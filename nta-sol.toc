@@ -1,0 +1,18 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {section}{\numberline {\LARGE \textcolor {dk}{1}}\huge Tổ hợp}{1}{section.1}%
+\contentsline {subsection}{\numberline {\large A }\LARGE \textcolor {dk}{Đề bài}}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {\large B }\LARGE \textcolor {dk}{Lời giải}}{33}{subsection.1.2}%
+\contentsline {section}{\numberline {\LARGE \textcolor {dk}{2}}\huge Phương trình hàm}{35}{section.2}%
+\contentsline {subsection}{\numberline {\large A }\LARGE \textcolor {dk}{Đề bài}}{35}{subsection.2.1}%
+\contentsline {subsection}{\numberline {\large B }\LARGE \textcolor {dk}{Lời giải}}{49}{subsection.2.2}%
+\contentsline {section}{\numberline {\LARGE \textcolor {dk}{3}}\huge Dãy số}{51}{section.3}%
+\contentsline {subsection}{\numberline {\large A }\LARGE \textcolor {dk}{Đề bài}}{51}{subsection.3.1}%
+\contentsline {subsection}{\numberline {\large B }\LARGE \textcolor {dk}{Lời giải}}{75}{subsection.3.2}%
+\contentsline {section}{\numberline {\LARGE \textcolor {dk}{4}}\huge Bất đẳng thức}{77}{section.4}%
+\contentsline {subsection}{\numberline {\large A }\LARGE \textcolor {dk}{Đề bài}}{77}{subsection.4.1}%
+\contentsline {subsection}{\numberline {\large B }\LARGE \textcolor {dk}{Lời giải}}{83}{subsection.4.2}%
+\contentsline {section}{\numberline {\LARGE \textcolor {dk}{5}}\huge Đa thức}{85}{section.5}%
+\contentsline {subsection}{\numberline {\large A }\LARGE \textcolor {dk}{Đề bài}}{85}{subsection.5.1}%
+\contentsline {subsection}{\numberline {\large B }\LARGE \textcolor {dk}{Lời giải}}{93}{subsection.5.2}%
+\contentsfinish 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,0 +1,18 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {section}{\numberline {\LARGE \textcolor {bk}{1.}}\huge Tổ hợp}{1}{section.1}%
+\contentsline {subsection}{\numberline {\LARGE \textcolor {dk}{\LARGE \textcolor {bk}{1.}1.}}\LARGE \textcolor {dk}{Đề bài}}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {\LARGE \textcolor {dk}{\LARGE \textcolor {bk}{1.}2.}}\LARGE \textcolor {dk}{Lời giải}}{50}{subsection.1.2}%
+\contentsline {section}{\numberline {\LARGE \textcolor {bk}{2.}}\huge Phương trình hàm}{52}{section.2}%
+\contentsline {subsection}{\numberline {\LARGE \textcolor {dk}{\LARGE \textcolor {bk}{2.}1.}}\LARGE \textcolor {dk}{Đề bài}}{52}{subsection.2.1}%
+\contentsline {subsection}{\numberline {\LARGE \textcolor {dk}{\LARGE \textcolor {bk}{2.}2.}}\LARGE \textcolor {dk}{Lời giải}}{67}{subsection.2.2}%
+\contentsline {section}{\numberline {\LARGE \textcolor {bk}{3.}}\huge Dãy số}{69}{section.3}%
+\contentsline {subsection}{\numberline {\LARGE \textcolor {dk}{\LARGE \textcolor {bk}{3.}1.}}\LARGE \textcolor {dk}{Đề bài}}{69}{subsection.3.1}%
+\contentsline {subsection}{\numberline {\LARGE \textcolor {dk}{\LARGE \textcolor {bk}{3.}2.}}\LARGE \textcolor {dk}{Lời giải}}{79}{subsection.3.2}%
+\contentsline {section}{\numberline {\LARGE \textcolor {bk}{4.}}\huge Bất đẳng thức}{81}{section.4}%
+\contentsline {subsection}{\numberline {\LARGE \textcolor {dk}{\LARGE \textcolor {bk}{4.}1.}}\LARGE \textcolor {dk}{Đề bài}}{81}{subsection.4.1}%
+\contentsline {subsection}{\numberline {\LARGE \textcolor {dk}{\LARGE \textcolor {bk}{4.}2.}}\LARGE \textcolor {dk}{Lời giải}}{85}{subsection.4.2}%
+\contentsline {section}{\numberline {\LARGE \textcolor {bk}{5.}}\huge Đa thức}{87}{section.5}%
+\contentsline {subsection}{\numberline {\LARGE \textcolor {dk}{\LARGE \textcolor {bk}{5.}1.}}\LARGE \textcolor {dk}{Đề bài}}{87}{subsection.5.1}%
+\contentsline {subsection}{\numberline {\LARGE \textcolor {dk}{\LARGE \textcolor {bk}{5.}2.}}\LARGE \textcolor {dk}{Lời giải}}{97}{subsection.5.2}%
+\contentsfinish 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
