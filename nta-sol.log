@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.28)  7 JUL 2024 16:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.28)  8 JUL 2024 04:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1517,77 +1517,77 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-<bia.pdf, id=6, 597.73312pt x 845.40843pt>
-File: bia.pdf Graphic file (type pdf)
-<use bia.pdf>
-Package pdftex.def Info: bia.pdf  used on input line 17.
+<Image/bia/bia.pdf, id=6, 597.73312pt x 845.40843pt>
+File: Image/bia/bia.pdf Graphic file (type pdf)
+<use Image/bia/bia.pdf>
+Package pdftex.def Info: Image/bia/bia.pdf  used on input line 17.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: bia.pdf Graphic file (type pdf)
-<use bia.pdf>
-Package pdftex.def Info: bia.pdf  used on input line 17.
+File: Image/bia/bia.pdf Graphic file (type pdf)
+<use Image/bia/bia.pdf>
+Package pdftex.def Info: Image/bia/bia.pdf  used on input line 17.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-<bia.pdf, id=9, page=1, 597.73312pt x 845.40843pt>
-File: bia.pdf Graphic file (type pdf)
-<use bia.pdf, page 1>
-Package pdftex.def Info: bia.pdf , page1 used on input line 17.
+<Image/bia/bia.pdf, id=9, page=1, 597.73312pt x 845.40843pt>
+File: Image/bia/bia.pdf Graphic file (type pdf)
+<use Image/bia/bia.pdf, page 1>
+Package pdftex.def Info: Image/bia/bia.pdf , page1 used on input line 17.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: bia.pdf Graphic file (type pdf)
-<use bia.pdf, page 1>
-Package pdftex.def Info: bia.pdf , page1 used on input line 17.
+File: Image/bia/bia.pdf Graphic file (type pdf)
+<use Image/bia/bia.pdf, page 1>
+Package pdftex.def Info: Image/bia/bia.pdf , page1 used on input line 17.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: bia.pdf Graphic file (type pdf)
-<use bia.pdf, page 1>
-Package pdftex.def Info: bia.pdf , page1 used on input line 17.
+File: Image/bia/bia.pdf Graphic file (type pdf)
+<use Image/bia/bia.pdf, page 1>
+Package pdftex.def Info: Image/bia/bia.pdf , page1 used on input line 17.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: bia.pdf Graphic file (type pdf)
-<use bia.pdf, page 1>
-Package pdftex.def Info: bia.pdf , page1 used on input line 17.
+File: Image/bia/bia.pdf Graphic file (type pdf)
+<use Image/bia/bia.pdf, page 1>
+Package pdftex.def Info: Image/bia/bia.pdf , page1 used on input line 17.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: bia.pdf Graphic file (type pdf)
-<use bia.pdf, page 1>
-Package pdftex.def Info: bia.pdf , page1 used on input line 17.
+File: Image/bia/bia.pdf Graphic file (type pdf)
+<use Image/bia/bia.pdf, page 1>
+Package pdftex.def Info: Image/bia/bia.pdf , page1 used on input line 17.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
  [1
 
 
- <./bia.pdf>] (nta-sol.toc)
+ <./Image/bia/bia.pdf>] (nta-sol.toc)
 \tf@toc=\write7
 \openout7 = `nta-sol.toc'.
 
-<1.pdf, id=237, 597.73312pt x 845.40843pt>
-File: 1.pdf Graphic file (type pdf)
-<use 1.pdf>
-Package pdftex.def Info: 1.pdf  used on input line 24.
+<Image/bia/1.pdf, id=237, 597.73312pt x 845.40843pt>
+File: Image/bia/1.pdf Graphic file (type pdf)
+<use Image/bia/1.pdf>
+Package pdftex.def Info: Image/bia/1.pdf  used on input line 24.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: 1.pdf Graphic file (type pdf)
-<use 1.pdf>
-Package pdftex.def Info: 1.pdf  used on input line 24.
+File: Image/bia/1.pdf Graphic file (type pdf)
+<use Image/bia/1.pdf>
+Package pdftex.def Info: Image/bia/1.pdf  used on input line 24.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-<1.pdf, id=240, page=1, 597.73312pt x 845.40843pt>
-File: 1.pdf Graphic file (type pdf)
-<use 1.pdf, page 1>
-Package pdftex.def Info: 1.pdf , page1 used on input line 24.
+<Image/bia/1.pdf, id=240, page=1, 597.73312pt x 845.40843pt>
+File: Image/bia/1.pdf Graphic file (type pdf)
+<use Image/bia/1.pdf, page 1>
+Package pdftex.def Info: Image/bia/1.pdf , page1 used on input line 24.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: 1.pdf Graphic file (type pdf)
-<use 1.pdf, page 1>
-Package pdftex.def Info: 1.pdf , page1 used on input line 24.
+File: Image/bia/1.pdf Graphic file (type pdf)
+<use Image/bia/1.pdf, page 1>
+Package pdftex.def Info: Image/bia/1.pdf , page1 used on input line 24.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
  [2{C:/Users/WIN10/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-t5.enc}]
-File: 1.pdf Graphic file (type pdf)
-<use 1.pdf, page 1>
-Package pdftex.def Info: 1.pdf , page1 used on input line 24.
+File: Image/bia/1.pdf Graphic file (type pdf)
+<use Image/bia/1.pdf, page 1>
+Package pdftex.def Info: Image/bia/1.pdf , page1 used on input line 24.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: 1.pdf Graphic file (type pdf)
-<use 1.pdf, page 1>
-Package pdftex.def Info: 1.pdf , page1 used on input line 24.
+File: Image/bia/1.pdf Graphic file (type pdf)
+<use Image/bia/1.pdf, page 1>
+Package pdftex.def Info: Image/bia/1.pdf , page1 used on input line 24.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: 1.pdf Graphic file (type pdf)
-<use 1.pdf, page 1>
-Package pdftex.def Info: 1.pdf , page1 used on input line 24.
+File: Image/bia/1.pdf Graphic file (type pdf)
+<use Image/bia/1.pdf, page 1>
+Package pdftex.def Info: Image/bia/1.pdf , page1 used on input line 24.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
  [3
 
- <./1.pdf>]
+ <./Image/bia/1.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 33.
@@ -1775,10 +1775,10 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 ) [15]
-<2017.pdf, id=503, 113.81522pt x 95.17557pt>
-File: 2017.pdf Graphic file (type pdf)
-<use 2017.pdf>
-Package pdftex.def Info: 2017.pdf  used on input line 675.
+<Image/2017.pdf, id=503, 113.81522pt x 95.17557pt>
+File: Image/2017.pdf Graphic file (type pdf)
+<use Image/2017.pdf>
+Package pdftex.def Info: Image/2017.pdf  used on input line 675.
 (pdftex.def)             Requested size: 170.72238pt x 142.76295pt.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
@@ -1788,40 +1788,40 @@ File: UTF8.chr 2021/10/16 4.8.5
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [17 <./2017.pdf>]
+) [17 <./Image/2017.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 717.
-<ex1.pdf, id=540, 244.66406pt x 257.46187pt>
-File: ex1.pdf Graphic file (type pdf)
-<use ex1.pdf>
-Package pdftex.def Info: ex1.pdf  used on input line 739.
+<Image/ex1.pdf, id=540, 244.66406pt x 257.46187pt>
+File: Image/ex1.pdf Graphic file (type pdf)
+<use Image/ex1.pdf>
+Package pdftex.def Info: Image/ex1.pdf  used on input line 739.
 (pdftex.def)             Requested size: 139.45995pt x 146.75478pt.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [18 <./ex1.pdf>]
-<trucngang.pdf, id=565, 244.66406pt x 257.46187pt>
-File: trucngang.pdf Graphic file (type pdf)
-<use trucngang.pdf>
-Package pdftex.def Info: trucngang.pdf  used on input line 743.
+) [18 <./Image/ex1.pdf>]
+<Image/trucngang.pdf, id=565, 244.66406pt x 257.46187pt>
+File: Image/trucngang.pdf Graphic file (type pdf)
+<use Image/trucngang.pdf>
+Package pdftex.def Info: Image/trucngang.pdf  used on input line 743.
 (pdftex.def)             Requested size: 139.45995pt x 146.75478pt.
-<+.pdf, id=566, 244.66406pt x 257.46187pt>
-File: +.pdf Graphic file (type pdf)
-<use +.pdf>
-Package pdftex.def Info: +.pdf  used on input line 749.
+<Image/+.pdf, id=566, 244.66406pt x 257.46187pt>
+File: Image/+.pdf Graphic file (type pdf)
+<use Image/+.pdf>
+Package pdftex.def Info: Image/+.pdf  used on input line 749.
 (pdftex.def)             Requested size: 139.45995pt x 146.75478pt.
-<tam.pdf, id=567, 244.66406pt x 257.46187pt>
-File: tam.pdf Graphic file (type pdf)
-<use tam.pdf>
-Package pdftex.def Info: tam.pdf  used on input line 753.
+<Image/tam.pdf, id=567, 244.66406pt x 257.46187pt>
+File: Image/tam.pdf Graphic file (type pdf)
+<use Image/tam.pdf>
+Package pdftex.def Info: Image/tam.pdf  used on input line 753.
 (pdftex.def)             Requested size: 139.45995pt x 146.75478pt.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [19 <./trucngang.pdf> <./+.pdf> <./tam.pdf>]
+) [19 <./Image/trucngang.pdf> <./Image/+.pdf> <./Image/tam.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 761.
@@ -1833,16 +1833,16 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 ) [20]
-<x.pdf, id=627, 296.60812pt x 127.22531pt>
-File: x.pdf Graphic file (type pdf)
-<use x.pdf>
-Package pdftex.def Info: x.pdf  used on input line 812.
+<Image/x.pdf, id=627, 296.60812pt x 127.22531pt>
+File: Image/x.pdf Graphic file (type pdf)
+<use Image/x.pdf>
+Package pdftex.def Info: Image/x.pdf  used on input line 812.
 (pdftex.def)             Requested size: 148.3037pt x 63.61249pt.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [21 <./x.pdf>] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
+) [21 <./Image/x.pdf>] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -1852,41 +1852,41 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 873.
 
 
-pdfTeX warning: pdflatex (file ./7.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<7.pdf, id=669, 794.97pt x 614.295pt>
-File: 7.pdf Graphic file (type pdf)
-<use 7.pdf>
-Package pdftex.def Info: 7.pdf  used on input line 883.
+pdfTeX warning: pdflatex (file ./Image/7.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Image/7.pdf, id=669, 794.97pt x 614.295pt>
+File: Image/7.pdf Graphic file (type pdf)
+<use Image/7.pdf>
+Package pdftex.def Info: Image/7.pdf  used on input line 883.
 (pdftex.def)             Requested size: 190.79669pt x 147.4338pt.
 (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [23 <./7.pdf>]
+) [23 <./Image/7.pdf>]
 
-pdfTeX warning: pdflatex (file ./8.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<8.pdf, id=694, 794.97pt x 614.295pt>
-File: 8.pdf Graphic file (type pdf)
-<use 8.pdf>
-Package pdftex.def Info: 8.pdf  used on input line 892.
+pdfTeX warning: pdflatex (file ./Image/8.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Image/8.pdf, id=694, 794.97pt x 614.295pt>
+File: Image/8.pdf Graphic file (type pdf)
+<use Image/8.pdf>
+Package pdftex.def Info: Image/8.pdf  used on input line 892.
 (pdftex.def)             Requested size: 174.89394pt x 135.14531pt.
-<kphec.pdf, id=695, 526.96875pt x 406.51875pt>
-File: kphec.pdf Graphic file (type pdf)
-<use kphec.pdf>
-Package pdftex.def Info: kphec.pdf  used on input line 905.
+<Image/kphec.pdf, id=695, 526.96875pt x 406.51875pt>
+File: Image/kphec.pdf Graphic file (type pdf)
+<use Image/kphec.pdf>
+Package pdftex.def Info: Image/kphec.pdf  used on input line 905.
 (pdftex.def)             Requested size: 131.74185pt x 101.62943pt.
 (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [24 <./8.pdf> <./kphec.pdf>]
+) [24 <./Image/8.pdf> <./Image/kphec.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 916.
-<tst.pdf, id=713, 376.40625pt x 376.40625pt>
-File: tst.pdf Graphic file (type pdf)
-<use tst.pdf>
-Package pdftex.def Info: tst.pdf  used on input line 940.
+<Image/tst.pdf, id=713, 376.40625pt x 376.40625pt>
+File: Image/tst.pdf Graphic file (type pdf)
+<use Image/tst.pdf>
+Package pdftex.def Info: Image/tst.pdf  used on input line 940.
 (pdftex.def)             Requested size: 112.92273pt x 112.92273pt.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
@@ -1896,7 +1896,7 @@ File: UTF8.chr 2021/10/16 4.8.5
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [26 <./tst.pdf>]
+) [26 <./Image/tst.pdf>]
 LaTeX Font Info:    Font shape `T5/lmss/m/it' in size <8> not available
 (Font)              Font shape `T5/lmss/m/sl' tried instead on input line 1022.
 LaTeX Font Info:    Font shape `T5/lmss/m/it' in size <6> not available
@@ -1926,49 +1926,49 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 ) [32]
-<IMO2023.pdf, id=825, 120.00835pt x 126.54276pt>
-File: IMO2023.pdf Graphic file (type pdf)
-<use IMO2023.pdf>
-Package pdftex.def Info: IMO2023.pdf  used on input line 1257.
+<Image/IMO2023.pdf, id=825, 120.00835pt x 126.54276pt>
+File: Image/IMO2023.pdf Graphic file (type pdf)
+<use Image/IMO2023.pdf>
+Package pdftex.def Info: Image/IMO2023.pdf  used on input line 1257.
 (pdftex.def)             Requested size: 120.00803pt x 126.54243pt.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [33 <./IMO2023.pdf>]
-<2.pdf, id=843, 597.73312pt x 845.40843pt>
-File: 2.pdf Graphic file (type pdf)
-<use 2.pdf>
-Package pdftex.def Info: 2.pdf  used on input line 1265.
+) [33 <./Image/IMO2023.pdf>]
+<Image/bia/2.pdf, id=843, 597.73312pt x 845.40843pt>
+File: Image/bia/2.pdf Graphic file (type pdf)
+<use Image/bia/2.pdf>
+Package pdftex.def Info: Image/bia/2.pdf  used on input line 1265.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: 2.pdf Graphic file (type pdf)
-<use 2.pdf>
-Package pdftex.def Info: 2.pdf  used on input line 1265.
+File: Image/bia/2.pdf Graphic file (type pdf)
+<use Image/bia/2.pdf>
+Package pdftex.def Info: Image/bia/2.pdf  used on input line 1265.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-<2.pdf, id=846, page=1, 597.73312pt x 845.40843pt>
-File: 2.pdf Graphic file (type pdf)
-<use 2.pdf, page 1>
-Package pdftex.def Info: 2.pdf , page1 used on input line 1265.
+<Image/bia/2.pdf, id=846, page=1, 597.73312pt x 845.40843pt>
+File: Image/bia/2.pdf Graphic file (type pdf)
+<use Image/bia/2.pdf, page 1>
+Package pdftex.def Info: Image/bia/2.pdf , page1 used on input line 1265.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: 2.pdf Graphic file (type pdf)
-<use 2.pdf, page 1>
-Package pdftex.def Info: 2.pdf , page1 used on input line 1265.
+File: Image/bia/2.pdf Graphic file (type pdf)
+<use Image/bia/2.pdf, page 1>
+Package pdftex.def Info: Image/bia/2.pdf , page1 used on input line 1265.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: 2.pdf Graphic file (type pdf)
-<use 2.pdf, page 1>
-Package pdftex.def Info: 2.pdf , page1 used on input line 1265.
+File: Image/bia/2.pdf Graphic file (type pdf)
+<use Image/bia/2.pdf, page 1>
+Package pdftex.def Info: Image/bia/2.pdf , page1 used on input line 1265.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: 2.pdf Graphic file (type pdf)
-<use 2.pdf, page 1>
-Package pdftex.def Info: 2.pdf , page1 used on input line 1265.
+File: Image/bia/2.pdf Graphic file (type pdf)
+<use Image/bia/2.pdf, page 1>
+Package pdftex.def Info: Image/bia/2.pdf , page1 used on input line 1265.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: 2.pdf Graphic file (type pdf)
-<use 2.pdf, page 1>
-Package pdftex.def Info: 2.pdf , page1 used on input line 1265.
+File: Image/bia/2.pdf Graphic file (type pdf)
+<use Image/bia/2.pdf, page 1>
+Package pdftex.def Info: Image/bia/2.pdf , page1 used on input line 1265.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
  [34
 
- <./2.pdf>]
+ <./Image/bia/2.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1269.
@@ -2086,39 +2086,39 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 ) [49]
-<3.pdf, id=991, 597.73312pt x 845.40843pt>
-File: 3.pdf Graphic file (type pdf)
-<use 3.pdf>
-Package pdftex.def Info: 3.pdf  used on input line 2040.
+<Image/bia/3.pdf, id=991, 597.73312pt x 845.40843pt>
+File: Image/bia/3.pdf Graphic file (type pdf)
+<use Image/bia/3.pdf>
+Package pdftex.def Info: Image/bia/3.pdf  used on input line 2040.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: 3.pdf Graphic file (type pdf)
-<use 3.pdf>
-Package pdftex.def Info: 3.pdf  used on input line 2040.
+File: Image/bia/3.pdf Graphic file (type pdf)
+<use Image/bia/3.pdf>
+Package pdftex.def Info: Image/bia/3.pdf  used on input line 2040.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-<3.pdf, id=994, page=1, 597.73312pt x 845.40843pt>
-File: 3.pdf Graphic file (type pdf)
-<use 3.pdf, page 1>
-Package pdftex.def Info: 3.pdf , page1 used on input line 2040.
+<Image/bia/3.pdf, id=994, page=1, 597.73312pt x 845.40843pt>
+File: Image/bia/3.pdf Graphic file (type pdf)
+<use Image/bia/3.pdf, page 1>
+Package pdftex.def Info: Image/bia/3.pdf , page1 used on input line 2040.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: 3.pdf Graphic file (type pdf)
-<use 3.pdf, page 1>
-Package pdftex.def Info: 3.pdf , page1 used on input line 2040.
+File: Image/bia/3.pdf Graphic file (type pdf)
+<use Image/bia/3.pdf, page 1>
+Package pdftex.def Info: Image/bia/3.pdf , page1 used on input line 2040.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: 3.pdf Graphic file (type pdf)
-<use 3.pdf, page 1>
-Package pdftex.def Info: 3.pdf , page1 used on input line 2040.
+File: Image/bia/3.pdf Graphic file (type pdf)
+<use Image/bia/3.pdf, page 1>
+Package pdftex.def Info: Image/bia/3.pdf , page1 used on input line 2040.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: 3.pdf Graphic file (type pdf)
-<use 3.pdf, page 1>
-Package pdftex.def Info: 3.pdf , page1 used on input line 2040.
+File: Image/bia/3.pdf Graphic file (type pdf)
+<use Image/bia/3.pdf, page 1>
+Package pdftex.def Info: Image/bia/3.pdf , page1 used on input line 2040.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: 3.pdf Graphic file (type pdf)
-<use 3.pdf, page 1>
-Package pdftex.def Info: 3.pdf , page1 used on input line 2040.
+File: Image/bia/3.pdf Graphic file (type pdf)
+<use Image/bia/3.pdf, page 1>
+Package pdftex.def Info: Image/bia/3.pdf , page1 used on input line 2040.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
  [50
 
- <./3.pdf>]
+ <./Image/bia/3.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2043.
@@ -2268,17 +2268,17 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 2711.
 
 
-pdfTeX warning: pdflatex (file ./2019.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<2019.pdf, id=1193, 645.08502pt x 234.57637pt>
-File: 2019.pdf Graphic file (type pdf)
-<use 2019.pdf>
-Package pdftex.def Info: 2019.pdf  used on input line 2727.
+pdfTeX warning: pdflatex (file ./Image/2019.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Image/2019.pdf, id=1193, 645.08502pt x 234.57637pt>
+File: Image/2019.pdf Graphic file (type pdf)
+<use Image/2019.pdf>
+Package pdftex.def Info: Image/2019.pdf  used on input line 2727.
 (pdftex.def)             Requested size: 258.02943pt x 93.82887pt.
 (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [67 <./2019.pdf>]
+) [67 <./Image/2019.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2757.
@@ -2409,39 +2409,39 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 ) [75]
-<4.pdf, id=1252, 597.73312pt x 845.40843pt>
-File: 4.pdf Graphic file (type pdf)
-<use 4.pdf>
-Package pdftex.def Info: 4.pdf  used on input line 3029.
+<Image/bia/4.pdf, id=1252, 597.73312pt x 845.40843pt>
+File: Image/bia/4.pdf Graphic file (type pdf)
+<use Image/bia/4.pdf>
+Package pdftex.def Info: Image/bia/4.pdf  used on input line 3029.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: 4.pdf Graphic file (type pdf)
-<use 4.pdf>
-Package pdftex.def Info: 4.pdf  used on input line 3029.
+File: Image/bia/4.pdf Graphic file (type pdf)
+<use Image/bia/4.pdf>
+Package pdftex.def Info: Image/bia/4.pdf  used on input line 3029.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-<4.pdf, id=1255, page=1, 597.73312pt x 845.40843pt>
-File: 4.pdf Graphic file (type pdf)
-<use 4.pdf, page 1>
-Package pdftex.def Info: 4.pdf , page1 used on input line 3029.
+<Image/bia/4.pdf, id=1255, page=1, 597.73312pt x 845.40843pt>
+File: Image/bia/4.pdf Graphic file (type pdf)
+<use Image/bia/4.pdf, page 1>
+Package pdftex.def Info: Image/bia/4.pdf , page1 used on input line 3029.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: 4.pdf Graphic file (type pdf)
-<use 4.pdf, page 1>
-Package pdftex.def Info: 4.pdf , page1 used on input line 3029.
+File: Image/bia/4.pdf Graphic file (type pdf)
+<use Image/bia/4.pdf, page 1>
+Package pdftex.def Info: Image/bia/4.pdf , page1 used on input line 3029.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: 4.pdf Graphic file (type pdf)
-<use 4.pdf, page 1>
-Package pdftex.def Info: 4.pdf , page1 used on input line 3029.
+File: Image/bia/4.pdf Graphic file (type pdf)
+<use Image/bia/4.pdf, page 1>
+Package pdftex.def Info: Image/bia/4.pdf , page1 used on input line 3029.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: 4.pdf Graphic file (type pdf)
-<use 4.pdf, page 1>
-Package pdftex.def Info: 4.pdf , page1 used on input line 3029.
+File: Image/bia/4.pdf Graphic file (type pdf)
+<use Image/bia/4.pdf, page 1>
+Package pdftex.def Info: Image/bia/4.pdf , page1 used on input line 3029.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: 4.pdf Graphic file (type pdf)
-<use 4.pdf, page 1>
-Package pdftex.def Info: 4.pdf , page1 used on input line 3029.
+File: Image/bia/4.pdf Graphic file (type pdf)
+<use Image/bia/4.pdf, page 1>
+Package pdftex.def Info: Image/bia/4.pdf , page1 used on input line 3029.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
  [76
 
- <./4.pdf>] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
+ <./Image/bia/4.pdf>] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -2470,39 +2470,39 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 ) [83]
-<5.pdf, id=1349, 597.73312pt x 845.40843pt>
-File: 5.pdf Graphic file (type pdf)
-<use 5.pdf>
-Package pdftex.def Info: 5.pdf  used on input line 3385.
+<Image/bia/5.pdf, id=1349, 597.73312pt x 845.40843pt>
+File: Image/bia/5.pdf Graphic file (type pdf)
+<use Image/bia/5.pdf>
+Package pdftex.def Info: Image/bia/5.pdf  used on input line 3385.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: 5.pdf Graphic file (type pdf)
-<use 5.pdf>
-Package pdftex.def Info: 5.pdf  used on input line 3385.
+File: Image/bia/5.pdf Graphic file (type pdf)
+<use Image/bia/5.pdf>
+Package pdftex.def Info: Image/bia/5.pdf  used on input line 3385.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-<5.pdf, id=1352, page=1, 597.73312pt x 845.40843pt>
-File: 5.pdf Graphic file (type pdf)
-<use 5.pdf, page 1>
-Package pdftex.def Info: 5.pdf , page1 used on input line 3385.
+<Image/bia/5.pdf, id=1352, page=1, 597.73312pt x 845.40843pt>
+File: Image/bia/5.pdf Graphic file (type pdf)
+<use Image/bia/5.pdf, page 1>
+Package pdftex.def Info: Image/bia/5.pdf , page1 used on input line 3385.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: 5.pdf Graphic file (type pdf)
-<use 5.pdf, page 1>
-Package pdftex.def Info: 5.pdf , page1 used on input line 3385.
+File: Image/bia/5.pdf Graphic file (type pdf)
+<use Image/bia/5.pdf, page 1>
+Package pdftex.def Info: Image/bia/5.pdf , page1 used on input line 3385.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: 5.pdf Graphic file (type pdf)
-<use 5.pdf, page 1>
-Package pdftex.def Info: 5.pdf , page1 used on input line 3385.
+File: Image/bia/5.pdf Graphic file (type pdf)
+<use Image/bia/5.pdf, page 1>
+Package pdftex.def Info: Image/bia/5.pdf , page1 used on input line 3385.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: 5.pdf Graphic file (type pdf)
-<use 5.pdf, page 1>
-Package pdftex.def Info: 5.pdf , page1 used on input line 3385.
+File: Image/bia/5.pdf Graphic file (type pdf)
+<use Image/bia/5.pdf, page 1>
+Package pdftex.def Info: Image/bia/5.pdf , page1 used on input line 3385.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: 5.pdf Graphic file (type pdf)
-<use 5.pdf, page 1>
-Package pdftex.def Info: 5.pdf , page1 used on input line 3385.
+File: Image/bia/5.pdf Graphic file (type pdf)
+<use Image/bia/5.pdf, page 1>
+Package pdftex.def Info: Image/bia/5.pdf , page1 used on input line 3385.
 (pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
  [84
 
- <./5.pdf>]
+ <./Image/bia/5.pdf>]
 Overfull \hbox (1.60027pt too wide) in paragraph at lines 3419--3420
 []\T5/lmss/m/sl/10.95 Chùng minh r¬ng n¸u nh÷ $\OML/lmm/m/it/10.95 P\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T5/lmss/m/sl/10.95 v  $\OML/lmm/m/it/10.95 Q\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T5/lmss/m/sl/10.95 l  t÷ìng hé th¼ $\OML/lmm/m/it/10.95 P\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 Q\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 ))$ \T5/lmss/m/sl/10.95 công t÷ìng hé v  $\OT1/lmr/m/n/10.95 [\OML/lmm/m/it/10.95 P\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 Q\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 ))] =
  []
@@ -2557,14 +2557,14 @@ Package rerunfilecheck Info: File `nta-sol.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  39216 strings out of 474486
- 760947 string characters out of 5743755
+ 762171 string characters out of 5743755
  1951542 words of memory out of 5000000
  59791 multiletter control sequences out of 15000+600000
  651757 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  109i,17n,147p,10943b,1764s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u30.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on nta-sol.pdf (96 pages, 1140087 bytes).
+Output written on nta-sol.pdf (96 pages, 1140216 bytes).
 PDF statistics:
  1788 PDF objects out of 2073 (max. 8388607)
  661 named destinations out of 1000 (max. 500000)
