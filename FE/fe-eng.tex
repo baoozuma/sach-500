@@ -1,0 +1,2516 @@
+\documentclass[11pt]{scrartcl}
+\usepackage{booktabs}
+\usepackage{bbding}
+\usepackage{oldstyle}
+
+\lhead{MOP 2024 Practise}
+\rhead{\begin{CJK}{UTF8}{ipxm} Adam Ardeishar
+\chead{June 12th 2024}
+\end{CJK}}
+\usepackage{pdfpages}
+\begin{document}
+
+%\title{\vspace{-2em}\textcolor{bk}{\textbf{BÀI TẬP TỔ HỢP VÀ ĐẠI SỐ}}}
+
+%\subtitle{\vspace{1.5em}{\textbf{\LARGE CAUCHY-SCHWARZ-HOLDER}}}
+%\author{Phạm Bảo -\begin{CJK}{UTF8}{ipxm} カズマアカリ。\end{CJK}\vspace{-1em}}
+
+
+\includepdf[pages=1]{biapt.pdf}
+\thispagestyle{empty}
+
+
+%\subsection*{\Large\textcolor{bk}{ \S 1.1.} Các bất đẳng thức cổ điển}
+\newpage
+\setcounter{page}{1}
+\thispagestyle{plain}
+
+    \thispagestyle{plain}
+    {\huge \vocab{Preface}}
+    \vspace{2em}
+
+
+    Upon returning from Romania in 2018, I was privileged to be invited to teach classes for the team selection in algebra and mathematics olympiad preparation. Functional equations stand as a cornerstone in mathematical problem-solving, offering a rich tapestry of challenges and insights into the behavior of functions.
+
+    This document serves as a reference for the MOP 2024 session, focusing on functional equations and test-solving strategies. As you engage with these problems, remember to approach each with a blend of creativity and rigor, exploring different avenues of solution and ensuring clarity in your reasoning.
+
+    I extend my heartfelt gratitude to Evan Chen for his invaluable contributions to LaTeX resources, which have greatly enhanced the presentation and accessibility of mathematical content.
+
+    Let's delve into the world of functional equations with curiosity and determination, embracing the elegance and complexity they offer in our journey of mathematical exploration.
+    \begin{flushright}
+        Adam Ardeishar, IMO 2018 USA participant
+    \end{flushright}
+    \newpage
+    \section{\LARGE{Problems}}
+    \vspace{1em}
+    \begin{itemize}[label=,itemsep=0.4em,leftmargin=0em]
+       \item In this section, I will introduce you to several typical problems regarding function equations, covering nearly all possible types known today. Try to put your pen down, brainstorm ideas, and attempt each problem. The difficulty levels will be arranged alternately.
+    
+    \item\begin{btvn}\vocab{(USAMO 2002).}
+        Find all functions $f: \mathbb{R} \to \mathbb{R}$ that satisfy
+        \[
+           f(x^2 - y^2) = xf(x) - yf(y)
+        \]
+        for all real numbers $x,y$.
+    \end{btvn}
+    \begin{comment}
+        Let \( P(x, y) \) denote the plugging into \((?)\). From \( P(x, 0) \) we get \( f(x^2) = xf(x) \). Substituting \( x \to -x \), we find that \( f \) is an odd function. Rewriting, we have
+            \[
+            f(x^2 - y^2) = f(x^2) - f(y^2), \quad \forall x, y \geq 0.
+            \]
+            Or \( f(x - y) = f(x) - f(y), \forall x, y \geq 0 \). Substituting \( x \to x + y \), we get \( f(x) + f(y) = f(x + y), \forall x, y \geq 0 \). Furthermore, we have 
+            \[
+            -f(x) - f(y) = -f(x + y) \implies f(-x) + f(-y) = f(-x - y), \forall x, y \geq 0.
+            \]
+            Thus, \( f \) is additive over \(\mathbb{R}\). Hence, for any \( k \in \mathbb{Q} \), we have \( f(kx) = kf(x) \). Let \( a = f(1) \). For \( x \in \mathbb{R} \) and \( y \in \mathbb{Q} \), we will compute \( f((x + y)^2) \) in two ways. We have 
+            \[
+            f((x + y)^2) = (x + y)f(x + y) = (x + y)(f(x) + ay) = xf(x) + yf(x) + axy + ay^2.
+            \]
+            We also have 
+            \[
+            f((x + y)^2) = f(x^2 + 2xy + y^2) = f(x^2) + f(2xy) + f(y^2) = xf(x) + 2yf(x) + ay^2.
+            \]
+            Fix \( x \) and compare the coefficients of \( y \), we obtain \(\boxed{f(x) = ax, \forall x \in \mathbb{R}}\) where \( a \in \mathbb{R} \).
+    \end{comment}
+    \begin{btvn}\vocab{(IMO Shortlist 2017 A4).}
+        Find all functions $f: \mathbb{R} \to \mathbb{R}$ that satisfy
+        \[
+           f(f(x)f(y)) + f(x + y) = f(xy)\tag{1}
+        \]
+        for all real numbers $x,y$.
+    \end{btvn}
+    \begin{comment}
+            Let \( P(x, y) \) denote plugging into \((?)\).
+
+            From \((1)\), substituting \( P(0,0) \) gives \( f(f(0)^2) = 0 \). Let \( c = f(0)^2 \), then \( f(c) = 0 \).
+            
+            Assume \( c \neq 1 \). Then substituting \( P\left(\frac{c}{c - 1},c\right) \) gives \( f(0) = 0 \).
+            
+            From \((1)\), substituting \( P(x,0) \) gives \( f(x) = 0, \forall x \in \mathbb{R} \). Checking, we find this function satisfies the condition. Assume there exists \( x_0 \) such that \( f(x_0) \neq 0 \), then it implies \( c = 1 \), i.e., \( f(1) = 0 \) and \( f(0)^2 = 1 \). In other words, if \( f(c) = 0 \), then \( c = 1 \).
+            
+            \textbf{Case 1:} \( f(0) = -1 \).
+            
+            \textbf{Claim 1:} \( f(x + n) = f(x) + n, \forall x \in \mathbb{R}, n \in \mathbb{N} \).
+            
+            \begin{pro}
+            We prove this by induction.
+            From \((1)\), substituting \( P(x,1) \) gives \( f(x + 1) = f(x) + 1 \). Assume for \( n - 1 \in \mathbb{Z}^+ \), we have \( f(x + n - 1) = f(x) + n - 1 \), then 
+            \[
+            f(x + n) = f(x + n - 1 + 1) = f(x + 1) + n - 1 = f(x) + n , \forall x \in \mathbb{R}.
+            \]
+            Thus, \( f(x + n) = f(x) + n, \forall x \in \mathbb{R}, n \in \mathbb{N} \).
+            \end{pro}
+            
+            \textbf{Claim 2:} If \( f(t) = -1 \), then \( t = 0 \).
+            
+            \begin{pro}
+            Assume \( t \neq 0 \) and \( f(t) = -1 \). From \((1)\), substituting \( P(t, 1) \), we get
+            \[
+            f(0) + f(t + 1) = f(t)
+            \implies f(t + 1) = 0
+            \implies t + 1 = 1
+            \implies t = 0.
+            \]
+            This leads to a contradiction, thus \( t = 0 \).
+            \end{pro}
+            
+            \textbf{Claim 3:} If there exist \( u,v \in \mathbb{R} \) such that \( f(u) = f(v) \), then
+            \[
+            \left\{
+            \begin{array}{l}
+            f(2u) = f(2v) \\
+            f(-u) = f(-v) \\
+            f(u^2) = f(v^2)
+            \end{array}
+            \right.
+            \]
+            
+            \begin{pro}
+            Assume \( f(a) = f(b) \). Substituting \( P(x,a) \) and \( P(x,b) \) into \((1)\) respectively, we get 
+            \[
+            f(x + a) - f(x + b) = f(xa) - f(xb) \tag{2}
+            \]
+            Substituting \( x \to 2 \) into \((2)\) gives
+            \[
+            f(a + 2) - f(b + 2) = f(2a) - f(2b) \implies f(2a) - f(2b) = f(a) + 2 - f(b) - 2 = 0.
+            \]
+            Similarly, substituting \( x \to -1 \) into \((2)\), noting that \( f(x - 1) = f(x) - 1, \forall x \in \mathbb{R} \), we get \( f(-a) = f(-b) \).
+            
+            From \((1)\), substituting \( P(a,a) \) and \( P(b,b) \) respectively, we get \( f(a^2) = f(b^2) \).
+            \end{pro}
+            \textbf{Claim 4:} \( f \) is injective on \(\mathbb{R}\).
+            \begin{pro}
+            Suppose \( a, b \in \mathbb{R} \) such that \( f(a) = f(b) \), and let \( d = a - b \). We will prove that \( d = 0 \). 
+            
+            In the substitution into \((1)\):
+            
+            \( P(a, -b) \ra f(f(a)f(-b)) + f(d) = f(-ab) \)
+            
+            \( P(-a, b) \ra f(f(-a)f(b)) + f(-d) = f(-ab) \)
+            
+            Combining these, we get \( f(d) = f(-d) \). 
+            On the other hand, noting that \( d + b = a \) and \( a - d = b \):
+            
+            \( P(d, b) \ra f(f(d)f(b)) + f(a) = f(db) \)
+            
+            \( P(-d, a) \ra f(f(-d)f(a)) + f(b) = f(-da) \)
+            
+            It follows that \( f(db) = f(-da) \). According to \textbf{Claim 3}, we get \( f(da) = f(-db) \). Noting that \( da - db = d^2 \) and \( -da + db = -d^2 \), we continue with the substitutions:
+            
+            \( P(da, -db) \ra f(f(da)f(-db)) + f(d^2) = f(-d^2ab) \)
+            
+            \( P(-da, db) \ra f(f(-da)f(db)) + f(-d^2) = f(-d^2ab) \)
+            
+            Combining these, we get \( f(d^2) = f(-d^2) \). Additionally,
+            
+            \( P(d, d) \ra f(f(d)^2) + f(2d) = f(d^2) \)
+            
+            \( P(d, -d) \ra f(f(d)f(-d)) + f(0) + f(-d^2) \)
+            
+            From this, we deduce \( f(2d) = f(0) = -1 \). According to \textbf{Claim 2}, we get \( 2d = 0 \ra d = 0 \ra a = b \). Thus, \( f \) is injective on \(\mathbb{R}\).
+            \end{pro}
+            
+            Now from \((1)\), substituting \( P(x, 1 - x) \) we get
+            \[
+            f(f(x)f(1-x)) + f(1) = f(x(1-x)) \ra f(f(x)f(1 - x)) = f(x(1-x)), \forall x \in \mathbb{R}
+            \]
+            Since \( f \) is injective, we get 
+            \[f(x)f(1-x) = x(1-x), \forall x \in \mathbb{R} \tag{3}\]
+            
+            We have 
+            \[
+            (3) \ra f(x)(f(-x) + 1) = x - x^2 \ra f(x) + f(x)f(-x) = x - x^2, \forall x \in \mathbb{R} \tag{4}
+            \]
+            
+            Substituting \( x \to -x \), we get
+            \[
+            f(-x) + f(-x)f(x) = -x - x^2, \forall x \in \mathbb{R}
+            \]
+            
+            It follows that \( f(-x) = f(x) - 2x \). Substituting this expression into \((4)\), we get
+            \[
+            f(x) + f(x)(f(x) - 2x) = x - x^2 \ra f(x)^2 + (1 - 2x)f(x) + x^2 - x = 0, \forall x \in \mathbb{R}
+            \]
+            
+            Considering the quadratic equation in \( f(x) \), we have \( \Delta  = (1 - 2x)^2 - 4(x^2 - x) = 4x^2 - 4x + 1 - 4x^2 + 4x = 1 \). Solving this equation, we get \( f(x) = x - 1 \) or \( f(x) = x \), \( \forall x \in \mathbb{R} \). 
+            
+            Checking, we find that \( f(x) = x \) does not satisfy the condition.
+            
+            Assume there exists \( a \in \mathbb{R} \) such that \( f(a) = a \).
+            
+            From \((1)\), substituting \( P(a, 0) \), we get \( f(-a) + a = -1 \ra f(-a) = -1 - a \).
+            
+            Substituting \( P(-a, 0) \), we get \( f(a + 1) - a - 1 = -1 \ra a + 1 - a - 1 = -1 \), which is a contradiction.
+            Therefore, the function that satisfies the condition is \( f(x) = x - 1, \forall x \in \mathbb{R} \).
+            
+            \textbf{Case 2:} \( f(0) = 1 \). Note that when the function \( f(x) \) is replaced by the function \( -f(x) \) in \((1)\), the function still satisfies the condition, i.e., \( -f(x) \) is also a solution of \((1)\), with \( -f(0) = -1 \). Therefore, solving similarly to \textbf{Case 1}, we get \( f(x) = 1 - x, \forall x \in \mathbb{R} \).
+            
+            Thus, all functions that satisfy the condition are:
+            \[
+            \boxed{f(x) = 0, \forall x \in \mathbb{R}},
+            \boxed{f(x) = x - 1, \forall x \in \mathbb{R}},
+            \boxed{f(x) = 1 - x, \forall x \in \mathbb{R}}
+            \]
+      \end{comment}
+
+
+
+    \begin{btvn}\vocab{(IMO 2015).}
+        Find all functions $f: \mathbb{R} \to \mathbb{R}$ that satisfy
+        \[
+           f(x + f(x + y)) + f(xy) = x + f(x + y) + yf(x)\tag{1}
+        \]
+        for all real numbers $x,y$.
+    \end{btvn}
+    \begin{comment}
+       Let $P(x,y)$ denote substitution into equation $(1)$. Define $\bb{S} = \{t \mid f(t) = t\}$ as the set of fixed points.
+
+        $P(x,1) \ra f(x + f(x + 1)) = x + f(x + 1), \xr \ra x + f(x + 1) \in \bb{S}$
+
+        $P(0,0) \ra f(f(0)) = 0$.
+
+        $P(0,f(0)) \ra 2f(0) = f(0)^2$
+
+        \textbf{Case 1:} $f(0) = 2$.
+
+        Let $t$ be an arbitrary fixed point in $\bb{S}$.
+
+        $P(t,0) \ra t + 2 = 2t \ra t = 2$. Also, since $x + f(x + 1) \in \bb{S}$, we have $x + f(x + 1) = t = 2 \ra f(x) = 2 - x, \xr$
+
+        \textbf{Case 2:} $f(0) = 0$.
+
+        $P(0,x) \ra f(f(x)) = f(x) \ra f(x) \in \bb{S}$
+
+        $P(-x,x) \ra f(-x) + f(-x^2) = -x + x f(-x)$ (2).
+
+        Setting $x = 1$ gives $2f(-1) = -1 + f(-1) \ra f(-1) = -1$
+
+        $P(x,-x) \ra f(x) + f(-x^2) = x - x f(x)$ (3).
+
+        Setting $x = 1$ gives $f(1) = 1$.
+
+        $P(x - 1, 1) \ra f(x - 1 + f(x)) = x - 1 + f(x) \ra x - 1 + f(x) \in \bb{S}$
+
+        $P(1, f(x) + x - 1) \ra f(x + 1 + f(x)) = x + 1 + f(x) \ra x + 1 + f(x) \in \bb{S}$.
+
+        $P(x,-1) \ra f(x + f(x - 1)) + f(-x) = x + f(x - 1) - f(x) \ra f(-x) = -f(x), \xr$
+
+        From (2) and (3), we deduce $f(-x) - f(x) = -2x + x(f(-x) + f(x)) \ra -2f(x) = 2x \ra f(x) = x, \xr$
+
+        The satisfied functions are $\boxed{f(x) = 2-x, \xr}$ and $\boxed{f(x) = x, \xr}$.
+
+    \end{comment}
+    \begin{btvn}\vocab{(Vietnam TST 2022).}
+        Given a real number \(\alpha\) and consider the function \(\varphi(x) = x^2 e^{\alpha x}\) for all \(x \in \mathbb{R}\).
+        Find all functions $f: \mathbb{R} \to \mathbb{R}$ that satisfy
+            $$
+            f(\varphi(x)+f(y))=y+\varphi(f(x))
+            $$
+            for all real numbers $x, y$
+    \end{btvn}
+   
+    \begin{comment}
+        Let \( P(x,y) \) denote substitution into \( (1) \).
+
+        \[ P(0,y) \ra f(f(y)) = y + \varphi(f(0)), \xr \]
+        From this, it is straightforward to deduce that \( f \) is bijective. Thus, there exists \( c \) such that \( f(c) = 0 \).
+
+        \[ P(c,f(y)) \ra f(\varphi(c) + f(f(y))) = f(y). \]
+        Since \( f \) is bijective, \( \varphi(c) + f(f(y)) = y \ra \varphi(c) + y + \varphi(f(0)) = y \ra \varphi(c) + \varphi(0) = 0 \).
+
+        Since \( \varphi: \mathbb{R} \to [0,+\infty) \), we conclude \( f(0) = c = 0 \).
+
+        From \( (1) \), substituting \( P(x,0) \):
+        \[ f(\varphi(x)) = \varphi(f(x)), \xr \]
+        we deduce \( f(f(y)) = y \). Since \( \varphi(x) \) is continuous over \( \mathbb{R} \) and takes values in \( [0,+\infty) \), \( f(x) \geq 0 \) for \( x \geq 0 \). Rewrite \( P(x,f(y)) \):
+        \[ f(\varphi(x) + y) = f(y) + f(\varphi(x)) \ra f(x + y) = f(x) + f(y), \quad \forall x \geq 0, y \in \mathbb{R}. \]
+
+        For \( x, y \in \mathbb{R} \), choose \( z > \max\{0, -y\} \), we have:
+        \[ f(x + y) + f(z) = f(x + y + z) = f(x) + f(y + z) = f(x) + f(y) + f(z). \]
+        Thus, \( f \) is additive over \( \mathbb{R} \). We state and prove the following lemma:
+
+        \begin{lemma}
+        Consider a function \( f: \mathbb{R} \to \mathbb{R} \) bounded on \( [a,b] \) and satisfying
+        \[ f(x + y) = f(x) + f(y), \xyr \]
+        Then \( f \) is linear over \( \mathbb{R} \).
+        \end{lemma}
+        \begin{pro}
+            Assume there exists a function \( f: \mathbb{R} \ra \mathbb{R} \) bounded on the interval \( [a, b] \) and satisfying the condition
+
+            Since \( f \) is bounded on the interval \( [a, b] \), there exists \( M \in \mathbb{R} \) such that
+            \[
+            f(x) < M, \forall x \in [a, b].
+            \]
+
+            We will prove that the function \( f \) is also bounded on the interval \( [0, b-a] \).
+            Indeed, for every \( x \in [0, b-a] \), we have \( x+a \in [a, b] \). Thus,
+            \[
+            f(x+a) = f(x) + f(a) \ra f(x) = f(x+a) - f(a) \ra -2M < f(x) < 2M.
+            \]
+
+            Therefore, \( |f(x)| < 2M \) for all \( x \in [0, b-a] \), implying \( f \) is bounded on the interval \( [0, b-a] \).
+            Let \( b-a = d > 0 \). Then \( f \) is bounded on \( [0, d] \). Set \( c = \frac{f(d)}{d} \) and define \( g(x) = f(x) - cx \). For all \( x, y \in \mathbb{R} \), we have
+            \[
+            g(x+y) = f(x+y) - c(x+y) = f(x) - cx + f(y) - cy = g(x) + g(y).
+            \]
+
+            Furthermore, \( g(d) = f(d) - cd = 0 \). Hence, \( g(x+d) = g(x) \) for all \( x \in \mathbb{R} \), meaning \( g \) is periodic. Since \( g \) is also bounded on \( [0, d] \) and periodic over \( \mathbb{R} \), \( g \) must be bounded on \( \mathbb{R} \).
+            Assume there exists \( x_0 \) such that \( g(x_0) \neq 0 \). Then for \( n \in \mathbb{N} \), \( g(nx_0) = ng(x_0) \), which implies
+            \[
+            |g(nx_0)| = n|g(x_0)|, \quad \forall n \in \mathbb{N}.
+            \]
+
+            Since \( g(x_0) \neq 0 \), from \( (2) \) we have \( \blim_{n \to \infty} |g(nx_0)| = \blim_{n \to \infty} n|g(x_0)| = +\infty \), contradicting the boundedness assumption. Therefore, \( g(x) = 0 \).
+            \end{pro}
+            Thus, \( \boxed{f(x) = cx} \).
+            Testing again, we find \( c = 1 \). Therefore, the function satisfying the conditions is \( \boxed{f(x) = x} \).
+
+    \end{comment}
+
+   
+     \begin{btvn}\vocab{(Romania EGMO TST 2022).}
+        Find all functions $f: \mathbb{R} \to \mathbb{R}$ that satisfy
+            $$
+            f(f(x)+y)=f\left(x^2-y\right)+4 y f(x)
+            $$
+            for all real numbers $x, y$
+    \end{btvn}
+    \begin{comment}
+        Let \( P(x,y) \) denote substitution into \( (1) \). \( P\left(x,\frac{x^2 - f(x)}{2}\right) \) yields 
+        \[ (x^2 - f(x))f(x) = 0. \]
+        Thus, we have \( f(0) = 0 \). It is easy to see that \( f(x) = 0 \) and \( f(x) = x^2 \) are two functions that satisfy this condition. Suppose there exist \( a, b \neq 0 \) such that \( f(a) = 0 \) and \( f(b) = b^2 \).
+
+        Considering \( P(0,y) \), we deduce that \( f \) is an even function. Suppose there exist \( a, b > 0 \) such that \( f(a) = 0 \) and \( f(b) = b^2 \).
+
+        \( P(b,-a) \ra f(b^2 - a) = f(b^2 + a) - 4ab^2 \)
+
+        \(P(a,y) \ra f(y) = f(a^2 - y) \ra f(y) = f(a^2 + y), \yr \)
+
+        \( P(b,a^2) \ra f(b^2 + a^2) = f(b^2 - a^2) + 4yb^2 \)
+
+        \( \ra f(a^2 + b^2) = f(a^2 - b^2) + 4a^2b^2 \ra f(b^2) = f(-b^2) + 4a^2b^2 \ra 4a^2b^2 = 0 \)
+
+        This is absurd since \( a, b \neq 0 \). Therefore, the functions that satisfy the conditions are \( \boxed{f(x) = 0 ,\xr} \) and \( \boxed{f(x) = x^2 ,\xr} \).\end{comment}
+    
+
+    \item \begin{btvn}\vocab{(IMO Shortlist 2004).}
+        Find all functions $f: \mathbb{R} \to \mathbb{R}$ that satisfy
+        \[
+           f(x^2 + y^2 +2f(xy)) = \left(f(x + y)\right)^2
+        \]
+        for all real numbers $x,y$.
+    \end{btvn}
+    \begin{comment}
+        Let \( P(x,y) \) denote substitution into \( (?) \). Define \( m = x^2 + y^2 \) and \( n = xy \). Then \( m^2 \geq 4n \). Let \( g(x) = 2f(x) - 2x \), rewriting 
+\[
+    f(m^2 + g(n)) = f(m)^2, \quad m^2 \geq 4n \tag{1}
+\]
+Let \( c = f(0) = g(0) \). From \( (1) \), substituting \( P(m,0) \) yields \( f(m^2 + c) = f(m)^2, \forall m \in \bb{R}, (2) \).
+
+\textbf{Claim 1:} \( f(x) \geq 0, \forall x \geq c \geq 0 \) \( (3) \).
+
+\begin{pro}
+Assume \( c < 0 \).
+
+From \( (2) \), substituting \( m \to \sqrt{-c} \), we get \( f(0) = f(\sqrt{-c})^2 \ra c = f(\sqrt{-c})^2 \geq 0 \), which is absurd.
+
+Thus, \( f(x + c) = f(\sqrt{x})^2 \geq 0, \forall x \geq 0 \).
+\end{pro}
+
+\textbf{Claim 2:} \( f \) is constant for \( x > c \).
+
+\begin{pro}
+If \( g \) is constant, it's easy to see \( f(x) = x, \xr \) is a solution. Assume \( g \) is non-constant. Choose \( p_1 > p_2 \in \bb{R} \) such that \( g(p_1) \neq g(p_2) \) and \( u > v > \max\{4p_1,4p_2,c\} \) such that \( u^2 - v^2 = g(p_1) - g(p_2) = d \), where \( d \) is constant. Then,
+
+\[
+    g(p_1) + v^2 = g(p_2) + u^2
+\]
+
+This leads to
+
+\[
+    f(v)^2 = f(v^2 + g(p_1)) = f(u^2 + g(p_2)) = f(u)^2
+\]
+
+Since \( u, v > c \), we have \( f(u), f(v) \geq 0 \), hence \( f(u) = f(v) \). Thus,
+
+\[
+    g(v) - g(u) = 2(f(v) - f(u) - v + u) = 2(u - v) = \frac{2d}{u + v} = t
+\]
+
+where \( t \) is arbitrary. It can be shown that \( g(u) - g(v) \) covers a range on some interval. Specifically, solving the system
+
+\[
+    \left\{
+    \begin{array}{l}
+    \frac{2d}{u + v} = t \\
+    u^2 - v^2 = 2d
+    \end{array}
+    \right.
+\]
+
+provides values \( u = \frac{d}{t} + \frac{t}{2}, v = \frac{d}{t} - \frac{t}{2} \). Conversely, choosing \( u, v \) in the interval \( [M,3M] \) with \( M > \max\{4p_1,4p_2,c\} \), ensures \( g(u) - g(v) \) spans a sufficiently small interval, implying \( f \) is constant on \( [\delta, 2\delta] \).
+
+    Consider \( p_1' = u \) and \( p_2' = v \), and repeat similarly. If \( a > b > L \) and \( a^2 - b^2 \in [\delta, 2\delta] \), then \( f(a) = f(b) \), where \( L = 12M \) is sufficiently large. Therefore, \( \sqrt{L^2 + \delta} \leq a^2, b^2 \leq \sqrt{L^2 + 2\delta} \), implying \( f \) is constant on \( [\sqrt{L^2 + \delta}, \sqrt{L^2 + 2\delta}], [\sqrt{L^2 + 3\delta}, \sqrt{L^2 + 4\delta}], \ldots \). Hence, the proof is completed.
+    \end{pro}
+
+    For \( x, y \) satisfying \( y > x \geq 2\sqrt{M} \) and \( \delta < y^2 - x^2 < 2\delta \), there exist \( u, v \) such that \( x^2 + g(u) = y^2 + g(v) \). Thus, \( f(x)^2 = f(y)^2 \). According to \( (3) \), \( f(x) = k \) for \( x \geq 2\sqrt{M} \). Substituting back, \( k^2 = k \).
+
+    Given \( t = 0 \) from the problem statement, we have \( |f(z)| = |f(-z)| \leq 1 \) for \( z \leq -2\sqrt{M} \). If \( g(u) = 2f(u) - 2u \geq -2-2u \) for \( u \leq -2\sqrt{M} \), as \( u \to -\infty \), \( g \) is unbounded. For each \( z \), there exists \( z' \) such that \( z + g(z') > 2\sqrt{r} \). Hence, \( f(z)^2 = f(z^2 + g(z')) = k = k^2 \).
+
+    Clearly, \( f(z) = \pm k \) for each \( z \). For \( k = 0 \), \( f(x) = 0 \) is a solution. For \( k = 1 \), \( c = 2f(0) = 2 \), hence \( f(x) = 1 \) for \( x \geq 2 \). If \( f(i) = -1 \) for some \( i < 2 \), then \( i - g(i) = 3i + 2 > 4i \). Assume \( i - g(i) \geq 0 \), then let \( j = i - g(i) > 4i \). Then \( f(j)^2 = f(j^2 + g(i)) = f(i) = -1 \), which is absurd.
+
+    Therefore, \( i - g(i) < 0 \) and \( i < \frac{-2}{3} \).
+
+    Hence, all functions that satisfy the conditions are \( \boxed{f(x) = 0 ,\xr}, \boxed{f(x) = 0 ,\xr} \) and 
+    \[
+    \boxed{ f(x)=
+    \left\{\begin{array}{rr}-1,&x\in \left(-\infty,-\frac{2}{3}\right)\\
+        1,&x\not\in \left(-\infty,-\frac{2}{3}\right)
+    \end{array}
+    \right.
+    }
+    \]
+
+    \end{comment}
+     \begin{btvn}\vocab{(IMO Shortlist 2015 A4).}
+        Find all functions $f: \mathbb{Z} \to \mathbb{Z}$ that satisfy
+        \[
+           f(m - f(n))  = f(f( m)) - f(n) -1\tag{1}
+        \]
+        for all integers $m,n$.
+    \end{btvn}
+    \begin{comment}
+        Denote $P(m,n)$ as the substitution into $(1)$. 
+        With $f(m) = -1, \forall m \in \mathbb{Z}$ it is satisfied, assuming there exists $m_0$ such that $f(m_0) \neq -1$.
+
+        $P(m,f(m)) \ra f(m - f(f(m))) = -1$. It follows that there exists $a \in \mathbb{Z}$ such that $f(a) = -1$. 
+
+        $P(m,a) \ra f(m + 1) = f(f(m)), \forall m,n \in \mathbb{Z} (2)$
+
+        Rewriting, we have 
+        \[
+            f(m - f(n)) = f(m + 1) - f(n) - 1, \forall m,n \in \mathbb{Z}
+        \]
+        Let $k = f(n) + 1$. Replacing $m \to m + f(n)$ we get 
+        \[
+            f(m) = f(m + k) - k \lra f(m + k) = f(m) + k
+        \]
+        By induction, we can prove $f(m + nk) = f(m) + nk, n \in \mathbb{Z^+}$
+
+        Replacing $m \to m - nk$ we get $f(m - nk) = f(m) - nk, \forall n \in \mathbb{Z^+}$. Thus,
+        \[
+            f(m + nk) = f(m) + nk, \forall m,n \in \mathbb{Z}
+        \]
+        Assuming there exist $f(a) = f(b)$ and $a > b$. We have 
+        \[
+            f(a + 1) = f(f(a)) = f(f(b)) = f(b + 1)
+        \]
+        Similarly, we also have $f(a + 2) = f(b + 2)$. By induction, we can prove $f(n + a) = f(n + b), \forall n \in \mathbb{N}$. Let $d = a - b$, substituting $n \to n - b$ we get 
+        \[
+            f(n) = f(n + d) = \dots = f(n + tkd) = f(n) + tkd, \forall t \in \mathbb{Z^+}
+        \]
+        This is absurd, thus $d = 0$ and $f$ is injective. From $(2)$, it follows that $f(m) = m + 1$.
+
+        Hence, the functions that satisfy are $\boxed{f(m) = -1, \forall m \in \mathbb{Z}}$, $\boxed{f(m) = m + 1, \forall m \in \mathbb{Z}}$.
+
+    \end{comment}
+    \begin{btvn}\vocab{(IMO 2012).}
+        Find all functions $f: \mathbb{Z} \to \mathbb{Z}$ that satisfy
+        \[
+          f(a)^2 + f(b)^2 + f(c)^2 = 2f(a)f(b) + 2f(b)f(c) + 2f(c)f(a)
+        \]
+        for all integers $a,b,c$ that satisfy $a + b + c = 0$.
+    \end{btvn}
+    \begin{comment}
+        Let \( c = - a - b \), we rewrite
+        \[
+            f(a)^2 + f(b)^2 + f(-a-b)^2 = 2f(a)f(b) +2f(-a-b)(f(a) + b(b)), \forall a,b \in \bb{Z} \tag{1}
+        \]
+        Let \( P(a,b) \) denote substitution into \( (1) \).
+
+        \( P(0,0) \) yields \( 3f(0)^2 = 6f(0)^2 \ra f(0) = 0 \).
+
+        \( P(a,0) \) gives \( f(a)^2 + f(-a)^2 = 2f(-a)f(a) \ra f(a) = f(-a), \forall a \in \bb{Z} \).
+
+        Thus, \( f \) is an even function over \( \bb{Z} \).
+
+        From \( (1) \), we rewrite
+        \[
+            f(a)^2 + f(b)^2 + f(a + b)^2 = 2f(a)f(b) + 2f(a + b)(f(a) + f(b)), \forall a,b \in \bb{Z} \tag{2}
+        \]
+        Substituting \( P(a,a) \) into \( (2) \), we get
+        \[
+            f(2a)^2 = 4f(2a)f(a) \ra (f(2a) - 4f(a))f(2a) = 0, \forall a \in \bb{Z}
+        \]
+
+        \vocab{Case 1:} \( f(2a) = 0, \forall a \in \bb{Z} \).
+
+        Using \( (2) \) with \( P(2a,b) \), we obtain
+        \[
+            f(b)^2 + f(2a + b)^2 = f(2a + b)f(b) \ra f(b) = f(2a + b)
+        \]
+        Thus, for every odd \( b \), \( f(b) = c \) where \( c \in \bb{Z} \). Therefore, the function satisfying this is 
+        \[
+        \boxed{ f(a)=
+        \left\{\begin{array}{rr}0,&a \text{ even }\\
+            c,&a \text{ odd }
+        \end{array}
+        \right.
+        }
+        \]
+
+        \vocab{Case 2:} \( f(2a) = 4f(a), \forall a \in \bb{Z} \).
+
+        From \( (2) \) using \( P(2a,a) \), we obtain
+        \[
+            9f(a)^2 - 10f(a)f(3a) + f(3a)^2 = 0 \ra (f(3a) - f(a))(f(3a) - 9f(a)) = 0
+        \]
+
+        \vocab{Subcase 2.1:} \( f(a) = f(3a) \).
+
+        Using \( (2) \) with \( P(a,3a) \), we get \( f(a) = 0, \forall a \in \bb{Z} \).
+
+        \vocab{Subcase 2.2:} \( f(3a) = 9f(a) \).
+
+        We will prove \( f(na) = n^2f(a) \) by induction. For \( n = 2,3 \), it is true. Assume \( f(ka) = k^2f(a) \) for all \( k \leq n \).
+
+        From \( (2) \) using \( P(na,a) \), we get
+        \[
+            (n^2 - 1)^2f(a)^2 - (2n^2 + 2)f(a)f((n + 1)a) + f((n + 1)a)^2 = 0
+        \]
+        Which simplifies to
+        \[
+            [(n + 1)f(a)^2 - f((n + 1)a)][(n - 1)^2f(a) - f((n + 1)a)] = 0
+        \]
+
+        If \( (n - 1)^2f(a) = f((n + 1)a) \), then similar to Subcase 2.1, we get \( f(a) = 0, \forall a \in \bb{Z} \).
+
+        For \( (n + 1)f(a)^2 = f((n + 1)a) \), induction is completed. Taking \( a = 1 = d \), we get \( f(n) = dn^2, \forall n \in \bb{N} \). Since \( f \) is even, \( f(-n) = dn^2 \).
+
+        Thus, the functions satisfying the conditions are \( \boxed{f(a) = da^2, \forall a \in \bb{Z}} \) where \( d \in \bb{Z} \), and 
+        \[
+        \boxed{ f(a)=
+        \left\{\begin{array}{rr}0,&a \text{ even }\\
+            c,&a \text{ odd }
+        \end{array}
+        \right.
+        }
+        \]
+    \end{comment}
+    
+    
+    \item \begin{btvn}\vocab{(Japan MO Final 2019).}
+        Find all functions $f: \mathbb{R^+} \to \mathbb{R^+}$ that satisfy
+        \[f\left(\frac{f(y)}{f(x)}+1\right)=f\left(x+\frac{y}{x}+1\right)-f(x)\]
+        for all positive real numbers $x,y$.
+    \end{btvn}
+    \begin{comment}
+        Denote $P(x,y)$ as the substitution into $(1)$.
+
+        Substituting $P(x,x)$ we get \[f(2) = f(x + 2) - f(x), \xr \tag{2}\]
+
+        We will prove that $f$ is injective. Assume there exist $a,b$ such that $f(a) = f(b)$ and $a > b$. From $P(x,a)$ and $P(x,b)$ we get 
+        \[
+            f\left(x + \frac{a}{x} + 1\right) = f\left(x + \frac{b}{x} + 1\right), \xro
+        \]
+        Setting $x = \frac{a - b}{2}$, we get 
+        \[
+            f\left(\frac{a - b}{2} + \frac{2a}{a - b} + 1\right) = f\left(\frac{a - b}{2} + \frac{2b}{a - b} + 1\right)
+        \]
+
+        However, from $(2)$ for $x \to \frac{a - b}{2} + \frac{2b}{a - b} + 1$ we get
+        \[
+        f\left(\frac{a - b}{2} + \frac{2a}{a - b} + 1\right) - f\left(\frac{a - b}{2} + \frac{2b}{a - b} + 1\right) = f(2) > 0
+        \]
+        This is absurd, so $f$ must be injective.
+
+        Substituting $P(2,2x)$ we get 
+        \[
+            f\left(\frac{f(2x)}{2} + 1\right) = f(x + 3) - f(2), \xro
+        \]
+        But from $(2)$ we also have $f(x + 1 ) = f(x + 3) - f(2), \xro$. Thus, we get
+        \[
+            f\left(\frac{f(2x)}{2} + 1\right) = f(x + 1 ) \ra \frac{f(2x)}{2} + 1 = x + 1  \ra f(x) = cx, \xro
+        \]
+        Checking again, it satisfies. Therefore, the function that satisfies is $\boxed{f(x) = cx, \xro}$ with $c > 0$.
+
+    \end{comment}
+    
+    \item \begin{btvn}\vocab{(VMO 2022).}
+        Find all functions $f: \mathbb{R^+} \to \mathbb{R^+}$ that satisfy
+        \[
+        f\left(\frac{f(x)}{x}+y\right)=1+f(y) \tag{1}
+        \]
+        for all positive real numbers $x,y$
+    \end{btvn}
+    
+    \begin{comment}
+        Denote $P(x,y)$ as the substitution into $(1)$.
+
+        \vocab{Method 1:}
+
+        Let $\mathbb{T} = \left\{\frac{f(x)}{x} \mid x \in \mathbb{R^+}\right\}$. Suppose $\mathbb{T}$ takes more than one value. Let $t_1, t_2 \in \mathbb{T}$ such that $t_1 > t_2$. Then there exist $a_1, a_2 > 0$ such that $t_1 = \frac{f(a_1)}{a_1}, t_2 = \frac{f(a_2)}{a_2}$. From substituting $P(a_1,y)$ and $P(a_2,y)$ and comparing, we get 
+        \[
+            f(y + t_1) = f(y + t_2), \yro
+        \]
+        Replacing $y \to y - t_2$ and letting $\delta = t_1 - t_2 > 0$, we get $f(y) = f(y + \delta), \forall y > t_2$. By induction, it is easy to prove that 
+        \[f(y) = f(y + n\delta), \forall y > t_2, n \in \mathbb{Z^+} \tag{2}\]
+        
+        On the other hand, substituting $P(x, \frac{f(x)}{x} + y)$ we get 
+        \[
+            f\left(2\frac{f(x)}{x}+y\right)=2+f(y), \xyro
+        \]
+        Also by induction, we can prove that 
+        \[
+            f\left(n\frac{f(x)}{x}+y\right)=n+f(y), \xyro \tag{3}
+        \]
+        From $(3)$, substituting $P(1,x - nf(1))$ we get 
+        \[
+            f(x) = n + f(x - nf(1)) > n ,\forall x > nf(1)
+        \]
+        At this point, choose $n_0 > \left\lfloor \frac{f(1)n}{\delta} \right\rfloor$, and from $(3)$ for $n = n_0$ we get $f(x) = f(x + n_0\delta) > n, \forall x > t_2$. As $n \to +\infty$ and $x$ is fixed (since $x$ does not depend on $n$), then $f(x) \to +\infty$, which is absurd. 
+
+        It follows that $t_1 = t_2$ or $\mathbb{T}$ takes only one value.
+
+        Therefore, $f(x) = cx, \xro$ with $c > 0$. Rechecking, we find that $c = 1$. 
+
+        Hence, the only function that satisfies is $\boxed{f(x) = x, \xro}$.
+
+        \vocab{Method 2:}
+        
+        First, we state and prove the following lemma:
+        \begin{lemma}
+            Given functions $f, g, h: \mathbb{R}^{+} \to \mathbb{R}^{+}$ satisfying
+            $$
+            f(g(x)+y)=h(x)+f(y)
+            $$
+            for all positive real numbers $x, y$. Then the function $\frac{g(x)}{h(x)}$ is a constant function.
+        \end{lemma}
+        \begin{pro}
+            Denote $P(x, y)$ as the assertion $f(g(x)+y)=h(x)+f(y), \forall x, y>0$. From $P(x, y-g(x))$ we deduce
+                $$
+                f(y-g(x))=f(y)-h(x), \forall x>0, y>g(x) .
+                $$
+
+                For $x, y>0$ and $p, q \in \mathbb{Z}^{+}$ such that $p g(x)-q g(y)>0$, from the above equalities we easily prove that
+                $$
+                f(z+p g(x)-q g(y))=f(z)+p h(x)-q h(y)
+                $$
+                for all $z>0$. If $p h(x)-q h(y)<0$, then replacing $(p, q)$ with $(k p, k q)$ for sufficiently large positive integer $k$, we get
+                $$
+                f(z)+p h(x)-q h(y)<0,
+                $$
+                which is absurd. Hence,
+                $$
+                p g(x)>q g(y) \ra p h(x) \geq q h(y) \quad \forall x, y>0,
+                $$
+                or
+                $
+                \frac{g(x)}{g(y)}>\frac{q}{p} \ra \frac{h(x)}{h(y)} \geq \frac{q}{p} \quad \forall x, y>0 .
+                $
+
+                Suppose $\frac{g(x)}{g(y)}>\frac{h(x)}{h(y)}$, then we can choose $p, q \in \mathbb{Z}^{+}$ such that
+                $ 
+                \frac{g(x)}{g(y)}>\frac{q}{p}>\frac{h(x)}{h(y)}
+                $
+                which contradicts the above proof. Therefore,
+                $$
+                \frac{h(x)}{h(y)} \geq \frac{g(x)}{g(y)} \ra \frac{h(x)}{g(x)} \geq \frac{h(y)}{g(y)} \quad \forall x, y>0 .
+                $$
+
+                Reversing the roles of $x$ and $y$ in the above evaluation, we obtain $\frac{h(x)}{g(x)}=\frac{h(y)}{g(y)}=c \quad \forall x, y>0$.
+        \end{pro}
+        Returning to the problem. Suppose there exists a function that satisfies.
+        Applying the above lemma, we deduce there exists a positive real number $c$ such that
+        $$
+        \frac{f(x)}{x}=c \ra f(x)=c x \quad \forall x>0
+        $$
+        From here, we find that $c = 1$. 
+        
+        Therefore, the only function that satisfies is $\boxed{f(x) = x, \xro}$.
+
+    \end{comment}
+
+    \item \begin{btvn}\vocab{(Balkan MO 2022).}
+        Find all functions $f: \mathbb{R^+} \to \mathbb{R^+}$ that satisfy
+        \[
+        f\left(y f(x)^3+x\right)=x^3 f(y)+f(x)\tag{1}
+        \]
+        for all positive real numbers $x,y$
+    \end{btvn}
+    \begin{comment}
+        Denote $P(x,y)$ as the substitution into $(1)$.
+        
+        \vocab{Claim 1:} $f$ is strictly increasing on $\mathbb{R^+}$. 
+        \begin{pro}
+            From $(1)$ we have 
+        \[
+            f(yf(x)^3) > f(x), \xyro \tag{2}
+        \]
+        From $(2)$, substituting $P\left(x,\frac{y}{f(x)^3}\right)$ we get $f(x + y) > f(x), \xyro$. Hence, $f$ is strictly increasing, so $f$ is also injective on $\mathbb{R^+}$.
+        \end{pro}
+
+        \vocab{Claim 2:} $\blim_{x \to 0}f(x) = 0$. 
+        \begin{pro}
+            Since $f$ is strictly increasing and $f(x) > 0$, there must exist $L = \blim_{x \to 0}f(x)$, with $f(x) > L, \xro$. We have 
+            \[
+            f(yL^3) < f(yf(x)^3 + x) = x^3f(y) + f(x), \xyro
+            \]
+            Letting $x \to 0^+$ gives $f(yL^3) \leq L, \yro$. Therefore, $yL^3 = 0$ or $L = 0$.
+            
+        \end{pro}
+        \vocab{Claim 3:} $f$ is continuous on $\mathbb{R^+}$. 
+        \begin{pro}
+            We have $f(yf(x)^3 + x) - f(x) = x^3f(y), \xyro$. Set $h = yf(x)^3$, let $x = x_0 > 0$ be arbitrary, and as $y \to 0^+$, $h \to 0^+$, we get 
+            \[
+                \blim_{h \to 0} f(x_0 + h) - f(x_0) =  f(x_0) - f(x_0) = 0
+            \]
+            Hence, $f$ is continuous on $\mathbb{R^+}$.
+        \end{pro}
+        
+        \vocab{Claim 4:} $f$ is bijective on $\mathbb{R^+}$
+        \begin{pro}
+            Indeed, from $(1)$ as $x \to +\infty$ we get $\blim_{x \to +\infty} f(x) = +\infty$. Since $f$ is continuous and unbounded above, $f$ is surjective. Therefore, $f$ is bijective on $\mathbb{R^+}$.
+        \end{pro}
+        \vocab{Claim 5:} $f(1) = 1$. 
+        \begin{pro}
+            Assume $f(1) < 1$, then $P\left(1,\frac{1}{1-f(1)^3}\right)$ implies $f(1) = 0$, which is absurd.
+
+            Assume $f(1) > 1$. Since $f$ is bijective, there exists $t < 1$ such that $f(t) = 1$. 
+            
+            $P(t,y) \ra f(y + t) = t^3f(y) + 1 > f(y) \lra 1 > (1 - t^3)f(y)$, which is absurd because $f$ is unbounded above. Therefore, $f(1) = 1$.
+        \end{pro}
+        \vocab{Claim 6:} $f(q) = q, \forall q \in \bb{Q^+} (4)$ 
+        \begin{pro}
+            Substituting $P(1,y)$ we get $f(y + 1) = f(y) + 1, \yro$. By induction, we can prove $f(y + n) = f(y) + n, \yro$ for $n \in \bb{Z^+}$. Letting $y \to 0^+$ we get $f(n) = n,\forall n \in \bb{Z^+}$.
+
+            For $m,n \in \bb{Z^+}$, substituting $P\left(m,\frac{n}{m}\right)$ we get 
+            \[
+                    f(nm^2 + m) = m^3 + f\left(\frac{m}{n}\right) + f(m) \lra f\left(\frac{m}{n}\right) = \frac{m}{n}, \forall m,n \in \bb{Z^+}
+            \]
+        \end{pro}
+        Now, for any real number $x > 0$, we choose a sequence $(u_n)$ such that $u_n = \frac{\lfloor nx \rfloor}{n}, \forall n \in \bb{Z^+}$. We have 
+        \[
+            \frac{nx - 1}{n} <  \frac{\lfloor nx \rfloor}{n} < \frac{nx + 1}{n} 
+        \]
+        Since $f$ is continuous on $\mathbb{R^+}$,
+        \[
+           \dlim \frac{nx - 1}{n} <\dlim u_n < \dlim\frac{nx + 1}{n} \ra \dlim u_n = x
+        \]
+        From $(4)$, substituting $x = u_n$ we get 
+        \[
+            \dlim f(u_n) = f(\dlim u_n) = \dlim u_n = x 
+        \]
+        Thus, the unique function that satisfies the conditions is $\boxed{f(x) = x, \xro}$.
+
+    \end{comment}
+    \item \begin{btvn}\vocab{(Switzerland TST 2022).}
+        Find all functions $f: \mathbb{R^+} \to \mathbb{R^+}$ that satisfy
+        \[
+        x+f(y f(x)+1)=x f(x+y)+y f(y f(x))\tag{1}
+        \]
+        for all positive real numbers $x,y$
+    \end{btvn}
+    \begin{comment}
+        Denote $P(x,y)$ as the substitution into $(1)$.
+
+        Claim 1: $f$ is not bounded above.
+Proof.
+From $P\left(x,\frac{y}{f(x)} - 1\right)$ it follows that\[f(y) = xf\left(x + \frac{y-1}{f(x)}\right) + \frac{y - 1}{f(x)}f(y - 1) - x,\forall x > 0, y > 1 \tag{2}
+    \]From $(2)$ as $y \to +\infty$, the right-hand side $\to +\infty$ so $\displaystyle \blim_{y \to +\infty} f(y) = +\infty$.
+
+Claim 2: $f$ is injective on $\mathbb{R^+}$
+Proof.
+Suppose $f(a)=f(b)$ and $a > b$. Let $d = a - b, q = \frac{b}{a}, r= \frac{d}{a}$, we have $d,q,r > 0$ and $q < 1$.
+Substituting $P(a,x), P(b,x) \ra a - af(a + x) = b - bf(b + x)$.
+
+As $x \to x -b$ and let $\delta = 4b$ be sufficiently large, we get
+\[
+        f(x + d) = qf(x) + r, \forall x > \delta \tag{$\clubsuit$ }
+    \]
+We state and prove the following lemma:
+Lemma. Consider the function $f: \mathbb{R^+} \to \mathbb{R^+}$ satisfying
+\[
+            f(x + d) = qf(x) + r, \forall x > M
+        \]with $M$ being sufficiently large positive real number with $q < 1$ and $d, r > 0$. Then $\displaystyle \blim_{x \to +\infty} f(x) = \frac{r}{1 - q}$.
+Proof. Substituting $x \to x + d$, we get\[f(x + 2d) = qf(x + d) + r = q(qf(x) + r) + r = q^2f(x) + qr + r, \forall x > \delta\]By induction it's easy to prove that\[f(x + nd) = q^nf(x) + r\sum_{i = 0}^n q^i, \forall x > \delta \tag{3}\]From $(3)$ we rewrite
+\[
+        f(x + nd) = q^nf(x) + r.\frac{1 - q^{n}}{1 - q}, \forall x > \delta \tag{4}
+    \]From $(4)$, as $n \to +\infty$ with $q < 1$, we have
+\[
+        \blim_{x \to +\infty} f(x) = \displaystyle \blim f(x + nd) = \frac{r}{1 - q}
+    \]This completes the proof.
+Applying the above lemma to $(\clubsuit)$, we get $\displaystyle \blim_{x \to +\infty} f(x) = \frac{r}{1 - q}$.
+But according to Claim 2, $f$ is not bounded above and $\displaystyle \blim_{x \to +\infty} f(x) = +\infty$, contradiction.
+Therefore $q = 1$ or $d = 0 \ra a = b$. Hence $f$ is injective on $\mathbb{R^+}$.
+Setting $P(1,1)$ we get $f(2) = f(1 + \frac{1}{f(1)})$. Since $f$ is injective, $f(1) = 1$.
+Give $P(1,x)$ the we get the satisfied function is $\boxed{f(x) = \frac{1}{x}, \forall x > 0}$. 
+       \end{comment}
+       \item \begin{btvn}\vocab{(Iran MO Round 3).}
+        Find all function $f: \bb{C} \to \bb{C}$ such that 
+        \[f(f(x)+yf(y))=x+|y|^2\]
+            for complex number $x,y$
+        \vocab{Note:} \textit{if $y = a + bi$ then $|y| = \sqrt{a^2 + b^2}$}.
+    \end{btvn}
+    \begin{comment}
+        Let $P(x,y)$ be the assertion $f(f(x)+yf(y))=x+|y|^2$.
+        $P(x,0) \implies f(f(x))=x$. With this $P(x,f(y)) \implies |y| = |f(y)|$ for all $y\in \mathbb{C}$ which leads us to $f(0)=0$.
+
+        Let $|y_{1}|=|y_{2}|$ be two complex numbers. Then using injectivity of $f$ we get
+        $P(x,y_{1}), P(x,y_{2}) \implies y_{1}f(y_{1}) = y_{2}f(y_{2})$. Let $y_{1} =y$ and $y_{2} = |y|$ we get that
+        $$f(y) = \dfrac{\bar{y}}{|y|}f(|y|)\; \;\;\;(1).$$
+        So it suffices to find $f$ on the real line $\mathbb{R}$. By applying $f()$ both sides of $P(x,y)$ we get $f(x+|y|^2)=f(x)+yf(y)$. By inserting $x=0$ in this equation and rewriting the equation we get
+        $f(x+|y|^{2})=f(x)+f(|y|^{2})$. Then for any two positive real numbers $x,y$ we have
+        $$f(x+y)=f(x)+f(y) .$$We know that $|f(x)|=|x|$ for any complex number $x$. Using triangle inequality, for positive reals $a,b$ we have
+        $$a+b = |a+b| = |f(a+b)| = |f(a)+f(b)| \leq |f(a)| +  |f(b)| = |a| + |b| = a+b.$$The equality case of triangle inequality gives us that $f(x)=xf(1)$ for all positive real $x$. So $f(|x|)= |x|f(1)$ for any $x\in \mathbb{C}$. This with $(1)$ gives us
+        $$\forall y\in \mathbb{C}:\;f(y) = f(1)\cdot \bar{y}.$$And so $\boxed{f(y)=e^{i\theta}\overline y\quad\forall y\in\mathbb C}$, which indeed fits, whatever is $\theta\in[0,2\pi)$.
+    \end{comment}
+    \item \begin{btvn}\vocab{(Japan MO Final 2021).}
+        Find all functions $f: \mathbb{Z^+} \to \mathbb{Z^+}$ that satisfy
+        \[
+             n\mid m \lra f(n) \mid f(m) - n \tag{1}
+        \]
+    \end{btvn}
+    \begin{comment}
+        Denote $P(m,n)$ as the substitution into $(1)$. 
+        
+        \vocab{Claim 1:} $n \mid m \iff f(n) \mid f(m)$.
+        \begin{pro}
+            Substituting $P(n,n)$ we get 
+                \[f(n) \mid f(n) - n \ra f(n) \mid n, \forall n \in \mathbb{Z^+} \tag{2}
+                \]
+                From this we deduce 
+                \[
+                n \mid m \iff f(n) \mid f(m) \tag{3}
+                \] 
+        \end{pro}
+        \vocab{Claim 2:} $f(p) = p, \forall p \in \mathbb{P}$.
+        \begin{pro}
+            From $(2)$ with $n = 1$, we get $f(1) \mid 1 \ra f(1) = 1$. 
+        
+        Consider any prime number $p \in \mathbb{P}$. From $(2)$ with $n = p$, we get 
+        \[
+            f(p) \mid p, \forall p \in \mathbb{P}
+        \]
+        Hence $f(p) = \{1, p\}, \forall p \in \mathbb{P}$. We will prove that $f$ is injective. Assume there exist $a$ and $b$ such that $f(a) = f(b)$ with $a \mid b$ and $a < b$. From $(3)$, substituting $P(b,a)$, we get $a = b$, which is a contradiction. Therefore, $f$ is injective. Since we already have $f(1) = 1$, we conclude that $f(p) = p, \forall p \in \mathbb{P}$.
+        \end{pro}
+        \vocab{Claim 3:} $f(p^k) = p^k, \forall k \in \mathbb{N}, p \in \mathbb{P}$
+        \begin{pro}
+            We will prove this by induction. For $k = 1$, it is obviously true.
+            
+            Assume $f(p^{k-1}) = p^{k-1}$. From $(2)$ with $n = p^k$, we get $f(p^k) \mid p^k$. 
+            
+            On the other hand, from $(3)$ substituting $P(p^k, p^{k-1})$, we get $p^{k-1} \mid f(p^k)$. From this, we deduce $f(p^k) = p^k$.
+        \end{pro}
+        
+        \vocab{Claim 4:} $f(m) = m, \forall m \in \mathbb{Z^+}$. According to the fundamental theorem of arithmetic, we decompose 
+        \[
+            m = p_1^{k_1}p_2^{k_2}\dots p_t^{k_t}
+        \]
+        where $p_1, p_2, \dots, p_t \in \mathbb{P}$ and $k_1, k_2, \dots \in \mathbb{Z^+}$. From $(3)$, we successively substitute $P(m, p_1^{k_1}), P(m, p_2^{k_2}), \dots, P(m, p_t^{k_t})$. On the other hand, we also have 
+        \[
+            (f(p_1^{k_1}), f(p_2^{k_2}), \dots, f(p_t^{k_t})) = 1
+        \]
+        Therefore, 
+        \[
+            f(p_1^{k_1}), f(p_2^{k_2}), \dots, f(p_t^{k_t}) \mid f(m)
+        \]
+        From $(2)$ with $n \to m$, we get 
+        \[
+            f(m) \mid f(p_1^{k_1}), f(p_2^{k_2}), \dots, f(p_t^{k_t}) 
+        \]
+        Hence, the unique function that satisfies the conditions is $\boxed{f(m) = m, \forall m \in \mathbb{Z^+}}$.
+
+    \end{comment}
+    \item \begin{btvn}\vocab{(Indonesia TST 2022). }
+        Find all functions $f: \mathbb{R} \to \mathbb{R}$ that satisfy
+        $$
+        f\left(a^2\right)-f\left(b^2\right) \leq(f(a)+b)(a-f(b))
+        $$
+        for all real numbers  $a, b$.
+    \end{btvn}
+    \begin{comment}
+        Let $P(a,b)$ denote the assertion for this functional inequality.
+        $P(0,0)\implies (f(0))^2\leq 0$ and hence, $f(0)=0$.
+        Now, $P(a,a)\implies (f(a))^2\leq a^2$.
+        $P(0,a)$ and $P(a,0)$ gives $a\cdot f(a)=f(a^2)$ which basically gives $f(a)=-f(-a)$.
+        $\newline$
+        Now, Adding $P(a,-a)$ and $P(-a,a)$ gives $-2a^2\geq 2\cdot f(a)\cdot f(-a)=-2(f(a))^2\geq -2a^2\implies (f(a))^2=a^2\implies f(a)=\pm a$.
+        Hence, $\boxed{f(x)=x}$ and $\boxed{f(x)=-x}$ are the solutions.
+    \end{comment}
+    \item \begin{btvn}\vocab{(Japan MO Final 2022).}
+        Find all functions $f: \mathbb{Z^+} \to \mathbb{Z^+}$ that satisfy
+        \[f^{f(n)}(m)+mn=f(m)f(n)\tag{1}\]
+        for all positive integers $m,n$
+    \end{btvn}
+    \begin{comment}
+        Denote $P(m,n)$ as the substitution into $(1)$. 
+
+        We observe that $f$ does not take the value $1$. It can be easily proven that $f$ is injective. By comparing $P(n,m)$, we get 
+        \[
+            f^{f(n)}(m) = f^{f(m)}(n) , \forall m,n \in \mathbb{Z}^+
+        \]
+        Assume $f(n) \geq f(m)$, since $f$ is injective, we get 
+        \[
+            f^{f(n) - f(m)}(m) = n \tag{3}
+        \]
+        We prove that $f(1)$ is the smallest value of the function. Suppose there exists $a$ such that $f(a) < f(1)$, from $(3)$ substituting $P(1,a)$, we get 
+        \[
+            f^{f(1) - f(a)}(a) = 1
+        \]
+        which is a contradiction. Therefore, $f(1)$ is the smallest value. Hence, $f(2) > f(1)$. From $(3)$ substituting $P(1,2)$, we get 
+        \[
+            f^{f(2) - f(1)}(1) = 2
+        \]
+        Since $f(1) > 1$, we have $f(1) = 2$. From $(1)$ substituting $P(m,1)$, we get
+        \[
+            f(f(m)) + m = f(m), \forall m \in \mathbb{Z}^+ \tag{4}
+        \]
+        We will use induction to show that $f(m) = m + 1$. Assume $f(m - 1) = m$ for $m > 2$. From $(4)$, substituting $m \to m - 1$, we get
+        \[
+            f(f(m - 1)) + m = 2f(m - 1) \implies f(m) = m
+        \]
+        Thus, the only function that satisfies the conditions is $\boxed{f(m) = m, \forall m \in \mathbb{Z}^+}$.
+
+    \end{comment} 
+
+
+    \item \begin{btvn}\vocab{(Japan MO Final 2024).}
+        Find all functions $f: \mathbb{Z^+} \to \mathbb{Z^+}$ that satisfy
+        \[
+        \text{lcm}(m, f(m+f(n)))=\text{lcm}(f(m), f(m)+n), \forall m,n \in \mathbb{Z}^+
+        \tag{1}\]
+    \end{btvn}
+    \begin{comment}
+        Denote $P(m,n)$ as the substitution into $(1)$.
+
+        $P(m,mf(m))$ implies
+        \[[m, f(m + f(mf(m)))] = [f(m), f(m) + mf(m)] = f(m)(m + 1), \forall m,n \in \bb{Z^+}\]
+        From this, we deduce $m \mid f(m)(m + 1) \ra m \mid f(m) \ra f(m) \geq m (2)$
+
+        $P(1,1)$ gives us $f(1 + f(1)) = f(1)(f(1) + 1)$
+
+        $P(1, 1 + f(1))$ implies
+        \[
+        f(1 + f(1)^2 + f(1)) = [f(1), 2f(1) + 1] = 2f(1)^2 + f(1)
+        \]
+        From $(2)$, we deduce $1 + f(1)^2 + f(1) \mid 2f(1)^2 + f(1) \ra f(1) = 1$
+
+        Using $(1)$, substituting $P(1,n)$ gives us $f(1 + f(n)) = n + 1 \geq 1 + f(n) \ra f(n) \leq n$
+
+        Combining this with $(2)$, we conclude that the function satisfying these conditions is $f(m) = m, \forall m \in \bb{Z^+}$.
+
+    \end{comment}
+
+    \item \begin{btvn}\vocab{(KMF 2022).}
+        Find all functions $f,g: \mathbb{R} \to \mathbb{R}$ that satisfy
+    $$f(x^2-g(y))=g(x)^2-y, \forall x,y \in \mathbb{R}$$
+    \end{btvn}
+    \begin{comment}
+        Let $P(x,y)$ denote the substitution into $(1)$. Let $a = g(0)$.
+
+        \vocab{Claim 1:} $f$ is surjective and $g$ is injective.
+        \begin{pro}
+            From $P(x,0)$, we have $g(x)^2 = f(x^2 - a)$. Rewriting,
+            \[
+                f(x^2 - g(y)) = f(x^2 - a) - y, \forall x,y \in \mathbb{R} \tag{2}
+            \]
+            Suppose there exist $a, b$ such that $g(a) = g(b)$. Using $P(x,a)$ and $P(x,b)$, we find $a = b$, proving $g$ is injective.
+
+            Moreover, from $(2)$ substituting $P(x, -y + f(x^2 - a))$, we conclude that $f$ is surjective.
+
+            From $(1)$ substituting $P(-x,y)$, we get $g(x)^2 = g(-x)^2$. Since $g$ is injective, we have $g(x) = -g(-x)$ for all $x \neq 0$.
+        \end{pro}
+
+        \vocab{Claim 2:} $g$ is unbounded above.
+        \begin{pro}
+            Assume there exists $M$ such that $|g(x)| \leq M$. For any arbitrary $y_1, y_2$, there exist $x_1, x_2$ satisfying
+            \[
+                x_1^2 - x_2^2 = g(y_1) - g(y_2) \ra g(x_1)^2 - g(x_2)^2 = y_1 - y_2
+            \]
+            Choosing $y_1, y_2$ such that $y_1 - y_2 > 4M$ leads to a contradiction, hence $g$ is unbounded above.
+        \end{pro}
+
+        \vocab{Claim 3:} $f$ and $g$ are bijective.
+        \begin{pro}
+            Suppose $f(a) = f(b)$. Choose $y_0 > \max\{-a, -b\}$. Choose $x_1, x_2$ such that $x_1^2 - g(y_0) = a$ and $x_2^2 - g(y_0) = b$. Since $f$ is injective and $g$ is odd and injective, we deduce
+            \[
+                g(x_1)^2 - y_0 = g(x_2)^2 - y_0 \ra x_1 = x_2
+            \]
+            Thus, $f$ is injective, implying $f$ is bijective.
+
+            From $(1)$ substituting $P(0,y)$, we obtain $f(-g(y)) = g(0)^2 - y$. Hence, $g$ is surjective, implying $g$ is bijective.
+        \end{pro}
+
+        Thus, there exists $c$ such that $g(c) = 0$. If $c \neq 0$, then $g(-c) = 0$, which is contradictory. Therefore, $g(0) = 0$.
+
+        \vocab{Claim 4:} $f$ is additive.
+        \begin{pro}
+            From $(1)$ substituting $P(0,0)$, we get $f(0) = 0$. Substituting $P(x,0)$ gives
+            \[
+                f(x^2) = g(x)^2 \ra f(x^2 - g(y)) = f(x^2) - y \ra f(x - g(y)) = f(x) - y, \forall x \geq 0, y \in \mathbb{R} \tag{3}
+            \]
+            From $(1)$ substituting $P(0, -y)$, we have $f(g(y)) = y$. Using $(3)$ substituting $P(x, f(y))$, we obtain
+            \[
+                f(x - y) = f(x) - f(y) \ra f(x + y) = f(x) + f(y), \forall x,y \in \mathbb{R}
+            \]
+        \end{pro}
+
+        Since $f(x^2) = g(x)^2 \ra f(x) \geq 0$ for all $x \geq 0$, by \vocab{Lemma 1}, we conclude $f(x) = ax, \forall x \in \mathbb{R}$. Testing again, we find $a = 1$ and $f(x) = x$.
+
+        Therefore, the pair of functions that satisfy these conditions is $\boxed{f(x) = x, g(x) = x, \forall x \in \mathbb{R}}$.
+
+    \end{comment}
+
+    \item \begin{btvn}\vocab{(Balkan MO 2024).}
+        Find all functions \( f : \mathbb{R}^+ \to \mathbb{R}^+ \) and polynomials \( P(x) \) with non-negative real coefficients satisfying \( P(0) = 0 \) and \[f(f(x) + P(y)) = f(x - y) + 2y\] for all positive real numbers $x > y$
+    \end{btvn}
+    \begin{comment}
+        
+
+        \vocab{Claim 1:} $f(x) \geq x$.
+\begin{pro}
+    Suppose there exists $x_0 > 0$ such that $f(x_0) < x_0$. It's clear that the polynomial $P(y) + y$ is surjective. Hence, there exists $y_0$ such that $P(y_0) + y_0 = f(x_0) - x_0$. Substituting $P(x_0,y_0)$ gives $2x_0y_0 = 0$, which leads to contradictions in both cases. Therefore, $f(x) \geq x$.
+\end{pro}
+
+\vocab{Claim 2:} $\deg P(x) < 2$.
+\begin{pro}
+    From Claim 1, we have
+    \[
+        f(x - y) + 2y \geq f(x) + P(y) \tag{2}
+    \]
+    Suppose $\deg P(x) \geq 2$. Since $P(y) - 2y$ is surjective and monotonic over defined intervals, there exists $N > 0$ large enough such that $P(y) > 2y$ for all $y > N$. Substituting $y > N$ into $(2)$ gives
+    \[
+        f(x - y) + 2y > f(x) + 2y \Rightarrow f(x - y) > f(x)
+    \]
+    This implies $f$ strictly decreases on $(N, +\infty)$. On the other hand, from $(2)$ substituting $P(x + y, y)$, we obtain
+    \[
+        f(x) - f(x + y) \geq P(y) - 2y
+    \]
+    Fixing $x$ and letting $y \to +\infty$, the left-hand side converges to a specific value, while the right-hand side tends to infinity, which is a contradiction. Thus, $\deg P(x) < 2$.
+\end{pro}
+
+\vocab{Case 1:} $\deg P(x) = 0$ or $P(x) = 0$.
+\begin{pro}
+    Rewrite as
+    \[
+        f(f(x)) = f(x - y) + 2y, \forall x > y > 0 \tag{1}
+    \]
+    Notice that $f(f(x)) \geq x + y$. Letting $y \to x^-$ gives $f(f(x)) \geq 2x$. Hence, $f(x - y) + 2y \geq 2x \Rightarrow f(x - y) \geq 2x - 2y$. Letting $y \to 0^-$, we get $f(x) \geq 2x$. This gives $f(f(x)) \geq 4x$. Also,
+    \[
+        f(x - y) + 2y \geq 4x + 2y \Rightarrow f(x - y) \geq 4x, \forall x > y > 0
+    \]
+    Letting $y \to x^-$ again gives $4x \leq f(0)$, which is a contradiction.
+\end{pro}
+
+\vocab{Case 2:} $\deg P(x) = 1$ or $P(x) = ax$ with $a > 0$.
+
+    Rewrite as
+    \[
+        f(f(x) + ay) = f(x - y) + 2y \tag{1}
+    \]
+    We have the estimate
+    \[
+        f(x - y) + 2y \geq x + ay \Rightarrow f(x - y) \geq x + (a - 2)y, \forall x > y
+    \]
+    Substituting $P(y + 1, y)$ gives
+    \[
+        f(1) \geq y + 1 + (a - 2)y = (a - 1)y + 1
+    \]
+    If $a > 1$, letting $y \to +\infty$ leads to a contradiction. Thus, $a \leq 1$. Also,
+    \[
+        f(x - y) + 2y = f(f(x) + y - (1 - a)y) \geq f(f(x) + y) + (1 - a)(a - 2)y \tag{2}
+    \]
+    From $(1)$ substituting $P\left(x, \frac{y}{a}\right)$ gives $f(f(x) + y) = f\left(x - \frac{y}{a}\right) + \frac{2y}{a}$. Substituting into $(2)$ gives
+    \[
+        f(x - y) \geq f\left(x - \frac{y}{a}\right) + \left(\frac{2}{a} + (1 - a)(a - 2) - 2\right)y
+    \]
+    It can be easily shown that $\left(\frac{2}{a} + (1 - a)(a - 2) - 2\right) \geq 0$, hence $f(x - y) \geq f\left(x - \frac{y}{a}\right)$. For $p > q > 0$, solving the system of equations
+    \[
+        x - y = p \text{ and } x - \frac{y}{a} = q
+    \]
+    gives $x = p \frac{a(p - q)}{1 - a}$ and $y = \frac{a(p - q)}{1 - a}$, implying that $f$ is increasing. If $f$ were constant over any interval, all expansions must be '$=$', thus giving $f(x - y) = x + (a - 2)y = x - y$, which is contradictory. Therefore, $f$ is strictly increasing. Consequently, from $(1)$ letting $y \to 0^+$ gives $f(f(x)) = f(x)$, which implies $\boxed{f(x) = x}$.
+\end{comment}
+
+
+
+
+    \item \begin{btvn}\vocab{(IMO Shortlist 2011 A3).}
+        Find all functions $f,g: \mathbb{R} \to \mathbb{R}$ that satisfy
+        \[g(f(x+y)) = f(x) + (2x + y)g(y)\]
+        for all real numbers $x,y$.
+    \end{btvn}
+    \begin{comment}
+        Let $P(x,y)$ be the assertion $g(f(x+y))=f(x)+(2x+y)g(y)$
+
+        Let $x\ne 0$ :
+        $P(x,0)$ $\implies$ $g(f(x))=f(x)+2xg(0)$
+        $P(0,x)$ $\implies$ $g(f(x))=f(0)+xg(x)$
+        Subtracting, we get $g(x)=\frac{f(x)-f(0)}x+2g(0)$ $\forall x\ne 0$
+
+        $P(x,y)$ $\implies$ $g(f(x+y))=f(x)+(2x+y)g(y)$
+        $P(x+y,0)$ $\implies$ $g(f(x+y))=f(x+y)+(2x+2y)g(0)$
+        Subtracting, we get $f(x+y)=f(x)+(2x+y)g(y)-(2x+2y)g(0)$
+
+        Considering $y\ne 0$ and using previous result, this becomes $f(x+y)=f(x)+(2x+y)\frac{f(y)-f(0)}y+2xg(0)$
+        Considering $x\ne 0$ and swapping $x,y$, this becomes $f(x+y)=f(y)+(2y+x)\frac{f(x)-f(0)}x+2yg(0)$
+
+        Considering $x,y\ne 0$ and subtracting, we get $f(x)=x^2(\frac{f(y)-f(0)}{y^2}+\frac{g(0)}y)-g(0)x+f(0)$
+
+        Setting $y=1$ in the above line, we get $f(x)=x^2(f(1)-f(0)+g(0))-g(0)x+f(0)$ $\forall x\ne 0$
+
+        Plugging this in the equality $g(x)=\frac{f(x)-f(0)}x+2g(0)$ $\forall x\ne 0$ we previously got, we get then :
+        $g(x)=x(f(1)-f(0)+g(0))+g(0)$ $\forall x\ne 0$
+
+        Plugging this in original equation, we get two possibilities :
+        $f(x)=g(x)=0$ $\forall x\ne 0$
+        $f(x)=x^2+c$ and $g(x)=x$ $\forall x\ne 0$
+
+        It's then easy to check that we need the same values for $x=0$ and we get the two families of solutions :
+        $f(x)=g(x)=0$ $\forall x$
+        $f(x)=x^2+c$ and $g(x)=x$ $\forall x$
+    \end{comment}
+
+    \item \begin{btvn}\vocab{(IMO Shortlist 2018 A1).}
+        Find all functions $f: \mathbb{Q}^+ \to \mathbb{Q}^+$ that satisfy
+        \[
+        f(x^2f(y)^2)=f(x)^2f(y)\tag{1}
+        \]
+        for all positive rational numbers $x,y$.
+    \end{btvn}
+\begin{comment}
+
+    Let $P(x,y)$ be the assertion to $(1)$
+
+    $P(x,y) \ra f(x^{2}f(y)^2)=f(x)^{2}f(y) $
+
+    $P(1,x) \ra f(f(x)^2)=f(1)^{2}f(x)...(A)$
+
+    $P(\displaystyle \frac{x}{f(x^2)},x^2) \ra f(x^2)=f(\frac{x}{f(x^2)})^{2}f(x^2)$ $\ra  f(\displaystyle \frac{x}{f(x^2)})=1$
+
+    $\exists c\in \mathbb{Q^+}$ such that $f(c)=1$
+
+    $P(x,c) \ra f(x^2)=f(x)^2$
+
+    $P(x,y^2) \ra f(xf(y)^2)^2=f(x)^{2}f(y)^{2}$ $\ra f(xf(y)^2)=f(x)f(y) ... (1)$
+
+    In (1) let $x=1$ and we obtain $f(f(y)^2)=f(1)f(y)...(B)$
+
+    Combining (A) and (B) yields $f(1)=1$
+
+    So $f(f(x)^2)= f(f(x))^2= f(x)$ $\ra f^k(x)=\sqrt[k]{f(x)}$ where $k$ is a power of $2$.
+
+    Suppose that for some $a\in \mathbb{Q^+}$ such that $f(a)\neq 1$ let $f(a)=\displaystyle \frac{m}{n}$ such that $\gcd(m,n)=1$
+
+    Let $k$ be a power of $2$ with $v_{p}(m)<k \wedge v_{p}(n)<k$ for all primes $p$.
+
+    $f^k(a)=\sqrt[k]{f(a)}$ so $\sqrt[k]{f(a)} \in \mathbb{Q^+}$
+
+    Let $\sqrt[k]{\displaystyle\frac{m}{n}}=\displaystyle\frac{x}{y}$ for some $x,y \in \mathbb{N}$ with $\gcd(x,y)=1$
+
+    $my^k=nx^k$ if $p \mid m \ra p \mid x$
+
+    $v_{p}(my^k)=v_{p}(nx^k)$ Since $\gcd(x,y)=1$ $v_{p}(y)=0$
+
+    $v_{p}(my^k)=v_{p}(m)=v_{p}(x^k)=k \cdot v_{p}(x) \geq k$ this is clearly a contradiction and thus there doesn't exist any positive rational number $a$ with $f(a)\neq 1$.
+    \end{comment}
+
+    \item \begin{btvn}\vocab{(IMO Shortlist 2019 A1).}
+        Find all functions $f: \mathbb{Z} \to \mathbb{Z}$ that satisfy
+        $$f(2a)+2f(b)=f(f(a+b)).$$
+        for all integers  $a,b$.
+    \end{btvn}
+    \begin{comment}
+        Let $P(x,y)$ denote the substitution into $(1)$.
+
+\vocab{Claim 1:} $f$ is strictly increasing over $\mathbb{R}^+$.
+\begin{pro}
+    First, we prove that $f$ is injective. By substituting $P(1,a)$ and $P(1,b)$ sequentially, we find that $a = b$.
+
+    Assume there exist $a > b$ such that $f(a) < f(b)$. Set $x_2 = \frac{ka}{a-b}$ and $x_1 = \frac{kb}{a-b}$, where $k = f(b) - f(a)$, and let $y_0 = \frac{a-b}{k}$. Substituting gives:
+    \[
+        x_1 + f(x_1 y_0) = x_2 + f(x_2 y_0) \Rightarrow f(x_1) = f(x_2) \Rightarrow x_1 = x_2 \Rightarrow a = b
+    \]
+    This is a contradiction, hence $f$ is strictly increasing.
+\end{pro}
+
+\vocab{Claim 2:} $f$ is unbounded above.
+\begin{pro}
+    From the problem statement, we have the estimate:
+    \[
+        f(x)f(y) + 1 > y \Rightarrow f(y) > \frac{y - 1}{f(x)}, \forall x, y \in \mathbb{R}
+    \]
+    Fixing $x$ and letting $y \to +\infty$, we get $\blim_{y \to +\infty} f(y) = +\infty$, hence $f$ is unbounded above.
+\end{pro}
+
+\vocab{Claim 3:} $f(x) > 1$ for all $x \in \mathbb{R}$.
+\begin{pro}
+    Assume there exists $a$ such that $f(a) \leq 1$. Using the estimate from above, substitute $P(a,y)$:
+    \[
+        f(y) > \frac{y - 1}{f(a)} \geq y - 1 \Rightarrow f(y) > y - 1
+    \]
+    Substituting $y = 1$, we obtain:
+    \[
+        f(x + f(x)) = f(x)f(1) < f(x)
+    \]
+    This contradicts $f$ being increasing, hence $f(x) > 1$ for all $x > 0$.
+\end{pro}
+
+\vocab{Claim 4:} $\blim_{x \to 0^+} f(x) = 1$.
+\begin{pro}
+    Extend $f$ continuously to $x_0 = 0$, i.e., $\blim_{x \to 0} f(x) = f(0)$. For $x < y$, we have:
+    \[
+        f(x + f(xy)) + y > f(x)f(y) \Rightarrow f(x) < \frac{f(x + f(xy)) + y}{f(y)} < \frac{f(x + f(xy)) + y}{f(x)}, \quad x < y
+    \]
+    \[
+        \begin{aligned}
+            f(x)^2 &< f(x + f(xy)) + y \\
+            &< f(x + f(y^2)) + y, \quad x < y,(3)
+        \end{aligned}
+    \]
+    According to the Archimedean property, there exists $k > 1$ such that $(k - 1)y > (k - 1)x > f(y^2) \Rightarrow y > x > \frac{f(y^2)}{k - 1}$, i.e., $x + f(y^2) < kx$. Using this estimate in $(3)$, we get:
+    \[
+        f(x)^2 < f(kx) + y, \quad x < y
+    \]
+    Letting $y \to 0$, we obtain:
+    \[
+        f(0)^2 \leq f(0)
+    \]
+    If $f(0) < 0$, it leads to a contradiction, hence $f(0) \geq 0$. Also, $f(0) > 1$, thus $f(0) = 1$.
+    \end{pro}
+        From the problem statement, as $x \to 0$, we have $f(1) + y = f(y) + 1 \Rightarrow f(y) = y + c$ with $c \geq 1$. Substituting back into the problem, we find $c = 1$. Therefore, the unique function that satisfies these conditions is $\boxed{f(x) = x + 1}$.
+    \end{comment}
+
+    \begin{btvn}
+        Find all continuous functions $f: \mathbb{R} \rightarrow \mathbb{R}$ which satisfy the following equation for all $x \in \mathbb{R}$:
+        $$f(-x) = 1 + \int _0 ^x \sin t f(x-t) dt.$$
+    \end{btvn}
+    \begin{comment}
+        Replacing $t$ by $x-t$ in the given equation$$f(-x)=1+\int_0^x\sin(x-t)f(t)dt$$From here we can see $f(0)=1$. Now differentiating w.r.t. $x$$$-f'(-x)=\int_0^x\cos(x-t)f(t)dt$$From here we can see that $f'(0)=0$. Now again differentiating w.r.t. $x$$$f''(-x)=f(x)-\int_0^x\sin(x-t)f(t)dt=f(x)+1-f(-x)$$Now if we replace $x$ by $-x$ above, we get $\boxed{f''(x)=f(-x)+1-f(x)}$. Adding these two we must have $f''(x)+f''(-x)=2$. Now differentiating the boxed expression twice w.r.t. $x$, we have $f''''(x)=f''(-x)-f''(x)$. So eliminating $f''(-x)$ from these we have$$f''''(x)+2f''(x)-2=0$$along with initial conditions $f(0)=1$ and $f'(0)=0$ and $f''(0)=1$ and $f'''(0)=0$. Solving we have$$\boxed{f(x)=1+\frac{x^2}{2}}$$
+    \end{comment}
+\end{itemize}
+    \newpage
+    \section{\LARGE Solution}
+    \begin{itemize}[label=, leftmargin=0em, itemsep=0.2em]
+    \item\begin{bt}\vocab{(USAMO 2002).}
+        Find all functions $f: \mathbb{R} \to \mathbb{R}$ that satisfy
+        \[
+           f(x^2 - y^2) = xf(x) - yf(y)
+        \]
+        for all real numbers $x,y$.
+    \end{bt}
+    \begin{sol}
+        Let \( P(x, y) \) denote the plugging into \((?)\). From \( P(x, 0) \) we get \( f(x^2) = xf(x) \). Substituting \( x \to -x \), we find that \( f \) is an odd function. Rewriting, we have
+            \[
+            f(x^2 - y^2) = f(x^2) - f(y^2), \quad \forall x, y \geq 0.
+            \]
+            Or \( f(x - y) = f(x) - f(y), \forall x, y \geq 0 \). Substituting \( x \to x + y \), we get \( f(x) + f(y) = f(x + y), \forall x, y \geq 0 \). Furthermore, we have 
+            \[
+            -f(x) - f(y) = -f(x + y) \implies f(-x) + f(-y) = f(-x - y), \forall x, y \geq 0.
+            \]
+            Thus, \( f \) is additive over \(\mathbb{R}\). Hence, for any \( k \in \mathbb{Q} \), we have \( f(kx) = kf(x) \). Let \( a = f(1) \). For \( x \in \mathbb{R} \) and \( y \in \mathbb{Q} \), we will compute \( f((x + y)^2) \) in two ways. We have 
+            \[
+            f((x + y)^2) = (x + y)f(x + y) = (x + y)(f(x) + ay) = xf(x) + yf(x) + axy + ay^2.
+            \]
+            We also have 
+            \[
+            f((x + y)^2) = f(x^2 + 2xy + y^2) = f(x^2) + f(2xy) + f(y^2) = xf(x) + 2yf(x) + ay^2.
+            \]
+            Fix \( x \) and compare the coefficients of \( y \), we obtain \(\boxed{f(x) = ax, \forall x \in \mathbb{R}}\) where \( a \in \mathbb{R} \).
+    \end{sol}
+    \begin{bt}\vocab{(IMO Shortlist 2017 A4).}
+        Find all functions $f: \mathbb{R} \to \mathbb{R}$ that satisfy
+        \[
+           f(f(x)f(y)) + f(x + y) = f(xy)\tag{1}
+        \]
+        for all real numbers $x,y$.
+    \end{bt}
+    \begin{sol}
+            Let \( P(x, y) \) denote plugging into \((?)\).
+
+            From \((1)\), substituting \( P(0,0) \) gives \( f(f(0)^2) = 0 \). Let \( c = f(0)^2 \), then \( f(c) = 0 \).
+            
+            Assume \( c \neq 1 \). Then substituting \( P\left(\frac{c}{c - 1},c\right) \) gives \( f(0) = 0 \).
+            
+            From \((1)\), substituting \( P(x,0) \) gives \( f(x) = 0, \forall x \in \mathbb{R} \). Checking, we find this function satisfies the condition. Assume there exists \( x_0 \) such that \( f(x_0) \neq 0 \), then it implies \( c = 1 \), i.e., \( f(1) = 0 \) and \( f(0)^2 = 1 \). In other words, if \( f(c) = 0 \), then \( c = 1 \).
+            
+            \textbf{Case 1:} \( f(0) = -1 \).
+            
+            \textbf{Claim 1:} \( f(x + n) = f(x) + n, \forall x \in \mathbb{R}, n \in \mathbb{N} \).
+            
+            \begin{pro}
+            We prove this by induction.
+            From \((1)\), substituting \( P(x,1) \) gives \( f(x + 1) = f(x) + 1 \). Assume for \( n - 1 \in \mathbb{Z}^+ \), we have \( f(x + n - 1) = f(x) + n - 1 \), then 
+            \[
+            f(x + n) = f(x + n - 1 + 1) = f(x + 1) + n - 1 = f(x) + n , \forall x \in \mathbb{R}.
+            \]
+            Thus, \( f(x + n) = f(x) + n, \forall x \in \mathbb{R}, n \in \mathbb{N} \).
+            \end{pro}
+            
+            \textbf{Claim 2:} If \( f(t) = -1 \), then \( t = 0 \).
+            
+            \begin{pro}
+            Assume \( t \neq 0 \) and \( f(t) = -1 \). From \((1)\), substituting \( P(t, 1) \), we get
+            \[
+            f(0) + f(t + 1) = f(t)
+            \implies f(t + 1) = 0
+            \implies t + 1 = 1
+            \implies t = 0.
+            \]
+            This leads to a contradiction, thus \( t = 0 \).
+            \end{pro}
+            
+            \textbf{Claim 3:} If there exist \( u,v \in \mathbb{R} \) such that \( f(u) = f(v) \), then
+            \[
+            \left\{
+            \begin{array}{l}
+            f(2u) = f(2v) \\
+            f(-u) = f(-v) \\
+            f(u^2) = f(v^2)
+            \end{array}
+            \right.
+            \]
+            
+            \begin{pro}
+            Assume \( f(a) = f(b) \). Substituting \( P(x,a) \) and \( P(x,b) \) into \((1)\) respectively, we get 
+            \[
+            f(x + a) - f(x + b) = f(xa) - f(xb) \tag{2}
+            \]
+            Substituting \( x \to 2 \) into \((2)\) gives
+            \[
+            f(a + 2) - f(b + 2) = f(2a) - f(2b) \implies f(2a) - f(2b) = f(a) + 2 - f(b) - 2 = 0.
+            \]
+            Similarly, substituting \( x \to -1 \) into \((2)\), noting that \( f(x - 1) = f(x) - 1, \forall x \in \mathbb{R} \), we get \( f(-a) = f(-b) \).
+            
+            From \((1)\), substituting \( P(a,a) \) and \( P(b,b) \) respectively, we get \( f(a^2) = f(b^2) \).
+            \end{pro}
+            \textbf{Claim 4:} \( f \) is injective on \(\mathbb{R}\).
+            \begin{pro}
+            Suppose \( a, b \in \mathbb{R} \) such that \( f(a) = f(b) \), and let \( d = a - b \). We will prove that \( d = 0 \). 
+            
+            In the substitution into \((1)\):
+            
+            \( P(a, -b) \ra f(f(a)f(-b)) + f(d) = f(-ab) \)
+            
+            \( P(-a, b) \ra f(f(-a)f(b)) + f(-d) = f(-ab) \)
+            
+            Combining these, we get \( f(d) = f(-d) \). 
+            On the other hand, noting that \( d + b = a \) and \( a - d = b \):
+            
+            \( P(d, b) \ra f(f(d)f(b)) + f(a) = f(db) \)
+            
+            \( P(-d, a) \ra f(f(-d)f(a)) + f(b) = f(-da) \)
+            
+            It follows that \( f(db) = f(-da) \). According to \textbf{Claim 3}, we get \( f(da) = f(-db) \). Noting that \( da - db = d^2 \) and \( -da + db = -d^2 \), we continue with the substitutions:
+            
+            \( P(da, -db) \ra f(f(da)f(-db)) + f(d^2) = f(-d^2ab) \)
+            
+            \( P(-da, db) \ra f(f(-da)f(db)) + f(-d^2) = f(-d^2ab) \)
+            
+            Combining these, we get \( f(d^2) = f(-d^2) \). Additionally,
+            
+            \( P(d, d) \ra f(f(d)^2) + f(2d) = f(d^2) \)
+            
+            \( P(d, -d) \ra f(f(d)f(-d)) + f(0) + f(-d^2) \)
+            
+            From this, we deduce \( f(2d) = f(0) = -1 \). According to \textbf{Claim 2}, we get \( 2d = 0 \ra d = 0 \ra a = b \). Thus, \( f \) is injective on \(\mathbb{R}\).
+            \end{pro}
+            
+            Now from \((1)\), substituting \( P(x, 1 - x) \) we get
+            \[
+            f(f(x)f(1-x)) + f(1) = f(x(1-x)) \ra f(f(x)f(1 - x)) = f(x(1-x)), \forall x \in \mathbb{R}
+            \]
+            Since \( f \) is injective, we get 
+            \[f(x)f(1-x) = x(1-x), \forall x \in \mathbb{R} \tag{3}\]
+            
+            We have 
+            \[
+            (3) \ra f(x)(f(-x) + 1) = x - x^2 \ra f(x) + f(x)f(-x) = x - x^2, \forall x \in \mathbb{R} \tag{4}
+            \]
+            
+            Substituting \( x \to -x \), we get
+            \[
+            f(-x) + f(-x)f(x) = -x - x^2, \forall x \in \mathbb{R}
+            \]
+            
+            It follows that \( f(-x) = f(x) - 2x \). Substituting this expression into \((4)\), we get
+            \[
+            f(x) + f(x)(f(x) - 2x) = x - x^2 \ra f(x)^2 + (1 - 2x)f(x) + x^2 - x = 0, \forall x \in \mathbb{R}
+            \]
+            
+            Considering the quadratic equation in \( f(x) \), we have \( \Delta  = (1 - 2x)^2 - 4(x^2 - x) = 4x^2 - 4x + 1 - 4x^2 + 4x = 1 \). Solving this equation, we get \( f(x) = x - 1 \) or \( f(x) = x \), \( \forall x \in \mathbb{R} \). 
+            
+            Checking, we find that \( f(x) = x \) does not satisfy the condition.
+            
+            Assume there exists \( a \in \mathbb{R} \) such that \( f(a) = a \).
+            
+            From \((1)\), substituting \( P(a, 0) \), we get \( f(-a) + a = -1 \ra f(-a) = -1 - a \).
+            
+            Substituting \( P(-a, 0) \), we get \( f(a + 1) - a - 1 = -1 \ra a + 1 - a - 1 = -1 \), which is a contradiction.
+            Therefore, the function that satisfies the condition is \( f(x) = x - 1, \forall x \in \mathbb{R} \).
+            
+            \textbf{Case 2:} \( f(0) = 1 \). Note that when the function \( f(x) \) is replaced by the function \( -f(x) \) in \((1)\), the function still satisfies the condition, i.e., \( -f(x) \) is also a solution of \((1)\), with \( -f(0) = -1 \). Therefore, solving similarly to \textbf{Case 1}, we get \( f(x) = 1 - x, \forall x \in \mathbb{R} \).
+            
+            Thus, all functions that satisfy the condition are:
+            \[
+            \boxed{f(x) = 0, \forall x \in \mathbb{R}},
+            \boxed{f(x) = x - 1, \forall x \in \mathbb{R}},
+            \boxed{f(x) = 1 - x, \forall x \in \mathbb{R}}
+            \]
+      \end{sol}
+
+
+
+    \begin{bt}\vocab{(IMO 2015).}
+        Find all functions $f: \mathbb{R} \to \mathbb{R}$ that satisfy
+        \[
+           f(x + f(x + y)) + f(xy) = x + f(x + y) + yf(x)\tag{1}
+        \]
+        for all real numbers $x,y$.
+    \end{bt}
+    \begin{sol}
+       Let $P(x,y)$ denote substitution into equation $(1)$. Define $\bb{S} = \{t \mid f(t) = t\}$ as the set of fixed points.
+
+        $P(x,1) \ra f(x + f(x + 1)) = x + f(x + 1), \xr \ra x + f(x + 1) \in \bb{S}$
+
+        $P(0,0) \ra f(f(0)) = 0$.
+
+        $P(0,f(0)) \ra 2f(0) = f(0)^2$
+
+        \textbf{Case 1:} $f(0) = 2$.
+
+        Let $t$ be an arbitrary fixed point in $\bb{S}$.
+
+        $P(t,0) \ra t + 2 = 2t \ra t = 2$. Also, since $x + f(x + 1) \in \bb{S}$, we have $x + f(x + 1) = t = 2 \ra f(x) = 2 - x, \xr$
+
+        \textbf{Case 2:} $f(0) = 0$.
+
+        $P(0,x) \ra f(f(x)) = f(x) \ra f(x) \in \bb{S}$
+
+        $P(-x,x) \ra f(-x) + f(-x^2) = -x + x f(-x)$ (2).
+
+        Setting $x = 1$ gives $2f(-1) = -1 + f(-1) \ra f(-1) = -1$
+
+        $P(x,-x) \ra f(x) + f(-x^2) = x - x f(x)$ (3).
+
+        Setting $x = 1$ gives $f(1) = 1$.
+
+        $P(x - 1, 1) \ra f(x - 1 + f(x)) = x - 1 + f(x) \ra x - 1 + f(x) \in \bb{S}$
+
+        $P(1, f(x) + x - 1) \ra f(x + 1 + f(x)) = x + 1 + f(x) \ra x + 1 + f(x) \in \bb{S}$.
+
+        $P(x,-1) \ra f(x + f(x - 1)) + f(-x) = x + f(x - 1) - f(x) \ra f(-x) = -f(x), \xr$
+
+        From (2) and (3), we deduce $f(-x) - f(x) = -2x + x(f(-x) + f(x)) \ra -2f(x) = 2x \ra f(x) = x, \xr$
+
+        The satisfied functions are $\boxed{f(x) = 2-x, \xr}$ and $\boxed{f(x) = x, \xr}$.
+
+    \end{sol}
+    \begin{bt}\vocab{(Vietnam TST 2022).}
+        Given a real number \(\alpha\) and consider the function \(\varphi(x) = x^2 e^{\alpha x}\) for all \(x \in \mathbb{R}\).
+        Find all functions $f: \mathbb{R} \to \mathbb{R}$ that satisfy
+            $$
+            f(\varphi(x)+f(y))=y+\varphi(f(x))
+            $$
+            for all real numbers $x, y$
+    \end{bt}
+   
+    \begin{sol}
+        Let \( P(x,y) \) denote substitution into \( (1) \).
+
+        \[ P(0,y) \ra f(f(y)) = y + \varphi(f(0)), \xr \]
+        From this, it is straightforward to deduce that \( f \) is bijective. Thus, there exists \( c \) such that \( f(c) = 0 \).
+
+        \[ P(c,f(y)) \ra f(\varphi(c) + f(f(y))) = f(y). \]
+        Since \( f \) is bijective, \( \varphi(c) + f(f(y)) = y \ra \varphi(c) + y + \varphi(f(0)) = y \ra \varphi(c) + \varphi(0) = 0 \).
+
+        Since \( \varphi: \mathbb{R} \to [0,+\infty) \), we conclude \( f(0) = c = 0 \).
+
+        From \( (1) \), substituting \( P(x,0) \):
+        \[ f(\varphi(x)) = \varphi(f(x)), \xr \]
+        we deduce \( f(f(y)) = y \). Since \( \varphi(x) \) is continuous over \( \mathbb{R} \) and takes values in \( [0,+\infty) \), \( f(x) \geq 0 \) for \( x \geq 0 \). Rewrite \( P(x,f(y)) \):
+        \[ f(\varphi(x) + y) = f(y) + f(\varphi(x)) \ra f(x + y) = f(x) + f(y), \quad \forall x \geq 0, y \in \mathbb{R}. \]
+
+        For \( x, y \in \mathbb{R} \), choose \( z > \max\{0, -y\} \), we have:
+        \[ f(x + y) + f(z) = f(x + y + z) = f(x) + f(y + z) = f(x) + f(y) + f(z). \]
+        Thus, \( f \) is additive over \( \mathbb{R} \). We state and prove the following lemma:
+
+        \begin{lemma}
+        Consider a function \( f: \mathbb{R} \to \mathbb{R} \) bounded on \( [a,b] \) and satisfying
+        \[ f(x + y) = f(x) + f(y), \xyr \]
+        Then \( f \) is linear over \( \mathbb{R} \).
+        \end{lemma}
+        \begin{pro}
+            Assume there exists a function \( f: \mathbb{R} \ra \mathbb{R} \) bounded on the interval \( [a, b] \) and satisfying the condition
+
+            Since \( f \) is bounded on the interval \( [a, b] \), there exists \( M \in \mathbb{R} \) such that
+            \[
+            f(x) < M, \forall x \in [a, b].
+            \]
+
+            We will prove that the function \( f \) is also bounded on the interval \( [0, b-a] \).
+            Indeed, for every \( x \in [0, b-a] \), we have \( x+a \in [a, b] \). Thus,
+            \[
+            f(x+a) = f(x) + f(a) \ra f(x) = f(x+a) - f(a) \ra -2M < f(x) < 2M.
+            \]
+
+            Therefore, \( |f(x)| < 2M \) for all \( x \in [0, b-a] \), implying \( f \) is bounded on the interval \( [0, b-a] \).
+            Let \( b-a = d > 0 \). Then \( f \) is bounded on \( [0, d] \). Set \( c = \frac{f(d)}{d} \) and define \( g(x) = f(x) - cx \). For all \( x, y \in \mathbb{R} \), we have
+            \[
+            g(x+y) = f(x+y) - c(x+y) = f(x) - cx + f(y) - cy = g(x) + g(y).
+            \]
+
+            Furthermore, \( g(d) = f(d) - cd = 0 \). Hence, \( g(x+d) = g(x) \) for all \( x \in \mathbb{R} \), meaning \( g \) is periodic. Since \( g \) is also bounded on \( [0, d] \) and periodic over \( \mathbb{R} \), \( g \) must be bounded on \( \mathbb{R} \).
+            Assume there exists \( x_0 \) such that \( g(x_0) \neq 0 \). Then for \( n \in \mathbb{N} \), \( g(nx_0) = ng(x_0) \), which implies
+            \[
+            |g(nx_0)| = n|g(x_0)|, \quad \forall n \in \mathbb{N}.
+            \]
+
+            Since \( g(x_0) \neq 0 \), from \( (2) \) we have \( \blim_{n \to \infty} |g(nx_0)| = \blim_{n \to \infty} n|g(x_0)| = +\infty \), contradicting the boundedness assumption. Therefore, \( g(x) = 0 \).
+            \end{pro}
+            Thus, \( \boxed{f(x) = cx} \).
+            Testing again, we find \( c = 1 \). Therefore, the function satisfying the conditions is \( \boxed{f(x) = x} \).
+
+    \end{sol}
+
+   
+     \begin{bt}\vocab{(Romania EGMO TST 2022).}
+        Find all functions $f: \mathbb{R} \to \mathbb{R}$ that satisfy
+            $$
+            f(f(x)+y)=f\left(x^2-y\right)+4 y f(x)
+            $$
+            for all real numbers $x, y$
+    \end{bt}
+    \begin{sol}
+        Let \( P(x,y) \) denote substitution into \( (1) \). \( P\left(x,\frac{x^2 - f(x)}{2}\right) \) yields 
+        \[ (x^2 - f(x))f(x) = 0. \]
+        Thus, we have \( f(0) = 0 \). It is easy to see that \( f(x) = 0 \) and \( f(x) = x^2 \) are two functions that satisfy this condition. Suppose there exist \( a, b \neq 0 \) such that \( f(a) = 0 \) and \( f(b) = b^2 \).
+
+        Considering \( P(0,y) \), we deduce that \( f \) is an even function. Suppose there exist \( a, b > 0 \) such that \( f(a) = 0 \) and \( f(b) = b^2 \).
+
+        \( P(b,-a) \ra f(b^2 - a) = f(b^2 + a) - 4ab^2 \)
+
+        \(P(a,y) \ra f(y) = f(a^2 - y) \ra f(y) = f(a^2 + y), \yr \)
+
+        \( P(b,a^2) \ra f(b^2 + a^2) = f(b^2 - a^2) + 4yb^2 \)
+
+        \( \ra f(a^2 + b^2) = f(a^2 - b^2) + 4a^2b^2 \ra f(b^2) = f(-b^2) + 4a^2b^2 \ra 4a^2b^2 = 0 \)
+
+        This is absurd since \( a, b \neq 0 \). Therefore, the functions that satisfy the conditions are \( \boxed{f(x) = 0 ,\xr} \) and \( \boxed{f(x) = x^2 ,\xr} \).\end{sol}
+    
+
+    \item \begin{bt}\vocab{(IMO Shortlist 2004).}
+        Find all functions $f: \mathbb{R} \to \mathbb{R}$ that satisfy
+        \[
+           f(x^2 + y^2 +2f(xy)) = \left(f(x + y)\right)^2
+        \]
+        for all real numbers $x,y$.
+    \end{bt}
+    \begin{sol}
+        Let \( P(x,y) \) denote substitution into \( (?) \). Define \( m = x^2 + y^2 \) and \( n = xy \). Then \( m^2 \geq 4n \). Let \( g(x) = 2f(x) - 2x \), rewriting 
+\[
+    f(m^2 + g(n)) = f(m)^2, \quad m^2 \geq 4n \tag{1}
+\]
+Let \( c = f(0) = g(0) \). From \( (1) \), substituting \( P(m,0) \) yields \( f(m^2 + c) = f(m)^2, \forall m \in \bb{R}, (2) \).
+
+\textbf{Claim 1:} \( f(x) \geq 0, \forall x \geq c \geq 0 \) \( (3) \).
+
+\begin{pro}
+Assume \( c < 0 \).
+
+From \( (2) \), substituting \( m \to \sqrt{-c} \), we get \( f(0) = f(\sqrt{-c})^2 \ra c = f(\sqrt{-c})^2 \geq 0 \), which is absurd.
+
+Thus, \( f(x + c) = f(\sqrt{x})^2 \geq 0, \forall x \geq 0 \).
+\end{pro}
+
+\textbf{Claim 2:} \( f \) is constant for \( x > c \).
+
+\begin{pro}
+If \( g \) is constant, it's easy to see \( f(x) = x, \xr \) is a solution. Assume \( g \) is non-constant. Choose \( p_1 > p_2 \in \bb{R} \) such that \( g(p_1) \neq g(p_2) \) and \( u > v > \max\{4p_1,4p_2,c\} \) such that \( u^2 - v^2 = g(p_1) - g(p_2) = d \), where \( d \) is constant. Then,
+
+\[
+    g(p_1) + v^2 = g(p_2) + u^2
+\]
+
+This leads to
+
+\[
+    f(v)^2 = f(v^2 + g(p_1)) = f(u^2 + g(p_2)) = f(u)^2
+\]
+
+Since \( u, v > c \), we have \( f(u), f(v) \geq 0 \), hence \( f(u) = f(v) \). Thus,
+
+\[
+    g(v) - g(u) = 2(f(v) - f(u) - v + u) = 2(u - v) = \frac{2d}{u + v} = t
+\]
+
+where \( t \) is arbitrary. It can be shown that \( g(u) - g(v) \) covers a range on some interval. Specifically, solving the system
+
+\[
+    \left\{
+    \begin{array}{l}
+    \frac{2d}{u + v} = t \\
+    u^2 - v^2 = 2d
+    \end{array}
+    \right.
+\]
+
+provides values \( u = \frac{d}{t} + \frac{t}{2}, v = \frac{d}{t} - \frac{t}{2} \). Conversely, choosing \( u, v \) in the interval \( [M,3M] \) with \( M > \max\{4p_1,4p_2,c\} \), ensures \( g(u) - g(v) \) spans a sufficiently small interval, implying \( f \) is constant on \( [\delta, 2\delta] \).
+
+    Consider \( p_1' = u \) and \( p_2' = v \), and repeat similarly. If \( a > b > L \) and \( a^2 - b^2 \in [\delta, 2\delta] \), then \( f(a) = f(b) \), where \( L = 12M \) is sufficiently large. Therefore, \( \sqrt{L^2 + \delta} \leq a^2, b^2 \leq \sqrt{L^2 + 2\delta} \), implying \( f \) is constant on \( [\sqrt{L^2 + \delta}, \sqrt{L^2 + 2\delta}], [\sqrt{L^2 + 3\delta}, \sqrt{L^2 + 4\delta}], \ldots \). Hence, the proof is completed.
+    \end{pro}
+
+    For \( x, y \) satisfying \( y > x \geq 2\sqrt{M} \) and \( \delta < y^2 - x^2 < 2\delta \), there exist \( u, v \) such that \( x^2 + g(u) = y^2 + g(v) \). Thus, \( f(x)^2 = f(y)^2 \). According to \( (3) \), \( f(x) = k \) for \( x \geq 2\sqrt{M} \). Substituting back, \( k^2 = k \).
+
+    Given \( t = 0 \) from the problem statement, we have \( |f(z)| = |f(-z)| \leq 1 \) for \( z \leq -2\sqrt{M} \). If \( g(u) = 2f(u) - 2u \geq -2-2u \) for \( u \leq -2\sqrt{M} \), as \( u \to -\infty \), \( g \) is unbounded. For each \( z \), there exists \( z' \) such that \( z + g(z') > 2\sqrt{r} \). Hence, \( f(z)^2 = f(z^2 + g(z')) = k = k^2 \).
+
+    Clearly, \( f(z) = \pm k \) for each \( z \). For \( k = 0 \), \( f(x) = 0 \) is a solution. For \( k = 1 \), \( c = 2f(0) = 2 \), hence \( f(x) = 1 \) for \( x \geq 2 \). If \( f(i) = -1 \) for some \( i < 2 \), then \( i - g(i) = 3i + 2 > 4i \). Assume \( i - g(i) \geq 0 \), then let \( j = i - g(i) > 4i \). Then \( f(j)^2 = f(j^2 + g(i)) = f(i) = -1 \), which is absurd.
+
+    Therefore, \( i - g(i) < 0 \) and \( i < \frac{-2}{3} \).
+
+    Hence, all functions that satisfy the conditions are \( \boxed{f(x) = 0 ,\xr}, \boxed{f(x) = 0 ,\xr} \) and 
+    \[
+    \boxed{ f(x)=
+    \left\{\begin{array}{rr}-1,&x\in \left(-\infty,-\frac{2}{3}\right)\\
+        1,&x\not\in \left(-\infty,-\frac{2}{3}\right)
+    \end{array}
+    \right.
+    }
+    \]
+
+    \end{sol}
+     \begin{bt}\vocab{(IMO Shortlist 2015 A4).}
+        Find all functions $f: \mathbb{Z} \to \mathbb{Z}$ that satisfy
+        \[
+           f(m - f(n))  = f(f( m)) - f(n) -1\tag{1}
+        \]
+        for all integers $m,n$.
+    \end{bt}
+    \begin{sol}
+        Denote $P(m,n)$ as the substitution into $(1)$. 
+        With $f(m) = -1, \forall m \in \mathbb{Z}$ it is satisfied, assuming there exists $m_0$ such that $f(m_0) \neq -1$.
+
+        $P(m,f(m)) \ra f(m - f(f(m))) = -1$. It follows that there exists $a \in \mathbb{Z}$ such that $f(a) = -1$. 
+
+        $P(m,a) \ra f(m + 1) = f(f(m)), \forall m,n \in \mathbb{Z} (2)$
+
+        Rewriting, we have 
+        \[
+            f(m - f(n)) = f(m + 1) - f(n) - 1, \forall m,n \in \mathbb{Z}
+        \]
+        Let $k = f(n) + 1$. Replacing $m \to m + f(n)$ we get 
+        \[
+            f(m) = f(m + k) - k \lra f(m + k) = f(m) + k
+        \]
+        By induction, we can prove $f(m + nk) = f(m) + nk, n \in \mathbb{Z^+}$
+
+        Replacing $m \to m - nk$ we get $f(m - nk) = f(m) - nk, \forall n \in \mathbb{Z^+}$. Thus,
+        \[
+            f(m + nk) = f(m) + nk, \forall m,n \in \mathbb{Z}
+        \]
+        Assuming there exist $f(a) = f(b)$ and $a > b$. We have 
+        \[
+            f(a + 1) = f(f(a)) = f(f(b)) = f(b + 1)
+        \]
+        Similarly, we also have $f(a + 2) = f(b + 2)$. By induction, we can prove $f(n + a) = f(n + b), \forall n \in \mathbb{N}$. Let $d = a - b$, substituting $n \to n - b$ we get 
+        \[
+            f(n) = f(n + d) = \dots = f(n + tkd) = f(n) + tkd, \forall t \in \mathbb{Z^+}
+        \]
+        This is absurd, thus $d = 0$ and $f$ is injective. From $(2)$, it follows that $f(m) = m + 1$.
+
+        Hence, the functions that satisfy are $\boxed{f(m) = -1, \forall m \in \mathbb{Z}}$, $\boxed{f(m) = m + 1, \forall m \in \mathbb{Z}}$.
+
+    \end{sol}
+    \begin{bt}\vocab{(IMO 2012).}
+        Find all functions $f: \mathbb{Z} \to \mathbb{Z}$ that satisfy
+        \[
+          f(a)^2 + f(b)^2 + f(c)^2 = 2f(a)f(b) + 2f(b)f(c) + 2f(c)f(a)
+        \]
+        for all integers $a,b,c$ that satisfy $a + b + c = 0$.
+    \end{bt}
+    \begin{sol}
+        Let \( c = - a - b \), we rewrite
+        \[
+            f(a)^2 + f(b)^2 + f(-a-b)^2 = 2f(a)f(b) +2f(-a-b)(f(a) + b(b)), \forall a,b \in \bb{Z} \tag{1}
+        \]
+        Let \( P(a,b) \) denote substitution into \( (1) \).
+
+        \( P(0,0) \) yields \( 3f(0)^2 = 6f(0)^2 \ra f(0) = 0 \).
+
+        \( P(a,0) \) gives \( f(a)^2 + f(-a)^2 = 2f(-a)f(a) \ra f(a) = f(-a), \forall a \in \bb{Z} \).
+
+        Thus, \( f \) is an even function over \( \bb{Z} \).
+
+        From \( (1) \), we rewrite
+        \[
+            f(a)^2 + f(b)^2 + f(a + b)^2 = 2f(a)f(b) + 2f(a + b)(f(a) + f(b)), \forall a,b \in \bb{Z} \tag{2}
+        \]
+        Substituting \( P(a,a) \) into \( (2) \), we get
+        \[
+            f(2a)^2 = 4f(2a)f(a) \ra (f(2a) - 4f(a))f(2a) = 0, \forall a \in \bb{Z}
+        \]
+
+        \vocab{Case 1:} \( f(2a) = 0, \forall a \in \bb{Z} \).
+
+        Using \( (2) \) with \( P(2a,b) \), we obtain
+        \[
+            f(b)^2 + f(2a + b)^2 = f(2a + b)f(b) \ra f(b) = f(2a + b)
+        \]
+        Thus, for every odd \( b \), \( f(b) = c \) where \( c \in \bb{Z} \). Therefore, the function satisfying this is 
+        \[
+        \boxed{ f(a)=
+        \left\{\begin{array}{rr}0,&a \text{ even }\\
+            c,&a \text{ odd }
+        \end{array}
+        \right.
+        }
+        \]
+
+        \vocab{Case 2:} \( f(2a) = 4f(a), \forall a \in \bb{Z} \).
+
+        From \( (2) \) using \( P(2a,a) \), we obtain
+        \[
+            9f(a)^2 - 10f(a)f(3a) + f(3a)^2 = 0 \ra (f(3a) - f(a))(f(3a) - 9f(a)) = 0
+        \]
+
+        \vocab{Subcase 2.1:} \( f(a) = f(3a) \).
+
+        Using \( (2) \) with \( P(a,3a) \), we get \( f(a) = 0, \forall a \in \bb{Z} \).
+
+        \vocab{Subcase 2.2:} \( f(3a) = 9f(a) \).
+
+        We will prove \( f(na) = n^2f(a) \) by induction. For \( n = 2,3 \), it is true. Assume \( f(ka) = k^2f(a) \) for all \( k \leq n \).
+
+        From \( (2) \) using \( P(na,a) \), we get
+        \[
+            (n^2 - 1)^2f(a)^2 - (2n^2 + 2)f(a)f((n + 1)a) + f((n + 1)a)^2 = 0
+        \]
+        Which simplifies to
+        \[
+            [(n + 1)f(a)^2 - f((n + 1)a)][(n - 1)^2f(a) - f((n + 1)a)] = 0
+        \]
+
+        If \( (n - 1)^2f(a) = f((n + 1)a) \), then similar to Subcase 2.1, we get \( f(a) = 0, \forall a \in \bb{Z} \).
+
+        For \( (n + 1)f(a)^2 = f((n + 1)a) \), induction is completed. Taking \( a = 1 = d \), we get \( f(n) = dn^2, \forall n \in \bb{N} \). Since \( f \) is even, \( f(-n) = dn^2 \).
+
+        Thus, the functions satisfying the conditions are \( \boxed{f(a) = da^2, \forall a \in \bb{Z}} \) where \( d \in \bb{Z} \), and 
+        \[
+        \boxed{ f(a)=
+        \left\{\begin{array}{rr}0,&a \text{ even }\\
+            c,&a \text{ odd }
+        \end{array}
+        \right.
+        }
+        \]
+    \end{sol}
+    
+    
+    \item \begin{bt}\vocab{(Japan MO Final 2019).}
+        Find all functions $f: \mathbb{R^+} \to \mathbb{R^+}$ that satisfy
+        \[f\left(\frac{f(y)}{f(x)}+1\right)=f\left(x+\frac{y}{x}+1\right)-f(x)\]
+        for all positive real numbers $x,y$.
+    \end{bt}
+    \begin{sol}
+        Denote $P(x,y)$ as the substitution into $(1)$.
+
+        Substituting $P(x,x)$ we get \[f(2) = f(x + 2) - f(x), \xr \tag{2}\]
+
+        We will prove that $f$ is injective. Assume there exist $a,b$ such that $f(a) = f(b)$ and $a > b$. From $P(x,a)$ and $P(x,b)$ we get 
+        \[
+            f\left(x + \frac{a}{x} + 1\right) = f\left(x + \frac{b}{x} + 1\right), \xro
+        \]
+        Setting $x = \frac{a - b}{2}$, we get 
+        \[
+            f\left(\frac{a - b}{2} + \frac{2a}{a - b} + 1\right) = f\left(\frac{a - b}{2} + \frac{2b}{a - b} + 1\right)
+        \]
+
+        However, from $(2)$ for $x \to \frac{a - b}{2} + \frac{2b}{a - b} + 1$ we get
+        \[
+        f\left(\frac{a - b}{2} + \frac{2a}{a - b} + 1\right) - f\left(\frac{a - b}{2} + \frac{2b}{a - b} + 1\right) = f(2) > 0
+        \]
+        This is absurd, so $f$ must be injective.
+
+        Substituting $P(2,2x)$ we get 
+        \[
+            f\left(\frac{f(2x)}{2} + 1\right) = f(x + 3) - f(2), \xro
+        \]
+        But from $(2)$ we also have $f(x + 1 ) = f(x + 3) - f(2), \xro$. Thus, we get
+        \[
+            f\left(\frac{f(2x)}{2} + 1\right) = f(x + 1 ) \ra \frac{f(2x)}{2} + 1 = x + 1  \ra f(x) = cx, \xro
+        \]
+        Checking again, it satisfies. Therefore, the function that satisfies is $\boxed{f(x) = cx, \xro}$ with $c > 0$.
+
+    \end{sol}
+    
+    \item \begin{bt}\vocab{(VMO 2022).}
+        Find all functions $f: \mathbb{R^+} \to \mathbb{R^+}$ that satisfy
+        \[
+        f\left(\frac{f(x)}{x}+y\right)=1+f(y) \tag{1}
+        \]
+        for all positive real numbers $x,y$
+    \end{bt}
+    
+    \begin{sol}
+        Denote $P(x,y)$ as the substitution into $(1)$.
+
+        \vocab{Method 1:}
+
+        Let $\mathbb{T} = \left\{\frac{f(x)}{x} \mid x \in \mathbb{R^+}\right\}$. Suppose $\mathbb{T}$ takes more than one value. Let $t_1, t_2 \in \mathbb{T}$ such that $t_1 > t_2$. Then there exist $a_1, a_2 > 0$ such that $t_1 = \frac{f(a_1)}{a_1}, t_2 = \frac{f(a_2)}{a_2}$. From substituting $P(a_1,y)$ and $P(a_2,y)$ and comparing, we get 
+        \[
+            f(y + t_1) = f(y + t_2), \yro
+        \]
+        Replacing $y \to y - t_2$ and letting $\delta = t_1 - t_2 > 0$, we get $f(y) = f(y + \delta), \forall y > t_2$. By induction, it is easy to prove that 
+        \[f(y) = f(y + n\delta), \forall y > t_2, n \in \mathbb{Z^+} \tag{2}\]
+        
+        On the other hand, substituting $P(x, \frac{f(x)}{x} + y)$ we get 
+        \[
+            f\left(2\frac{f(x)}{x}+y\right)=2+f(y), \xyro
+        \]
+        Also by induction, we can prove that 
+        \[
+            f\left(n\frac{f(x)}{x}+y\right)=n+f(y), \xyro \tag{3}
+        \]
+        From $(3)$, substituting $P(1,x - nf(1))$ we get 
+        \[
+            f(x) = n + f(x - nf(1)) > n ,\forall x > nf(1)
+        \]
+        At this point, choose $n_0 > \left\lfloor \frac{f(1)n}{\delta} \right\rfloor$, and from $(3)$ for $n = n_0$ we get $f(x) = f(x + n_0\delta) > n, \forall x > t_2$. As $n \to +\infty$ and $x$ is fixed (since $x$ does not depend on $n$), then $f(x) \to +\infty$, which is absurd. 
+
+        It follows that $t_1 = t_2$ or $\mathbb{T}$ takes only one value.
+
+        Therefore, $f(x) = cx, \xro$ with $c > 0$. Rechecking, we find that $c = 1$. 
+
+        Hence, the only function that satisfies is $\boxed{f(x) = x, \xro}$.
+
+        \vocab{Method 2:}
+        
+        First, we state and prove the following lemma:
+        \begin{lemma}
+            Given functions $f, g, h: \mathbb{R}^{+} \to \mathbb{R}^{+}$ satisfying
+            $$
+            f(g(x)+y)=h(x)+f(y)
+            $$
+            for all positive real numbers $x, y$. Then the function $\frac{g(x)}{h(x)}$ is a constant function.
+        \end{lemma}
+        \begin{pro}
+            Denote $P(x, y)$ as the assertion $f(g(x)+y)=h(x)+f(y), \forall x, y>0$. From $P(x, y-g(x))$ we deduce
+                $$
+                f(y-g(x))=f(y)-h(x), \forall x>0, y>g(x) .
+                $$
+
+                For $x, y>0$ and $p, q \in \mathbb{Z}^{+}$ such that $p g(x)-q g(y)>0$, from the above equalities we easily prove that
+                $$
+                f(z+p g(x)-q g(y))=f(z)+p h(x)-q h(y)
+                $$
+                for all $z>0$. If $p h(x)-q h(y)<0$, then replacing $(p, q)$ with $(k p, k q)$ for sufficiently large positive integer $k$, we get
+                $$
+                f(z)+p h(x)-q h(y)<0,
+                $$
+                which is absurd. Hence,
+                $$
+                p g(x)>q g(y) \ra p h(x) \geq q h(y) \quad \forall x, y>0,
+                $$
+                or
+                $
+                \frac{g(x)}{g(y)}>\frac{q}{p} \ra \frac{h(x)}{h(y)} \geq \frac{q}{p} \quad \forall x, y>0 .
+                $
+
+                Suppose $\frac{g(x)}{g(y)}>\frac{h(x)}{h(y)}$, then we can choose $p, q \in \mathbb{Z}^{+}$ such that
+                $ 
+                \frac{g(x)}{g(y)}>\frac{q}{p}>\frac{h(x)}{h(y)}
+                $
+                which contradicts the above proof. Therefore,
+                $$
+                \frac{h(x)}{h(y)} \geq \frac{g(x)}{g(y)} \ra \frac{h(x)}{g(x)} \geq \frac{h(y)}{g(y)} \quad \forall x, y>0 .
+                $$
+
+                Reversing the roles of $x$ and $y$ in the above evaluation, we obtain $\frac{h(x)}{g(x)}=\frac{h(y)}{g(y)}=c \quad \forall x, y>0$.
+        \end{pro}
+        Returning to the problem. Suppose there exists a function that satisfies.
+        Applying the above lemma, we deduce there exists a positive real number $c$ such that
+        $$
+        \frac{f(x)}{x}=c \ra f(x)=c x \quad \forall x>0
+        $$
+        From here, we find that $c = 1$. 
+        
+        Therefore, the only function that satisfies is $\boxed{f(x) = x, \xro}$.
+
+    \end{sol}
+
+    \item \begin{bt}\vocab{(Balkan MO 2022).}
+        Find all functions $f: \mathbb{R^+} \to \mathbb{R^+}$ that satisfy
+        \[
+        f\left(y f(x)^3+x\right)=x^3 f(y)+f(x)\tag{1}
+        \]
+        for all positive real numbers $x,y$
+    \end{bt}
+    \begin{sol}
+        Denote $P(x,y)$ as the substitution into $(1)$.
+        
+        \vocab{Claim 1:} $f$ is strictly increasing on $\mathbb{R^+}$. 
+        \begin{pro}
+            From $(1)$ we have 
+        \[
+            f(yf(x)^3) > f(x), \xyro \tag{2}
+        \]
+        From $(2)$, substituting $P\left(x,\frac{y}{f(x)^3}\right)$ we get $f(x + y) > f(x), \xyro$. Hence, $f$ is strictly increasing, so $f$ is also injective on $\mathbb{R^+}$.
+        \end{pro}
+
+        \vocab{Claim 2:} $\blim_{x \to 0}f(x) = 0$. 
+        \begin{pro}
+            Since $f$ is strictly increasing and $f(x) > 0$, there must exist $L = \blim_{x \to 0}f(x)$, with $f(x) > L, \xro$. We have 
+            \[
+            f(yL^3) < f(yf(x)^3 + x) = x^3f(y) + f(x), \xyro
+            \]
+            Letting $x \to 0^+$ gives $f(yL^3) \leq L, \yro$. Therefore, $yL^3 = 0$ or $L = 0$.
+            
+        \end{pro}
+        \vocab{Claim 3:} $f$ is continuous on $\mathbb{R^+}$. 
+        \begin{pro}
+            We have $f(yf(x)^3 + x) - f(x) = x^3f(y), \xyro$. Set $h = yf(x)^3$, let $x = x_0 > 0$ be arbitrary, and as $y \to 0^+$, $h \to 0^+$, we get 
+            \[
+                \blim_{h \to 0} f(x_0 + h) - f(x_0) =  f(x_0) - f(x_0) = 0
+            \]
+            Hence, $f$ is continuous on $\mathbb{R^+}$.
+        \end{pro}
+        
+        \vocab{Claim 4:} $f$ is bijective on $\mathbb{R^+}$
+        \begin{pro}
+            Indeed, from $(1)$ as $x \to +\infty$ we get $\blim_{x \to +\infty} f(x) = +\infty$. Since $f$ is continuous and unbounded above, $f$ is surjective. Therefore, $f$ is bijective on $\mathbb{R^+}$.
+        \end{pro}
+        \vocab{Claim 5:} $f(1) = 1$. 
+        \begin{pro}
+            Assume $f(1) < 1$, then $P\left(1,\frac{1}{1-f(1)^3}\right)$ implies $f(1) = 0$, which is absurd.
+
+            Assume $f(1) > 1$. Since $f$ is bijective, there exists $t < 1$ such that $f(t) = 1$. 
+            
+            $P(t,y) \ra f(y + t) = t^3f(y) + 1 > f(y) \lra 1 > (1 - t^3)f(y)$, which is absurd because $f$ is unbounded above. Therefore, $f(1) = 1$.
+        \end{pro}
+        \vocab{Claim 6:} $f(q) = q, \forall q \in \bb{Q^+} (4)$ 
+        \begin{pro}
+            Substituting $P(1,y)$ we get $f(y + 1) = f(y) + 1, \yro$. By induction, we can prove $f(y + n) = f(y) + n, \yro$ for $n \in \bb{Z^+}$. Letting $y \to 0^+$ we get $f(n) = n,\forall n \in \bb{Z^+}$.
+
+            For $m,n \in \bb{Z^+}$, substituting $P\left(m,\frac{n}{m}\right)$ we get 
+            \[
+                    f(nm^2 + m) = m^3 + f\left(\frac{m}{n}\right) + f(m) \lra f\left(\frac{m}{n}\right) = \frac{m}{n}, \forall m,n \in \bb{Z^+}
+            \]
+        \end{pro}
+        Now, for any real number $x > 0$, we choose a sequence $(u_n)$ such that $u_n = \frac{\lfloor nx \rfloor}{n}, \forall n \in \bb{Z^+}$. We have 
+        \[
+            \frac{nx - 1}{n} <  \frac{\lfloor nx \rfloor}{n} < \frac{nx + 1}{n} 
+        \]
+        Since $f$ is continuous on $\mathbb{R^+}$,
+        \[
+           \dlim \frac{nx - 1}{n} <\dlim u_n < \dlim\frac{nx + 1}{n} \ra \dlim u_n = x
+        \]
+        From $(4)$, substituting $x = u_n$ we get 
+        \[
+            \dlim f(u_n) = f(\dlim u_n) = \dlim u_n = x 
+        \]
+        Thus, the unique function that satisfies the conditions is $\boxed{f(x) = x, \xro}$.
+
+    \end{sol}
+    \item \begin{bt}\vocab{(Switzerland TST 2022).}
+        Find all functions $f: \mathbb{R^+} \to \mathbb{R^+}$ that satisfy
+        \[
+        x+f(y f(x)+1)=x f(x+y)+y f(y f(x))\tag{1}
+        \]
+        for all positive real numbers $x,y$
+    \end{bt}
+    \begin{sol}
+        Denote $P(x,y)$ as the substitution into $(1)$.
+
+        Claim 1: $f$ is not bounded above.
+Proof.
+From $P\left(x,\frac{y}{f(x)} - 1\right)$ it follows that\[f(y) = xf\left(x + \frac{y-1}{f(x)}\right) + \frac{y - 1}{f(x)}f(y - 1) - x,\forall x > 0, y > 1 \tag{2}
+    \]From $(2)$ as $y \to +\infty$, the right-hand side $\to +\infty$ so $\displaystyle \blim_{y \to +\infty} f(y) = +\infty$.
+
+Claim 2: $f$ is injective on $\mathbb{R^+}$
+Proof.
+Suppose $f(a)=f(b)$ and $a > b$. Let $d = a - b, q = \frac{b}{a}, r= \frac{d}{a}$, we have $d,q,r > 0$ and $q < 1$.
+Substituting $P(a,x), P(b,x) \ra a - af(a + x) = b - bf(b + x)$.
+
+As $x \to x -b$ and let $\delta = 4b$ be sufficiently large, we get
+\[
+        f(x + d) = qf(x) + r, \forall x > \delta \tag{$\clubsuit$ }
+    \]
+We state and prove the following lemma:
+Lemma. Consider the function $f: \mathbb{R^+} \to \mathbb{R^+}$ satisfying
+\[
+            f(x + d) = qf(x) + r, \forall x > M
+        \]with $M$ being sufficiently large positive real number with $q < 1$ and $d, r > 0$. Then $\displaystyle \blim_{x \to +\infty} f(x) = \frac{r}{1 - q}$.
+Proof. Substituting $x \to x + d$, we get\[f(x + 2d) = qf(x + d) + r = q(qf(x) + r) + r = q^2f(x) + qr + r, \forall x > \delta\]By induction it's easy to prove that\[f(x + nd) = q^nf(x) + r\sum_{i = 0}^n q^i, \forall x > \delta \tag{3}\]From $(3)$ we rewrite
+\[
+        f(x + nd) = q^nf(x) + r.\frac{1 - q^{n}}{1 - q}, \forall x > \delta \tag{4}
+    \]From $(4)$, as $n \to +\infty$ with $q < 1$, we have
+\[
+        \blim_{x \to +\infty} f(x) = \displaystyle \blim f(x + nd) = \frac{r}{1 - q}
+    \]This completes the proof.
+Applying the above lemma to $(\clubsuit)$, we get $\displaystyle \blim_{x \to +\infty} f(x) = \frac{r}{1 - q}$.
+But according to Claim 2, $f$ is not bounded above and $\displaystyle \blim_{x \to +\infty} f(x) = +\infty$, contradiction.
+Therefore $q = 1$ or $d = 0 \ra a = b$. Hence $f$ is injective on $\mathbb{R^+}$.
+Setting $P(1,1)$ we get $f(2) = f(1 + \frac{1}{f(1)})$. Since $f$ is injective, $f(1) = 1$.
+Give $P(1,x)$ the we get the satisfied function is $\boxed{f(x) = \frac{1}{x}, \forall x > 0}$. 
+       \end{sol}
+       \item \begin{bt}\vocab{(Iran MO Round 3).}
+        Find all function $f: \bb{C} \to \bb{C}$ such that 
+        \[f(f(x)+yf(y))=x+|y|^2\]
+            for complex number $x,y$
+        \vocab{Note:} \textit{if $y = a + bi$ then $|y| = \sqrt{a^2 + b^2}$}.
+    \end{bt}
+    \begin{sol}
+        Let $P(x,y)$ be the assertion $f(f(x)+yf(y))=x+|y|^2$.
+        $P(x,0) \implies f(f(x))=x$. With this $P(x,f(y)) \implies |y| = |f(y)|$ for all $y\in \mathbb{C}$ which leads us to $f(0)=0$.
+
+        Let $|y_{1}|=|y_{2}|$ be two complex numbers. Then using injectivity of $f$ we get
+        $P(x,y_{1}), P(x,y_{2}) \implies y_{1}f(y_{1}) = y_{2}f(y_{2})$. Let $y_{1} =y$ and $y_{2} = |y|$ we get that
+        $$f(y) = \dfrac{\bar{y}}{|y|}f(|y|)\; \;\;\;(1).$$
+        So it suffices to find $f$ on the real line $\mathbb{R}$. By applying $f()$ both sides of $P(x,y)$ we get $f(x+|y|^2)=f(x)+yf(y)$. By inserting $x=0$ in this equation and rewriting the equation we get
+        $f(x+|y|^{2})=f(x)+f(|y|^{2})$. Then for any two positive real numbers $x,y$ we have
+        $$f(x+y)=f(x)+f(y) .$$We know that $|f(x)|=|x|$ for any complex number $x$. Using triangle inequality, for positive reals $a,b$ we have
+        $$a+b = |a+b| = |f(a+b)| = |f(a)+f(b)| \leq |f(a)| +  |f(b)| = |a| + |b| = a+b.$$The equality case of triangle inequality gives us that $f(x)=xf(1)$ for all positive real $x$. So $f(|x|)= |x|f(1)$ for any $x\in \mathbb{C}$. This with $(1)$ gives us
+        $$\forall y\in \mathbb{C}:\;f(y) = f(1)\cdot \bar{y}.$$And so $\boxed{f(y)=e^{i\theta}\overline y\quad\forall y\in\mathbb C}$, which indeed fits, whatever is $\theta\in[0,2\pi)$.
+    \end{sol}
+    \item \begin{bt}\vocab{(Japan MO Final 2021).}
+        Find all functions $f: \mathbb{Z^+} \to \mathbb{Z^+}$ that satisfy
+        \[
+             n\mid m \lra f(n) \mid f(m) - n \tag{1}
+        \]
+    \end{bt}
+    \begin{sol}
+        Denote $P(m,n)$ as the substitution into $(1)$. 
+        
+        \vocab{Claim 1:} $n \mid m \iff f(n) \mid f(m)$.
+        \begin{pro}
+            Substituting $P(n,n)$ we get 
+                \[f(n) \mid f(n) - n \ra f(n) \mid n, \forall n \in \mathbb{Z^+} \tag{2}
+                \]
+                From this we deduce 
+                \[
+                n \mid m \iff f(n) \mid f(m) \tag{3}
+                \] 
+        \end{pro}
+        \vocab{Claim 2:} $f(p) = p, \forall p \in \mathbb{P}$.
+        \begin{pro}
+            From $(2)$ with $n = 1$, we get $f(1) \mid 1 \ra f(1) = 1$. 
+        
+        Consider any prime number $p \in \mathbb{P}$. From $(2)$ with $n = p$, we get 
+        \[
+            f(p) \mid p, \forall p \in \mathbb{P}
+        \]
+        Hence $f(p) = \{1, p\}, \forall p \in \mathbb{P}$. We will prove that $f$ is injective. Assume there exist $a$ and $b$ such that $f(a) = f(b)$ with $a \mid b$ and $a < b$. From $(3)$, substituting $P(b,a)$, we get $a = b$, which is a contradiction. Therefore, $f$ is injective. Since we already have $f(1) = 1$, we conclude that $f(p) = p, \forall p \in \mathbb{P}$.
+        \end{pro}
+        \vocab{Claim 3:} $f(p^k) = p^k, \forall k \in \mathbb{N}, p \in \mathbb{P}$
+        \begin{pro}
+            We will prove this by induction. For $k = 1$, it is obviously true.
+            
+            Assume $f(p^{k-1}) = p^{k-1}$. From $(2)$ with $n = p^k$, we get $f(p^k) \mid p^k$. 
+            
+            On the other hand, from $(3)$ substituting $P(p^k, p^{k-1})$, we get $p^{k-1} \mid f(p^k)$. From this, we deduce $f(p^k) = p^k$.
+        \end{pro}
+        
+        \vocab{Claim 4:} $f(m) = m, \forall m \in \mathbb{Z^+}$. According to the fundamental theorem of arithmetic, we decompose 
+        \[
+            m = p_1^{k_1}p_2^{k_2}\dots p_t^{k_t}
+        \]
+        where $p_1, p_2, \dots, p_t \in \mathbb{P}$ and $k_1, k_2, \dots \in \mathbb{Z^+}$. From $(3)$, we successively substitute $P(m, p_1^{k_1}), P(m, p_2^{k_2}), \dots, P(m, p_t^{k_t})$. On the other hand, we also have 
+        \[
+            (f(p_1^{k_1}), f(p_2^{k_2}), \dots, f(p_t^{k_t})) = 1
+        \]
+        Therefore, 
+        \[
+            f(p_1^{k_1}), f(p_2^{k_2}), \dots, f(p_t^{k_t}) \mid f(m)
+        \]
+        From $(2)$ with $n \to m$, we get 
+        \[
+            f(m) \mid f(p_1^{k_1}), f(p_2^{k_2}), \dots, f(p_t^{k_t}) 
+        \]
+        Hence, the unique function that satisfies the conditions is $\boxed{f(m) = m, \forall m \in \mathbb{Z^+}}$.
+
+    \end{sol}
+    \item \begin{bt}\vocab{(Indonesia TST 2022). }
+        Find all functions $f: \mathbb{R} \to \mathbb{R}$ that satisfy
+        $$
+        f\left(a^2\right)-f\left(b^2\right) \leq(f(a)+b)(a-f(b))
+        $$
+        for all real numbers  $a, b$.
+    \end{bt}
+    \begin{sol}
+        Let $P(a,b)$ denote the assertion for this functional inequality.
+        $P(0,0)\implies (f(0))^2\leq 0$ and hence, $f(0)=0$.
+        Now, $P(a,a)\implies (f(a))^2\leq a^2$.
+        $P(0,a)$ and $P(a,0)$ gives $a\cdot f(a)=f(a^2)$ which basically gives $f(a)=-f(-a)$.
+        $\newline$
+        Now, Adding $P(a,-a)$ and $P(-a,a)$ gives $-2a^2\geq 2\cdot f(a)\cdot f(-a)=-2(f(a))^2\geq -2a^2\implies (f(a))^2=a^2\implies f(a)=\pm a$.
+        Hence, $\boxed{f(x)=x}$ and $\boxed{f(x)=-x}$ are the solutions.
+    \end{sol}
+    \item \begin{bt}\vocab{(Japan MO Final 2022).}
+        Find all functions $f: \mathbb{Z^+} \to \mathbb{Z^+}$ that satisfy
+        \[f^{f(n)}(m)+mn=f(m)f(n)\tag{1}\]
+        for all positive integers $m,n$
+    \end{bt}
+    \begin{sol}
+        Denote $P(m,n)$ as the substitution into $(1)$. 
+
+        We observe that $f$ does not take the value $1$. It can be easily proven that $f$ is injective. By comparing $P(n,m)$, we get 
+        \[
+            f^{f(n)}(m) = f^{f(m)}(n) , \forall m,n \in \mathbb{Z}^+
+        \]
+        Assume $f(n) \geq f(m)$, since $f$ is injective, we get 
+        \[
+            f^{f(n) - f(m)}(m) = n \tag{3}
+        \]
+        We prove that $f(1)$ is the smallest value of the function. Suppose there exists $a$ such that $f(a) < f(1)$, from $(3)$ substituting $P(1,a)$, we get 
+        \[
+            f^{f(1) - f(a)}(a) = 1
+        \]
+        which is a contradiction. Therefore, $f(1)$ is the smallest value. Hence, $f(2) > f(1)$. From $(3)$ substituting $P(1,2)$, we get 
+        \[
+            f^{f(2) - f(1)}(1) = 2
+        \]
+        Since $f(1) > 1$, we have $f(1) = 2$. From $(1)$ substituting $P(m,1)$, we get
+        \[
+            f(f(m)) + m = f(m), \forall m \in \mathbb{Z}^+ \tag{4}
+        \]
+        We will use induction to show that $f(m) = m + 1$. Assume $f(m - 1) = m$ for $m > 2$. From $(4)$, substituting $m \to m - 1$, we get
+        \[
+            f(f(m - 1)) + m = 2f(m - 1) \implies f(m) = m
+        \]
+        Thus, the only function that satisfies the conditions is $\boxed{f(m) = m, \forall m \in \mathbb{Z}^+}$.
+
+    \end{sol} 
+
+
+    \item \begin{bt}\vocab{(Japan MO Final 2024).}
+        Find all functions $f: \mathbb{Z^+} \to \mathbb{Z^+}$ that satisfy
+        \[
+        \text{lcm}(m, f(m+f(n)))=\text{lcm}(f(m), f(m)+n), \forall m,n \in \mathbb{Z}^+
+        \tag{1}\]
+    \end{bt}
+    \begin{sol}
+        Denote $P(m,n)$ as the substitution into $(1)$.
+
+        $P(m,mf(m))$ implies
+        \[[m, f(m + f(mf(m)))] = [f(m), f(m) + mf(m)] = f(m)(m + 1), \forall m,n \in \bb{Z^+}\]
+        From this, we deduce $m \mid f(m)(m + 1) \ra m \mid f(m) \ra f(m) \geq m (2)$
+
+        $P(1,1)$ gives us $f(1 + f(1)) = f(1)(f(1) + 1)$
+
+        $P(1, 1 + f(1))$ implies
+        \[
+        f(1 + f(1)^2 + f(1)) = [f(1), 2f(1) + 1] = 2f(1)^2 + f(1)
+        \]
+        From $(2)$, we deduce $1 + f(1)^2 + f(1) \mid 2f(1)^2 + f(1) \ra f(1) = 1$
+
+        Using $(1)$, substituting $P(1,n)$ gives us $f(1 + f(n)) = n + 1 \geq 1 + f(n) \ra f(n) \leq n$
+
+        Combining this with $(2)$, we conclude that the function satisfying these conditions is $f(m) = m, \forall m \in \bb{Z^+}$.
+
+    \end{sol}
+
+    \item \begin{bt}\vocab{(KMF 2022).}
+        Find all functions $f,g: \mathbb{R} \to \mathbb{R}$ that satisfy
+    $$f(x^2-g(y))=g(x)^2-y, \forall x,y \in \mathbb{R}$$
+    \end{bt}
+    \begin{sol}
+        Let $P(x,y)$ denote the substitution into $(1)$. Let $a = g(0)$.
+
+        \vocab{Claim 1:} $f$ is surjective and $g$ is injective.
+        \begin{pro}
+            From $P(x,0)$, we have $g(x)^2 = f(x^2 - a)$. Rewriting,
+            \[
+                f(x^2 - g(y)) = f(x^2 - a) - y, \forall x,y \in \mathbb{R} \tag{2}
+            \]
+            Suppose there exist $a, b$ such that $g(a) = g(b)$. Using $P(x,a)$ and $P(x,b)$, we find $a = b$, proving $g$ is injective.
+
+            Moreover, from $(2)$ substituting $P(x, -y + f(x^2 - a))$, we conclude that $f$ is surjective.
+
+            From $(1)$ substituting $P(-x,y)$, we get $g(x)^2 = g(-x)^2$. Since $g$ is injective, we have $g(x) = -g(-x)$ for all $x \neq 0$.
+        \end{pro}
+
+        \vocab{Claim 2:} $g$ is unbounded above.
+        \begin{pro}
+            Assume there exists $M$ such that $|g(x)| \leq M$. For any arbitrary $y_1, y_2$, there exist $x_1, x_2$ satisfying
+            \[
+                x_1^2 - x_2^2 = g(y_1) - g(y_2) \ra g(x_1)^2 - g(x_2)^2 = y_1 - y_2
+            \]
+            Choosing $y_1, y_2$ such that $y_1 - y_2 > 4M$ leads to a contradiction, hence $g$ is unbounded above.
+        \end{pro}
+
+        \vocab{Claim 3:} $f$ and $g$ are bijective.
+        \begin{pro}
+            Suppose $f(a) = f(b)$. Choose $y_0 > \max\{-a, -b\}$. Choose $x_1, x_2$ such that $x_1^2 - g(y_0) = a$ and $x_2^2 - g(y_0) = b$. Since $f$ is injective and $g$ is odd and injective, we deduce
+            \[
+                g(x_1)^2 - y_0 = g(x_2)^2 - y_0 \ra x_1 = x_2
+            \]
+            Thus, $f$ is injective, implying $f$ is bijective.
+
+            From $(1)$ substituting $P(0,y)$, we obtain $f(-g(y)) = g(0)^2 - y$. Hence, $g$ is surjective, implying $g$ is bijective.
+        \end{pro}
+
+        Thus, there exists $c$ such that $g(c) = 0$. If $c \neq 0$, then $g(-c) = 0$, which is contradictory. Therefore, $g(0) = 0$.
+
+        \vocab{Claim 4:} $f$ is additive.
+        \begin{pro}
+            From $(1)$ substituting $P(0,0)$, we get $f(0) = 0$. Substituting $P(x,0)$ gives
+            \[
+                f(x^2) = g(x)^2 \ra f(x^2 - g(y)) = f(x^2) - y \ra f(x - g(y)) = f(x) - y, \forall x \geq 0, y \in \mathbb{R} \tag{3}
+            \]
+            From $(1)$ substituting $P(0, -y)$, we have $f(g(y)) = y$. Using $(3)$ substituting $P(x, f(y))$, we obtain
+            \[
+                f(x - y) = f(x) - f(y) \ra f(x + y) = f(x) + f(y), \forall x,y \in \mathbb{R}
+            \]
+        \end{pro}
+
+        Since $f(x^2) = g(x)^2 \ra f(x) \geq 0$ for all $x \geq 0$, by \vocab{Lemma 1}, we conclude $f(x) = ax, \forall x \in \mathbb{R}$. Testing again, we find $a = 1$ and $f(x) = x$.
+
+        Therefore, the pair of functions that satisfy these conditions is $\boxed{f(x) = x, g(x) = x, \forall x \in \mathbb{R}}$.
+
+    \end{sol}
+
+    \item \begin{bt}\vocab{(Balkan MO 2024).}
+        Find all functions \( f : \mathbb{R}^+ \to \mathbb{R}^+ \) and polynomials \( P(x) \) with non-negative real coefficients satisfying \( P(0) = 0 \) and \[f(f(x) + P(y)) = f(x - y) + 2y\] for all positive real numbers $x > y$
+    \end{bt}
+    \begin{sol}
+        
+
+        \vocab{Claim 1:} $f(x) \geq x$.
+\begin{pro}
+    Suppose there exists $x_0 > 0$ such that $f(x_0) < x_0$. It's clear that the polynomial $P(y) + y$ is surjective. Hence, there exists $y_0$ such that $P(y_0) + y_0 = f(x_0) - x_0$. Substituting $P(x_0,y_0)$ gives $2x_0y_0 = 0$, which leads to contradictions in both cases. Therefore, $f(x) \geq x$.
+\end{pro}
+
+\vocab{Claim 2:} $\deg P(x) < 2$.
+\begin{pro}
+    From Claim 1, we have
+    \[
+        f(x - y) + 2y \geq f(x) + P(y) \tag{2}
+    \]
+    Suppose $\deg P(x) \geq 2$. Since $P(y) - 2y$ is surjective and monotonic over defined intervals, there exists $N > 0$ large enough such that $P(y) > 2y$ for all $y > N$. Substituting $y > N$ into $(2)$ gives
+    \[
+        f(x - y) + 2y > f(x) + 2y \Rightarrow f(x - y) > f(x)
+    \]
+    This implies $f$ strictly decreases on $(N, +\infty)$. On the other hand, from $(2)$ substituting $P(x + y, y)$, we obtain
+    \[
+        f(x) - f(x + y) \geq P(y) - 2y
+    \]
+    Fixing $x$ and letting $y \to +\infty$, the left-hand side converges to a specific value, while the right-hand side tends to infinity, which is a contradiction. Thus, $\deg P(x) < 2$.
+\end{pro}
+
+\vocab{Case 1:} $\deg P(x) = 0$ or $P(x) = 0$.
+\begin{pro}
+    Rewrite as
+    \[
+        f(f(x)) = f(x - y) + 2y, \forall x > y > 0 \tag{1}
+    \]
+    Notice that $f(f(x)) \geq x + y$. Letting $y \to x^-$ gives $f(f(x)) \geq 2x$. Hence, $f(x - y) + 2y \geq 2x \Rightarrow f(x - y) \geq 2x - 2y$. Letting $y \to 0^-$, we get $f(x) \geq 2x$. This gives $f(f(x)) \geq 4x$. Also,
+    \[
+        f(x - y) + 2y \geq 4x + 2y \Rightarrow f(x - y) \geq 4x, \forall x > y > 0
+    \]
+    Letting $y \to x^-$ again gives $4x \leq f(0)$, which is a contradiction.
+\end{pro}
+
+\vocab{Case 2:} $\deg P(x) = 1$ or $P(x) = ax$ with $a > 0$.
+
+    Rewrite as
+    \[
+        f(f(x) + ay) = f(x - y) + 2y \tag{1}
+    \]
+    We have the estimate
+    \[
+        f(x - y) + 2y \geq x + ay \Rightarrow f(x - y) \geq x + (a - 2)y, \forall x > y
+    \]
+    Substituting $P(y + 1, y)$ gives
+    \[
+        f(1) \geq y + 1 + (a - 2)y = (a - 1)y + 1
+    \]
+    If $a > 1$, letting $y \to +\infty$ leads to a contradiction. Thus, $a \leq 1$. Also,
+    \[
+        f(x - y) + 2y = f(f(x) + y - (1 - a)y) \geq f(f(x) + y) + (1 - a)(a - 2)y \tag{2}
+    \]
+    From $(1)$ substituting $P\left(x, \frac{y}{a}\right)$ gives $f(f(x) + y) = f\left(x - \frac{y}{a}\right) + \frac{2y}{a}$. Substituting into $(2)$ gives
+    \[
+        f(x - y) \geq f\left(x - \frac{y}{a}\right) + \left(\frac{2}{a} + (1 - a)(a - 2) - 2\right)y
+    \]
+    It can be easily shown that $\left(\frac{2}{a} + (1 - a)(a - 2) - 2\right) \geq 0$, hence $f(x - y) \geq f\left(x - \frac{y}{a}\right)$. For $p > q > 0$, solving the system of equations
+    \[
+        x - y = p \text{ and } x - \frac{y}{a} = q
+    \]
+    gives $x = p \frac{a(p - q)}{1 - a}$ and $y = \frac{a(p - q)}{1 - a}$, implying that $f$ is increasing. If $f$ were constant over any interval, all expansions must be '$=$', thus giving $f(x - y) = x + (a - 2)y = x - y$, which is contradictory. Therefore, $f$ is strictly increasing. Consequently, from $(1)$ letting $y \to 0^+$ gives $f(f(x)) = f(x)$, which implies $\boxed{f(x) = x}$.
+\end{sol}
+
+
+
+
+    \item \begin{bt}\vocab{(IMO Shortlist 2011 A3).}
+        Find all functions $f,g: \mathbb{R} \to \mathbb{R}$ that satisfy
+        \[g(f(x+y)) = f(x) + (2x + y)g(y)\]
+        for all real numbers $x,y$.
+    \end{bt}
+    \begin{sol}
+        Let $P(x,y)$ be the assertion $g(f(x+y))=f(x)+(2x+y)g(y)$
+
+        Let $x\ne 0$ :
+        $P(x,0)$ $\implies$ $g(f(x))=f(x)+2xg(0)$
+        $P(0,x)$ $\implies$ $g(f(x))=f(0)+xg(x)$
+        Subtracting, we get $g(x)=\frac{f(x)-f(0)}x+2g(0)$ $\forall x\ne 0$
+
+        $P(x,y)$ $\implies$ $g(f(x+y))=f(x)+(2x+y)g(y)$
+        $P(x+y,0)$ $\implies$ $g(f(x+y))=f(x+y)+(2x+2y)g(0)$
+        Subtracting, we get $f(x+y)=f(x)+(2x+y)g(y)-(2x+2y)g(0)$
+
+        Considering $y\ne 0$ and using previous result, this becomes $f(x+y)=f(x)+(2x+y)\frac{f(y)-f(0)}y+2xg(0)$
+        Considering $x\ne 0$ and swapping $x,y$, this becomes $f(x+y)=f(y)+(2y+x)\frac{f(x)-f(0)}x+2yg(0)$
+
+        Considering $x,y\ne 0$ and subtracting, we get $f(x)=x^2(\frac{f(y)-f(0)}{y^2}+\frac{g(0)}y)-g(0)x+f(0)$
+
+        Setting $y=1$ in the above line, we get $f(x)=x^2(f(1)-f(0)+g(0))-g(0)x+f(0)$ $\forall x\ne 0$
+
+        Plugging this in the equality $g(x)=\frac{f(x)-f(0)}x+2g(0)$ $\forall x\ne 0$ we previously got, we get then :
+        $g(x)=x(f(1)-f(0)+g(0))+g(0)$ $\forall x\ne 0$
+
+        Plugging this in original equation, we get two possibilities :
+        $f(x)=g(x)=0$ $\forall x\ne 0$
+        $f(x)=x^2+c$ and $g(x)=x$ $\forall x\ne 0$
+
+        It's then easy to check that we need the same values for $x=0$ and we get the two families of solutions :
+        $f(x)=g(x)=0$ $\forall x$
+        $f(x)=x^2+c$ and $g(x)=x$ $\forall x$
+    \end{sol}
+
+    \item \begin{bt}\vocab{(IMO Shortlist 2018 A1).}
+        Find all functions $f: \mathbb{Q}^+ \to \mathbb{Q}^+$ that satisfy
+        \[
+        f(x^2f(y)^2)=f(x)^2f(y)\tag{1}
+        \]
+        for all positive rational numbers $x,y$.
+    \end{bt}
+\begin{sol}
+
+    Let $P(x,y)$ be the assertion to $(1)$
+
+    $P(x,y) \ra f(x^{2}f(y)^2)=f(x)^{2}f(y) $
+
+    $P(1,x) \ra f(f(x)^2)=f(1)^{2}f(x)...(A)$
+
+    $P(\displaystyle \frac{x}{f(x^2)},x^2) \ra f(x^2)=f(\frac{x}{f(x^2)})^{2}f(x^2)$ $\ra  f(\displaystyle \frac{x}{f(x^2)})=1$
+
+    $\exists c\in \mathbb{Q^+}$ such that $f(c)=1$
+
+    $P(x,c) \ra f(x^2)=f(x)^2$
+
+    $P(x,y^2) \ra f(xf(y)^2)^2=f(x)^{2}f(y)^{2}$ $\ra f(xf(y)^2)=f(x)f(y) ... (1)$
+
+    In (1) let $x=1$ and we obtain $f(f(y)^2)=f(1)f(y)...(B)$
+
+    Combining (A) and (B) yields $f(1)=1$
+
+    So $f(f(x)^2)= f(f(x))^2= f(x)$ $\ra f^k(x)=\sqrt[k]{f(x)}$ where $k$ is a power of $2$.
+
+    Suppose that for some $a\in \mathbb{Q^+}$ such that $f(a)\neq 1$ let $f(a)=\displaystyle \frac{m}{n}$ such that $\gcd(m,n)=1$
+
+    Let $k$ be a power of $2$ with $v_{p}(m)<k \wedge v_{p}(n)<k$ for all primes $p$.
+
+    $f^k(a)=\sqrt[k]{f(a)}$ so $\sqrt[k]{f(a)} \in \mathbb{Q^+}$
+
+    Let $\sqrt[k]{\displaystyle\frac{m}{n}}=\displaystyle\frac{x}{y}$ for some $x,y \in \mathbb{N}$ with $\gcd(x,y)=1$
+
+    $my^k=nx^k$ if $p \mid m \ra p \mid x$
+
+    $v_{p}(my^k)=v_{p}(nx^k)$ Since $\gcd(x,y)=1$ $v_{p}(y)=0$
+
+    $v_{p}(my^k)=v_{p}(m)=v_{p}(x^k)=k \cdot v_{p}(x) \geq k$ this is clearly a contradiction and thus there doesn't exist any positive rational number $a$ with $f(a)\neq 1$.
+    \end{sol}
+
+    \item \begin{bt}\vocab{(IMO Shortlist 2019 A1).}
+        Find all functions $f: \mathbb{Z} \to \mathbb{Z}$ that satisfy
+        $$f(2a)+2f(b)=f(f(a+b)).$$
+        for all integers  $a,b$.
+    \end{bt}
+    \begin{sol}
+        Let $P(x,y)$ denote the substitution into $(1)$.
+
+\vocab{Claim 1:} $f$ is strictly increasing over $\mathbb{R}^+$.
+\begin{pro}
+    First, we prove that $f$ is injective. By substituting $P(1,a)$ and $P(1,b)$ sequentially, we find that $a = b$.
+
+    Assume there exist $a > b$ such that $f(a) < f(b)$. Set $x_2 = \frac{ka}{a-b}$ and $x_1 = \frac{kb}{a-b}$, where $k = f(b) - f(a)$, and let $y_0 = \frac{a-b}{k}$. Substituting gives:
+    \[
+        x_1 + f(x_1 y_0) = x_2 + f(x_2 y_0) \Rightarrow f(x_1) = f(x_2) \Rightarrow x_1 = x_2 \Rightarrow a = b
+    \]
+    This is a contradiction, hence $f$ is strictly increasing.
+\end{pro}
+
+\vocab{Claim 2:} $f$ is unbounded above.
+\begin{pro}
+    From the problem statement, we have the estimate:
+    \[
+        f(x)f(y) + 1 > y \Rightarrow f(y) > \frac{y - 1}{f(x)}, \forall x, y \in \mathbb{R}
+    \]
+    Fixing $x$ and letting $y \to +\infty$, we get $\blim_{y \to +\infty} f(y) = +\infty$, hence $f$ is unbounded above.
+\end{pro}
+
+\vocab{Claim 3:} $f(x) > 1$ for all $x \in \mathbb{R}$.
+\begin{pro}
+    Assume there exists $a$ such that $f(a) \leq 1$. Using the estimate from above, substitute $P(a,y)$:
+    \[
+        f(y) > \frac{y - 1}{f(a)} \geq y - 1 \Rightarrow f(y) > y - 1
+    \]
+    Substituting $y = 1$, we obtain:
+    \[
+        f(x + f(x)) = f(x)f(1) < f(x)
+    \]
+    This contradicts $f$ being increasing, hence $f(x) > 1$ for all $x > 0$.
+\end{pro}
+
+\vocab{Claim 4:} $\blim_{x \to 0^+} f(x) = 1$.
+\begin{pro}
+    Extend $f$ continuously to $x_0 = 0$, i.e., $\blim_{x \to 0} f(x) = f(0)$. For $x < y$, we have:
+    \[
+        f(x + f(xy)) + y > f(x)f(y) \Rightarrow f(x) < \frac{f(x + f(xy)) + y}{f(y)} < \frac{f(x + f(xy)) + y}{f(x)}, \quad x < y
+    \]
+    \[
+        \begin{aligned}
+            f(x)^2 &< f(x + f(xy)) + y \\
+            &< f(x + f(y^2)) + y, \quad x < y,(3)
+        \end{aligned}
+    \]
+    According to the Archimedean property, there exists $k > 1$ such that $(k - 1)y > (k - 1)x > f(y^2) \Rightarrow y > x > \frac{f(y^2)}{k - 1}$, i.e., $x + f(y^2) < kx$. Using this estimate in $(3)$, we get:
+    \[
+        f(x)^2 < f(kx) + y, \quad x < y
+    \]
+    Letting $y \to 0$, we obtain:
+    \[
+        f(0)^2 \leq f(0)
+    \]
+    If $f(0) < 0$, it leads to a contradiction, hence $f(0) \geq 0$. Also, $f(0) > 1$, thus $f(0) = 1$.
+    \end{pro}
+        From the problem statement, as $x \to 0$, we have $f(1) + y = f(y) + 1 \Rightarrow f(y) = y + c$ with $c \geq 1$. Substituting back into the problem, we find $c = 1$. Therefore, the unique function that satisfies these conditions is $\boxed{f(x) = x + 1}$.
+    \end{sol}
+
+    \begin{bt}
+        Find all continuous functions $f: \mathbb{R} \rightarrow \mathbb{R}$ which satisfy the following equation for all $x \in \mathbb{R}$:
+        $$f(-x) = 1 + \int _0 ^x \sin t f(x-t) dt.$$
+    \end{bt}
+    \begin{sol}
+        Replacing $t$ by $x-t$ in the given equation$$f(-x)=1+\int_0^x\sin(x-t)f(t)dt$$From here we can see $f(0)=1$. Now differentiating w.r.t. $x$$$-f'(-x)=\int_0^x\cos(x-t)f(t)dt$$From here we can see that $f'(0)=0$. Now again differentiating w.r.t. $x$$$f''(-x)=f(x)-\int_0^x\sin(x-t)f(t)dt=f(x)+1-f(-x)$$Now if we replace $x$ by $-x$ above, we get $\boxed{f''(x)=f(-x)+1-f(x)}$. Adding these two we must have $f''(x)+f''(-x)=2$. Now differentiating the boxed expression twice w.r.t. $x$, we have $f''''(x)=f''(-x)-f''(x)$. So eliminating $f''(-x)$ from these we have$$f''''(x)+2f''(x)-2=0$$along with initial conditions $f(0)=1$ and $f'(0)=0$ and $f''(0)=1$ and $f'''(0)=0$. Solving we have$$\boxed{f(x)=1+\frac{x^2}{2}}$$
+    \end{sol}
+
+    \newpage
+    \section{\LARGE{Homeworks}}
+    \item \begin{btvn}\vocab{(APMO 2023).}
+        Let the positive real number $c > 0$. Find all functions $f: \mathbb{R^+} \to \mathbb{R^+}$ that satisfy
+        \[
+            f((c + 1)x +f(y)) = f(x + 2y) +2cx
+        \]
+        for all positive real numbers $x,y$.
+    \end{btvn}
+
+    \item \begin{btvn}\vocab{(Vietnam TST 2014).} Find all functions $f: \mathbb{Z} \to \mathbb{Z}$ that satisfy
+        \[ f(2m+f(m)+f(m)f(n))=nf(m)+m \]
+    for all integers $m,n$
+    \end{btvn}
+    \item \begin{btvn}\vocab{(AOPS).}
+        Find all functions $f: \mathbb{R} \to \mathbb{R}$ that satisfy $f(x + 1) =f(x) + 1$ and
+        \[
+            f(x^{2024} + x^{2023} + \dots + x + 1) = (f(x))^{2024} + (f(x))^{2023} + \dots + f(x) + 1
+        \]
+    \end{btvn}
+    \begin{btvn}\vocab{(IMO Shortlist 2014 A4).}
+        Determine all functions $f: \mathbb{Z}\to\mathbb{Z}$ satisfying\[f\big(f(m)+n\big)+f(m)=f(n)+f(3m)+2014\]for all integers $m$ and $n$.
+    \end{btvn}
+    \item \begin{btvn}\vocab{(IMO Shortlist 2018 A5).}
+        Determine all functions $f:(0,\infty)\to\mathbb{R}$ satisfying$$\left(x+\frac{1}{x}\right)f(y)=f(xy)+f\left(\frac{y}{x}\right)$$for all $x,y>0$.
+    \end{btvn}
+    \item \begin{btvn}\vocab{(IMO Shortlist 2016 A7).}
+        Find all functions $f:\mathbb{R}\rightarrow\mathbb{R}$ such that $f(0)\neq 0$ and for all $x,y\in\mathbb{R}$,
+\[ f(x+y)^2 = 2f(x)f(y) + \max \left\{ f(x^2+y^2), f(x^2)+f(y^2) \right\}. \]
+    \end{btvn}
+    \item \begin{btvn}\vocab{(IMO Shortlist 2017 A8).}
+        A function $f:\mathbb{R} \to \mathbb{R}$ has the following property:
+        $$\text{For every } x,y \in \mathbb{R} \text{ such that }(f(x)+y)(f(y)+x) > 0, \text{ we have } f(x)+y = f(y)+x.$$Prove that $f(x)+y \leq f(y)+x$ whenever $x>y$.
+    \end{btvn}
+    \item \begin{btvn}\textbf{(VMO 2023)} Find all pairs of functions \( f, g:\mathbb{R} \to \mathbb{R} \) satisfying \( f(0) = 2022 \) and
+    \[ f(x+g(y)) = xf(y) + (2023-y)f(x) + g(x) \]
+    for all real numbers \( x, y \).
+\end{btvn}
+\begin{btvn}\vocab{(IMO Shortlist 2014 A6).}
+    Find all functions $f : \mathbb{Z} \to\mathbb{ Z}$ such that
+\[ n^2+4f(n)=f(f(n))^2 \]
+for all $n\in \mathbb{Z}$.
+
+\end{btvn}
+    \item \begin{btvn}\vocab{(Baltic Way 2012).}
+        Find all functions $f:\mathbb{Z^+} \to \mathbb{Z^+}$ satisfying the condition
+$$ f(a) + f(b) \mid (a + b)^2$$for all $a,b \in \mathbb{Z^+}$
+    \end{btvn}
+    \item \begin{btvn}\vocab{(IMO Shortlist 2022 A3).}
+        Find all functions $f: \mathbb{R}^+ \to \mathbb{R}^+$ such that for each $x \in \mathbb{R}^+$, there is exactly one $y \in \mathbb{R}^+$ satisfying$$xf(y)+yf(x) \leq 2$$
+    \end{btvn}
+    \item \begin{btvn}\vocab{(Balkan MO 2019).}
+        Let $\mathbb{P}$ be the set of all prime numbers. Find all functions $f:\mathbb{P}\rightarrow\mathbb{P}$ such that:
+$$f(p)^{f(q)}+q^p=f(q)^{f(p)}+p^q$$holds for all $p,q\in\mathbb{P}$.
+    \end{btvn}
+\end{itemize}
+\end{document}

@@ -1634,7 +1634,51 @@ Một điểm xoáy là một nút khác với $A$ và nếu hai cạnh trên tu
         }
         \]
     \end{sol}
+    \item \begin{bt}\vocab{(IMO Shortlist 2015 A4).}
+        Tìm tất cả các hàm số $f: \mathbb{Z}\to \mathbb{Z}$ thỏa mãn
+        \[
+           f(m - f(n))  = f(f( m)) - f(n) -1\tag{1}
+        \]
+        với mọi số nguyên $m,n$.
+    \end{bt}
+    \begin{sol}
+        Ký hiệu $P(m,n)$ chỉ phép thế vào $(1)$. 
 
+        $P(m,f(m)) \ra f(m - f(f(m))) = -1$. Suy ra tồn tại $a \in \bb{Z}$ để $f(a) = -1$. 
+
+        $P(m,a) \ra f(m + 1) = f(f(m)),\forall m,n\in \bb{Z}$
+
+        Viết lại có 
+        \[
+            f(m - f(n)) = f( m + 1) -f(n) - 1, \forall m,n \in \bb{Z}
+        \]
+        Đặt $k = f(n) + 1$. Thay $m \to m + f(n)$ ta được 
+        \[
+            f(m) =  f(m + k) -k \lra f(m + k) = f(m) +k
+        \]
+        Bằng quy nạp, ta chứng minh được $f(m + nk) = f(m) + nk, n \in \bb{Z^+}$
+
+        Thay $m \to m - nk$ ta được $f(m - nk) = f(m) - nk, \forall n \in \bb{Z^+}$. Do đó 
+        \[
+            f(m + nk) = f(m) + nk, \forall m,n \in \bb{Z}
+        \]
+    \end{sol}
+    \item \begin{bt}\vocab{(IMO 2012).}
+        Tìm tất cả các hàm số $f: \mathbb{Z} \to \mathbb{Z}$ thỏa mãn
+        \[
+          f(a)^2 + f(b)^2 + f(c)^2 = 2f(a)f(b) + 2f(b)f(c) + 2f(c)f(a)
+        \]
+        với mọi số nguyên $a,b,c$ thỏa mãn $a + b + c = 0$.
+    \end{bt}
+    
+    
+    
+        \item \begin{bt}\vocab{(Japan MO Final 2019).}
+            Tìm tất cả các hàm số $f: \mathbb{R}^+\rightarrow \mathbb{R}^+$ thỏa mãn
+            \[f\left(\frac{f(y)}{f(x)}+1\right)=f\left(x+\frac{y}{x}+1\right)-f(x)\]
+        \end{bt}
+    
+    
     \item \begin{bt}\vocab{(VMO 2022).}
         Tìm tất cả hàm số $f: \mathbb{R}^{+} \rightarrow \mathbb{R}^{+}$thỏa mãn
         \[
@@ -1646,7 +1690,7 @@ Một điểm xoáy là một nút khác với $A$ và nếu hai cạnh trên tu
     \begin{sol}
         Ký hiệu $P(x,y)$ chỉ phép thế vào $(1)$.
 
-        \vocab{Cách 1 (Phạm Bảo):}
+        \vocab{Cách 1:}
 
         Gọi $\bb{T} =\left\{\frac{f(x)}{x}| x \in \bb{R^+}\right\}$. Giả sử $T$ nhận nhiều hơn một giá trị. Gọi $t_1, t_2 \in \bb{T}$ sao cho $t_1 > t_2$. Khi đó tồn tại $a_1,a_2 > 0$ sao cho $t_1 = \frac{f(a_1)}{a_1}, t_2 = \frac{f(a_2)}{a_2}$. Lần lượt $P(a_1,y)$, $P(a_2,y)$ và so sánh, ta được 
         \[
@@ -1741,9 +1785,9 @@ Một điểm xoáy là một nút khác với $A$ và nếu hai cạnh trên tu
         $$
         \frac{f(x)}{x}=c \Longrightarrow f(x)=c x \quad \forall x>0
         $$
-        Từ đây tìm được $c = 1$. Vậy hàm duy nhất thỏa mãn là $\boxed{f(x) = cx, \xro}$.
+        Từ đây tìm được $c = 1$. Vậy hàm duy nhất thỏa mãn là $\boxed{f(x) = x, \xro}$.
     \end{sol}
-    \newpage
+
     \item \begin{bt}\vocab{(Balkan MO 2022).}
         Tìm tất cả hàm số $f: \mathbb{R}^{+} \rightarrow \mathbb{R}^{+}$thỏa mãn
         \[
@@ -1816,13 +1860,6 @@ Một điểm xoáy là một nút khác với $A$ và nếu hai cạnh trên tu
         \]
         Vậy hàm số duy nhất thỏa mãn là $\boxed{f(x) =x ,\xro}$.
     \end{sol}
-    \item \begin{bt}\vocab{(Czech-Polish-Slovak Match 2022).}
-         Tìm tất cả hàm số $f: \mathbb{R}^{+} \rightarrow \mathbb{R}^{+}$thỏa mãn
-        $$
-        f\left(f(x)+\frac{y+1}{f(y)}\right)=\frac{1}{f(y)}+x+1
-        $$
-        với mọi số thực dương $x, y$.
-    \end{bt}
     \item \begin{bt}\vocab{(Switzerland TST 2022).}
          Tìm tất cả hàm số $f: \mathbb{R}^{+} \rightarrow \mathbb{R}^{+}$thỏa mãn
         $$
@@ -1834,20 +1871,67 @@ Một điểm xoáy là một nút khác với $A$ và nếu hai cạnh trên tu
         Ký hiệu $P(x,y)$ chỉ phép thế vào $(1)$.
     
     
-        $P\left(x,\frac{y}{f(x)}\right) \ra x + f(y + 1) = xf\left(x + \frac{y}{f(x)}\right) + \frac{y}{f(x)}f(y),\yro$
-
-        $P(1,1) \ra 1 + f(1 + 1) = f(1 + 1) + f(f(x)) \ra f(f(1)) = 1 $. Đặt $a = f(1) \ra f(a) = 1$.
-
-        $P(a,y) \ra a + f(y + 1) = af(a + y) + yf(y),\yr$
-
-        $P(x,1) \ra x + f(f(x) + 1) = xf(x + 1) + f(f(x))$.
-
-        Giả sử có $f(a)=f(b)$ mà $a > b$. Đặt $d = a - b$, ta có 
         
-        $P(a,y),P(b,y) \ra a - af(a + y) = b - bf(b + y) \lra f(y + a) = f(y + b) +1,\yro$.
 
+        \vocab{Nhận xét 1:} $f$ không bị chặn trên.
+        \begin{proof}
+            Từ $P\left(x,\frac{y}{f(x)} - 1\right)$ suy ra \[f(y) = xf\left(x + \frac{y-1}{f(x)}\right) + \frac{y - 1}{f(x)}f(y - 1) - x,\xro, y > 1 \tag{2}
+            \]
+            Từ $(2)$ ta cho $y \to +\infty$ thì vế phải $\to +\infty$ nên $\blim_{y \to +\infty} f(y) = +\infty$.
+        \end{proof}
+
+        \vocab{Nhận xét 2:} $f$ đơn ánh trên $\bb{R^+}$
+        \begin{proof}
+            Giả sử có $f(a)=f(b)$ mà $a > b$. Đặt $d = a - b,q = \frac{b}{a}, r= \frac{d}{a}$, ta có $d,q,r > 0$ và $q < 1$.
         
-        
+            Thay lần lượt $P(a,x),P(b,x) \ra a - af(a + x) = b - bf(b + x)$. 
+
+            Cho $x \to x -b$ và đặt $\delta = 4b$ là một số đủ lớn, ta được 
+            \[
+                f(x + d) = qf(x) + r, \forall x > \delta \tag{$\clubsuit$ }
+            \]
+
+            Ta phát biểu và chứng minh bổ đề sau:
+            \begin{lemma}
+                Xét hàm số $f: \bb{R^+} \to \bb{R^+}$ thỏa mãn 
+                \[
+                    f(x + d) = qf(x) + r, \forall x > M
+                \]
+                với $M$ là một số thực dương đủ lớn với $q < 1$ và $d,r > 0$. Khi đó $\blim_{x \to +\infty} f(x) = \frac{r}{1 - q}$.
+            \end{lemma}
+            \begin{proof}
+            Thay $x \to x + d$ thì được \[f(x + 2d) = qf(x + d) + r = q(qf(x) + r) +r = q^2f(x) + qr + r, \forall x > \delta\]
+
+            Ta sẽ chứng minh điều này đúng bằng quy nạp khi thay $2$ bởi $n$. Giả sử có \[f(x + nd) = q^nf(x) + r\dsum_{i = 0}^n q^i, \forall x > \delta\tag{3}\]
+
+            Từ $(3)$ thay $x \to x + d$ ta được 
+            \[
+                f(x + (n + 1)d) = q^nf(x + d) + r\dsum_{i = 0}^n q^i = q^n(qf(x) +r) +  r\dsum_{i = 0}^n q^i = q^{n + 1}f(x) +  r\dsum_{i = 0}^{n + 1} q^i
+            \]
+            Vậy là giả thuyết quy nạp được chứng minh.
+
+            Từ $(3)$ ta viết lại 
+            \[
+                f(x + nd) = q^nf(x) + r.\frac{1 - q^{n}}{1 - q}, \forall x > \delta \tag{4}
+            \]
+            Từ $(4)$ cho $n \to +\infty$ với chú ý $q < 1$ ta có 
+            \[
+                \lim_{x \to +\infty} f(x) = \dlim f(x + nd) = \frac{r}{1 - q}
+            \]
+            Hoàn tất chứng minh.
+            \end{proof}
+            Áp dụng bổ đề trên cho $(\clubsuit)$ thì ta được $\blim_{x \to +\infty} f(x) = \frac{r}{1 - q}$.
+
+            Nhưng theo \vocab{nhận xét 2} thì $f$ không bị chặn trên và $\blim_{x \to +\infty}f(x) = +\infty$ nên dẫn tới vô lý.
+
+            Suy ra $q = 1$ hay $d = 0 \ra a = b$. Thế nên $f$ đơn ánh trên $\bb{R^+}$.
+        \end{proof}
+
+        Từ $(1)$ thay $P\left(x,\frac{y}{f(x)}\right)$ suy ra \[x + f(y + 1) = xf\left(x + \frac{y}{f(x)}\right) + \frac{y}{f(x)}f(y) ,\xyro \]
+
+        Cho $x = y = 1$ ta được $f(2) = f(1 + \frac{1}{f(1)})$. Vì $f$ đơn ánh nên $f(1) = 1$. 
+
+        Từ $(1)$ thay $P(1,x) \ra f(x) = \frac{1}{x}, \xro$. Thử lại thì thỏa mãn. Vậy hàm duy nhất thỏa mãn là $\boxed{f(x) = \frac{1}{x}, \xro}$. 
        \end{sol}
     \item \begin{bt}\vocab{(Taiwan TST 2022, Round 2).}
         Tìm tất cả hàm số $f: \mathbb{R}^{+} \rightarrow \mathbb{R}^{+}$thỏa mãn
@@ -1856,29 +1940,13 @@ Một điểm xoáy là một nút khác với $A$ và nếu hai cạnh trên tu
         $$
         với mọi số thực dương $x, y$.
    \end{bt}
-   
-   \item \begin{bt}\vocab{(IMO Shortlist 2015 A4).}
-    Tìm tất cả các hàm số $f: \mathbb{Z}^+ \to \mathbb{Z}^+$ thỏa mãn
-    \[
-       f(m - f(n))  = f(f(m)) - f(n) -1
-    \]
-    với mọi số nguyên dương $x,y$.
+   \item \begin{bt}\vocab{(Czech-Polish-Slovak Match 2022).}
+    Tìm tất cả hàm số $f: \mathbb{R}^{+} \rightarrow \mathbb{R}^{+}$thỏa mãn
+   $$
+   f\left(f(x)+\frac{y+1}{f(y)}\right)=\frac{1}{f(y)}+x+1
+   $$
+   với mọi số thực dương $x, y$.
 \end{bt}
-\item \begin{bt}\vocab{(IMO 2012).}
-    Tìm tất cả các hàm số $f: \mathbb{Z} \to \mathbb{Z}$ thỏa mãn
-    \[
-      f(a)^2 + f(b)^2 + f(c)^2 = 2f(a)f(b) + 2f(b)f(c) + 2f(c)f(a)
-    \]
-    với mọi số nguyên $a,b,c$ thỏa mãn $a + b + c = 0$.
-\end{bt}
-
-
-
-    \item \begin{bt}\vocab{(Japan MO Final 2019).}
-        Tìm tất cả các hàm số $f: \mathbb{R}^+\rightarrow \mathbb{R}^+$ thỏa mãn
-        \[f\left(\frac{f(y)}{f(x)}+1\right)=f\left(x+\frac{y}{x}+1\right)-f(x)\]
-    \end{bt}
-
 
     \item \begin{bt}\vocab{(Japan MO Final 2021).}
         Tìm tất cả các hàm số $f: \mathbb{Z}^+\rightarrow \mathbb{Z}^+$ thỏa mãn hai điều kiện sau
