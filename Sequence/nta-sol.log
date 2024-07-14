@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.28)  14 JUL 2024 18:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.28)  14 JUL 2024 09:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"d:/Toan Latex/500/nta-sol.tex"
-(d:/Toan Latex/500/nta-sol.tex
+**"d:/Toan Latex/500/Sequence/nta-sol.tex"
+(d:/Toan Latex/500/Sequence/nta-sol.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrartcl.cls
@@ -1321,15 +1321,6 @@ LaTeX Warning: Label `-' multiply defined.
 
 LaTeX Warning: Label `-' multiply defined.
 
-
-LaTeX Warning: Label `-' multiply defined.
-
-
-LaTeX Warning: Label `-' multiply defined.
-
-
-LaTeX Warning: Label `-' multiply defined.
-
 )
 \openout1 = `nta-sol.aux'.
 
@@ -1516,78 +1507,13 @@ Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-))
-<Image/bia/bia.pdf, id=6, 597.73312pt x 845.40843pt>
-File: Image/bia/bia.pdf Graphic file (type pdf)
-<use Image/bia/bia.pdf>
-Package pdftex.def Info: Image/bia/bia.pdf  used on input line 17.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: Image/bia/bia.pdf Graphic file (type pdf)
-<use Image/bia/bia.pdf>
-Package pdftex.def Info: Image/bia/bia.pdf  used on input line 17.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-<Image/bia/bia.pdf, id=9, page=1, 597.73312pt x 845.40843pt>
-File: Image/bia/bia.pdf Graphic file (type pdf)
-<use Image/bia/bia.pdf, page 1>
-Package pdftex.def Info: Image/bia/bia.pdf , page1 used on input line 17.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: Image/bia/bia.pdf Graphic file (type pdf)
-<use Image/bia/bia.pdf, page 1>
-Package pdftex.def Info: Image/bia/bia.pdf , page1 used on input line 17.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: Image/bia/bia.pdf Graphic file (type pdf)
-<use Image/bia/bia.pdf, page 1>
-Package pdftex.def Info: Image/bia/bia.pdf , page1 used on input line 17.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: Image/bia/bia.pdf Graphic file (type pdf)
-<use Image/bia/bia.pdf, page 1>
-Package pdftex.def Info: Image/bia/bia.pdf , page1 used on input line 17.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: Image/bia/bia.pdf Graphic file (type pdf)
-<use Image/bia/bia.pdf, page 1>
-Package pdftex.def Info: Image/bia/bia.pdf , page1 used on input line 17.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
- [1
-
-
- <./Image/bia/bia.pdf>] (nta-sol.toc)
+)) (nta-sol.toc)
 \tf@toc=\write7
 \openout7 = `nta-sol.toc'.
 
-<Image/bia/1.pdf, id=237, 597.73312pt x 845.40843pt>
-File: Image/bia/1.pdf Graphic file (type pdf)
-<use Image/bia/1.pdf>
-Package pdftex.def Info: Image/bia/1.pdf  used on input line 24.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: Image/bia/1.pdf Graphic file (type pdf)
-<use Image/bia/1.pdf>
-Package pdftex.def Info: Image/bia/1.pdf  used on input line 24.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-<Image/bia/1.pdf, id=240, page=1, 597.73312pt x 845.40843pt>
-File: Image/bia/1.pdf Graphic file (type pdf)
-<use Image/bia/1.pdf, page 1>
-Package pdftex.def Info: Image/bia/1.pdf , page1 used on input line 24.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: Image/bia/1.pdf Graphic file (type pdf)
-<use Image/bia/1.pdf, page 1>
-Package pdftex.def Info: Image/bia/1.pdf , page1 used on input line 24.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
- [2{C:/Users/WIN10/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-t5.enc}]
-File: Image/bia/1.pdf Graphic file (type pdf)
-<use Image/bia/1.pdf, page 1>
-Package pdftex.def Info: Image/bia/1.pdf , page1 used on input line 24.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: Image/bia/1.pdf Graphic file (type pdf)
-<use Image/bia/1.pdf, page 1>
-Package pdftex.def Info: Image/bia/1.pdf , page1 used on input line 24.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: Image/bia/1.pdf Graphic file (type pdf)
-<use Image/bia/1.pdf, page 1>
-Package pdftex.def Info: Image/bia/1.pdf , page1 used on input line 24.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
- [3
+ [1
 
- <./Image/bia/1.pdf>]
+{C:/Users/WIN10/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-t5.enc}]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 33.
@@ -1595,69 +1521,54 @@ LaTeX Font Info:    Font shape `T5/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T5/lmss/m/sl' tried instead on input line 33.
 LaTeX Font Info:    Font shape `T5/lmss/bx/it' in size <10.95> not available
 (Font)              Font shape `T5/lmss/bx/sl' tried instead on input line 33.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 33.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 34.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 33.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 34.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 33.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 34.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 33.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 34.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 33.
+(Font)              <10.95> on input line 34.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 33.
+(Font)              <8> on input line 34.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 33.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
+(Font)              <6> on input line 34.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Image/P1.1.pdf, id=289, 188.20313pt x 188.20311pt>
-File: Image/P1.1.pdf Graphic file (type pdf)
-<use Image/P1.1.pdf>
-Package pdftex.def Info: Image/P1.1.pdf  used on input line 38.
-(pdftex.def)             Requested size: 94.10132pt x 94.10132pt.
-<Image/P1.2.pdf, id=290, 188.95593pt x 188.20311pt>
-File: Image/P1.2.pdf Graphic file (type pdf)
-<use Image/P1.2.pdf>
-Package pdftex.def Info: Image/P1.2.pdf  used on input line 40.
-(pdftex.def)             Requested size: 94.47772pt x 94.10132pt.
-<Image/P1.3.pdf, id=291, 377.15906pt x 377.15906pt>
-File: Image/P1.3.pdf Graphic file (type pdf)
-<use Image/P1.3.pdf>
-Package pdftex.def Info: Image/P1.3.pdf  used on input line 54.
-(pdftex.def)             Requested size: 75.43047pt x 75.43047pt.
-<Image/P1.4.pdf, id=292, 377.15906pt x 377.15906pt>
-File: Image/P1.4.pdf Graphic file (type pdf)
-<use Image/P1.4.pdf>
-Package pdftex.def Info: Image/P1.4.pdf  used on input line 56.
-(pdftex.def)             Requested size: 75.43047pt x 75.43047pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 52.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.59     \newpage
-                  [1{C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <./Image/P1.1.pdf> <./Image/P1.2.pdf> <./Image/P1.3.pdf> <./Image/P1.4.pdf>]
+l.73         (
+              b) V·ªõi ch√∫ √Ω $u_{n} > \sqrt{2},\forall n\geq 1$, ta c√≥ [1{C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 60.
-Package mdframed Info: Not enough space on this page on input line 63.
+(mdframed)              on input line 83.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 81.
+(mdframed)              on input line 95.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 115.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.bdg
 File: UTF8.bdg 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
@@ -1665,699 +1576,212 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-LaTeX Font Info:    Trying to load font information for C70+ipxm on input line 101.
+LaTeX Font Info:    Trying to load font information for C70+ipxm on input line 117.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/ipaex-type1\c70ipxm.fd
 File: c70ipxm.fd 2018/05/05 v0.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/ipaex-type1\c70ipxm.fdx
 File: c70ipxm.fdx 2018/05/05 v0.5
 )
-LaTeX Font Info:    Trying to load font information for T5+lmr on input line 101.
+LaTeX Font Info:    Trying to load font information for T5+lmr on input line 117.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/lm\t5lmr.fd
 File: t5lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.101         K
-               hi n√†y theo s·ª± li√™n t·ª•c trong r·ªùi r·∫°c th√¨ s·∫Ω t·ª... [2{C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u30.enc}]
-<Image/P3.pdf, id=328, 376.40625pt x 376.40625pt>
-File: Image/P3.pdf Graphic file (type pdf)
-<use Image/P3.pdf>
-Package pdftex.def Info: Image/P3.pdf  used on input line 103.
-(pdftex.def)             Requested size: 150.55983pt x 150.55983pt.
+) [2{C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u30.enc}]
+Package mdframed Info: Not enough space on this page on input line 117.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 110.
+(mdframed)              on input line 127.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-)
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.162         \]
-                 [3{C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc} <./Image/P3.pdf>]
-<Image/1993.pdf, id=338, 246.69164pt x 242.1246pt>
-File: Image/1993.pdf Graphic file (type pdf)
-<use Image/1993.pdf>
-Package pdftex.def Info: Image/1993.pdf  used on input line 212.
-(pdftex.def)             Requested size: 172.68295pt x 169.48605pt.
+) [3]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 154.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 158.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 176.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 190.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [4 <./Image/1993.pdf>]
+) [4]
+Package mdframed Info: Not enough space on this page on input line 210.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 220.
-Package mdframed Info: Not enough space on this page on input line 222.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 234.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 262.
+(mdframed)              on input line 242.
+LaTeX Font Info:    Font shape `T5/lmss/m/it' in size <8> not available
+(Font)              Font shape `T5/lmss/m/sl' tried instead on input line 244.
+LaTeX Font Info:    Font shape `T5/lmss/m/it' in size <6> not available
+(Font)              Font shape `T5/lmss/m/sl' tried instead on input line 244.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 ) [5]
-Package mdframed Info: Not enough space on this page on input line 264.
+Package mdframed Info: Not enough space on this page on input line 250.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 281.
+(mdframed)              on input line 265.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 284.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [6] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
+) [6]
+Package mdframed Info: Not enough space on this page on input line 293.
+ (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 ) [7]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 362.
+(mdframed)              on input line 393.
+Package mdframed Info: Not enough space on this page on input line 402.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 ) [8]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 408.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 420.
+Package mdframed Info: Not enough space on this page on input line 402.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [9]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 447.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
+) [9] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 ) [10]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 478.
+(mdframed)              on input line 517.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 507.
+(mdframed)              on input line 532.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [11] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
+) [11]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 548.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 564.
+ (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 ) [12]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 564.
+(mdframed)              on input line 581.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 609.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 616.
+(mdframed)              on input line 600.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [13] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [14] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [15] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [16] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [17] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [18]
-<Image/2017.pdf, id=518, 113.81522pt x 95.17557pt>
-File: Image/2017.pdf Graphic file (type pdf)
-<use Image/2017.pdf>
-Package pdftex.def Info: Image/2017.pdf  used on input line 856.
-(pdftex.def)             Requested size: 170.72238pt x 142.76295pt.
+) [13]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 613.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 629.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 639.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [19] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [20 <./Image/2017.pdf>]
+) [14]
+Package mdframed Info: Not enough space on this page on input line 644.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 898.
-<Image/ex1.pdf, id=554, 244.66406pt x 257.46187pt>
-File: Image/ex1.pdf Graphic file (type pdf)
-<use Image/ex1.pdf>
-Package pdftex.def Info: Image/ex1.pdf  used on input line 920.
-(pdftex.def)             Requested size: 139.45995pt x 146.75478pt.
+(mdframed)              on input line 679.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [21 <./Image/ex1.pdf>]
-<Image/trucngang.pdf, id=579, 244.66406pt x 257.46187pt>
-File: Image/trucngang.pdf Graphic file (type pdf)
-<use Image/trucngang.pdf>
-Package pdftex.def Info: Image/trucngang.pdf  used on input line 924.
-(pdftex.def)             Requested size: 139.45995pt x 146.75478pt.
-<Image/+.pdf, id=580, 244.66406pt x 257.46187pt>
-File: Image/+.pdf Graphic file (type pdf)
-<use Image/+.pdf>
-Package pdftex.def Info: Image/+.pdf  used on input line 930.
-(pdftex.def)             Requested size: 139.45995pt x 146.75478pt.
-<Image/tam.pdf, id=581, 244.66406pt x 257.46187pt>
-File: Image/tam.pdf Graphic file (type pdf)
-<use Image/tam.pdf>
-Package pdftex.def Info: Image/tam.pdf  used on input line 934.
-(pdftex.def)             Requested size: 139.45995pt x 146.75478pt.
+) [15]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 701.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [22 <./Image/trucngang.pdf> <./Image/+.pdf> <./Image/tam.pdf>]
+) [16]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 942.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 967.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [23]
-<Image/x.pdf, id=642, 296.60812pt x 127.22531pt>
-File: Image/x.pdf Graphic file (type pdf)
-<use Image/x.pdf>
-Package pdftex.def Info: Image/x.pdf  used on input line 993.
-(pdftex.def)             Requested size: 148.3037pt x 63.61249pt.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [24 <./Image/x.pdf>] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [25]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1054.
-
-
-pdfTeX warning: pdflatex (file ./Image/7.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Image/7.pdf, id=683, 794.97pt x 614.295pt>
-File: Image/7.pdf Graphic file (type pdf)
-<use Image/7.pdf>
-Package pdftex.def Info: Image/7.pdf  used on input line 1064.
-(pdftex.def)             Requested size: 190.79669pt x 147.4338pt.
-(C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [26 <./Image/7.pdf>]
-
-pdfTeX warning: pdflatex (file ./Image/8.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Image/8.pdf, id=708, 794.97pt x 614.295pt>
-File: Image/8.pdf Graphic file (type pdf)
-<use Image/8.pdf>
-Package pdftex.def Info: Image/8.pdf  used on input line 1073.
-(pdftex.def)             Requested size: 174.89394pt x 135.14531pt.
-<Image/kphec.pdf, id=709, 526.96875pt x 406.51875pt>
-File: Image/kphec.pdf Graphic file (type pdf)
-<use Image/kphec.pdf>
-Package pdftex.def Info: Image/kphec.pdf  used on input line 1086.
-(pdftex.def)             Requested size: 131.74185pt x 101.62943pt.
-(C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [27 <./Image/8.pdf> <./Image/kphec.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1097.
-<Image/tst.pdf, id=727, 376.40625pt x 376.40625pt>
-File: Image/tst.pdf Graphic file (type pdf)
-<use Image/tst.pdf>
-Package pdftex.def Info: Image/tst.pdf  used on input line 1121.
-(pdftex.def)             Requested size: 112.92273pt x 112.92273pt.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [28] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [29 <./Image/tst.pdf>]
-LaTeX Font Info:    Font shape `T5/lmss/m/it' in size <8> not available
-(Font)              Font shape `T5/lmss/m/sl' tried instead on input line 1203.
-LaTeX Font Info:    Font shape `T5/lmss/m/it' in size <6> not available
-(Font)              Font shape `T5/lmss/m/sl' tried instead on input line 1203.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [30] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [31] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [32] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [33] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [34] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [35]
-<Image/IMO2023.pdf, id=840, 120.00835pt x 126.54276pt>
-File: Image/IMO2023.pdf Graphic file (type pdf)
-<use Image/IMO2023.pdf>
-Package pdftex.def Info: Image/IMO2023.pdf  used on input line 1438.
-(pdftex.def)             Requested size: 120.00803pt x 126.54243pt.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [36 <./Image/IMO2023.pdf>]
-<Image/bia/2.pdf, id=858, 597.73312pt x 845.40843pt>
-File: Image/bia/2.pdf Graphic file (type pdf)
-<use Image/bia/2.pdf>
-Package pdftex.def Info: Image/bia/2.pdf  used on input line 1446.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: Image/bia/2.pdf Graphic file (type pdf)
-<use Image/bia/2.pdf>
-Package pdftex.def Info: Image/bia/2.pdf  used on input line 1446.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-<Image/bia/2.pdf, id=861, page=1, 597.73312pt x 845.40843pt>
-File: Image/bia/2.pdf Graphic file (type pdf)
-<use Image/bia/2.pdf, page 1>
-Package pdftex.def Info: Image/bia/2.pdf , page1 used on input line 1446.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: Image/bia/2.pdf Graphic file (type pdf)
-<use Image/bia/2.pdf, page 1>
-Package pdftex.def Info: Image/bia/2.pdf , page1 used on input line 1446.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: Image/bia/2.pdf Graphic file (type pdf)
-<use Image/bia/2.pdf, page 1>
-Package pdftex.def Info: Image/bia/2.pdf , page1 used on input line 1446.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: Image/bia/2.pdf Graphic file (type pdf)
-<use Image/bia/2.pdf, page 1>
-Package pdftex.def Info: Image/bia/2.pdf , page1 used on input line 1446.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: Image/bia/2.pdf Graphic file (type pdf)
-<use Image/bia/2.pdf, page 1>
-Package pdftex.def Info: Image/bia/2.pdf , page1 used on input line 1446.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
- [37
-
- <./Image/bia/2.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1450.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1476.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [38] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [39]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1602.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [40]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1648.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [41]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1711.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [42]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1739.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [43]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1818.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [44]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1847.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1857.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1863.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [45] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [46]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1972.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [47] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [48]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2044.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [49]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2117.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2124.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2132.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [50] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [51] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [52] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [53]
-<Image/bia/3.pdf, id=1016, 597.73312pt x 845.40843pt>
-File: Image/bia/3.pdf Graphic file (type pdf)
-<use Image/bia/3.pdf>
-Package pdftex.def Info: Image/bia/3.pdf  used on input line 2289.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: Image/bia/3.pdf Graphic file (type pdf)
-<use Image/bia/3.pdf>
-Package pdftex.def Info: Image/bia/3.pdf  used on input line 2289.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-<Image/bia/3.pdf, id=1019, page=1, 597.73312pt x 845.40843pt>
-File: Image/bia/3.pdf Graphic file (type pdf)
-<use Image/bia/3.pdf, page 1>
-Package pdftex.def Info: Image/bia/3.pdf , page1 used on input line 2289.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: Image/bia/3.pdf Graphic file (type pdf)
-<use Image/bia/3.pdf, page 1>
-Package pdftex.def Info: Image/bia/3.pdf , page1 used on input line 2289.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: Image/bia/3.pdf Graphic file (type pdf)
-<use Image/bia/3.pdf, page 1>
-Package pdftex.def Info: Image/bia/3.pdf , page1 used on input line 2289.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: Image/bia/3.pdf Graphic file (type pdf)
-<use Image/bia/3.pdf, page 1>
-Package pdftex.def Info: Image/bia/3.pdf , page1 used on input line 2289.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: Image/bia/3.pdf Graphic file (type pdf)
-<use Image/bia/3.pdf, page 1>
-Package pdftex.def Info: Image/bia/3.pdf , page1 used on input line 2289.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
- [54
-
- <./Image/bia/3.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2292.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2311.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [55]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2342.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2354.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [56]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2381.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [57]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2393.
-Package mdframed Info: Not enough space on this page on input line 2400.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2405.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2412.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [58]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2442.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2446.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [59]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2468.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [60] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [61] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [62] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [63] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [64]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2743.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2758.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [65]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2774.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2790.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [66]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2807.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2826.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [67]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2839.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2855.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2865.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [68]
-Package mdframed Info: Not enough space on this page on input line 2870.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2905.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [69]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2927.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [70]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2960.
+(mdframed)              on input line 734.
 
 
 pdfTeX warning: pdflatex (file ./Image/2019.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Image/2019.pdf, id=1218, 645.08502pt x 234.57637pt>
+<Image/2019.pdf, id=190, 645.08502pt x 234.57637pt>
 File: Image/2019.pdf Graphic file (type pdf)
 <use Image/2019.pdf>
-Package pdftex.def Info: Image/2019.pdf  used on input line 2976.
+Package pdftex.def Info: Image/2019.pdf  used on input line 750.
 (pdftex.def)             Requested size: 258.02943pt x 93.82887pt.
 (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [71 <./Image/2019.pdf>]
+) [17 <./Image/2019.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3006.
+(mdframed)              on input line 780.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3025.
+(mdframed)              on input line 799.
 
 
 Package mdframed Warning: You got a bad break
 (mdframed)                because the last box will be empty
 (mdframed)                you have to change it manually
 (mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 3031.
+(mdframed)                or something else on input line 805.
 
 (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [72]
+) [18]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3042.
+(mdframed)              on input line 816.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3062.
+(mdframed)              on input line 836.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [73]
+) [19]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3091.
+(mdframed)              on input line 865.
 
-Overfull \hbox (6.30232pt too wide) in paragraph at lines 3095--3096
+Overfull \hbox (6.30232pt too wide) in paragraph at lines 869--870
 []\T5/lmss/m/sl/10.95 D¢y sË $\OMS/lmsy/m/n/10.95 f\OML/lmm/m/it/10.95 a[]\OMS/lmsy/m/n/10.95 g[]$ \T5/lmss/m/sl/10.95 ^^_˜Òc ^^_‡nh nghæa bi $\OML/lmm/m/it/10.95 a[] \OT1/lmr/m/n/10.95 = []\OML/lmm/m/it/10.95 ; \OMS/lmsy/m/n/10.95 8\OML/lmm/m/it/10.95 n \OMS/lmsy/m/n/10.95 ^^U \OT1/lmr/m/n/10.95 1\OML/lmm/m/it/10.95 :$ \T5/lmss/m/sl/10.95 ^^^∞t $\OML/lmm/m/it/10.95 b[] \OT1/lmr/m/n/10.95 = [] [] \OML/lmm/m/it/10.95 :$ 
  []
 
 
-Overfull \hbox (34.37373pt too wide) in paragraph at lines 3101--3104
+Overfull \hbox (34.37373pt too wide) in paragraph at lines 875--878
 \T5/lmss/m/n/10.95 Ta ^^_∫ ˛ r¨ng $\OML/lmm/m/it/10.95 a[] \OT1/lmr/m/n/10.95 = 1$\T5/lmss/m/n/10.95 , $\OML/lmm/m/it/10.95 a[]; a[]; a[] \OT1/lmr/m/n/10.95 = 4$\T5/lmss/m/n/10.95 , $\OML/lmm/m/it/10.95 a[]; a[]; :::; a[] \OT1/lmr/m/n/10.95 = 16$ \T5/lmss/m/n/10.95 v† ta c‚ l™p lu™n r¨ng c˘ mÈi $\OML/lmm/m/it/10.95 a[]; a[]; :::; a[]$
  []
 
@@ -2365,224 +1789,51 @@ Overfull \hbox (34.37373pt too wide) in paragraph at lines 3101--3104
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [74]
+) [20]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3121.
+(mdframed)              on input line 895.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3122.
+(mdframed)              on input line 896.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3125.
+(mdframed)              on input line 899.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3126.
+(mdframed)              on input line 900.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3139.
+(mdframed)              on input line 913.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3140.
+(mdframed)              on input line 914.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3143.
+(mdframed)              on input line 917.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3144.
+(mdframed)              on input line 918.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [75]
+) [21]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3153.
+(mdframed)              on input line 927.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3173.
-
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last box will be empty
-(mdframed)                you have to change it manually
-(mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 3179.
-
-(C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [76]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 3193.
+(mdframed)              on input line 948.
  (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [77]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 3231.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 3234.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 3238.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 3240.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 3258.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
+) [22] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-) [78]
-Package mdframed Info: Not enough space on this page on input line 3263.
- (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [79]
-<Image/bia/4.pdf, id=1277, 597.73312pt x 845.40843pt>
-File: Image/bia/4.pdf Graphic file (type pdf)
-<use Image/bia/4.pdf>
-Package pdftex.def Info: Image/bia/4.pdf  used on input line 3278.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: Image/bia/4.pdf Graphic file (type pdf)
-<use Image/bia/4.pdf>
-Package pdftex.def Info: Image/bia/4.pdf  used on input line 3278.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-<Image/bia/4.pdf, id=1280, page=1, 597.73312pt x 845.40843pt>
-File: Image/bia/4.pdf Graphic file (type pdf)
-<use Image/bia/4.pdf, page 1>
-Package pdftex.def Info: Image/bia/4.pdf , page1 used on input line 3278.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: Image/bia/4.pdf Graphic file (type pdf)
-<use Image/bia/4.pdf, page 1>
-Package pdftex.def Info: Image/bia/4.pdf , page1 used on input line 3278.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: Image/bia/4.pdf Graphic file (type pdf)
-<use Image/bia/4.pdf, page 1>
-Package pdftex.def Info: Image/bia/4.pdf , page1 used on input line 3278.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: Image/bia/4.pdf Graphic file (type pdf)
-<use Image/bia/4.pdf, page 1>
-Package pdftex.def Info: Image/bia/4.pdf , page1 used on input line 3278.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: Image/bia/4.pdf Graphic file (type pdf)
-<use Image/bia/4.pdf, page 1>
-Package pdftex.def Info: Image/bia/4.pdf , page1 used on input line 3278.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
- [80
-
- <./Image/bia/4.pdf>] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [81] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [82] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [83] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [84] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [85] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [86] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [87]
-<Image/bia/5.pdf, id=1373, 597.73312pt x 845.40843pt>
-File: Image/bia/5.pdf Graphic file (type pdf)
-<use Image/bia/5.pdf>
-Package pdftex.def Info: Image/bia/5.pdf  used on input line 3634.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: Image/bia/5.pdf Graphic file (type pdf)
-<use Image/bia/5.pdf>
-Package pdftex.def Info: Image/bia/5.pdf  used on input line 3634.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-<Image/bia/5.pdf, id=1376, page=1, 597.73312pt x 845.40843pt>
-File: Image/bia/5.pdf Graphic file (type pdf)
-<use Image/bia/5.pdf, page 1>
-Package pdftex.def Info: Image/bia/5.pdf , page1 used on input line 3634.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: Image/bia/5.pdf Graphic file (type pdf)
-<use Image/bia/5.pdf, page 1>
-Package pdftex.def Info: Image/bia/5.pdf , page1 used on input line 3634.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: Image/bia/5.pdf Graphic file (type pdf)
-<use Image/bia/5.pdf, page 1>
-Package pdftex.def Info: Image/bia/5.pdf , page1 used on input line 3634.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: Image/bia/5.pdf Graphic file (type pdf)
-<use Image/bia/5.pdf, page 1>
-Package pdftex.def Info: Image/bia/5.pdf , page1 used on input line 3634.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: Image/bia/5.pdf Graphic file (type pdf)
-<use Image/bia/5.pdf, page 1>
-Package pdftex.def Info: Image/bia/5.pdf , page1 used on input line 3634.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
- [88
-
- <./Image/bia/5.pdf>]
-Overfull \hbox (1.60027pt too wide) in paragraph at lines 3668--3669
-[]\T5/lmss/m/sl/10.95 Ch˘ng minh r¨ng n∏u nh˜ $\OML/lmm/m/it/10.95 P\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T5/lmss/m/sl/10.95 v† $\OML/lmm/m/it/10.95 Q\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T5/lmss/m/sl/10.95 l† t˜Ïng hÈ thº $\OML/lmm/m/it/10.95 P\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 Q\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 ))$ \T5/lmss/m/sl/10.95 cÙng t˜Ïng hÈ v† $\OT1/lmr/m/n/10.95 [\OML/lmm/m/it/10.95 P\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 Q\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 ))] =
- []
-
-(C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [89] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [90] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [91] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [92] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [93] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [94] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [95] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [96] (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (C:\Users\WIN10\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) [97] (nta-sol.aux)
+) [23] (nta-sol.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -2595,17 +1846,17 @@ Package rerunfilecheck Info: File `nta-sol.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 39265 strings out of 474486
- 763984 string characters out of 5743755
- 1955542 words of memory out of 5000000
- 59818 multiletter control sequences out of 15000+600000
+ 38113 strings out of 474486
+ 732232 string characters out of 5743755
+ 1952542 words of memory out of 5000000
+ 59501 multiletter control sequences out of 15000+600000
  651757 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 109i,17n,147p,10943b,1573s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u30.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on nta-sol.pdf (100 pages, 1171643 bytes).
+ 109i,12n,147p,10952b,1778s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u30.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on nta-sol.pdf (24 pages, 467986 bytes).
 PDF statistics:
- 1814 PDF objects out of 2073 (max. 8388607)
- 667 named destinations out of 1000 (max. 500000)
- 347 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 357 PDF objects out of 1000 (max. 8388607)
+ 112 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
