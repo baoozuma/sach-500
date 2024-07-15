@@ -269,15 +269,31 @@
             \]
             Theo định lý Turan, tồn tại một $K_{100}$ ở $G$. Nói cách khác, tồn tại các tập $A_i$ rời nhau, hoàn tất chứng minh.
         \end{sol}
-    \item \begin{btvn}\vocab{\href{https://www.facebook.com/ToanHocvoiPsi/posts/1208622909838295}{(Psi 2023).}} Có 1000 cái bánh chưng được đánh số $001,002,\dots,999$ và 100 nồi bánh chưng, Psi được phép xóa đi một chữ số và đặt cái bánh chưng đó vào nồi bánh chưng có số ghi tương ứng bằng với số còn lại sau khi xóa của cái bánh chưng. Tìm số lượng nồi bánh ít nhất sao cho Psi có thể đặt được tất cả 1000 cái bánh chưng vào những nồi bánh đó.        
-    \end{btvn}
-    \item \begin{btvn}\vocab{(PTNK 2020).}
+
+    \item \begin{bt}\vocab{(PTNK 2020).}
         Một trường phổ thông có $n$ học sinh. Các học sinh tham gia vào tổng cộng $m$ câu lạc bộ $A_1,A_2,\dots,A_m$
         \begin{enumerate}[label=(\alph*)]
             \item Chứng minh rằng nếu mỗi câu lạc bộ có 4 học sinh và hai học sinh bất kì tham gia chung nhiều nhất 1 câu thì $m \leq \frac{n(n - 1)}{12}$
             \item Giả sử tồn tại $k > 0$ sao cho hai câu lạc bộ bất kỳ có chung nhau $k$ thành viên và tồn tại một câu lạc bộ $A_t$ có $k$ thành viên. Chứng minh rằng $m \leq n$.
         \end{enumerate}
-    \end{btvn}
+    \end{bt}
+    \begin{sol}
+
+        (a) Ta đếm số bộ có cặp học sinh tham gia vào một CLB bằng hai cách 
+
+        \vocab{Cách 1:} Mỗi CLB có 4 học sinh chọn ra 2 bạn, nên ta được 
+        \[
+            S = m\binom{4}{2} = 6m 
+        \]
+        \vocab{Cách 2:} Vì hai học sinh bất kỳ có chung tối đa 1 CLB nên ta được 
+        \[
+            S \leq \frac{n(n - 1)}{2}
+        \]
+        Thế thì $m \leq \frac{n(n - 1)}{12}$.
+
+        (b) Vì CLB $A_t$ có $k$ thành viên và có chung $k$ thành viên với tất cả các CLB còn lại nên các thành viên $A_t$ đã tham gia tất cả CLB và cũng là thành viên chung của nhau. Xét $n - k$ học sinh còn lại thì mỗi học sinh phải tham gia tối đa 1 CLB (trong số các CLB còn lại), vậy nên số CLB không vượt quá $n - k$, nên suy ra $m \leq n - k + 1 \leq n$, hoàn tất chứng minh.
+        
+    \end{sol}
     \begin{bt}\vocab{(Japan MO Final 2017). }
         Cho số nguyên dương $n \geq 3$. Có $n$ người, mỗi ngày tổ chức một cuộc họp mà ít nhất 3 người tham dự. Mỗi người trong cuộc họp bắt tay với tất cả những người còn lại. Sau $n$ cuộc họp, mỗi cặp người đã bắt tay đúng một lần. Chứng minh rằng mỗi cuộc họp đều có cùng số người tham dự.
     \end{bt}
@@ -376,17 +392,54 @@
         \]
         Ta dự đoán rằng $A = \{2^0,2^1,2^2,\dots,2^7\}$. Thật vậy, xét hàm số $f: N \to N_2$ biến một số thập phân bất kỳ thành số nhị phân. Ta chứng minh $f$ là hàm song ánh. Thật vậy, xét một số $a$ bất kỳ. Khi đó, thực hiện thuật toán chia $a$ cho $2$ đến khi $a \to 0$, theo Euclid ta được một dãy số dư duy nhất. Nếu tồn tại số $b$ có cùng dãy số dư với $a$ thì $a = b$. Suy ra $f$ đơn ánh. Hơn nữa với mọi $b_2$ thì luôn tồn tại $a$ để $f(a) = b_2$. Vậy nên $f$ song ánh.
 
-        Mặt khác, giả sửu tồn tại $t \neq 2^k, k \in 0,1,...,7$, mà $t \in A$, khi đó $t$ có thể phân tích theo nhị phân, nhưng vì $2^7 = 128 < 250$ nên $t \notin A$
+        Mặt khác, giả sử tồn tại $t \neq 2^k, k \in 0,1,...,7$, mà $t \in A$, khi đó $t$ có thể phân tích theo nhị phân, nhưng vì $2^7 = 128 < 250$ nên $t \notin A$
          
         Vậy nên  $A = \{2^0,2^1,2^2,\dots,2^7\}$.
     \end{sol}
-    \item \begin{btvn}\vocab{\href{https://www.facebook.com/photo/?fbid=425469753537685&set=gm.1372811930099600&idorvanity=243634219684049}{(Olympic KHTN 2024).}}
-        Cho số nguyên $n \geq 4$. Kí hiệu $k_n$ là số nguyên dương nhỏ nhất thỏa mãn: với mọi số nguyên dương $m$ thì mọi tập con có $k_n$ phần tử của tập hợp $\{m, m + 1, \dots, m + n - 1\}$ đều chứa 3 phần tử đôi một nguyên tố cùng nhau. Chứng minh rằng
+    \item \begin{bt}\vocab{(Phạm Bảo). }
+        Cho tập hợp $S = \{1,2,...,n\}$ và $k$ là hằng số. Tìm số nguyên $f(n)$ nhỏ nhất để với mọi tập con của $S$ có $f(n)$ phần tử đều tìm được $k$ phần tử đôi một nguyên tố cùng nhau.
+    \end{bt}
+    \begin{sol} Đầu tiên để xét với mọi tập con hữu hạn mà có 2 số nguyên tố cùng nhau thì hai số này không thể có ước chung, tức là kích thước của tập phải lớn hơn số phần tử có ước chung của cả hai thì mới có thể bao hàm chúng được. Khi đó, ta có thể bù trừ các số có ước là $2,3,5,\dots$ dựa trên yêu cầu cần bao nhiêu số nguyên tố cùng nhau.
+        Ta hãy xét một tập hợp và hàm số sau:
         \[
-            k_n = \left\lfloor \frac{n + 1}{2}\right\rfloor + \left\lfloor \frac{n + 1}{3}\right\rfloor - \left\lfloor \frac{n + 1}{6}\right\rfloor + 1
+            \left\{
+            \begin{array}{l}
+                A_n = \{a \in \mathbb{S} \mid p_n \mid a \text{ và } p_{i} \nmid a, \forall i < n\}, \text{ với } p_i \text{ là số nguyên tố thứ } i\\
+                h(n) = |A_n|
+            \end{array}
+            \right.
         \]
-    \end{btvn}
+        Rõ ràng là $h(n)$ là hàm giảm trên khoảng nguyên tố $[2,+\infty)$ khi xét trên tập hữu hạn. Khi đó chặn dưới tốt nhất của $f$ sẽ là khi ta lấy hết tất cả các phần tử có ước chung với nhau. Do đó ta được
+        \[
+            f(n) \geq  h(2) + h(3) + ... + h(k) + 1 = \sum_{i = 2}^k h(i) + 1
+        \]
+        Thật vậy, ta có một bổ đề sau
 
+        
+        \begin{theo}[Bổ đề chia hết] -Cho một đoạn số nguyên $[a,b]$ và số nguyên $k$, khi đó có $\left\lfloor\frac{b - a + 1}{k}\right\rfloor$ số thuộc đoạn này chia hết cho $k$.
+        \end{theo}
+        Bổ đề có thể dễ dàng chứng minh được bằng nguyên lý Dirichlet.
+
+
+
+        Đặt $T_i= \left\lfloor \frac{n}{i } \right\rfloor$. Để tính được $h(p_i)$ thì ta phải bù trừ các $T_i$ được tạo bởi các ước bé hơn nó. Ta có
+        \[
+            \begin{aligned}
+                &h(1) = T_2 \\
+                &h(2) = T_3 - T_6\\
+                &h(3) = T_5 - T_{10} - T_{15} - T_{30}\\
+                &...\\
+                &h(i) = T_{p_i} - \sum_{j \in a_{p_i}} T_j,
+            \end{aligned}
+        \]
+        với $a_{p_i}$ là bội và có các ước nguyên tố bậc 1 bé hơn $p_i$. Khi đó ta có
+        \[
+            \sum_{i = 2}^k h(i) + 1 = \left(\sum_{i = 1}^k T_{p_i}\right) - \left(\sum_{i = 1}^k \sum_{j \in a_{p_i}} T_{j}\right) + 1 = \sum_{i = 1}^k\left( T_{p_i} - \sum_{j \in a_{p_i}} T_{j}\right) + 1
+        \]
+        Kết luận lại, ta có $\displaystyle f(n)_{min} = \sum_{i = 1}^k\left( \left\lfloor \frac{n}{p_i }\right\rfloor - \sum_{j \in a_{p_i}} \left\lfloor \frac{n}{j }\right\rfloor\right) + 1$
+        
+    \end{sol}
+    \vocab{Nhận xét:} Thông thường các giả thuyết như chứa số nguyên tố hay nguyên tố cùng nhau thì ta không có nhiều công cụ để xử lý trong tổ hợp. Vì vậy điều này gợi ý cho ta việc thực hiện điều ngược lại: Như thế nào thì hai số không nguyên tố cùng nhau? Làm cách nào để tránh điều đó?
     \item \begin{btvn}\vocab{(PTNK 2022).}
         Cho $n, k \geq 2$ là hai số nguyên dương và $a_0, a_1, \cdots, a_k$ là các số nguyên dương cho trước. Đặt $S_n=\{1,2, \cdots, n\}$, ta ký hiệu $A_n$ là số các bộ $\left(x_1, x_2, \cdots, x_k\right) \in S_n^k$ thỏa điều kiện:
         $$
@@ -632,14 +685,50 @@
     \item \begin{btvn}\vocab{(Đồng Tháp TST 2022).}
         Trên đường tròn có 2023 điểm phân biệt. Tìm số nguyên dương $n$ nhỏ nhất sao cho với mọi cách chọn $n$ điểm trong số các điểm trên, tồn tại hai điểm sao cho phần trong của một trong hai cung tròn có đầu mút là hai điểm nói trên chứa đúng 1012 điểm trong số 2023 điểm đã cho (phần trong của một cung tròn là các điểm của cung đó không kể hai đầu mút).
     \end{btvn}
-    \item \begin{btvn}\vocab{(India TST 2010).}
+    \item \begin{bt}\vocab{(India TST 2010).}
         Cho bảng vuông $10\times 10$, mỗi ô $(i,j)$ được điền bởi một số thực dương $a_{ij}$ sao cho tổng các số thuộc mỗi hàng, mỗi cột của bảng luôn là $1$. Chứng minh rằng tồn tại $j,k,l,m \in [10]$ với $j < k$ và $l < m$ sao cho
         \[
             a_{jl}a_{km} + a_{jm}a_{kl} \geq \frac{1}{50}
         \]
-    \end{btvn}
+    \end{bt}
+    \begin{sol}
+        Rõ ràng 4 điểm nói trên tạo ra một hình chữ nhật nằm trong bảng ô vuông đó (tổng tích các cạnh đối lớn hơn hoặc bằng $\frac{1}{50}$)\\
+    - Ta sẽ giả sử rằng với mọi bốn điểm như vậy thì hệ thức trên luôn bé hơn $\frac{1}{50}$\\
+    Ta đếm tổng giá trị các phần tử của tập hợp
+    $$ S = \{a_{jl}a_{km} + a_{jm}a_{kl} \}$$
+    \begin{itemize}[label=,leftmargin=0em]
+        \item \textbf{Cách 1:} Chọn ra hai dòng bất kì và từ một trong hai dòng đó chọn ra 2 điểm, ta tạo được một hình chữ nhật. Ta được $$|S| < \frac{1}{50}\binom{10}{2}\binom{10}{2} $$
+                    \begin{figure}[ht]
+            \centering
+            \subfloat{\includegraphics[width=0.3\linewidth]{Image/ando.png}}
+        \end{figure}
+        \item \textbf{Cách 2:} Đếm dựa trên một điểm $a_{ij}$ cho trước. Ta sẽ tìm một điểm $b_{mn} $ nào đó để tạo nên một đường chéo. 
+        
+        Khi đó nếu ta lấy $\sum a_{ij}b_{mn}$ và nhân 2 lên chia cho 4 thì ta được S, vì mỗi lần chọn cặp $(a,b)$ thì ta chọn ra 2 đường chéo, tức là sau khi đếm hết thì mỗi đường chéo được đếm hai lần. 
+    
+        - Nhưng nếu đếm như vậy thì mỗi cấu hình của S sẽ lặp lại 4 lần, tức là ô màu đen và đỏ đổi vị trí cho nhau, ô màu đen và đỏ thế chỗ cho 2 ô xám, ta được 4 cấu hình như nhau.
+    
+        Gọi $S_{ij}$ là tổng giá trị các phần tử trong $S$ có chứa $a_{ij}$. Ta được $$S_{ij} = a_{ij} \sum b_{mn}$$
+        Chọn $a$ có 100 cách. Theo hình vẽ bên trên thì những chỉ những ô màu trắng mới chứa được $b$, nên do đó $b$ có $100 - 10 - 9 = 81$ cách, viết lại 
+        $$ S_{ij} = a_{ij}\sum_{1}^{81} b_{mn}
+        $$
+        Nếu nhìn vào bảng thì ta còn có thể làm gọn tổng này hơn nữa. Ta có
+        $$ S_{ij} = a_{ij}[10 - 1 - (1 - a_{ij}) ]
+        = a_{ij}(8 + a_{ij})
+        = a_{ij}^2 + 8a_{ij}
+        $$
+        Cộng lại các $S_{ij}$ ta được
+        $$ |S| = \frac{1}{2}\sum_{1}^{100} S_{ij} =\frac{1}{2} \sum_{1}^{100} a_{ij}^2 + 8a_{ij} =  \frac{1}{2}.8.10 + \frac{1}{2}\sum_{1}^{100} a_{ij}^2  
+        $$
+        Áp dụng bất đẳng thức Cauchy-Schwartz ta có 
+        $$ \sum_{i=1}^{100} a_{ij}^2 \geq \frac{ \left(\displaystyle \sum_{i=1}^{100}a_{ij}\right)^2}{100} = 1
+        $$
+        Do đó $|S| \geq \frac{1}{2}.80.10 + \frac{1}{2} = \frac{81}{2}$
+    \end{itemize}
+    Từ đây cho ta được mâu thuẫn bài toán, suy ra điều phải chứng minh.
+    \end{sol}
 
-    \item \begin{btvn}\vocab{(Đồng Tháp TST 2023).}
+    \item \begin{bt}\vocab{(Đồng Tháp TST 2023).}
         Bạn Bảo có $n$ cái hộp, lần lượt chứa $1,2,\dots,n$ viên bi ($n > 1$). Bạn Bảo thực hiện việc cho thêm bi vào hộp theo các quy tắc sau:
         \begin{enumerate}
             \item Ở lượt đầu tiên, bạn ấy cho thêm vào mỗi hộp 1 viên bi.
@@ -647,8 +736,51 @@
             \item Cứ như vậy, ở lượt $k$, nếu có hộp nào với số bi chia hết cho $k$, bạn Bảo sẽ thêm vào mỗi hộp đó 1 viên bi.
         \end{enumerate}
         Tìm tất cả các số nguyên $n > 1$ sao cho kết thúc lượt thêm bi thứ $n$ thì mỗi hộp đều có đúng $n + 1$ viên bi.
-    \end{btvn}
+    \end{bt}
+    \begin{sol}
+        \textit{(Phạm Bảo)}. Ký hiệu tập $\{1,2,\dots, n\}$ là $[n]$ với mọi $n$ nguyên dương.
 
+        \vocab{Nhận xét 1:} $n + 1$ là số nguyên tố 
+        \begin{proof}
+            Giả sử $n + 1$ là hợp số, khi đó tồn tại $p \in \bb{P}$ sao cho $p \mid n + 1$, khi đó ở lượt thứ $1$ và $p$, hộp thứ $n$ sẽ chứa $n + 2$ viên bi, vượt mức cho phép.
+
+            Vậy nên $n + 1$ là số nguyên tố.
+        \end{proof}
+        Xét một hộp thứ $k >1$ bất kỳ, gọi $f(x): [n] \to [n]$ là số viên bi của hộp $k$ ở lượt thứ $x$. Đặt $g(x) = f(x) - x - 1$. 
+        
+        
+        \vocab{Nhận xét 2:} $f$ và $g$ là hàm liên tục trên tập rời rạc $[1,n]$.
+        \begin{proof}
+          Mỗi lượt chỉ được thêm vào hộp 1 viên bi, khi đó ta có  
+        \[
+         0 \leq f(x + 1)  - f(x) \leq 1 \ra |f(x + 1) - f(x)| \leq 1, \forall x \in [n]
+        \]
+        Mặt khác lại có 
+        \[
+        \begin{aligned}
+            &0 \leq g(x + 1) + x + 2 -g(x) -x - 1\leq 1\\
+            & \ra -1 \leq g(x + 1) - g(x)\leq 0\\
+            & \ra |g(x + 1) - g(x)| \leq 1
+        \end{aligned}
+        \]
+        Suy ra $f$ và $g$ liên tục trên $[1,n]$.
+        \end{proof}
+        \vocab{Nhận xét 3:} $f(x) \leq n + 1, \forall x \in [n]$
+        \begin{proof}
+            Giả sử tồn tại $t$ sao cho $f(t) > n + 1$, vì $n + 1$ nguyên tố nên để đạt được từ $n + 1$ lên $n + 2$ viên bi thì phải chơi nhiều hơn $n + 1$ lượt, mâu thuẫn.
+        \end{proof}
+        \vocab{Nhận xét 4:} Tồn tại $a$ để $g(a) = 0$. 
+        \begin{proof}
+            Thật vậy, vì $k > 1$ nên khi đó $g(1) = k - 2 \geq 0$. Mặt khác lại có $k \leq n$ nên $g(n) = f(n) -n - 1\leq n + 1 - n -1= 0$. 
+            
+            Khi đó $g(1).g(n) \leq 0$ và vì $g$ liên tục nên theo định lý giá trị trung gian thì tồn tại $a \in [n]$ để $g(a) = 0$.
+        \end{proof} 
+        \vocab{Nhận xét 5:} Với $a \in [1,n]$ thỏa mãn $g(a) = 0$ thì $f(t) = t + 1,\forall t \geq a$.
+        \begin{proof}
+            Thật vậy ở lượt thứ $a$ thì số bi ở hộp $k$ là $a + 1$. Nên ở lượt $a + 1$ thì hộp $k$ có $a + 1$ viên nên tăng 1 viên, lặp lại như vậy, thì ta được $f(t) = t + 1, \forall t \geq a$.
+        \end{proof}
+        Khi này vì $n \geq t \geq a$ nên $f(n) = n + 1$. Vậy nên mỗi hộp sau $n$ lượt có đúng $n + 1$ viên bi khi và chỉ khi $n + 1$ là số nguyên tố.
+    \end{sol}
     \item \begin{btvn}\vocab{\href{https://artofproblemsolving.com/community/c5h2156986p15952792}{(USOMO 2020).}}
         Giả sử $(a_1,b_1),$ $(a_2,b_2),$ $\dots,$ $(a_{100},b_{100})$ là các cặp được sắp xếp khác nhau của các số nguyên không âm. Đặt $N$ là số các cặp số nguyên $(i,j)$ thoả mãn $1\leq i<j\leq 100$ và $|a_ib_j-a_jb_i|=1$. Xác định giá trị lớn nhất có thể của $N$ qua tất cả các lựa chọn có thể của $100$ cặp được sắp xếp.
     \end{btvn}

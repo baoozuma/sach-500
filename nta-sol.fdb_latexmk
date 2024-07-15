@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1720955267.61126 "d:/Toan Latex/500/nta-sol.tex" "nta-sol.pdf" "nta-sol" 1720955273.47709 0
+["pdflatex"] 1721016680.92754 "d:/Toan Latex/500/nta-sol.tex" "nta-sol.pdf" "nta-sol" 1721016687.51289 0
   "C:/Users/WIN10/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1720941191 231331 2046a6d1f5452f8de7477ee182e5aa47 ""
   "C:/Users/WIN10/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1711592121 24225046 fb61a17db6170e77ba5fcdc4a9c13900 ""
   "C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u30.enc" 1525518892 2323 808a4954230d4b9aaf0f3e890ff4e23e ""
@@ -293,6 +293,7 @@
   "Image/P1.3.pdf" 1718111255 2317 5788cfe78c9e2f1d972009ee826e4175 ""
   "Image/P1.4.pdf" 1718111141 2665 fb0345229122c88b3e3c2c1dca6ae811 ""
   "Image/P3.pdf" 1720931515 2716 baaed40a44d19688fbc8496cd69795f0 ""
+  "Image/ando.png" 1710615283 1035 4b8313301d341bdf4cbf3e5c68a770c0 ""
   "Image/bia/1.pdf" 1714988013 30078 aa553982d7d0333ad297496c8d56e4f0 ""
   "Image/bia/2.pdf" 1714988064 21431 8e300182dedf54587e71d0c178cda2b0 ""
   "Image/bia/3.pdf" 1714988094 20625 06337ac3538cdb764c60f38d693fdea4 ""
@@ -305,12 +306,12 @@
   "Image/trucngang.pdf" 1717434459 19086 593a1f59abfc07f9c3bc2ce0a86c498e ""
   "Image/tst.pdf" 1711892309 20322 730de13d545eaa0b3635f07af83b9e72 ""
   "Image/x.pdf" 1714739317 10868 c751d45367e96225279db0cb8d790e43 ""
-  "d:/Toan Latex/500/nta-sol.tex" 1720955266 287309 5277442a8b9e0304bb9da40581ffd7c3 ""
-  "nta-sol.aux" 1720955272 9566 5ab9baefd104f735ffeea4892515fba2 "pdflatex"
-  "nta-sol.out" 1720955269 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "nta-sol.pre" 1720955269 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "nta-sol.tex" 1720955266 287309 5277442a8b9e0304bb9da40581ffd7c3 ""
-  "nta-sol.toc" 1720955272 1697 4b9e5e9b7145af34b9dc8c448b96d37f "pdflatex"
+  "d:/Toan Latex/500/nta-sol.tex" 1721016673 295843 c8d8643177d51ba2c20473739b7767e9 ""
+  "nta-sol.aux" 1721016686 9767 d65bcef555a1379714d4134d92d90d29 "pdflatex"
+  "nta-sol.out" 1721016683 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "nta-sol.pre" 1721016682 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "nta-sol.tex" 1721016673 295843 c8d8643177d51ba2c20473739b7767e9 ""
+  "nta-sol.toc" 1721016686 1698 76b780af558e8d44784762d6113c8077 "pdflatex"
   "settings.sty" 1720339363 8856 ec1dc6e09c7c5e8fa9ccc83c19779e42 ""
   (generated)
   "nta-sol.aux"
