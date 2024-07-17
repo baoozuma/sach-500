@@ -30,246 +30,8 @@
 \begin{itemize}[label=, leftmargin=0em, itemsep=0.5em]
     
     \vspace{1em}
-    \item \begin{bt}\vocab{(HMMT 02/2016).} Cho số nguyên lẻ $n > 1$. Trên một bàn cờ $n \times n$ có ô trung tâm và 4 ô ở góc bị cắt đi. Chúng ta muốn chia $n^2 -5$ hình vuông còn lại thành $\frac{1}{2}(n^2 - 5)$ cặp sao cho hai hình vuông ở mỗi cặp giao nhau tại chính xác một điểm. Tìm giá trị của $n$ thỏa mãn điều đó.
-    \end{bt}
-    \begin{sol}
-        Ta tô màu xen kẽ cho bảng ô vuông bằng hai màu trắng và vàng, với hàng màu vàng nằm ở hàng trung tâm. khi đó sẽ có hai trường hợp như sau:
-        \begin{center}
-            \includegraphics[scale=0.5]{Image/P1.1.pdf}
-            \hspace{1cm}
-            \includegraphics[scale=0.5]{Image/P1.2.pdf}
-        \end{center}
-        Mỗi cặp hình vuông thỏa mãn được chọn sẽ chiếm 1 ô trắng và 1 ô vàng, tức là để tồn tại một cách chọn thỏa mãn thì số ô vàng phải bằng số ô trắng.
-
-        \vocab{Trường hợp 1:} hàng ở trên và dưới cùng được tô màu vàng.  Khi này tổng số ô màu vàng là $\frac{n(n + 1)}{2} - 5$, tổng số ô màu trắng là $\frac{n(n - 1)}{2}$, khi này ta được 
-        \[
-            \frac{n(n + 1)}{2} - 5 = \frac{n(n - 1)}{2} \lra n = 5
-        \]
-        \vocab{Trường hợp 2:} hàng ở trên và dưới cùng được tô màu trắng. Khi này tổng số ô màu vàng là $\frac{n(n - 1)}{2} - 1$, tổng số ô màu trắng là $\frac{n(n + 1)}{2} - 4$, khi này ta được 
-        \[
-            \frac{n(n - 1)}{2} - 1 = \frac{n(n + 1)}{2} - 4 \ra n = 3
-        \]
-        Vậy với $n \in \{3,5\}$ thì tồn tại cách chọn cặp thỏa mãn đề bài. Ta có một cách ghép cặp thỏa mãn như sau cho từng trường hợp:
-        \begin{center}
-            \includegraphics[scale=0.2]{Image/P1.3.pdf}
-            \hspace{1cm}
-            \includegraphics[scale=0.2]{Image/P1.4.pdf}
-        \end{center}
-    \end{sol}
-    \newpage
-    \item \begin{bt}\vocab{(USAJMO 2019).}
-        Có $a+b$ cái bát được sắp xếp thành một hàng ngang, được đánh số từ $1$ đến $a+b$. Ban đầu, $a$ bát đầu tiên mỗi bát chứa một quả táo và $b$ bát cuối cùng mỗi bát chứa một quả lê.
-        Một nước đi được gọi là \vocab{hợp lệ} bao gồm việc chuyển một quả táo từ bát $i$ sang bát $i+1$ và một quả lê từ bát $j$ sang bát $j-1$, với điều kiện là sự chênh lệch $i-j$ là chẵn. nhiều loại trái cây có thể nằm trong cùng một bát cùng một lúc. Mục tiêu là có được $b$ bát đầu tiên, mỗi bát chứa một quả lê và $a$ bát cuối cùng, mỗi bát chứa một quả táo. Chứng minh rằng điều này có thể xảy ra khi và chỉ nếu tích $ab$ là số chẵn.
-    \end{bt}
-    \begin{sol}
-        \vocab{Nhận xét 1:} Tích $ab$ là số chẵn. Giả sử cả $a$ và $b$ đều lẻ. Ta nhận thấy rằng mỗi bước đi ta lấy táo và lê ở các bát cùng tính chẵn lẻ chuyển sang các bát bên cạnh. Thế nên ý tưởng bất biến đó là hiệu số táo và số lê ở ô lẻ. Thật vậy, tô đen các ô lẻ. 
-        
-        Ban đầu số táo ô đen là $\frac{a + 1}{2}$, số lê ô đen là $\frac{b - 1}{2}$, hiệu bất biến là $\frac{a - b + 2}{2}$. 
-        
-        Sau khi đạt được mục tiêu, số táo ô đen là $\frac{a - 1}{2}$, số lê ô đen là $\frac{b  + 1}{2}$, hiệu bất biến là $\frac{a - b - 2}{2}$, vô lý. Vậy nên tích $ab$ phải chẵn.
-
-        \vocab{Nhận xét 2:} Với $ab$ chẵn thì luôn tồn tại nước đi hợp lý để đạt được mục tiêu. Ta sẽ chứng minh điều này đúng bằng quy nạp. Nếu $(a, b) = (0,b)$ hoặc $(a,b) = (1,b)$ thì rõ ràng luôn đúng. Giả sử giả thuyết đúng với mọi trường hợp $ \leq a + b - 2$ và $\min{a,b} \geq 2$. Ta có hai trường hợp:
-        
-        \vocab{Trường hợp 1: }$a + b$ chẵn. Xét $a + b$ ô. Ta đổi vị trí của táo ô $1$ và lê ô $a + b - 1$, táo ô $2$ và lê ô $a + b$, đưa về $(a - 2, b - 2)$, đúng theo quy nạp.
-        
-        \vocab{Trường hợp 2: }$a + b$ lẻ. Xét $a + b + 2$ ô. Ta đổi vị trí của táo ô $1$ và lê ô $a + b$, đưa về trường hợp $(a - 1, b - 1)$, đúng theo quy nạp.
-
-        Như vậy là chứng minh hoàn tất.
-    \end{sol}
-
     
-    \item \begin{bt}\vocab{\href{https://www.facebook.com/ToanHocvoiPsi/posts/1319983838702201}{(KHTN Lớp 10 - 2023).}}
-        Viết một trăm số nguyên dương đầu tiên $1,2,\dots,100$ vào một bảng ô vuông kích thước $10\times 10$ một cách tùy ý sao cho mỗi ô được viết đúng một số. Chứng minh rằng tồn tại hai ô kề nhau (2 ô có cạnh chung) mà hai số viêt ở hai ô này có hiệu lớn hơn hoặc bằng 10.
-    \end{bt}
-    \begin{sol}
-        Giả sử với mọi hai ô kề nhau thì hiệu của chúng luôn bé hơn 10. Xét ba tập hợp sau 
-        \[
-            \begin{aligned}
-                &A_x = \{1,2,\dots,x\}\\
-                &B_x = \{x + 1, x+ 2,\dots,x +9\}\\
-                &C_x = \{x + 10, x + 11,\dots, 100\}
-            \end{aligned}
-        \]
-        với $x$ chạy trên $[2,90]$. Để ý rằng hai số kề nhau thì không thể nằm trong cả hai tập $A$ và $C$. Theo nguyên lý Dirichlet, sẽ tồn tại một hàng và một cột không chứa phần tử nào của $B$. Gọi hợp của hàng và cột đó là một "dấu cộng". Mọi số nằm trên dấu cộng sẽ chỉ có hai khả năng là toàn bộ thuộc $A$ hoặc $C$. Ta giả sử đó là $A$ thì $A \geq 19$. 
-
-        Khi $x$ chạy trên $[1,90]$ thì dấu cộng sẽ thay đổi. Ta sẽ chứng minh rằng tồn tại một giá trị mà ở đó dấu cộng của $A$ sẽ biến thành của $C$ khi $x$ tăng một đơn vị, hoặc ngược lại. 
-        
-        Với $x = 2$ thì $A = 2 < 19$ nên dấu cộng của $x = 2$ sẽ chứa $C$. 
-
-        Với $x = 90$ thì $C = 10 < 19$ nên dấu cộng của $x = 90$ sẽ chứa $A$.
-
-        Khi này theo sự liên tục trong rời rạc thì sẽ tồn tại $i \in [2,90]$ để dấu cộng chứa $C$ tại $i$ và chứa $A$ tại $i + 1$.
-        \begin{center}
-            \includegraphics[scale=0.4]{Image/P3.pdf} 
-        \end{center}
-        
-        Khi này thì hai dấu cộng sẽ giao nhau tại hai điểm. Mà lại khả năng $C$ hoặc $A$ mất đi một số nên sẽ tồn tại một số là giao của hai dấu cộng.
-    \end{sol}
-    
-
-    \item \begin{bt}\vocab{(IMO 1993).} Trên bàn cờ vô hạn ta thực hiện một trò chơi như sau: Đầu tiên xếp $n^2$ quân vào một hình vuông gồm $n \times n$ ô vuông cạnh liền kề sao cho trong mỗi ô vuông của hình vuông chứa một quân cờ, cách đi trong trò chơi là quân cờ chỉ được nhảy theo một chiều ngang hoặc chiều dọc qua một ô có chứa quân cờ ở ngay sát bên cạnh sang một bên ô trống tiếp ngay sau đó. Khi đó quân cờ ô bị nhảy qua sẽ bị loại bỏ. Tìm các giá trị của $n$ để có thể kết thúc trò chơi sao cho trên bàn cờ chỉ còn lại đúng một quân cờ.
-    \end{bt}
-    \begin{sol}
-        
-        Tô xanh, đỏ, vàng xen kẽ cho bàn cờ. Gọi $A_1,A_2,A_3$ lần lượt là số quân cờ nằm ở ô xanh, đỏ, vàng.
-
-        \vocab{Nhận xét 1: }$3 \nmid n$. 
-        \begin{proof}
-            Giả sử $3\mid n$, để ý rằng sau mỗi bước đi thì tính chẵn lẻ của $A_1,A_2,A_3$ bị thay đổi, để thắng trò chơi thì phải có một số bằng 1. Nhưng vì $A_1,A_2,A_3$ luôn cùng tính chẵn lẻ nên dẫn tới vô lý.
-        \end{proof}
-
-        \vocab{Nhận xét 2: } Với cấu hình sau thì có thể làm mất đi 3 quân ở cột trung tâm (với dấu $*$ tượng trưng cho mỗi quân cờ). Từ giờ ta sẽ gọi đây là nước đi $(\fa)$.
-        \[
-        \begin{bmatrix}
-        . & * & . \\
-        .& * & . \\
-        . & * & *
-        \end{bmatrix}
-        \]
-        \begin{proof}
-            Di chuyển quân góc dưới phải $\to$ giữa trên $\to$ dưới trái.
-        \end{proof}
-        \vocab{Nhận xét 3:} Với $n = 1,2,4$ thì có thể thắng. Ta chỉ cần chứng minh với $n = 4$. Thực hiện liên tục $(\fa)$.
-        \begin{proof}
-        \[
-        \begin{bmatrix}
-        * & * & *&*\\
-        * & * & *&*\\
-        * & * & *&*\\
-        * & * & *&*\\
-        \end{bmatrix}
-        \to 
-        \begin{bmatrix}
-            . & . & .&*\\
-            * & * & *&*\\
-            * & * & *&*\\
-            * & * & *&*\\
-        \end{bmatrix}
-        \to 
-        \begin{bmatrix}
-            . & . & .&*\\
-            . & . & .&*\\
-            * & * & *&*\\
-            * & * & *&*\\
-        \end{bmatrix}
-        \to 
-        \begin{bmatrix}
-            . & . & .&.\\
-            . & . & .&.\\
-            * & * & *&.\\
-            * & * & *&*\\
-        \end{bmatrix}
-        \]
-        \[
-        \to 
-        \begin{bmatrix}
-            . & . & .&.\\
-            . & . & .&.\\
-            * & * & *&.\\
-            * & * & *&*\\
-        \end{bmatrix}
-        \to 
-        \begin{bmatrix}
-            . & . & .&.\\
-            . & . & .&.\\
-            * & * & *&.\\
-            * & . & .&.\\
-        \end{bmatrix}
-        \to 
-        \begin{bmatrix}
-            . & . & .&.\\
-            . & . & .&.\\
-            . & . & .&.\\
-            * & . & .&.\\
-        \end{bmatrix}
-        \]
-        \end{proof}
-        \vocab{Nhận xét 4: } Từ $(n + 3)\times (n + 3)$ có thể đưa về $n \times n$.
-        \begin{proof}
-            Đối với mảng $3 \times k$ ở rìa ngoài, bằng nước đi $(\fa)$ ta có thể biến đổi như sau: 
-            \[
-                \begin{bmatrix}
-                    * & * & *&*&*&*&...\\
-                    * & * & *&*&*&*&...\\
-                    * & * & *&*&*&*&...\\
-                \end{bmatrix}
-            \to 
-                \begin{bmatrix}
-                    . & * & *&*&*&*&...\\
-                    . & * & *&*&*&*&...\\
-                    . & * & *&*&*&*&...\\
-                \end{bmatrix}
-            \to 
-                \begin{bmatrix}
-                    . & . & *&*&*&*&...\\
-                    . & . & *&*&*&*&...\\
-                    . & . & *&*&*&*&...\\
-                \end{bmatrix}
-                \to \dots
-            \]
-            Khi đó khối $L$ $3 \times n$ ở phía ngoài đồng loạt thu về còn khối $4 \times 4$ ở góc, với một quân là giao của khối $4 \times 4$ và $n \times n$, và bằng nước đi ở nhận xét 3, ta đã quy về $n \times n$.
-            \begin{center}
-                \includegraphics[scale=0.7]{Image/1993.pdf}
-            \end{center}
-            Mặt khác, với $n = 2,4$ thì có thể thắng, vì vậy theo quy nạp thì với $n = 3k + 1$ hoặc $n = 3k + 2$ với $k \geq 0$ thì có thể thắng.
-        \end{proof}
-    \end{sol}
-
-
-\newpage
-    \item \begin{bt}\vocab{(IMO Shortlist 2013 C1).}
-        Cho $n$ là một số nguyên dương. Tìm số nguyên nhỏ nhất $k$ với tính chất sau: Cho bất kỳ các số thực $a_1 , \cdots , a_d $ sao cho $a_1 + a_2 + \cdots + a_d = n$ và $0 \le a_i \le 1$ với $i=1,2,\cdots ,d$, ta có thể phân chia các số này thành $k$ nhóm (một số trong số đó có thể là rỗng) sao cho tổng của các số trong mỗi nhóm không vượt quá $1$.
-    \end{bt}
-    \begin{sol}
-        Ta sẽ tìm cách phân hoạch đủ lớn, sao cho mỗi nhóm của $k$ chỉ chứa ít nhất 1 phần tử để khi đó $k$ sẽ có chặn dưới tốt nhất. 
-        
-        Thật vậy, để có tồn tại phân nhóm ít nhất không thể phân được nữa thì mỗi phân hoạch $a_i$ phải lớn hơn $\frac{1}{2}$ để mỗi nhóm chỉ chứa đúng 1 phân hoạch.  Xét phân hoạch $a_i = \frac{1}{2} + \frac{1}{d}, \forall i = 1,2,\dots$.
-        \[
-        a_1 + a_2 + \dots + a_d = \frac{d}{2} + 1 = n
-        \]
-        Suy ra $d = 2n - 2$ và $k_{min} = 2n - 2$.
-    \end{sol}
-
-    
-    \item\begin{bt}\vocab{(Japan MO Final 2016 P3). }
-        Cho $n$ là một số nguyên dương. Trong vương quốc Skibidi có $2^n$ công dân và một vị vua. Trong ngôn ngữ tiền tệ, vương quốc sử dụng các tờ giấy bạc có mệnh giá là $2^n$ đồng và các đồng xu có mệnh giá là $2^a$ (với $a=0,1,\ldots,n-1$). Mỗi công dân có vô số tờ giấy bạc (không tính đến lạm phát). Gọi $S$ là tổng số đồng xu trong vương quốc. Một ngày đẹp trời, vua quyết định triển khai một chính sách sẽ được thực hiện mỗi đêm:
-        \begin{enumerate}
-            \item Mỗi công dân phải và anh ta phải chuyển một số tiền hữu hạn cho một công dân khác hoặc cho vua.
-            \item Mỗi công dân phải chuyển chính xác nhiều hơn $\$1$ số tiền mà anh ta nhận được từ một công dân khác. 
-            \item Luôn phải có một công dân kết thúc quá trình này bằng cách đưa tiền cho vua.
-        \end{enumerate}
-
-        Tìm giá trị nhỏ nhất của $S$ sao cho vua có thể thu tiền mỗi đêm mà không bao giờ hết tiền.
-    \end{bt}
-
-    \begin{sol}
-        Tuy mỗi người có vô hạn tiền giấy, nhưng lại có hữu hạn xu. Vậy nên người cuối cùng đưa tiền cho vua phải đưa $k$ tờ tiền $2^n$ và ta gọi cách chuyển tiền này là $\mathbb{H}$. Ta hãy xét thuật toán như sau:
-
-        Để chuyển tiền thỏa mãn $\mathbb{H}$, người đầu tiên phải đưa một số tiền bằng $k2^n$ với $k \geq 1$, vì ta muốn $S$ nhỏ nhất nên ta có thể tối ưu bằng cách để anh ta đưa $k$ tờ tiền giấy. Và mỗi người tiếp theo là $2,3,\dots,2^{n} - 1$ sẽ góp $\$1$ xu vào đến người thứ $2^n$ số tiền góp lại hiện tại là $(k + 1)2^n$ tính cả người thứ $2^n$ đã góp vào, vì tiền giấy của anh ta là vô hạn nên anh ta mcó thể đưa nhà vua $k + 1$ tờ tiền bao nhiêu lần cũng được.
-
-
-        Khi này người thứ $2^n$ đang giữ $2^n$ đồng xu. Nếu ta chặn $S_{min} = 2^n$ thì sẽ có vài người ở lượt sau không có $\$1$ xu nên không thể chuyển tiền được.
-
-
-        Vì vậy nên ta phải đưa cho mỗi người $t$ xu sao cho sau khi chọn $2^{n} - 1$ người làm người cuối cùng đưa tiền cho vua, thì người này vẫn có thể tiếp tục chuyển tiền được.
-
-
-        Thật vậy, vì mỗi lần chuyển là tốn $\$1$ nên sau $2^{n}$ lần chuyển thì $t \geq 2^{n - 1}$
-
-
-        Lấy tổng lại từng người thì ta được $S_{min} = n2^{n - 1}$, hoàn tất bài toán.\end{sol}
-
-        \begin{bt}\vocab{(IMO Shortlist 2003)}
-            Cho $A$ là một tập con gồm $101$ phần tử của tập $S=[1000000]$. Chứng minh rằng tồn tại các số $t_1$, $t_2, \ldots, t_{100}$ trong $S$ sao cho các tập\[ A_j=\{x+t_j\mid x\in A\},\qquad j=1,2,\ldots,100  \]là đôi một không giao nhau.
-        \end{bt}
-        \begin{sol}
-            Xét tập hợp $D = \{x -y \mid x,y\in A\}$, khi đó hai tập $A_i$ và $A_j$ giao nhau khi và chỉ khi $t_i - t_j \in D$. Ngược lại, nếu $A_i \cap A_j = \varnothing$  thì khi đó $t_i - t_j \notin D$. Xét đồ thị $G = (V,E)$ có $10^6$ đỉnh, với mỗi đỉnh $v_i$ là tập $A_i$. Nếu $A_i \cap A_j = \varnothing$ thì có cạnh $ij$. Thật vậy, xét đỉnh $i$ bất kỳ. Để đỉnh $j$ kề $i$ thì $t_i - t_j \notin D$, thế nên chọn $j$ có $10^6 - |D| = 10^6 - 100.101$ cách. Suy ra $d(i) = 10^6 - 100.101$. Theo bổ đề bắt tay, ta có 
-            \[
-                |E(G)| = \frac{\dsum_{i = 1}^{10^6}d(i)}{2} = \frac{10^6(10^6 - 100.101)}{2} > \frac{98.10^{12}}{99.2}
-            \]
-            Theo định lý Turan, tồn tại một $K_{100}$ ở $G$. Nói cách khác, tồn tại các tập $A_i$ rời nhau, hoàn tất chứng minh.
-        \end{sol}
-
+   
     \item \begin{bt}\vocab{(PTNK 2020).}
         Một trường phổ thông có $n$ học sinh. Các học sinh tham gia vào tổng cộng $m$ câu lạc bộ $A_1,A_2,\dots,A_m$
         \begin{enumerate}[label=(\alph*)]
@@ -294,87 +56,7 @@
         (b) Vì CLB $A_t$ có $k$ thành viên và có chung $k$ thành viên với tất cả các CLB còn lại nên các thành viên $A_t$ đã tham gia tất cả CLB và cũng là thành viên chung của nhau. Xét $n - k$ học sinh còn lại thì mỗi học sinh phải tham gia tối đa 1 CLB (trong số các CLB còn lại), vậy nên số CLB không vượt quá $n - k$, nên suy ra $m \leq n - k + 1 \leq n$, hoàn tất chứng minh.
         
     \end{sol}
-    \begin{bt}\vocab{(Japan MO Final 2017). }
-        Cho số nguyên dương $n \geq 3$. Có $n$ người, mỗi ngày tổ chức một cuộc họp mà ít nhất 3 người tham dự. Mỗi người trong cuộc họp bắt tay với tất cả những người còn lại. Sau $n$ cuộc họp, mỗi cặp người đã bắt tay đúng một lần. Chứng minh rằng mỗi cuộc họp đều có cùng số người tham dự.
-    \end{bt}
-    Ta phát biểu hai lời giải theo ngôn ngữ lập luận và đồ thị. 
-    \begin{sol}
-
-        \vocab{Nhận xét 1:} Nếu $A$ không tham gia ngày thứ $m$ thì số ngày $A$ tham gia phải ít nhất bằng số người tham gia ngày thứ $m$''. 
-        \begin{proof}
-            Nếu những người ở ngày hôm đó đã bắt tay nhau, vậy nên họ không thể gặp lại lần nữa, tức để $A$ có thể bắt tay với tất cả những người đó thì phải có mặt ở những ngày mà những người đó có mặt.
-        \end{proof}
-        
-        Ta sẽ đếm tổng số lượng người vào tất cả các ngày bằng hai cách.
-
-        Không mất tính tổng quát, giả sử ngày thứ nhất có nhiều người tham gia nhất, và ngày thứ hai có nhiều người tham gia thứ nhì. Giả sử số người tham gia ngày 1 và ngày 2 lần lượt là $a$ và $b$, thì ta có số người tham gia nhiều nhất phải là $a + b(n - 1)$.
-
-
-        Những người đã bắt tay vào ngày thứ nhất thì ngày thứ hai không thể xuất hiện cùng nhau, vì vậy có nhiều nhất một người $A$ tham gia cả ngày một và hai.
-
-
-        Thế nên có $a - 1$ người ở ngày thứ nhất xuất hiện $b$ lần khác nhau và $A$ xuất hiện ít nhất 2 lần. Hơn nữa, những người không có mặt ở ngày thứ nhất sẽ xuất hiện ít nhất ở $a$ ngày. Vậy nên tổng số người tham gia ít nhất là $(a - 1)b + a(n-a) + 2$. Ta có bất đẳng thức 
-        \[
-            (a - 1)b + a(n - a) + 2 \leq a + b( n - 1) \lra (a - b)( n - a ) < a
-        \]
-        Nếu $a \neq b$ thế thì $n - a < a \lra a > \frac{n}{2}$
-        
-        
-        Những người không có mặt vào ngày thứ nhất sẽ phải xuất hiện ít nhất trong $\frac{n}{2}$ ngày. Điều này rõ ràng là mâu thuẫn vì nếu người thứ nhất xuất hiện từ ngày $2$ đến $\frac{n}{2}$ thì người thứ hai phải xuất hiện ngày $\frac{n}{2}$ đến ngày $n$, xét đến người ba thì anh ta luôn xuất hiện nhiều lần hoặc với người đầu hoặc người thứ hai, mâu thuẫn.
-
-
-        Điều này dẫn đến việc $a \leq \frac{n}{2} \lra n - a > a$. Để bất đẳng thức trên đúng thì $a = b$
-
-
-
-        Mà thế thì mọi người đều phải tham gia ít nhất $a$ ngày nên vì thế số người tham gia mỗi ngày là như nhau, hoàn tất chứng minh.
-
-    \end{sol}
     
-    \vocab{Cách 2:} Bài toán có thể phát biểu lại như sau:
-    \begin{lemma}
-        Xét $G = (V,E)$ có $n$ đỉnh và không có cạnh. Mỗi một lần, lấy ra ít nhất 3 đỉnh đôi một độc lập nhau và nối chúng lại với nhau. Sau $n$ lần ta được một $K_n$ đầy đủ. Chứng minh rằng số đỉnh mỗi lần lấy là như nhau.
-    \end{lemma}
-    \begin{proof}
-        
-        Gọi $T_i$ là tập hợp các đỉnh ở lần lấy thao tác thứ $i$, $T = \{T_1,T_2,\dots,T_n\}$. Ký hiệu $T_i = |T_i|$. Gọi $A(u)$ là số lần xuất hiện của $u$ sau $n$ lần thao tác. 
-
-        \vocab{Nhận xét 1:} Nếu $u \notin T_k$ bất kỳ thì $A(u) \geq T_k$.
-        \begin{proof}
-            Giả sử $A(u) < T_k$. Vì mỗi lần $T_k$ thì các cặp đỉnh không được chọn lại nên nếu $v_m,v_n \in T_k$ thì $\nexists j \in [n]: v_m,v_n \in T_j$. Mà vì $d(u) = n - 1$ nên sẽ tồn tại một đỉnh không kề $v$, vô lý.
-        \end{proof}
-        Không mất tính tổng quát, giả sử $T_1 = \max(T) = a, T_2 = \max(T \backslash \{T_1\}) = b$. Đặt $S = \dsum_{i = 1}^n T_i$. Giả thuyết rằng $a > b$.
-
-        \vocab{Nhận xét 2:} $S \leq a +(n - 1)b$. 
-        \begin{proof}
-            Điều này có thể dễ dàng chứng minh bằng định nghĩa:
-            \[
-                S = T_1 + T_2 + \dots + T_n  \leq a + b + b + b +\dots + b = a + b(n - 1)
-            \]
-        \end{proof}
-        \vocab{Nhận xét 3:}  $S \geq a(n - a) + b(a - 1)$
-        \begin{proof}
-            Để ý rằng $|T_1 \cap T_2| \leq 1$. Vì nếu không sẽ có $u,v \in T_1,T_2$ vô lý vì hai đỉnh bất kỳ chỉ được ghép 1 lần. 
-            
-            Khi này với $u  \notin T_1$ thì theo nhận xét 1 ta có $A(u) \geq a$. 
-            
-            Với $v \in T_1 \notin T_2$ thì sẽ có $A(v) \geq b$. 
-
-            Tương tự với $w \in T_1 \cap T_2$ thì có $A(w) \geq 2$. Từ đó ta suy ra 
-            \[
-                S \geq a(n - a) + b(a - 1) + 2
-            \]
-        \end{proof}
-        Kết hợp lại hai điều trên ta được 
-        \[
-        \begin{aligned}
-            a + (n - 1)b \geq a(n - a) + b(a - 1) + 2 \lra a &\geq an -a^2 + ab  + 2 -nb\\
-             &> (n - a)(a - b) \\
-             &> n - a 
-        \end{aligned}
-        \]
-        Suy ra $a > \frac{n}{2}$. Do đó với $u,v,w \notin T_1$ thì $A(u),A(v),A(w) > \frac{n}{2}$. Theo Dirichlet thì tồn tại hai trong số 3 đỉnh trên cùng xuất hiện nhiều hơn 2 lần, mâu thuẫn. Vậy nên $a = b$. Kéo theo $|T_1| = |T_2| =\dots = |T_n|$, hoàn tất chứng minh.
-    \end{proof}
     \item \begin{bt}\vocab{\href{https://www.facebook.com/groups/vmo.tst/permalink/1373016430079150/}{(Đắk Lắk TST 2023).}}
         Tìm tất cả các tập hợp $A$ gồm 8 số nguyên dương sao cho với mọi số nguyên dương $n \leq 250$, tồn tại tập hợp $B$ là tập hợp con của $A$ thỏa mãn tổng tất cả các phần tử của $B$ bằng $n$.
     \end{bt}
@@ -440,39 +122,8 @@
         
     \end{sol}
     \vocab{Nhận xét:} Thông thường các giả thuyết như chứa số nguyên tố hay nguyên tố cùng nhau thì ta không có nhiều công cụ để xử lý trong tổ hợp. Vì vậy điều này gợi ý cho ta việc thực hiện điều ngược lại: Như thế nào thì hai số không nguyên tố cùng nhau? Làm cách nào để tránh điều đó?
-    \item \begin{btvn}\vocab{(PTNK 2022).}
-        Cho $n, k \geq 2$ là hai số nguyên dương và $a_0, a_1, \cdots, a_k$ là các số nguyên dương cho trước. Đặt $S_n=\{1,2, \cdots, n\}$, ta ký hiệu $A_n$ là số các bộ $\left(x_1, x_2, \cdots, x_k\right) \in S_n^k$ thỏa điều kiện:
-        $$
-        n \mid a_0+a_1 x_1+\cdots+a_k x_k .
-        $$
-        \begin{enumerate}[label=(\alph*)]
-            \item Xét số nguyên tố $p \geq 5 ; a_0, a_1, \cdots, a_k$ phân biệt và đều nhỏ hơn $p$. Tính $A_{p^2}$.
-            \item Tính $A_n$ với trường hợp tổng quát.
-        \end{enumerate}
-    \end{btvn}
-    \item \begin{bt}\vocab{(PTNK 2023).}
-        Cho $n$ là một số nguyên dương. Một bảng ô vuông gôm $n$ hàng và $n$ cột gồm $n^2$ ô vuông đơn vị ta gọi là một bảng $n \times n$.
-        Với mỗi số nguyên $k(1 \leq k \leq n)$, trên mỗi hàng ta chọn $k$ hàng liên tiếp và trên mỗi cột ta chọn $k$ cột liên tiếp, khi đó $k^2$ ô vuông nằm ở phần giao nhau ta gọi là một bảng con $k \times k$ của bảng $n \times n$ ban đầu.
-        \begin{enumerate}[label=(\alph*)]
-            \item Điền các số $1,2,3, \ldots, 81$ vào bảng $9 \times 9$. Chứng minh rằng tồn tại bảng con $2 \times 2$ có tổng của 4 số được điền trong nó lớn hơn 137.
-            \item Giả sử $n$ là số lẻ. Mỗi ô vuông đơn vị của bàng $n \times n$ ta điền một số thuộc $\{-1 ; 0 ; 1\}$ sao cho mỗi bảng con $2 \times 2$ có tổng của 4 số được điền trong nó là 0 . Gọi $S$ là tổng của $n^2$ số trong bảng $n \times n$. Tìm giá trị lớn nhất của $S$.
-        \end{enumerate}
-    \end{bt}
-    \begin{sol}
-        (a) Gọi 
-    \end{sol}
-    \begin{bt}\vocab{(Yufei Zhao).}
-        Cho $X$ là một tập hữu hạn có $|X| = n$, và gọi $A_1, A_2, \dots, A_m$ là các tập con của $X$ có ba phần tử sao cho $|A_i \cap A_j| \le 1$ cho tất cả $i \neq j$. Chứng minh rằng tồn tại một tập con $B$ của $X$, có ít nhất $\sqrt{2n}$ phần tử, sao cho $B \nsupseteq  A_i$ với mọi $i \in [n]$.
-    \end{bt}
-    \begin{sol}
-        Đặt $A = (A_1 \cup A_2 \cup \dots \cup A_m)$
-        Giả sử $\exists k_{min}: |B| \geq k$ và $B \nsupseteq A_i, \forall i \in [n]$. Khi này ta có thể đếm $A$ bằng hai cách.
-        \begin{enumerate}
-            \item  \vocabf{Cách 1 (theo phần bù):} Trường hợp $A$ nhỏ nhất chắc chắn là khi các $A_i$ đều không lấn sang $B$, và ta có được $A \geq n - k $ 
-            \item \vocabf{Cách 2 (Đếm quét cực đại): }Giả sử $\exists x_i \in B$ sao cho $x \cup A_i \subset A$. Theo giả thuyết đề bài thì mỗi $|A_i \cap A| = 2$ và $|A_i \cap B| = 1$. Cho nên $|A| \leq \dbinom{k}{2}$
-        \end{enumerate}
-        Tổng kết lại thì $$n - k \leq \dbinom{k}{2} \Leftrightarrow  k^2 + k \geq 2n \Rightarrow \Delta \lra 4 + 8n \Rightarrow k \geq \frac{-1 + 2\sqrt{1 + 2n}}{2} \geq \sqrt{2n}$$
-    \end{sol}
+   
+
     \begin{bt}
         Trên trục số nguyên, một con ếch xuất phát tại 0, nhảy đến các vị trí có tọa độ thuộc $\left\{1,2,3, \ldots, 2^{2022}-1\right\}$, mỗi điểm được nhảy qua không quá một lần và con ếch có thể nhảy tới hoặc nhảy lùi lại tùy ý. Biết rằng độ dài bước nhảy của ếch là lũy thừa của 2 và gọi $a_k$ là số bước nhảy độ dài $2^k$ mà con ếch đã nhảy.
     \begin{enumerate}[label=(\alph*)]
@@ -500,123 +151,7 @@
             $$
             \end{enumerate}
     \end{sol}
-    \begin{bt}\vocab{(Japan MO Final 2018 P1). }
-        Cho các số nguyên dương từ $1$ đến $100$ được viết trên một bảng đen, mỗi số đúng một lần. Một phép toán bao gồm việc chọn hai số $a$ và $b$ trên bảng đen và xóa chúng, sau đó viết số ước chung lớn nhất của $a^2+b^2+2$ và $a^2b^2+3$. Sau một số lượng phép toán, chỉ còn lại một số nguyên dương trên bảng đen. Chứng minh rằng số này không thể là số chính phương.
-    \end{bt}
-
-    \begin{sol}
-        Ta chứng minh rằng tính chia hết cho $3$ là bất biến. 
-        
-        Nếu $3 \mid a,b$ thì khi đó $3\nmid a^2 + b^2 + 2$ nên $3 \nmid \gcd(a^2 + b^2 + 2, a^2b^2 + 2)$
-
-
-        Nếu $3 \nmid a,b$ thì $3\nmid a^2b^2 +3$ nên $3 \nmid \gcd(a^2 + b^2 + 2, a^2b^2 + 2)$
-
-
-        Nếu chỉ có $a$ hoặc $b$ chia hết cho $3$, khi đó ta có hai trường hợp
-
-
-        Nếu $b = 3k + 1, k \in \mathbb{Z}$ thì khi đó $a^2 + b^2 + 2 = a^2 + 9k^2 + 6k + 1 + 2 \equiv 0 \pmod{3}$
-
-
-        Nếu $b = 3k + 2, k \in \mathbb{Z}$ thì khi đó $a^2 + b^2 + 2 = a^2 +9k^2 + 6k + 4 + 2 \equiv 0 \pmod{3}$
-
-
-        Khẳng định được chứng minh.
-
-
-        Mặt khác dễ dàng kiểm tra được rằng $ 9 \nmid \gcd(a^2 + b^2 + 2, a^2b^2 + 2)$
-
-
-        Mặt khác vì từ 1 đến 100 có $33$ số chia hết cho 3 và có 100 lượt nên tức là đến một lúc nào đó sẽ chỉ còn $33$ số chia hết cho 3, và sau chẵn lượt tất nhiên là sẽ được một số chia hết cho 3, mà số này lại không chia hết cho 9 nên không thể là số chính phương.
-    \end{sol}
-
-    \begin{bt}\vocab{(Japan MO Final 2019). }
-        Cho $n \geq 3$ là một số lẻ và xét một lưới ô vuông $n\times n$. Trò chơi bao gồm $n^2$ lượt, ở mỗi lượt, chúng ta sẽ thực hiện các thao tác sau theo tuần tự.
-        \begin{enumerate}
-            \item Chúng ta sẽ chọn một ô chứa một số nguyên chưa được viết và viết một số nguyên từ 1 đến $n^2$. Chúng ta chỉ có thể viết một số nguyên một lần duy nhất trong suốt trò chơi.
-            \item Đối với mỗi hàng, cột bao gồm cả một ô, nếu tổng vài số nguyên  nằm trên hàng, cột hoặc một ô là bội số của $n$, thì chúng ta sẽ nhận được 1 điểm.
-        \end{enumerate}
-        Xác định giá trị lớn nhất có thể của điểm số như tổng số có thể đạt được vào cuối trò chơi.
-    \end{bt}
-
-    \begin{sol}
-        Lấy module $n$ các số và ta sử dụng $n$ thay vì $0$. 
-        Ta gọi $r_i$ và $c_i$ lần lượt là tổng các số thuộc hàng hoặc cột $i$. Khi đó số điểm lớn nhất mà hàng $i$ có thể nhận được là $\left\lfloor \frac{r_i}{n} \right\rfloor$. Khi này số điểm lớn nhất ở hàng là 
-        \[
-            \sum_{i = 1}^n \left\lfloor \frac{r_i}{n} \right\rfloor \leq \frac{\dsum_{i = 1}^n r_i}{n} = \frac{n(n + 1)}{2}
-        \]
-        Lý do tổng vẫn theo mod $n$ là vì số điểm khi này phải phụ thuộc vào các số mod $n$. Tương tự với cột thì ta có tổng điểm lớn nhất là $n(n +1)$. Giờ ta sẽ chỉ ra một cấu hình có thể đạt được giá trị lớn nhất. Viết vào ô $(i,j)$ với $i<n$ số $i$ nếu $2\nmid j$ và $n-i$ ngược lại và viết $n$ vào hàng cuối cùng.
-    \end{sol}
-
-    \item \begin{btvn}\vocab{(Japan MO Final 2021).}
-        Cho số nguyên dương $n \geq 2$. Hai người chơi $A$ và $B$ chơi một trò chơi trên lưới các ô vuông đơn vị $n \times 2021$. Đầu tiên, $A$ tô mỗi ô màu đen hoặc trắng. $B$ đặt một viên bi vào một trong các ô ở hàng trên cùng và chỉ định một trong các ô ở hàng dưới cùng làm \textit{goal}. Sau đó, $A$ thao tác $n - 1$ lần như sau:
-        \begin{enumerate}
-            \item Khi ô có bi được sơn màu trắng, $A$ di chuyển bi sang ô bên dưới.
-            \item Nếu không, $A$ hãy di chuyển viên bi đến ô tiếp theo ở bên trái hoặc bên phải, sau đó đến ô bên dưới.
-            
-        \end{enumerate}
-        
-        Tìm giá trị nhỏ nhất của $n$ sao cho $A$ luôn có thể di chuyển một viên bi đến \textit{goal}, bất kể lựa chọn của $B$.
-    \end{btvn}
-
-    \begin{bt}\vocab{(Japan MO Final 2022).}
-        Có $2022$ ô vuông được đánh số thứ tự trên một hàng ngang. Hai người $A$ và $B$ cùng nhau chơi một trò chơi. Đầu tiên, những ô vuông số lẻ được đánh dấu chữ $A$ và những ô vuông số chẵn được đánh dấu chữ $B$. Sau đó, bắt đầu từ $A$, họ thay phiên thực hiện những thao tác sau:
-        \begin{enumerate}
-            \item Người chơi sẽ chọn hai ô vuông được đánh dấu bằng tên của họ, sao cho hai ô đó không kề nhau, và tất cả các ô vuông nằm ở giữa hai ô đó đều được đánh dấu bằng tên của đối thủ và đổi tên tất cả các ô đó sang tên của mình.
-            \item Hai người chơi luân phiên chơi liên tục như vậy đến khi có một người không thể thao tác tiếp được nữa
-        \end{enumerate}
-        Tìm số nguyên dương $m$ lớn nhất sao cho $A$ luôn có thể đảm bảo rằng có ít nhất $m$ ô vuông được đánh dấu chữ $A$.
-    \end{bt}
-
-    \begin{sol}
-        Ta có thể tổng quát bài toán này. Gọi $f(n)$ là số ô vuông lớn nhất $A$ có thể đảm bảo là có tên mình trên lưới $2n \times 1$.
-
-
-        Xét lưới $2n \times 1$ thì bởi vì $A$ đi đầu nên bất kể $A$ chọn vị trí nào đồng nhất, ta có thể xem $AAA$ ở lượt đầu là $A$ khi này kích thước lướt trở thành $2(n - 1) \times 1$ mà trong khi đó số lượng $A$ và $B$ vẫn là như nhau xen kẽ. Cấu hình này chính bằng $f(n - 1)$. Do đó ta lập được hệ thức truy hồi:
-        \[
-            \left\{
-                \begin{array}{l}
-                    f(1) = 1, f(2) = 3\\
-                    f(n) = f(n - 1) + 1
-                \end{array}
-            \right.
-        \]
-        Thế nên tìm được $f(n) = n$. Có được $f(1011) = 1011$. Bây giờ ta sẽ thiết lập một chiến thuật dành cho $A$ để luôn có thể đảm bảo ít nhất được con số này. 
-
-
-        Đầu tiên $A$ sẽ bắt đầu thao tác từ trái sang, anh ta có thể thực hiện như sau:
-        \[
-            \begin{aligned}
-                &ABABAB\dots AB \to AAABAB\dots AB \to AAABAB\dots BBB\dots AB\\
-                &\to AAAAAB\dots BBB \dots AB \to \dots
-            \end{aligned}
-        \]
-        Số lượng chữ $A$ được thể hiện như sau:
-        \[
-            1011 \to 1012 \to 1011 \to 1012 \to\dots
-        \]
-        Có thể thấy rằng bất kể $B$ chọn ở đâu để đồng nhất thì $A$ luôn giữ được một lượng quân nhất định từ bên trái sang và chúng chỉ có thể tăng mà không giảm được dưới $1011$, hoàn tất bài toán.
-    \end{sol}
-
-    \item \begin{btvn}\vocab{(Japan MO Final 2023).}
-        Trên một bảng ô vuông $5 \times 5$, người ta đặt các Tetromino
-        lên các hình vuông để trong mỗi hình vuông, có hai hoặc ít hơn viên được bao phủ (các viên này có thể xếp chồng lên nhau). Tìm số hình vuông lớn nhất được bao phủ bởi đúng một viên.
-    \end{btvn}
-
-
-    \item \begin{btvn}\vocab{(Japan MO Final 2024).}
-    Trong mặt phẳng tọa độ, các điểm có tung độ và hoành độ nguyên thuộc $1$ đến $2000$ được gọi là điểm tốt. Hơn nữa, đối với bốn điểm $A(x_1, y_1)$, $B(x_2, y_2)$, $C(x_3, y_3)$, $D(x_4, y_4)$ có đường đa tuyến $ABCD$ được gọi là đường $\mathbb{Z}$ nếu như:
-    \begin{enumerate}
-        \item Tất cả đều $A, B, C, D$ là những điểm tốt.
-        \item  $x_1<x_2$, $y_1=y_2$
-        \item $x_2>x_3$, $y_2-x_2=y_3-x_3$
-        \item $x_3<x_4$, $y_3=y_4$
-    \end{enumerate}
-    
-    Tìm giá trị nguyên dương $n$ nhỏ nhất sao cho có $n$ đường $\mathbb{Z}$ là $Z_1, Z_2,\dots, Z_n$ thỏa mãn với bất kỳ điểm $P$ tốt nào, tồn tại một số nguyên $i \in [n]$ sao cho $P$ nằm trên $Z_i$.
-        
-    \end{btvn}
+   
     \begin{bt}\vocab{(Nguyễn Tuấn Anh). }
         Cho $\mathcal{S}$ là tập hợp các bộ số nguyên dương $(x_1,x_2,\dots,x_n)$ là nghiệm của phương trình
     \[
@@ -662,72 +197,7 @@
             f(x) = \left(\sum_{i = 0}^{\infty}ix^i\right)^n
         \]
     \end{sol}
-    \begin{bt}\vocab{(Korean\ MO 2023).}
-        Cho các tập hợp $A_0, A_1, \dots, A_{2023}$ thỏa mãn các điều kiện sau:
-        \begin{enumerate}
-            \item $A_0 = \{ 3 \}$
-            \item $A_n = \{ x + 2 \mid x \in A_{n -     1} \} \ \cup \{x(x+1) / 2 \mid x \in A_{n - 1} \}$ với mọi $n = 1, 2, \dots, 2023$.
-        \end{enumerate}
-    Tính $|A_{2023}|$.  
-    \end{bt}
-
-    \begin{sol}
-        Giả sử tồn tại hai dãy phép toán có cùng độ dài biến $3$ thành cùng một số. Giả sử số đó là $\frac{2k(2k + 1)}{2} = 2k^2 + k$
-
-
-        Ta được hai số trước đó là $2k^2 + k - 2$ và $2k$.
-
-
-        Xét số $\frac{2k(2k - 1)}{2}$ thì cần tối thiểu $k - 1$ phép toán để trở thành $2k^2 + k$ tuy nhiên điều này là không thể vì khi đó để được $2k$ thì phải xuất phát lớn nhất là $2$ vô lý. Vậy nên 
-        \[
-            \{ x + 2 \mid x \in A_{n - 1} \} \ \cap \{x(x+1) / 2 \mid x \in A_{n - 1} \} = \varnothing
-        \]
-        Khi đó ta được $|A_{2023}| = 2^{2023}$.
-    \end{sol}
-
-    
-    \item \begin{bt}\vocab{(India TST 2010).}
-        Cho bảng vuông $10\times 10$, mỗi ô $(i,j)$ được điền bởi một số thực dương $a_{ij}$ sao cho tổng các số thuộc mỗi hàng, mỗi cột của bảng luôn là $1$. Chứng minh rằng tồn tại $j,k,l,m \in [10]$ với $j < k$ và $l < m$ sao cho
-        \[
-            a_{jl}a_{km} + a_{jm}a_{kl} \geq \frac{1}{50}
-        \]
-    \end{bt}
-    \begin{sol}
-        Rõ ràng 4 điểm nói trên tạo ra một hình chữ nhật nằm trong bảng ô vuông đó (tổng tích các cạnh đối lớn hơn hoặc bằng $\frac{1}{50}$)\\
-    - Ta sẽ giả sử rằng với mọi bốn điểm như vậy thì hệ thức trên luôn bé hơn $\frac{1}{50}$\\
-    Ta đếm tổng giá trị các phần tử của tập hợp
-    $$ S = \{a_{jl}a_{km} + a_{jm}a_{kl} \}$$
-    \begin{itemize}[label=,leftmargin=0em]
-        \item \textbf{Cách 1:} Chọn ra hai dòng bất kì và từ một trong hai dòng đó chọn ra 2 điểm, ta tạo được một hình chữ nhật. Ta được $$|S| < \frac{1}{50}\binom{10}{2}\binom{10}{2} $$
-                    \begin{figure}[ht]
-            \centering
-            \subfloat{\includegraphics[width=0.3\linewidth]{Image/ando.png}}
-        \end{figure}
-        \item \textbf{Cách 2:} Đếm dựa trên một điểm $a_{ij}$ cho trước. Ta sẽ tìm một điểm $b_{mn} $ nào đó để tạo nên một đường chéo. 
-        
-        Khi đó nếu ta lấy $\sum a_{ij}b_{mn}$ và nhân 2 lên chia cho 4 thì ta được S, vì mỗi lần chọn cặp $(a,b)$ thì ta chọn ra 2 đường chéo, tức là sau khi đếm hết thì mỗi đường chéo được đếm hai lần. 
-    
-        - Nhưng nếu đếm như vậy thì mỗi cấu hình của S sẽ lặp lại 4 lần, tức là ô màu đen và đỏ đổi vị trí cho nhau, ô màu đen và đỏ thế chỗ cho 2 ô xám, ta được 4 cấu hình như nhau.
-    
-        Gọi $S_{ij}$ là tổng giá trị các phần tử trong $S$ có chứa $a_{ij}$. Ta được $$S_{ij} = a_{ij} \sum b_{mn}$$
-        Chọn $a$ có 100 cách. Theo hình vẽ bên trên thì những chỉ những ô màu trắng mới chứa được $b$, nên do đó $b$ có $100 - 10 - 9 = 81$ cách, viết lại 
-        $$ S_{ij} = a_{ij}\sum_{1}^{81} b_{mn}
-        $$
-        Nếu nhìn vào bảng thì ta còn có thể làm gọn tổng này hơn nữa. Ta có
-        $$ S_{ij} = a_{ij}[10 - 1 - (1 - a_{ij}) ]
-        = a_{ij}(8 + a_{ij})
-        = a_{ij}^2 + 8a_{ij}
-        $$
-        Cộng lại các $S_{ij}$ ta được
-        $$ |S| = \frac{1}{2}\sum_{1}^{100} S_{ij} =\frac{1}{2} \sum_{1}^{100} a_{ij}^2 + 8a_{ij} =  \frac{1}{2}.8.10 + \frac{1}{2}\sum_{1}^{100} a_{ij}^2  
-        $$
-        Áp dụng bất đẳng thức Cauchy-Schwartz ta có 
-        $$ \sum_{i=1}^{100} a_{ij}^2 \geq \frac{ \left(\displaystyle \sum_{i=1}^{100}a_{ij}\right)^2}{100} = 1
-        $$
-        Do đó $|S| \geq \frac{1}{2}.80.10 + \frac{1}{2} = \frac{81}{2}$
-    \end{itemize}
-    Từ đây cho ta được mâu thuẫn bài toán, suy ra điều phải chứng minh.
-    \end{sol}
+   
     \item \begin{bt}\vocab{(Kon Tum TST 2023).}
         Trên một đường tròn có đường kính bằng 2, người ta tiến hành tô đỏ một số cung tròn không có điểm chung. Cho $d$ là một đường kính tùy ý của đường tròn. Chứng minh rằng luôn tồn tại dây cung song song $d$ sao cho cả hai đầu mút của dây cung đó đều được tô màu đỏ. Biết rằng tổng độ dài của các cung màu đỏ lớn hơn $\pi$
     \end{bt}
@@ -858,45 +328,62 @@
 
         Vậy nên tồn tại tập $B$ thỏa mãn đề bài.
     \end{sol}
-    \item \begin{btvn}\vocab{(Tiền Giang TST 2023).}
-        Năm bạn học sinh thông minh ngồi xung quanh một chiếc bàn tròn. Thầy giáo đưa cho các em một số quả táo và nói với các em: "Thầy đưa cho một số các em một số quả táo, không có hai em nào có cùng số táo. Hơn nữa, mỗi em sẽ biết số táo của mỗi bạn trong hai bạn ngồi cạnh mình (bạn ngồi cạnh bên trái và bạn ngồi cạnh bên phải)". Sau đó thầy giáo nói cho các em học sinh tồng số táo mà các bạn học sinh có và đề nghị các em học sinh đoán hiệu số táo của hai bạn ngồi đối diện vơi mình (hai bạn không ngồi cạnh mình).
-        \begin{enumerate}[label=(\alph*)]
-            \item Chứng minh rằng thầy giáo có cách đưa cho năm học sinh tổng cộng 16 quả táo để không bạn nào có thế đoán được chính xác hiệu số được hỏi.
-            \item Giả sừ tổng số táo nhỏ hơn 16. Chứng minh rằng có ít nhất một học sinh đoán được chính xác hiệu số được hỏi.
+    \vocab{Nhận xét:} Ý (b) của bài toán khá quen thuộc mà chẳng qua là đã được chỉnh sửa số từ bài toán gốc sau:
+    \begin{bt}\vocab{(Yufei Zhao).}
+        Cho $X$ là một tập hữu hạn có $|X| = n$, và gọi $A_1, A_2, \dots, A_m$ là các tập con của $X$ có ba phần tử sao cho $|A_i \cap A_j| \le 1$ cho tất cả $i \neq j$. Chứng minh rằng tồn tại một tập con $B$ của $X$, có ít nhất $\sqrt{2n}$ phần tử, sao cho $B \nsupseteq  A_i$ với mọi $i \in [n]$.
+    \end{bt}
+    \begin{sol}
+        Đặt $A = (A_1 \cup A_2 \cup \dots \cup A_m)$
+        Giả sử $\exists k_{min}: |B| \geq k$ và $B \nsupseteq A_i, \forall i \in [n]$. Khi này ta có thể đếm $A$ bằng hai cách.
+        \begin{enumerate}
+            \item  \vocabf{Cách 1 (theo phần bù):} Trường hợp $A$ nhỏ nhất chắc chắn là khi các $A_i$ đều không lấn sang $B$, và ta có được $A \geq n - k $ 
+            \item \vocabf{Cách 2 (Đếm quét cực đại): }Giả sử $\exists x_i \in B$ sao cho $x \cup A_i \subset A$. Theo giả thuyết đề bài thì mỗi $|A_i \cap A| = 2$ và $|A_i \cap B| = 1$. Cho nên $|A| \leq \dbinom{k}{2}$
         \end{enumerate}
-    \end{btvn}
+        Tổng kết lại thì $$n - k \leq \dbinom{k}{2} \Leftrightarrow  k^2 + k \geq 2n \Rightarrow \Delta \lra 4 + 8n \Rightarrow k \geq \frac{-1 + 2\sqrt{1 + 2n}}{2} \geq \sqrt{2n}$$
+    \end{sol}
 
-    \item \begin{btvn}\vocab{(An Giang TST 2023).}
-        Cho lục giác lồi $A_1 A_2 A_3 A_4 A_5 A_6$ có diện tích bằng 1 và có các cặp cạnh đối diện song song, hai đường thẳng $A_6 A_1 ; A_2 A_3$ cắt nhau tại các điểm $B_1$, hai đường thẳng $A_1 A_2 ; A_3 A_4$ cắt nhau tại điểm $B_2 ; \ldots ;$ tương tự $A_{i-1} A_i ; A_{i+1} A_{i+2}$ cắt nhau tại điểm $B_i, i=1 \ldots 6\left(\right.$ xem $A_7$ là $A_1$ và $A_8$ là $\left.A_2\right)$. Chứng minh rằng tổng diện tích sáu tam giác $A_i B_i A_{i+1} ; i=1 \ldots 6$ không bé hơn 1.
-    \end{btvn}
-    \item \begin{btvn}\vocab{(Bình Phước TST 2023).}
+    \item \begin{bt}\vocab{\href{https://artofproblemsolving.com/community/c5h1824275p12195834}{(Yannick Yao).}}
+        Hai số hữu tỉ \(\tfrac{m}{n}\) và \(\tfrac{n}{m}\) được viết trên một bảng đen, với \(m\) và \(n\) là các số nguyên dương nguyên tố cùng nhau. Tại bất kỳ thời điểm nào, Evan có thể chọn hai số \(x\) và \(y\) được viết trên bảng và viết số trung bình cộng \(\tfrac{x+y}{2}\) hoặc số trung bình nghịch đảo \(\tfrac{2xy}{x+y}\) của chúng lên bảng. Tìm tất cả các cặp \((m,n)\) sao cho Evan có thể viết 1 lên bảng trong một số bước hữu hạn.
+    \end{bt}
+    \begin{sol}
+        Ta chứng minh bằng quy nạp rằng xuất phát từ $2$ số $a,b$ ta lấy trung bình cộng của các số thì sau $n$ bước ta nhận được tất cả các số có dạng $\frac{ka + (2^n -k)b}{2^n},\forall k = 0,\dots,2^n$. Thay $(a,b) = \left(\frac{m}{n}, \frac{n}{m}\right)$ và chọn $m + n =2^k$ ta được số 1. 
+        
+        Ta chứng minh rằng nếu $m + n \neq 2^k$ thì không viết được số $1$. Xét $p \in \bb{P}$ sao cho $p \mid m + n$. Ta nghịch đảo modulo $p$, do $m + n \equiv 0 \pmod{p}$ nên $\frac{m}{n} \equiv \frac{n}{m} \equiv - 1 \pmod{p}$
+      
+        Mọi số được viết trên bảng đều $\equiv - 1\pmod{p}$ vì nếu $x,y \equiv -1 \pmod{p}$ thì $\frac{x + y}{2} \equiv \frac{-1 - 1}{2} \equiv - 1\pmod{p}$ và $\frac{2xy}{x + y} \equiv \frac{2}{-2} \equiv -1\pmod{p}$. Vậy nên không bao giờ viết được $1$ vì $1 \neq - 1 \pmod{p}$. Như vậy để thỏa mãn đề bài thì chọn $(m,n)$ có dạng $m + n = 2^k$ với $k$ nguyên không âm bất kỳ.\end{sol}
+        \item \begin{bt}\vocab{(Đồng Tháp TST 2022).}
+            Trên đường tròn có 2023 điểm phân biệt. Tìm số nguyên dương $n$ nhỏ nhất sao cho với mọi cách chọn $n$ điểm trong số các điểm trên, tồn tại hai điểm sao cho phần trong của một trong hai cung tròn có đầu mút là hai điểm nói trên chứa đúng 1012 điểm trong số 2023 điểm đã cho (phần trong của một cung tròn là các điểm của cung đó không kể hai đầu mút).
+        \end{bt}
+        \begin{sol}
+            Ta chứng minh $n \geq 1011$ là giá trị nhỏ nhất cần tìm.
+    
+            Ta thấy rằng một cặp điểm thỏa mãn là khi số các điểm nằm bên trong và ngoài cung tương ứng là $1012$ và $1009$.
+            Giả sử $2023$ điểm này là đều nhau và được đánh số từ $1 \to 2023$.
+    
+            Thật vậy, với $n = 1010$. Khi đó, với cách chọn $1010$ điểm liên tiếp trên đường tròn. Gọi $A,B$ là hai điểm ở ngoài cùng có cung bên trong lớn nhất, và bên ngoài nhỏ nhất. Khi đó số các điểm trong và ngoài của cung $AB$ là  $1009 - 2 + 1 = 1008$ và $2023 - 1011 + 1 = 1013$, mà các điểm bên trong thì lại tạo ra cung trong nhỏ hơn và cung ngoài lớn hơn. Do đó $n \geq 1011$.
+    
+            Với $n \geq 1011$. Ta chia $2023$ điểm thành các cặp 
+             \[(1,1014), (2,1015),\dots, (1010, 2023),(1011,1),(1012,2),(1013,3),\dots,(2023,1013) \tag{1}\]
+    
+             Ta chọn ít nhất 1011 số, mỗi số được chọn sẽ nằm trong $2$ cặp ở $(1)$, mà lại có $2023$ cặp. Khi đó sau $1011$ lần bỏ vào, theo Dirichlet sẽ có ít nhất một cặp được bỏ vào 2 lần. 
+        \end{sol}
+    \item \begin{bt}\vocab{(Bình Phước TST 2023).}
         Trên bàn có 99 tấm thẻ được đánh số từ 1 đến 4 và từ 6 đến 100 . Hai bạn $A$ và $B$ luân phiên chơi trò chơi với luật như sau:
         \begin{enumerate}
             \item A là người thực hiện lượt chơi đầu tiên.
-            \item Trong mỗi lượt chơi, người chơi nhặt ra khỏi bàn 2 tấm thė được đánh hai số nguyên liên tiếp nhau sao cho số bé hơn không chia hết cho 10 và giữ một tấm thè trên tay đồng thời bỏ đi tấm thẻ còn lại.
+            \item Trong mỗi lượt chơi, người chơi nhặt ra khỏi bàn 2 tấm thẻ được đánh hai số nguyên liên tiếp nhau sao cho số bé hơn không chia hết cho 10 và giữ một tấm thè trên tay đồng thời bỏ đi tấm thẻ còn lại.
             \item Khi tới lượt chơi của mình, nếu người chơi không thể thực hiện được yêu cầu ii hoặc chọn được hai tấm thè nhưng tổng số của một trong hai tấm thè đó với một tấm thẻ tuỳ ý trên tay hai người chơi đang giữ bằng 101 thì là người thua cuộc.
         \end{enumerate}
         Biết rằng hai người chơi có thể thấy được số ghi trên tất cả các tấm thẻ trên bàn và trong tay đối thủ. Hỏi ai là người có chiến thuật thắng.
-    \end{btvn}
-    \item \begin{btvn}\vocab{\href{https://artofproblemsolving.com/community/c5h2156986p15952792}{(USAMO 2020).}}
-        Giả sử $(a_1,b_1),$ $(a_2,b_2),$ $\dots,$ $(a_{100},b_{100})$ là các cặp được sắp xếp khác nhau của các số nguyên không âm. Đặt $N$ là số các cặp số nguyên $(i,j)$ thoả mãn $1\leq i<j\leq 100$ và $|a_ib_j-a_jb_i|=1$. Xác định giá trị lớn nhất có thể của $N$ qua tất cả các lựa chọn có thể của $100$ cặp được sắp xếp.
-    \end{btvn}
-    \item \begin{btvn}\vocab{(Đồng Tháp TST 2022).}
-        Trên đường tròn có 2023 điểm phân biệt. Tìm số nguyên dương $n$ nhỏ nhất sao cho với mọi cách chọn $n$ điểm trong số các điểm trên, tồn tại hai điểm sao cho phần trong của một trong hai cung tròn có đầu mút là hai điểm nói trên chứa đúng 1012 điểm trong số 2023 điểm đã cho (phần trong của một cung tròn là các điểm của cung đó không kể hai đầu mút).
-    \end{btvn}
-    \item \begin{btvn}\vocab{\href{https://artofproblemsolving.com/community/c5h1824275p12195834}{(Yannick Yao).}}
-        Hai số hữu tỉ \(\tfrac{m}{n}\) và \(\tfrac{n}{m}\) được viết trên một bảng đen, với \(m\) và \(n\) là các số nguyên dương tương đối nguyên tố. Tại bất kỳ thời điểm nào, Evan có thể chọn hai số \(x\) và \(y\) được viết trên bảng và viết số trung bình cộng \(\tfrac{x+y}{2}\) hoặc số trung bình nghịch đảo \(\tfrac{2xy}{x+y}\) của chúng lên bảng. Tìm tất cả các cặp \((m,n)\) sao cho Evan có thể viết 1 lên bảng trong một số bước hữu hạn.
-    \end{btvn}
+    \end{bt}
+    \begin{sol}
+        Ta chứng minh rằng $A$ là người chiến thắng. Ở lượt đầu, $A$ lấy $95,96$ bỏ $95$. Khi đó số $6$ không được chọn. Vì số nhỏ hơn được chọn không chia hết cho $10$ nên các cặp được chọn chỉ nằm trong từng đoạn $[1,10],[11,20],[21,30],\dots,[91,100]$. 
+        
+        Phân hoạch các tập thành $X = [1,4],Y = [7,10]$ và $Z = [11,50],T= [51,100]$. Nếu $B$ chọn cặp trong $X$ thì $A$ chọn cặp trong $Y$ theo vị trí đối xứng và ngược lại. Tương tự với tập $Z$ và $T$.
+    \end{sol}
+    
 
-
-    \item \begin{btvn}\vocab{(Hong Kong TST 2009).}
-        Trong một trường học có $2008$ học sinh. Học sinh là thành viên của một số ủy ban nhất định. Một ủy ban có tối đa $1004$ thành viên và mỗi hai học sinh tham gia vào một ủy ban chung.
-        \begin{enumerate}
-            \item Xác định số ít nhất có thể của các ủy ban trong trường học.
-            \item Nếu yêu cầu thêm rằng hợp của bất kỳ hai ủy ban nào cũng không được vượt quá $1800$ học sinh, thì câu trả lời trong (i) có đúng không?
-        \end{enumerate}
-    \end{btvn}
-    \item \begin{btvn}\vocab{(Vinh 2023).} Có $k$ người trong một gia đình đi nghỉ mát trong thời gian 7 ngày tại khu du lịch. Buổi sáng, mỗi người chọn ăn một trong 3 món: xôi, phở hoặc bánh mỳ. Biết rằng trong bất kỳ 3 ngày nào, cũng có ít nhất một người mà trong 3 ngày này chọn ăn 3 món phân biệt. Tìm giá trị nhỏ nhất có thể của $k$.
+    \item \begin{btvn}\vocab{(Trường hè Vinh 2023).} Có $k$ người trong một gia đình đi nghỉ mát trong thời gian 7 ngày tại khu du lịch. Buổi sáng, mỗi người chọn ăn một trong 3 món: xôi, phở hoặc bánh mỳ. Biết rằng trong bất kỳ 3 ngày nào, cũng có ít nhất một người mà trong 3 ngày này chọn ăn 3 món phân biệt. Tìm giá trị nhỏ nhất có thể của $k$.
         
     \end{btvn}
     
@@ -925,7 +412,579 @@
     \item \begin{btvn}\vocab{(Hà Tĩnh TST 2023).}
         Cho $n$ số nguyên dương đôi một phân biệt $a_1,a_2,\dots,a_n$. Chứng minh rằng với mọi $i \in [n]$, tồn tại số nguyên dương $b$ sao cho $ba_i$ là lũy thừa của số nguyên dương với số mũ lớn hơn $1$.
     \end{btvn}
+    \begin{sol}
+        Ta chứng minh bằng quy nạp rằng xuất phát từ $2$ số $a,b$ ta lấy trung bình cộng của các số thì sau $n$ bước ta nhận được tất cả các số có dạng $\frac{ka + (2^n -k)b}{2^n},\forall k = 0,\dots,2^n$. Thay $(a,b) = \left(\frac{m}{n}, \frac{n}{m}\right)$ và chọn $m + n =2^k$ ta được số 1. 
+        
+        Ta chứng minh rằng nếu $m + n \neq 2^k$ thì không viết được số $1$. Xét $p \in \bb{P}$ sao cho $p \mid m + n$. Ta nghịch đảo modulo $p$, do $m + n \equiv 0 \pmod{p}$ nên $\frac{m}{n} \equiv \frac{n}{m} \equiv - 1 \pmod{p}$
+      
+        Mọi số được viết trên bảng đều $\equiv - 1\pmod{p}$ vì nếu $x,y \equiv -1 \pmod{p}$ thì $\frac{x + y}{2} \equiv \frac{-1 - 1}{2} \equiv - 1\pmod{p}$ và $\frac{2xy}{x + y} \equiv \frac{2}{-2} \equiv -1\pmod{p}$. Vậy nên không bao giờ viết được $1$ vì $1 \neq - 1 \pmod{p}$. Như vậy để thỏa mãn đề bài thì chọn $(m,n)$ có dạng $m + n = 2^k$ với $k$ nguyên không âm bất kỳ.\end{sol}
+    \item \begin{btvn}\vocab{(PTNK 2022).}
+        Cho $n, k \geq 2$ là hai số nguyên dương và $a_0, a_1, \cdots, a_k$ là các số nguyên dương cho trước. Đặt $S_n=\{1,2, \cdots, n\}$, ta ký hiệu $A_n$ là số các bộ $\left(x_1, x_2, \cdots, x_k\right) \in S_n^k$ thỏa điều kiện:
+        $$
+        n \mid a_0+a_1 x_1+\cdots+a_k x_k .
+        $$
+        \begin{enumerate}[label=(\alph*)]
+            \item Xét số nguyên tố $p \geq 5 ; a_0, a_1, \cdots, a_k$ phân biệt và đều nhỏ hơn $p$. Tính $A_{p^2}$.
+            \item Tính $A_n$ với trường hợp tổng quát.
+        \end{enumerate}
+    \end{btvn}
+    \item \begin{bt}\vocab{(PTNK 2023).}
+        Cho $n$ là một số nguyên dương. Một bảng ô vuông gôm $n$ hàng và $n$ cột gồm $n^2$ ô vuông đơn vị ta gọi là một bảng $n \times n$.
+        Với mỗi số nguyên $k(1 \leq k \leq n)$, trên mỗi hàng ta chọn $k$ hàng liên tiếp và trên mỗi cột ta chọn $k$ cột liên tiếp, khi đó $k^2$ ô vuông nằm ở phần giao nhau ta gọi là một bảng con $k \times k$ của bảng $n \times n$ ban đầu.
+        \begin{enumerate}[label=(\alph*)]
+            \item Điền các số $1,2,3, \ldots, 81$ vào bảng $9 \times 9$. Chứng minh rằng tồn tại bảng con $2 \times 2$ có tổng của 4 số được điền trong nó lớn hơn 137.
+            \item Giả sử $n$ là số lẻ. Mỗi ô vuông đơn vị của bàng $n \times n$ ta điền một số thuộc $\{-1 ; 0 ; 1\}$ sao cho mỗi bảng con $2 \times 2$ có tổng của 4 số được điền trong nó là 0 . Gọi $S$ là tổng của $n^2$ số trong bảng $n \times n$. Tìm giá trị lớn nhất của $S$.
+        \end{enumerate}
+    \end{bt}
+    \begin{sol}
+        (a) Gọi 
+    \end{sol}
+    \item \begin{bt}\vocab{\href{https://www.facebook.com/ToanHocvoiPsi/posts/1319983838702201}{(KHTN Lớp 10 - 2023).}}
+        Viết một trăm số nguyên dương đầu tiên $1,2,\dots,100$ vào một bảng ô vuông kích thước $10\times 10$ một cách tùy ý sao cho mỗi ô được viết đúng một số. Chứng minh rằng tồn tại hai ô kề nhau (2 ô có cạnh chung) mà hai số viêt ở hai ô này có hiệu lớn hơn hoặc bằng 10.
+    \end{bt}
+    \begin{sol}
+        Giả sử với mọi hai ô kề nhau thì hiệu của chúng luôn bé hơn 10. Xét ba tập hợp sau 
+        \[
+            \begin{aligned}
+                &A_x = \{1,2,\dots,x\}\\
+                &B_x = \{x + 1, x+ 2,\dots,x +9\}\\
+                &C_x = \{x + 10, x + 11,\dots, 100\}
+            \end{aligned}
+        \]
+        với $x$ chạy trên $[2,90]$. Để ý rằng hai số kề nhau thì không thể nằm trong cả hai tập $A$ và $C$. Theo nguyên lý Dirichlet, sẽ tồn tại một hàng và một cột không chứa phần tử nào của $B$. Gọi hợp của hàng và cột đó là một "dấu cộng". Mọi số nằm trên dấu cộng sẽ chỉ có hai khả năng là toàn bộ thuộc $A$ hoặc $C$. Ta giả sử đó là $A$ thì $A \geq 19$. 
 
+        Khi $x$ chạy trên $[1,90]$ thì dấu cộng sẽ thay đổi. Ta sẽ chứng minh rằng tồn tại một giá trị mà ở đó dấu cộng của $A$ sẽ biến thành của $C$ khi $x$ tăng một đơn vị, hoặc ngược lại. 
+        
+        Với $x = 2$ thì $A = 2 < 19$ nên dấu cộng của $x = 2$ sẽ chứa $C$. 
+
+        Với $x = 90$ thì $C = 10 < 19$ nên dấu cộng của $x = 90$ sẽ chứa $A$.
+
+        Khi này theo sự liên tục trong rời rạc thì sẽ tồn tại $i \in [2,90]$ để dấu cộng chứa $C$ tại $i$ và chứa $A$ tại $i + 1$.
+        \begin{center}
+            \includegraphics[scale=0.4]{Image/P3.pdf} 
+        \end{center}
+        
+        Khi này thì hai dấu cộng sẽ giao nhau tại hai điểm. Mà lại khả năng $C$ hoặc $A$ mất đi một số nên sẽ tồn tại một số là giao của hai dấu cộng.
+    \end{sol}
+    
+    \item \begin{bt}\vocab{(IMO Shortlist 2013 C1).}
+        Cho $n$ là một số nguyên dương. Tìm số nguyên nhỏ nhất $k$ với tính chất sau: Cho bất kỳ các số thực $a_1 , \cdots , a_d $ sao cho $a_1 + a_2 + \cdots + a_d = n$ và $0 \le a_i \le 1$ với $i=1,2,\cdots ,d$, ta có thể phân chia các số này thành $k$ nhóm (một số trong số đó có thể là rỗng) sao cho tổng của các số trong mỗi nhóm không vượt quá $1$.
+    \end{bt}
+    \begin{sol}
+        Ta sẽ tìm cách phân hoạch đủ lớn, sao cho mỗi nhóm của $k$ chỉ chứa ít nhất 1 phần tử để khi đó $k$ sẽ có chặn dưới tốt nhất. 
+        
+        Thật vậy, để có tồn tại phân nhóm ít nhất không thể phân được nữa thì mỗi phân hoạch $a_i$ phải lớn hơn $\frac{1}{2}$ để mỗi nhóm chỉ chứa đúng 1 phân hoạch.  Xét phân hoạch $a_i = \frac{1}{2} + \frac{1}{d}, \forall i = 1,2,\dots$.
+        \[
+        a_1 + a_2 + \dots + a_d = \frac{d}{2} + 1 = n
+        \]
+        Suy ra $d = 2n - 2$ và $k_{min} = 2n - 2$.
+    \end{sol}
+
+    
+    \item\begin{bt}\vocab{(Japan MO Final 2016 P3). }
+        Cho $n$ là một số nguyên dương. Trong vương quốc Skibidi có $2^n$ công dân và một vị vua. Trong ngôn ngữ tiền tệ, vương quốc sử dụng các tờ giấy bạc có mệnh giá là $2^n$ đồng và các đồng xu có mệnh giá là $2^a$ (với $a=0,1,\ldots,n-1$). Mỗi công dân có vô số tờ giấy bạc (không tính đến lạm phát). Gọi $S$ là tổng số đồng xu trong vương quốc. Một ngày đẹp trời, vua quyết định triển khai một chính sách sẽ được thực hiện mỗi đêm:
+        \begin{enumerate}
+            \item Mỗi công dân phải và anh ta phải chuyển một số tiền hữu hạn cho một công dân khác hoặc cho vua.
+            \item Mỗi công dân phải chuyển chính xác nhiều hơn $\$1$ số tiền mà anh ta nhận được từ một công dân khác. 
+            \item Luôn phải có một công dân kết thúc quá trình này bằng cách đưa tiền cho vua.
+        \end{enumerate}
+
+        Tìm giá trị nhỏ nhất của $S$ sao cho vua có thể thu tiền mỗi đêm mà không bao giờ hết tiền.
+    \end{bt}
+
+    \begin{sol}
+        Tuy mỗi người có vô hạn tiền giấy, nhưng lại có hữu hạn xu. Vậy nên người cuối cùng đưa tiền cho vua phải đưa $k$ tờ tiền $2^n$ và ta gọi cách chuyển tiền này là $\mathbb{H}$. Ta hãy xét thuật toán như sau:
+
+        Để chuyển tiền thỏa mãn $\mathbb{H}$, người đầu tiên phải đưa một số tiền bằng $k2^n$ với $k \geq 1$, vì ta muốn $S$ nhỏ nhất nên ta có thể tối ưu bằng cách để anh ta đưa $k$ tờ tiền giấy. Và mỗi người tiếp theo là $2,3,\dots,2^{n} - 1$ sẽ góp $\$1$ xu vào đến người thứ $2^n$ số tiền góp lại hiện tại là $(k + 1)2^n$ tính cả người thứ $2^n$ đã góp vào, vì tiền giấy của anh ta là vô hạn nên anh ta mcó thể đưa nhà vua $k + 1$ tờ tiền bao nhiêu lần cũng được.
+
+
+        Khi này người thứ $2^n$ đang giữ $2^n$ đồng xu. Nếu ta chặn $S_{min} = 2^n$ thì sẽ có vài người ở lượt sau không có $\$1$ xu nên không thể chuyển tiền được.
+
+
+        Vì vậy nên ta phải đưa cho mỗi người $t$ xu sao cho sau khi chọn $2^{n} - 1$ người làm người cuối cùng đưa tiền cho vua, thì người này vẫn có thể tiếp tục chuyển tiền được.
+
+
+        Thật vậy, vì mỗi lần chuyển là tốn $\$1$ nên sau $2^{n}$ lần chuyển thì $t \geq 2^{n - 1}$
+
+
+        Lấy tổng lại từng người thì ta được $S_{min} = n2^{n - 1}$, hoàn tất bài toán.\end{sol}
+
+        \begin{bt}\vocab{(IMO Shortlist 2003)}
+            Cho $A$ là một tập con gồm $101$ phần tử của tập $S=[1000000]$. Chứng minh rằng tồn tại các số $t_1$, $t_2, \ldots, t_{100}$ trong $S$ sao cho các tập\[ A_j=\{x+t_j\mid x\in A\},\qquad j=1,2,\ldots,100  \]là đôi một không giao nhau.
+        \end{bt}
+        \begin{sol}
+            Xét tập hợp $D = \{x -y \mid x,y\in A\}$, khi đó hai tập $A_i$ và $A_j$ giao nhau khi và chỉ khi $t_i - t_j \in D$. Ngược lại, nếu $A_i \cap A_j = \varnothing$  thì khi đó $t_i - t_j \notin D$. Xét đồ thị $G = (V,E)$ có $10^6$ đỉnh, với mỗi đỉnh $v_i$ là tập $A_i$. Nếu $A_i \cap A_j = \varnothing$ thì có cạnh $ij$. Thật vậy, xét đỉnh $i$ bất kỳ. Để đỉnh $j$ kề $i$ thì $t_i - t_j \notin D$, thế nên chọn $j$ có $10^6 - |D| = 10^6 - 100.101$ cách. Suy ra $d(i) = 10^6 - 100.101$. Theo bổ đề bắt tay, ta có 
+            \[
+                |E(G)| = \frac{\dsum_{i = 1}^{10^6}d(i)}{2} = \frac{10^6(10^6 - 100.101)}{2} > \frac{98.10^{12}}{99.2}
+            \]
+            Theo định lý Turan, tồn tại một $K_{100}$ ở $G$. Nói cách khác, tồn tại các tập $A_i$ rời nhau, hoàn tất chứng minh.
+        \end{sol}
+
+    \item \begin{bt}\vocab{\href{https://artofproblemsolving.com/community/c5h2156986p15952792}{(USAMO 2020).}}
+        Cho các cặp số nguyên không âm  $(a_1,b_1),$ $(a_2,b_2),$ $\dots,$ $(a_{100},b_{100})$. Đặt $N$ là số các cặp $(i,j)$ thoả mãn $1\leq i<j\leq 100$ và $|a_ib_j-a_jb_i|=1$. Xác định giá trị lớn nhất của $N$ qua tất cả các lựa chọn có thể của $100$ cặp được sắp xếp.
+
+        Có thể thấy rằng, với mọi cách chọn của $B$ thì $A$ luôn có thể chọn được qua phép đối xứng. Vì vậy đến một lúc nào đó, hoặc là đến lượt $B$ thì $X,Y,Z,T$ đều rỗng, hoặc là mọi số còn lại đều không còn liên nhau trong các tập. Vậy nên $A$ là người thắng cuộc.
+    \end{bt}
+    \begin{sol}
+        Bài toán có thể phát biểu như sau: Cho $n$ điểm nguyên ở góc phần tư thứ nhất của hệ trục $Oxy$. Tìm số tam giác lớn nhất có thể có diện tích là $\frac{1}{2}$ được tạo từ $O(0,0)$ và 2 trong $n$ điểm này. Gọi điểm thuộc tam giác có diện tích $\frac{1}{2}$ là điểm tốt.
+
+        \vocab{Nhận xét 1:}
+            Mọi điểm tốt $M(a,b)$ đều thỏa mãn $(a,b) =1$.
+
+        \begin{proof}
+            Giả sử tồn tại $N(x,y)$ sao cho $|ax - by| = 1$. Khi đó theo định lý Bezout, ta được $(a,b) = 1$.
+        \end{proof}
+        Gọi $(u_n)$ là số tam giác tốt nhiều nhất có thể, ta có $u_2 = 1$. 
+
+        
+        \vocab{Nhận xét 2:} Xét điểm $P_{n + 1}$ tốt, khi đó $P_{n + 1}$ nằm trong nhiều nhất 2 tam giác tốt.
+
+        \begin{proof}
+            Xét quỹ tích của $Q(x,y)$ sao cho $|ax - by| = 1$. Khi đó $(x,y)$ nằm trên hai đường thẳng là $ax - by = 1$ và $ax - by = -1$ với $(x,y) = 1$ và hai đường này bị giới hạn bởi góc phần tư của đường tròn $(O,OP)$. 
+            
+            Khi đó chỉ tồn tại nhiều nhất hai điểm $Q(x_1,x_1)$ và $Q(x_2,x_2)$ mỗi điểm thỏa mãn phương trình trên. 
+
+            Giả sử tồn tại $Q(x',y')$ sao cho $ax' - by' = 1$ và $(x',y') < (a,b)$. Khi đó ta có $a(x_1 - x') = b(y_1 - y') \lra \frac{a}{b} = \frac{x_1 - x'}{y_1 - y'}$
+
+            Vì $(a,b) = 1$ nên tồn tại số nguyên dương $k$ sao cho $x_1 - x' = ka, y_1 - y' = kb$. Suy ra $(x',y') = (x_1 - ka, y_1 - kb)$. Nhưng vì $x_1 < a<  ka, y_1 < b< kb$ nên vô lý. 
+        \end{proof}
+        Khi đó ta có được $u_{n + 1} \leq u_n + 2 \leq \dots \leq u_2 + 2(n - 2)  = 2n - 1$
+
+        Vậy nên $u_n \leq 2n - 3 \ra u_{100} \leq 197$. Ta có thể chỉ ra một cấu hình thỏa mãn như sau: 
+
+        \[
+            (1,0),(1,1),(1,2),(1,3),\dots,(1,99)
+        \]
+        Ghép $(1,0)$ lần lượt với các cặp còn lại và ghép 2 cặp kề nhau bất kỳ thì ta được nhiều nhất $197$ cặp tốt.
+    \end{sol}
+    \begin{bt}\vocab{(Korean MO 2023).}
+        Cho các tập hợp $A_0, A_1, \dots, A_{2023}$ thỏa mãn các điều kiện sau:
+        \begin{enumerate}
+            \item $A_0 = \{ 3 \}$
+            \item $A_n = \{ x + 2 \mid x \in A_{n -     1} \} \ \cup \{x(x+1) / 2 \mid x \in A_{n - 1} \}$ với mọi $n = 1, 2, \dots, 2023$.
+        \end{enumerate}
+    Tính $|A_{2023}|$.  
+    \end{bt}
+
+    \begin{sol}
+        Giả sử tồn tại hai dãy phép toán có cùng độ dài biến $3$ thành cùng một số. Giả sử số đó là $\frac{2k(2k + 1)}{2} = 2k^2 + k$
+
+
+        Ta được hai số trước đó là $2k^2 + k - 2$ và $2k$.
+
+
+        Xét số $\frac{2k(2k - 1)}{2}$ thì cần tối thiểu $k - 1$ phép toán để trở thành $2k^2 + k$ tuy nhiên điều này là không thể vì khi đó để được $2k$ thì phải xuất phát lớn nhất là $2$ vô lý. Vậy nên 
+        \[
+            \{ x + 2 \mid x \in A_{n - 1} \} \ \cap \{x(x+1) / 2 \mid x \in A_{n - 1} \} = \varnothing
+        \]
+        Khi đó ta được $|A_{2023}| = 2^{2023}$.
+    \end{sol}
+
+    
+    \item \begin{bt}\vocab{(India TST 2010).}
+        Cho bảng vuông $10\times 10$, mỗi ô $(i,j)$ được điền bởi một số thực dương $a_{ij}$ sao cho tổng các số thuộc mỗi hàng, mỗi cột của bảng luôn là $1$. Chứng minh rằng tồn tại $j,k,l,m \in [10]$ với $j < k$ và $l < m$ sao cho
+        \[
+            a_{jl}a_{km} + a_{jm}a_{kl} \geq \frac{1}{50}
+        \]
+    \end{bt}
+    \begin{sol}
+        Rõ ràng 4 điểm nói trên tạo ra một hình chữ nhật nằm trong bảng ô vuông đó (tổng tích các cạnh đối lớn hơn hoặc bằng $\frac{1}{50}$)\\
+    - Ta sẽ giả sử rằng với mọi bốn điểm như vậy thì hệ thức trên luôn bé hơn $\frac{1}{50}$\\
+    Ta đếm tổng giá trị các phần tử của tập hợp
+    $$ S = \{a_{jl}a_{km} + a_{jm}a_{kl} \}$$
+    \begin{itemize}[label=,leftmargin=0em]
+        \item \textbf{Cách 1:} Chọn ra hai dòng bất kì và từ một trong hai dòng đó chọn ra 2 điểm, ta tạo được một hình chữ nhật. Ta được $$|S| < \frac{1}{50}\binom{10}{2}\binom{10}{2} $$
+                    \begin{figure}[ht]
+            \centering
+            \subfloat{\includegraphics[width=0.3\linewidth]{Image/ando.png}}
+        \end{figure}
+        \item \textbf{Cách 2:} Đếm dựa trên một điểm $a_{ij}$ cho trước. Ta sẽ tìm một điểm $b_{mn} $ nào đó để tạo nên một đường chéo. 
+        
+        Khi đó nếu ta lấy $\sum a_{ij}b_{mn}$ và nhân 2 lên chia cho 4 thì ta được S, vì mỗi lần chọn cặp $(a,b)$ thì ta chọn ra 2 đường chéo, tức là sau khi đếm hết thì mỗi đường chéo được đếm hai lần. 
+    
+        - Nhưng nếu đếm như vậy thì mỗi cấu hình của S sẽ lặp lại 4 lần, tức là ô màu đen và đỏ đổi vị trí cho nhau, ô màu đen và đỏ thế chỗ cho 2 ô xám, ta được 4 cấu hình như nhau.
+    
+        Gọi $S_{ij}$ là tổng giá trị các phần tử trong $S$ có chứa $a_{ij}$. Ta được $$S_{ij} = a_{ij} \sum b_{mn}$$
+        Chọn $a$ có 100 cách. Theo hình vẽ bên trên thì những chỉ những ô màu trắng mới chứa được $b$, nên do đó $b$ có $100 - 10 - 9 = 81$ cách, viết lại 
+        $$ S_{ij} = a_{ij}\sum_{1}^{81} b_{mn}
+        $$
+        Nếu nhìn vào bảng thì ta còn có thể làm gọn tổng này hơn nữa. Ta có
+        $$ S_{ij} = a_{ij}[10 - 1 - (1 - a_{ij}) ]
+        = a_{ij}(8 + a_{ij})
+        = a_{ij}^2 + 8a_{ij}
+        $$
+        Cộng lại các $S_{ij}$ ta được
+        $$ |S| = \frac{1}{2}\sum_{1}^{100} S_{ij} =\frac{1}{2} \sum_{1}^{100} a_{ij}^2 + 8a_{ij} =  \frac{1}{2}.8.10 + \frac{1}{2}\sum_{1}^{100} a_{ij}^2  
+        $$
+        Áp dụng bất đẳng thức Cauchy-Schwartz ta có 
+        $$ \sum_{i=1}^{100} a_{ij}^2 \geq \frac{ \left(\displaystyle \sum_{i=1}^{100}a_{ij}\right)^2}{100} = 1
+        $$
+        Do đó $|S| \geq \frac{1}{2}.80.10 + \frac{1}{2} = \frac{81}{2}$
+    \end{itemize}
+    Từ đây cho ta được mâu thuẫn bài toán, suy ra điều phải chứng minh.
+    \end{sol}
+    \begin{bt}\vocab{(Japan MO Final 2017). }
+        Cho số nguyên dương $n \geq 3$. Có $n$ người, mỗi ngày tổ chức một cuộc họp mà ít nhất 3 người tham dự. Mỗi người trong cuộc họp bắt tay với tất cả những người còn lại. Sau $n$ cuộc họp, mỗi cặp người đã bắt tay đúng một lần. Chứng minh rằng mỗi cuộc họp đều có cùng số người tham dự.
+    \end{bt}
+    Ta phát biểu hai lời giải theo ngôn ngữ lập luận và đồ thị. 
+    \begin{sol}
+
+        \vocab{Nhận xét 1:} Nếu $A$ không tham gia ngày thứ $m$ thì số ngày $A$ tham gia phải ít nhất bằng số người tham gia ngày thứ $m$''. 
+        \begin{proof}
+            Nếu những người ở ngày hôm đó đã bắt tay nhau, vậy nên họ không thể gặp lại lần nữa, tức để $A$ có thể bắt tay với tất cả những người đó thì phải có mặt ở những ngày mà những người đó có mặt.
+        \end{proof}
+        
+        Ta sẽ đếm tổng số lượng người vào tất cả các ngày bằng hai cách.
+
+        Không mất tính tổng quát, giả sử ngày thứ nhất có nhiều người tham gia nhất, và ngày thứ hai có nhiều người tham gia thứ nhì. Giả sử số người tham gia ngày 1 và ngày 2 lần lượt là $a$ và $b$, thì ta có số người tham gia nhiều nhất phải là $a + b(n - 1)$.
+
+
+        Những người đã bắt tay vào ngày thứ nhất thì ngày thứ hai không thể xuất hiện cùng nhau, vì vậy có nhiều nhất một người $A$ tham gia cả ngày một và hai.
+
+
+        Thế nên có $a - 1$ người ở ngày thứ nhất xuất hiện $b$ lần khác nhau và $A$ xuất hiện ít nhất 2 lần. Hơn nữa, những người không có mặt ở ngày thứ nhất sẽ xuất hiện ít nhất ở $a$ ngày. Vậy nên tổng số người tham gia ít nhất là $(a - 1)b + a(n-a) + 2$. Ta có bất đẳng thức 
+        \[
+            (a - 1)b + a(n - a) + 2 \leq a + b( n - 1) \lra (a - b)( n - a ) < a
+        \]
+        Nếu $a \neq b$ thế thì $n - a < a \lra a > \frac{n}{2}$
+        
+        
+        Những người không có mặt vào ngày thứ nhất sẽ phải xuất hiện ít nhất trong $\frac{n}{2}$ ngày. Điều này rõ ràng là mâu thuẫn vì nếu người thứ nhất xuất hiện từ ngày $2$ đến $\frac{n}{2}$ thì người thứ hai phải xuất hiện ngày $\frac{n}{2}$ đến ngày $n$, xét đến người ba thì anh ta luôn xuất hiện nhiều lần hoặc với người đầu hoặc người thứ hai, mâu thuẫn.
+
+
+        Điều này dẫn đến việc $a \leq \frac{n}{2} \lra n - a > a$. Để bất đẳng thức trên đúng thì $a = b$
+
+
+
+        Mà thế thì mọi người đều phải tham gia ít nhất $a$ ngày nên vì thế số người tham gia mỗi ngày là như nhau, hoàn tất chứng minh.
+
+    \end{sol}
+    
+    \vocab{Cách 2:} Bài toán có thể phát biểu lại như sau:
+    \begin{lemma}
+        Xét $G = (V,E)$ có $n$ đỉnh và không có cạnh. Mỗi một lần, lấy ra ít nhất 3 đỉnh đôi một độc lập nhau và nối chúng lại với nhau. Sau $n$ lần ta được một $K_n$ đầy đủ. Chứng minh rằng số đỉnh mỗi lần lấy là như nhau.
+    \end{lemma}
+    \begin{proof}
+        
+        Gọi $T_i$ là tập hợp các đỉnh ở lần lấy thao tác thứ $i$, $T = \{T_1,T_2,\dots,T_n\}$. Ký hiệu $T_i = |T_i|$. Gọi $A(u)$ là số lần xuất hiện của $u$ sau $n$ lần thao tác. 
+
+        \vocab{Nhận xét 1:} Nếu $u \notin T_k$ bất kỳ thì $A(u) \geq T_k$.
+        \begin{proof}
+            Giả sử $A(u) < T_k$. Vì mỗi lần $T_k$ thì các cặp đỉnh không được chọn lại nên nếu $v_m,v_n \in T_k$ thì $\nexists j \in [n]: v_m,v_n \in T_j$. Mà vì $d(u) = n - 1$ nên sẽ tồn tại một đỉnh không kề $v$, vô lý.
+        \end{proof}
+        Không mất tính tổng quát, giả sử $T_1 = \max(T) = a, T_2 = \max(T \backslash \{T_1\}) = b$. Đặt $S = \dsum_{i = 1}^n T_i$. Giả thuyết rằng $a > b$.
+
+        \vocab{Nhận xét 2:} $S \leq a +(n - 1)b$. 
+        \begin{proof}
+            Điều này có thể dễ dàng chứng minh bằng định nghĩa:
+            \[
+                S = T_1 + T_2 + \dots + T_n  \leq a + b + b + b +\dots + b = a + b(n - 1)
+            \]
+        \end{proof}
+        \vocab{Nhận xét 3:}  $S \geq a(n - a) + b(a - 1)$
+        \begin{proof}
+            Để ý rằng $|T_1 \cap T_2| \leq 1$. Vì nếu không sẽ có $u,v \in T_1,T_2$ vô lý vì hai đỉnh bất kỳ chỉ được ghép 1 lần. 
+            
+            Khi này với $u  \notin T_1$ thì theo nhận xét 1 ta có $A(u) \geq a$. 
+            
+            Với $v \in T_1 \notin T_2$ thì sẽ có $A(v) \geq b$. 
+
+            Tương tự với $w \in T_1 \cap T_2$ thì có $A(w) \geq 2$. Từ đó ta suy ra 
+            \[
+                S \geq a(n - a) + b(a - 1) + 2
+            \]
+        \end{proof}
+        Kết hợp lại hai điều trên ta được 
+        \[
+        \begin{aligned}
+            a + (n - 1)b \geq a(n - a) + b(a - 1) + 2 \lra a &\geq an -a^2 + ab  + 2 -nb\\
+             &> (n - a)(a - b) \\
+             &> n - a 
+        \end{aligned}
+        \]
+        Suy ra $a > \frac{n}{2}$. Do đó với $u,v,w \notin T_1$ thì $A(u),A(v),A(w) > \frac{n}{2}$. Theo Dirichlet thì tồn tại hai trong số 3 đỉnh trên cùng xuất hiện nhiều hơn 2 lần, mâu thuẫn. Vậy nên $a = b$. Kéo theo $|T_1| = |T_2| =\dots = |T_n|$, hoàn tất chứng minh.
+    \end{proof}
+    \begin{bt}\vocab{(Japan MO Final 2018 P1). }
+        Cho các số nguyên dương từ $1$ đến $100$ được viết trên một bảng đen, mỗi số đúng một lần. Một phép toán bao gồm việc chọn hai số $a$ và $b$ trên bảng đen và xóa chúng, sau đó viết số ước chung lớn nhất của $a^2+b^2+2$ và $a^2b^2+3$. Sau một số lượng phép toán, chỉ còn lại một số nguyên dương trên bảng đen. Chứng minh rằng số này không thể là số chính phương.
+    \end{bt}
+
+    
+\begin{sol}
+    Ta chứng minh $3 | \gcd(a^2 + b^2 + 2,a^2b^2 + 3)$ khi và chỉ khi có một trong hai số chia hết cho $3$.
+    
+    Nếu $3 \mid a,b$ thì khi đó $3\nmid a^2 + b^2 + 2$ nên $3 \nmid \gcd(a^2 + b^2 + 2, a^2b^2 + 3)$
+  
+  
+    Nếu $3 \nmid a,b$ thì $3\nmid a^2b^2 +3$ nên $3 \nmid \gcd(a^2 + b^2 + 2, a^2b^2 + 3)$
+  
+  
+    Nếu chỉ có $a$ hoặc $b$ chia hết cho $3$, giả sử $3 | a$, khi đó ta có hai trường hợp
+  
+  
+    Nếu $b = 3k + 1, k \in \mathbb{Z}$ thì khi đó $a^2 + b^2 + 2 = a^2 + 9k^2 + 6k + 1 + 2 \equiv 0 \pmod{3}$
+  
+  
+    Nếu $b = 3k + 2, k \in \mathbb{Z}$ thì khi đó $a^2 + b^2 + 2 = a^2 +9k^2 + 6k + 4 + 2 \equiv 0 \pmod{3}$
+  
+  
+    Khẳng định được chứng minh.
+  
+  
+    Mặt khác dễ dàng kiểm tra được rằng $ 9 \nmid \gcd(a^2 + b^2 + 2, a^2b^2 + 3)$
+  
+  
+    Vì từ 1 đến 100 có $33$ số chia hết cho 3 và có 100 lượt nên tức là đến một lúc nào đó sẽ chỉ còn $33$ số chia hết cho 3, và sau chẵn lượt tất nhiên là sẽ được một số chia hết cho 3, mà số này lại không chia hết cho 9 nên không thể là số chính phương.
+  \end{sol}
+
+    \begin{bt}\vocab{(Japan MO Final 2019). }
+        Cho $n \geq 3$ là một số lẻ và xét một lưới ô vuông $n\times n$. Trò chơi bao gồm $n^2$ lượt, ở mỗi lượt, chúng ta sẽ thực hiện các thao tác sau theo tuần tự.
+        \begin{enumerate}
+            \item Chúng ta sẽ chọn một ô chứa một số nguyên chưa được viết và viết một số nguyên từ 1 đến $n^2$. Chúng ta chỉ có thể viết một số nguyên một lần duy nhất trong suốt trò chơi.
+            \item Đối với mỗi hàng, cột bao gồm cả một ô, nếu tổng vài số nguyên  nằm trên hàng, cột hoặc một ô là bội số của $n$, thì chúng ta sẽ nhận được 1 điểm.
+        \end{enumerate}
+        Xác định giá trị lớn nhất có thể của điểm số như tổng số có thể đạt được vào cuối trò chơi.
+    \end{bt}
+
+    \begin{sol}
+        Lấy module $n$ các số và ta sử dụng $n$ thay vì $0$. 
+        Ta gọi $r_i$ và $c_i$ lần lượt là tổng các số thuộc hàng hoặc cột $i$. Khi đó số điểm lớn nhất mà hàng $i$ có thể nhận được là $\left\lfloor \frac{r_i}{n} \right\rfloor$. Khi này số điểm lớn nhất ở hàng là 
+        \[
+            \sum_{i = 1}^n \left\lfloor \frac{r_i}{n} \right\rfloor \leq \frac{\dsum_{i = 1}^n r_i}{n} = \frac{n(n + 1)}{2}
+        \]
+        Lý do tổng vẫn theo mod $n$ là vì số điểm khi này phải phụ thuộc vào các số mod $n$. Tương tự với cột thì ta có tổng điểm lớn nhất là $n(n +1)$. Giờ ta sẽ chỉ ra một cấu hình có thể đạt được giá trị lớn nhất. Viết vào ô $(i,j)$ với $i<n$ số $i$ nếu $2\nmid j$ và $n-i$ ngược lại và viết $n$ vào hàng cuối cùng.
+    \end{sol}
+
+    \item \begin{btvn}\vocab{(Japan MO Final 2021).}
+        Cho số nguyên dương $n \geq 2$. Hai người chơi $A$ và $B$ chơi một trò chơi trên lưới các ô vuông đơn vị $n \times 2021$. Đầu tiên, $A$ tô mỗi ô màu đen hoặc trắng. $B$ đặt một viên bi vào một trong các ô ở hàng trên cùng và chỉ định một trong các ô ở hàng dưới cùng làm \textit{goal}. Sau đó, $A$ thao tác $n - 1$ lần như sau:
+        \begin{enumerate}
+            \item Khi ô có bi được sơn màu trắng, $A$ di chuyển bi sang ô bên dưới.
+            \item Nếu không, $A$ hãy di chuyển viên bi đến ô tiếp theo ở bên trái hoặc bên phải, sau đó đến ô bên dưới.
+            
+        \end{enumerate}
+        
+        Tìm giá trị nhỏ nhất của $n$ sao cho $A$ luôn có thể di chuyển một viên bi đến \textit{goal}, bất kể lựa chọn của $B$.
+    \end{btvn}
+
+    \begin{bt}\vocab{(Japan MO Final 2022).}
+        Có $2022$ ô vuông được đánh số thứ tự trên một hàng ngang. Hai người $A$ và $B$ cùng nhau chơi một trò chơi. Đầu tiên, những ô vuông số lẻ được đánh dấu chữ $A$ và những ô vuông số chẵn được đánh dấu chữ $B$. Sau đó, bắt đầu từ $A$, họ thay phiên thực hiện những thao tác sau:
+        \begin{enumerate}
+            \item Người chơi sẽ chọn hai ô vuông được đánh dấu bằng tên của họ, sao cho hai ô đó không kề nhau, và tất cả các ô vuông nằm ở giữa hai ô đó đều được đánh dấu bằng tên của đối thủ và đổi tên tất cả các ô đó sang tên của mình.
+            \item Hai người chơi luân phiên chơi liên tục như vậy đến khi có một người không thể thao tác tiếp được nữa
+        \end{enumerate}
+        Tìm số nguyên dương $m$ lớn nhất sao cho $A$ luôn có thể đảm bảo rằng có ít nhất $m$ ô vuông được đánh dấu chữ $A$.
+    \end{bt}
+
+    \begin{sol}
+        Ta có thể tổng quát bài toán này. Gọi $f(n)$ là số ô vuông lớn nhất $A$ có thể đảm bảo là có tên mình trên lưới $2n \times 1$.
+
+
+        Xét lưới $2n \times 1$ thì bởi vì $A$ đi đầu nên bất kể $A$ chọn vị trí nào đồng nhất, ta có thể xem $AAA$ ở lượt đầu là $A$ khi này kích thước lướt trở thành $2(n - 1) \times 1$ mà trong khi đó số lượng $A$ và $B$ vẫn là như nhau xen kẽ. Cấu hình này chính bằng $f(n - 1)$. Do đó ta lập được hệ thức truy hồi:
+        \[
+            \left\{
+                \begin{array}{l}
+                    f(1) = 1, f(2) = 3\\
+                    f(n) = f(n - 1) + 1
+                \end{array}
+            \right.
+        \]
+        Thế nên tìm được $f(n) = n$. Có được $f(1011) = 1011$. Bây giờ ta sẽ thiết lập một chiến thuật dành cho $A$ để luôn có thể đảm bảo ít nhất được con số này. 
+
+
+        Đầu tiên $A$ sẽ bắt đầu thao tác từ trái sang, anh ta có thể thực hiện như sau:
+        \[
+            \begin{aligned}
+                &ABABAB\dots AB \to AAABAB\dots AB \to AAABAB\dots BBB\dots AB\\
+                &\to AAAAAB\dots BBB \dots AB \to \dots
+            \end{aligned}
+        \]
+        Số lượng chữ $A$ được thể hiện như sau:
+        \[
+            1011 \to 1012 \to 1011 \to 1012 \to\dots
+        \]
+        Có thể thấy rằng bất kể $B$ chọn ở đâu để đồng nhất thì $A$ luôn giữ được một lượng quân nhất định từ bên trái sang và chúng chỉ có thể tăng mà không giảm được dưới $1011$, hoàn tất bài toán.
+    \end{sol}
+
+
+    \item \begin{btvn}\vocab{(Hong Kong TST 2009).}
+        Trong một trường học có $2008$ học sinh. Học sinh là thành viên của một số ủy ban nhất định. Một ủy ban có tối đa $1004$ thành viên và mỗi hai học sinh tham gia vào một ủy ban chung.
+        \begin{enumerate}
+            \item Xác định số ít nhất có thể của các ủy ban trong trường học.
+            \item Nếu yêu cầu thêm rằng hợp của bất kỳ hai ủy ban nào cũng không được vượt quá $1800$ học sinh, thì câu trả lời trong (i) có đúng không?
+        \end{enumerate}
+    \end{btvn}
+   
+    \item \begin{bt}\vocab{(HMMT 02/2016).} Cho số nguyên lẻ $n > 1$. Trên một bàn cờ $n \times n$ có ô trung tâm và 4 ô ở góc bị cắt đi. Chúng ta muốn chia $n^2 -5$ hình vuông còn lại thành $\frac{1}{2}(n^2 - 5)$ cặp sao cho hai hình vuông ở mỗi cặp giao nhau tại chính xác một điểm. Tìm giá trị của $n$ thỏa mãn điều đó.
+    \end{bt}
+    \begin{sol}
+        Ta tô màu xen kẽ cho bảng ô vuông bằng hai màu trắng và vàng, với hàng màu vàng nằm ở hàng trung tâm. khi đó sẽ có hai trường hợp như sau:
+        \begin{center}
+            \includegraphics[scale=0.5]{Image/P1.1.pdf}
+            \hspace{1cm}
+            \includegraphics[scale=0.5]{Image/P1.2.pdf}
+        \end{center}
+        Mỗi cặp hình vuông thỏa mãn được chọn sẽ chiếm 1 ô trắng và 1 ô vàng, tức là để tồn tại một cách chọn thỏa mãn thì số ô vàng phải bằng số ô trắng.
+
+        \vocab{Trường hợp 1:} hàng ở trên và dưới cùng được tô màu vàng.  Khi này tổng số ô màu vàng là $\frac{n(n + 1)}{2} - 5$, tổng số ô màu trắng là $\frac{n(n - 1)}{2}$, khi này ta được 
+        \[
+            \frac{n(n + 1)}{2} - 5 = \frac{n(n - 1)}{2} \lra n = 5
+        \]
+        \vocab{Trường hợp 2:} hàng ở trên và dưới cùng được tô màu trắng. Khi này tổng số ô màu vàng là $\frac{n(n - 1)}{2} - 1$, tổng số ô màu trắng là $\frac{n(n + 1)}{2} - 4$, khi này ta được 
+        \[
+            \frac{n(n - 1)}{2} - 1 = \frac{n(n + 1)}{2} - 4 \ra n = 3
+        \]
+        Vậy với $n \in \{3,5\}$ thì tồn tại cách chọn cặp thỏa mãn đề bài. Ta có một cách ghép cặp thỏa mãn như sau cho từng trường hợp:
+        \begin{center}
+            \includegraphics[scale=0.2]{Image/P1.3.pdf}
+            \hspace{1cm}
+            \includegraphics[scale=0.2]{Image/P1.4.pdf}
+        \end{center}
+    \end{sol}
+
+    \item \begin{bt}\vocab{(USAJMO 2019).}
+        Có $a+b$ cái bát được sắp xếp thành một hàng ngang, được đánh số từ $1$ đến $a+b$. Ban đầu, $a$ bát đầu tiên mỗi bát chứa một quả táo và $b$ bát cuối cùng mỗi bát chứa một quả lê.
+        Một nước đi được gọi là \vocab{hợp lệ} bao gồm việc chuyển một quả táo từ bát $i$ sang bát $i+1$ và một quả lê từ bát $j$ sang bát $j-1$, với điều kiện là sự chênh lệch $i-j$ là chẵn. nhiều loại trái cây có thể nằm trong cùng một bát cùng một lúc. Mục tiêu là có được $b$ bát đầu tiên, mỗi bát chứa một quả lê và $a$ bát cuối cùng, mỗi bát chứa một quả táo. Chứng minh rằng điều này có thể xảy ra khi và chỉ nếu tích $ab$ là số chẵn.
+    \end{bt}
+    \begin{sol}
+        \vocab{Nhận xét 1:} Tích $ab$ là số chẵn. Giả sử cả $a$ và $b$ đều lẻ. Ta nhận thấy rằng mỗi bước đi ta lấy táo và lê ở các bát cùng tính chẵn lẻ chuyển sang các bát bên cạnh. Thế nên ý tưởng bất biến đó là hiệu số táo và số lê ở ô lẻ. Thật vậy, tô đen các ô lẻ. 
+        
+        Ban đầu số táo ô đen là $\frac{a + 1}{2}$, số lê ô đen là $\frac{b - 1}{2}$, hiệu bất biến là $\frac{a - b + 2}{2}$. 
+        
+        Sau khi đạt được mục tiêu, số táo ô đen là $\frac{a - 1}{2}$, số lê ô đen là $\frac{b  + 1}{2}$, hiệu bất biến là $\frac{a - b - 2}{2}$, vô lý. Vậy nên tích $ab$ phải chẵn.
+
+        \vocab{Nhận xét 2:} Với $ab$ chẵn thì luôn tồn tại nước đi hợp lý để đạt được mục tiêu. Ta sẽ chứng minh điều này đúng bằng quy nạp. Nếu $(a, b) = (0,b)$ hoặc $(a,b) = (1,b)$ thì rõ ràng luôn đúng. Giả sử giả thuyết đúng với mọi trường hợp $ \leq a + b - 2$ và $\min{a,b} \geq 2$. Ta có hai trường hợp:
+        
+        \vocab{Trường hợp 1: }$a + b$ chẵn. Xét $a + b$ ô. Ta đổi vị trí của táo ô $1$ và lê ô $a + b - 1$, táo ô $2$ và lê ô $a + b$, đưa về $(a - 2, b - 2)$, đúng theo quy nạp.
+        
+        \vocab{Trường hợp 2: }$a + b$ lẻ. Xét $a + b + 2$ ô. Ta đổi vị trí của táo ô $1$ và lê ô $a + b$, đưa về trường hợp $(a - 1, b - 1)$, đúng theo quy nạp.
+
+        Như vậy là chứng minh hoàn tất.
+    \end{sol}
+    \item \begin{bt}\vocab{(IMO 1993).} Trên bàn cờ vô hạn ta thực hiện một trò chơi như sau: Đầu tiên xếp $n^2$ quân vào một hình vuông gồm $n \times n$ ô vuông cạnh liền kề sao cho trong mỗi ô vuông của hình vuông chứa một quân cờ, cách đi trong trò chơi là quân cờ chỉ được nhảy theo một chiều ngang hoặc chiều dọc qua một ô có chứa quân cờ ở ngay sát bên cạnh sang một bên ô trống tiếp ngay sau đó. Khi đó quân cờ ô bị nhảy qua sẽ bị loại bỏ. Tìm các giá trị của $n$ để có thể kết thúc trò chơi sao cho trên bàn cờ chỉ còn lại đúng một quân cờ.
+    \end{bt}
+    \begin{sol}
+        
+        Tô xanh, đỏ, vàng xen kẽ cho bàn cờ. Gọi $A_1,A_2,A_3$ lần lượt là số quân cờ nằm ở ô xanh, đỏ, vàng.
+
+        \vocab{Nhận xét 1: }$3 \nmid n$. 
+        \begin{proof}
+            Giả sử $3\mid n$, để ý rằng sau mỗi bước đi thì tính chẵn lẻ của $A_1,A_2,A_3$ bị thay đổi, để thắng trò chơi thì phải có một số bằng 1. Nhưng vì $A_1,A_2,A_3$ luôn cùng tính chẵn lẻ nên dẫn tới vô lý.
+        \end{proof}
+
+        \vocab{Nhận xét 2: } Với cấu hình sau thì có thể làm mất đi 3 quân ở cột trung tâm (với dấu $*$ tượng trưng cho mỗi quân cờ). Từ giờ ta sẽ gọi đây là nước đi $(\fa)$.
+        \[
+        \begin{bmatrix}
+        . & * & . \\
+        .& * & . \\
+        . & * & *
+        \end{bmatrix}
+        \]
+        \begin{proof}
+            Di chuyển quân góc dưới phải $\to$ giữa trên $\to$ dưới trái.
+        \end{proof}
+        \vocab{Nhận xét 3:} Với $n = 1,2,4$ thì có thể thắng. Ta chỉ cần chứng minh với $n = 4$. Thực hiện liên tục $(\fa)$.
+        \begin{proof}
+        \[
+        \begin{bmatrix}
+        * & * & *&*\\
+        * & * & *&*\\
+        * & * & *&*\\
+        * & * & *&*\\
+        \end{bmatrix}
+        \to 
+        \begin{bmatrix}
+            . & . & .&*\\
+            * & * & *&*\\
+            * & * & *&*\\
+            * & * & *&*\\
+        \end{bmatrix}
+        \to 
+        \begin{bmatrix}
+            . & . & .&*\\
+            . & . & .&*\\
+            * & * & *&*\\
+            * & * & *&*\\
+        \end{bmatrix}
+        \to 
+        \begin{bmatrix}
+            . & . & .&.\\
+            . & . & .&.\\
+            * & * & *&.\\
+            * & * & *&*\\
+        \end{bmatrix}
+        \]
+        \[
+        \to 
+        \begin{bmatrix}
+            . & . & .&.\\
+            . & . & .&.\\
+            * & * & *&.\\
+            * & * & *&*\\
+        \end{bmatrix}
+        \to 
+        \begin{bmatrix}
+            . & . & .&.\\
+            . & . & .&.\\
+            * & * & *&.\\
+            * & . & .&.\\
+        \end{bmatrix}
+        \to 
+        \begin{bmatrix}
+            . & . & .&.\\
+            . & . & .&.\\
+            . & . & .&.\\
+            * & . & .&.\\
+        \end{bmatrix}
+        \]
+        \end{proof}
+        \vocab{Nhận xét 4: } Từ $(n + 3)\times (n + 3)$ có thể đưa về $n \times n$.
+        \begin{proof}
+            Đối với mảng $3 \times k$ ở rìa ngoài, bằng nước đi $(\fa)$ ta có thể biến đổi như sau: 
+            \[
+                \begin{bmatrix}
+                    * & * & *&*&*&*&...\\
+                    * & * & *&*&*&*&...\\
+                    * & * & *&*&*&*&...\\
+                \end{bmatrix}
+            \to 
+                \begin{bmatrix}
+                    . & * & *&*&*&*&...\\
+                    . & * & *&*&*&*&...\\
+                    . & * & *&*&*&*&...\\
+                \end{bmatrix}
+            \to 
+                \begin{bmatrix}
+                    . & . & *&*&*&*&...\\
+                    . & . & *&*&*&*&...\\
+                    . & . & *&*&*&*&...\\
+                \end{bmatrix}
+                \to \dots
+            \]
+            Khi đó khối $L$ $3 \times n$ ở phía ngoài đồng loạt thu về còn khối $4 \times 4$ ở góc, với một quân là giao của khối $4 \times 4$ và $n \times n$, và bằng nước đi ở nhận xét 3, ta đã quy về $n \times n$.
+            \begin{center}
+                \includegraphics[scale=0.7]{Image/1993.pdf}
+            \end{center}
+            Mặt khác, với $n = 2,4$ thì có thể thắng, vì vậy theo quy nạp thì với $n = 3k + 1$ hoặc $n = 3k + 2$ với $k \geq 0$ thì có thể thắng.
+        \end{proof}
+    \end{sol}
+
+    \item \begin{btvn}\vocab{(Japan MO Final 2023).}
+        Trên một bảng ô vuông $5 \times 5$, người ta đặt các Tetromino
+        lên các hình vuông để trong mỗi hình vuông, có hai hoặc ít hơn viên được bao phủ (các viên này có thể xếp chồng lên nhau). Tìm số hình vuông lớn nhất được bao phủ bởi đúng một viên.
+    \end{btvn}
+
+
+    \item \begin{btvn}\vocab{(Japan MO Final 2024).}
+    Trong mặt phẳng tọa độ, các điểm có tung độ và hoành độ nguyên thuộc $1$ đến $2000$ được gọi là điểm tốt. Hơn nữa, đối với bốn điểm $A(x_1, y_1)$, $B(x_2, y_2)$, $C(x_3, y_3)$, $D(x_4, y_4)$ có đường đa tuyến $ABCD$ được gọi là đường $\mathbb{Z}$ nếu như:
+    \begin{enumerate}
+        \item Tất cả đều $A, B, C, D$ là những điểm tốt.
+        \item  $x_1<x_2$, $y_1=y_2$
+        \item $x_2>x_3$, $y_2-x_2=y_3-x_3$
+        \item $x_3<x_4$, $y_3=y_4$
+    \end{enumerate}
+    
+    Tìm giá trị nguyên dương $n$ nhỏ nhất sao cho có $n$ đường $\mathbb{Z}$ là $Z_1, Z_2,\dots, Z_n$ thỏa mãn với bất kỳ điểm $P$ tốt nào, tồn tại một số nguyên $i \in [n]$ sao cho $P$ nằm trên $Z_i$.
+        
+    \end{btvn}
    
     \item \begin{btvn}\vocab{(RMM 2019).}
         Hai con kiến đang di chuyển dọc theo các cạnh của một đa diện lồi. Đường đi của mỗi con kiến kết thúc tại điểm bắt đầu của nó, sao cho một con kiến không đi qua cùng một điểm hai lần trên đường đi của mình. Trên mỗi mặt $F$ của đa diện được viết số cạnh của $F$ thuộc về đường đi của con kiến đầu tiên và số cạnh của $F$ thuộc về đường đi của con kiến thứ hai. Có một đa diện và một cặp đường đi mô tả như trên, sao cho chỉ có một mặt chứa một cặp số khác nhau không?

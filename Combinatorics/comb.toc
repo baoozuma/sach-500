@@ -1,6 +1,6 @@
 \babel@toc {vietnamese}{}\relax 
 \contentsline {section}{\numberline {\LARGE \textcolor {dk}{1}}\huge Tổ hợp}{1}{section.1}%
 \contentsline {subsection}{\numberline {\large A }\LARGE \textcolor {dk}{Đề bài}}{1}{subsection.1.1}%
-\contentsline {subsection}{\numberline {\large B }\LARGE \textcolor {dk}{Lời giải}}{42}{subsection.1.2}%
+\contentsline {subsection}{\numberline {\large B }\LARGE \textcolor {dk}{Lời giải}}{43}{subsection.1.2}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

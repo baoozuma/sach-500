@@ -188,10 +188,12 @@
 		\end{btv}
 
 }
+\newcounter{solution}
 \renewcommand\proofname{}
 \newenvironment{sol}{%
+\refstepcounter{solution} 
         \begin{proof}[\unskip\nopunct]%
-	\vocab{Lời giải.}
+	\vocab{Lời giải \thesolution.} 
 }{% 
         \end{proof}%
 }

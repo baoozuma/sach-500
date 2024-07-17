@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1721089930.11702 "d:/Toan Latex/500/Combinatorics/comb.tex" "comb.pdf" "comb" 1721089934.32682 0
+["pdflatex"] 1721193583.27421 "d:/Toan Latex/500/Combinatorics/comb.tex" "comb.pdf" "comb" 1721193587.76907 0
   "C:/Users/WIN10/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1720941191 231331 2046a6d1f5452f8de7477ee182e5aa47 ""
   "C:/Users/WIN10/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1711592121 24225046 fb61a17db6170e77ba5fcdc4a9c13900 ""
   "C:/Users/WIN10/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u30.enc" 1525518892 2323 808a4954230d4b9aaf0f3e890ff4e23e ""
@@ -301,13 +301,13 @@
   "Image/trucngang.pdf" 1717434459 19086 593a1f59abfc07f9c3bc2ce0a86c498e ""
   "Image/tst.pdf" 1711892309 20322 730de13d545eaa0b3635f07af83b9e72 ""
   "Image/x.pdf" 1714739317 10868 c751d45367e96225279db0cb8d790e43 ""
-  "comb.aux" 1721089933 2827 a3e8b4b5febd3ba3a651145606a1ad5a "pdflatex"
-  "comb.out" 1721089932 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "comb.pre" 1721089932 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "comb.tex" 1721089929 146677 ccb0cc1fe73a0defcc001e98e522504b ""
-  "comb.toc" 1721089933 426 afac0627a580fe5e2bf833ac363c8564 "pdflatex"
-  "d:/Toan Latex/500/Combinatorics/comb.tex" 1721089929 146677 ccb0cc1fe73a0defcc001e98e522504b ""
-  "settings.sty" 1721019458 8856 ec1dc6e09c7c5e8fa9ccc83c19779e42 ""
+  "comb.aux" 1721193587 3175 8a2143ab32a0fce1b4288afa547ced16 "pdflatex"
+  "comb.out" 1721193585 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "comb.pre" 1721193585 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "comb.tex" 1721193582 151693 b1bfd88bfdb24118dee5c82d20637fe5 ""
+  "comb.toc" 1721193587 426 81b58fc7af9e5341ff4a242bb9c1f7ed "pdflatex"
+  "d:/Toan Latex/500/Combinatorics/comb.tex" 1721193582 151693 b1bfd88bfdb24118dee5c82d20637fe5 ""
+  "settings.sty" 1721189026 8921 49b008b901f2a0c58dcd67150b34a8db ""
   (generated)
   "comb.aux"
   "comb.log"
