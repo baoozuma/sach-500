@@ -98,8 +98,8 @@
         Thật vậy, ta có một bổ đề sau
 
         
-        \begin{theo}[Bổ đề chia hết] -Cho một đoạn số nguyên $[a,b]$ và số nguyên $k$, khi đó có $\left\lfloor\frac{b - a + 1}{k}\right\rfloor$ số thuộc đoạn này chia hết cho $k$.
-        \end{theo}
+        \begin{lemma}[Bổ đề chia hết] Cho một đoạn số nguyên $[a,b]$ và số nguyên $k$, khi đó có $\left\lfloor\frac{b - a + 1}{k}\right\rfloor$ số thuộc đoạn này chia hết cho $k$.
+        \end{lemma}
         Bổ đề có thể dễ dàng chứng minh được bằng nguyên lý Dirichlet.
 
 
@@ -395,30 +395,134 @@
 
         Để ý rằng $u > |u - 2v|$ nên bộ sau sẽ luôn bé hơn bộ trước. Lặp lại quá trình này liên tục, ta sẽ đều được $(3,4),(-3,4),(3,-4) \to (3,4)$, hoàn tất chứng minh.
     \end{sol}
-    \item \begin{bt}\vocab{(OLP 30/4/2023). } Ký hiệu $(a_1, a_2, \ldots, a_{2023})$ là một hoán vị của tập hợp $X = \{1; 2; \ldots; 2023\}$ thỏa mãn tính chất $2(a_1 + a_2 + \ldots + a_k)$ chia hết cho $k$ với mọi $k = 1, 2, \ldots, 2023$.
-        \begin{enumerate}
-            \item Chứng minh $a_{2023} \in \{1, 2023\}$.
-            \item Tính số các hoán vị trên.
-        \end{enumerate}
+    \item \begin{bt}\vocab{(IMO Shortlist 2008 và OLP 30/4 2023). } Cho số nguyên dương $n$ và ký hiệu $A_n$ là tập hợp các hoán vị $(a_1,a_2,\dots,a_n)$ của $\{1,2,\dots,n\}$ sao cho 
+    \[
+        k \mid 2(a_1 + a_2 + \dots + a_k), \forall 1 \leq k \leq n \tag{1}
+    \]
+    Tính số phần tử của $A_n$.
     \end{bt}
+    \begin{sol}
+        Với $k = n - 1$ ta có  
+        \[
+        \begin{aligned}
+            2(a_1 + a_2 + \dots + a_{n - 1}) &\equiv 0 &\pmod{n - 1}\\
+            \lra n(n + 1) - 2a_n &\equiv 0 &\pmod{n - 1}\\
+            \lra 2a_n &\equiv n(n + 1) &\pmod{n - 1}\\
+            \lra 2a_n &\equiv (n - 1)(n + 1) + n - 1 + 2 &\pmod{n - 1}\\
+            \lra 2a_n &\equiv 2 &\pmod{n - 1}
+        \end{aligned}
+        \]
+        Nếu $n - 1$ lẻ thì ta được $a_n \equiv 1 \pmod{n - 1} \ra a_n \in \{1, n\}$.
+        
+        Nếu $n - 1$ chẵn thì $a_n \equiv 1 \pmod{\frac{n - 1}{2}} \ra a_n \in \{1,\frac{n + 1}{2},n\}$
 
-    \item \begin{btvn}\vocab{(Đồng Nai TST 2023).}
+        Xét $n - 1$ chẵn và $a_n = \frac{n + 1}{2}$. Từ $(1)$ xét $k = n - 2$ ta có 
+        \[
+        \begin{aligned}
+            2(a_1 + a_2 + \dots + a_{n - 2}) &\equiv 0 &\pmod{n - 2}\\
+            \lra n(n + 1) - 2a_{n - 1} - 2a_{n} &\equiv 0 &\pmod{n - 2}\\
+            \lra 2a_{n - 1} &\equiv  n(n +1) - (n + 1)&\pmod{n - 2}\\
+            \lra 2a_{n - 1} &\equiv n + 1 &\pmod{n - 2}\\
+            \lra a_{n - 1} &\equiv \frac{n + 1}{2} &\pmod{n - 2}\\
+        \end{aligned}
+        \]
+        Suy ra $a_{n - 1} = \frac{n + 1}{2}$ vô lý. Vậy nên $a_n \in \{1,n\}$.
+
+        Đặt $f(n) = |A_n|$, với mọi $n \geq 1$. 
+
+        \vocab{Trường hợp 1:} $a_n = n$. Khi đó số hoán vị của $(a_1,a_2,\dots,a_{n -1})$ chính là $f(n - 1)$.
+
+        \vocab{Trường hợp 2:} $a_n = 1$. Xét ánh xạ $g: (a_1 ,a_2,\dots,a_n) \to(a_1 - 1, a_2 - 1,\dots,a_{n - 1} - 1)$. Đặt $b_n = a_n - 1$. Khi đó với mọi $1 \leq k \leq n$ ta có 
+        \[
+            k \mid 2(a_1 + a_2 + \dots + a_k) \lra k \mid 2(b_1 + b_2 + \dots + b_k) +2k  \ra k \mid 2(b_1 + b_2 + \dots + b_k)
+        \]
+        Suy ra $g$ là song ánh, nên số hoán vị trong trường hợp $a_n = 1$ chính bằng $f(n - 1)$. 
+
+        Từ đó ta được $f(n) = 2f(n - 1) = \dots = 2^{n - 2}.3$.
+
+        Vậy $|A_n| = 3.2^{n -2}$.
+    \end{sol}
+    \item \begin{bt}\vocab{(Đồng Nai TST 2023).}
         Cho các ý sau:
         \begin{enumerate}[label=(\alph*)]
             \item Cho $2024$ viên bi được xếp thành hàng ngang. Tính số các cách đặt $29$ chiếc thẻ vào giữa các viên bi thỏa mãn ở giữa hai viên bi kề nhau chỉ có nhiều nhất một chiếc thẻ và các viên bi đã cho được thành $30$ phần, mà mỗi phần có ít nhất $9$ viên bi.
             \item Cho 2024 viên bi giống nhau được đặt vào các đỉnh của hình đa giác đều có $2024$ cạnh nội tiếp đường tròn $(O)$, mỗi đỉnh chỉ có 1 viên bi. Tính số các đặt 29 chiếc thẻ giống nhau vào trung điểm các cạnh của đa giác đã cho thỏa mãn tại mỗi trung điểm có nhiều nhất một chiếc thẻ và các viên bi đã cho được chia thành $29$ phần, mà mỗi phần có ít nhất 9 viên bi (biết hai cách đặt thẻ được coi là như nhau nếu tồn tại phép quay quanh tâm $O$ biến cách chia này thành cách chia kia).
         \end{enumerate}
-    \end{btvn}
+    \end{bt}
+    \begin{sol}
+        (a) Đây là một kết quả của bài toán chia kẹo Euler. Ta nhắc lại một bổ đề sau:
+        \begin{lemma}[Bài toán chia kẹo Euler]
+            Số cách chia $n$ viên kẹo giống nhau cho $k$ em bé khác nhau, trong đó hai cách chia kẹo nếu có một em bé mà số kẹo nhận được trong từng cách đó là khác nhau được tính như sau:
+
+            \begin{enumerate}
+                \item Nếu em nào cũng phải có kẹo thì kết quả là $\dbi{n - 1}{k  -1}$
+                \item Nếu chia kẹo tùy ý thì kết quả là $\dbi{n + k - 1}{k - 1}$.
+            \end{enumerate}
+        \end{lemma}
+        Gọi $x_1,x_2,\dots,x_{30}$ lần lượt là số viên kẹo nằm trước tấm thẻ thứ 1, nằm giữa tấm thẻ thứ 1 và 2,$\dots$, nằm sau tấm thẻ thứ 29. Ta có hệ sau:
+
+        \[
+            \left\{
+            \begin{array}{l}
+                    x_1 + x_2 + \dots + x_{30} = 2024\\
+                    x_i \geq 9, \forall 1 \leq i \leq 30.
+            \end{array}
+            \right.
+        \]
+        Đặt $y_i = x_i - 9$ ta được hệ mới là 
+        \[
+            \left\{
+            \begin{array}{l}
+                    y_1 + y_2 + \dots + y_{30} = 2024 - 30.9 = 1754\\
+                    y_i \geq 0, \forall 1 \leq i \leq 30.
+            \end{array}
+            \right.
+        \]
+        Áp dụng kết quả 2 của bổ đề 2, ta được số cách đặt các tấm thẻ là $\dbi{1754 + 30 - 1}{30 - 1} = \dbi{1783}{29}$.
+
+        (b) Khi đưa lên đường tròn thì sẽ có một vài cấu hình bị lặp lại. Gọi $|X_G|$ là số cách đặt thẻ toàn bộ (tính cả sự lặp lại), $G$ là số quỹ đạo lặp, $|X|$ là số cách đặt thực sự. Gọi $x_1,x_2,\dots,x_{29}$ lần lượt là số viên kẹo nằm giữa tấm thẻ thứ 29 và 1,$\dots$, nằm giữa 28 và 29. Ta có hệ sau:
+
+        \[
+            \left\{
+            \begin{array}{l}
+                    x_1 + x_2 + \dots + x_{29} = 2024\\
+                    x_i \geq 9, \forall 1 \leq i \leq 29.
+            \end{array}
+            \right.
+        \]
+        Đặt $y_i = x_i - 9$ ta được hệ mới là 
+        \[
+            \left\{
+            \begin{array}{l}
+                    y_1 + y_2 + \dots + y_{29} = 2024 - 29.9 = 1763\\
+                    y_i \geq 0, \forall 1 \leq i \leq 29.
+            \end{array}
+            \right.
+        \]
+        Áp dụng kết quả 2 của bổ đề 2, ta được $|X_G| = \dbi{1763 + 29 - 1}{29 - 1} = \dbi{1791}{28}$.  Theo bổ đề Burnside, ta có 
+        \[
+            |X| = \frac{|X_G|}{G} = \frac{2024\dbi{1791}{28}}{30}
+        \]
+        Vậy số cách đặt thẻ thỏa mãn là $|X| = \frac{2024\dbi{1791}{28}}{30}$.
+    \end{sol}
     \item \begin{bt}\vocab{(PTNK 2023).}
         Cho $n$ là một số nguyên dương. Một bảng ô vuông gôm $n$ hàng và $n$ cột gồm $n^2$ ô vuông đơn vị ta gọi là một bảng $n \times n$.
-        Với mỗi số nguyên $k(1 \leq k \leq n)$, trên mỗi hàng ta chọn $k$ hàng liên tiếp và trên mỗi cột ta chọn $k$ cột liên tiếp, khi đó $k^2$ ô vuông nằm ở phần giao nhau ta gọi là một bảng con $k \times k$ của bảng $n \times n$ ban đầu.
+        Với mỗi số nguyên $k$ với $(1 \leq k \leq n)$, trên mỗi hàng ta chọn $k$ hàng liên tiếp và trên mỗi cột ta chọn $k$ cột liên tiếp, khi đó $k^2$ ô vuông nằm ở phần giao nhau ta gọi là một bảng con $k \times k$ của bảng $n \times n$ ban đầu.
         \begin{enumerate}[label=(\alph*)]
             \item Điền các số $1,2,3, \ldots, 81$ vào bảng $9 \times 9$. Chứng minh rằng tồn tại bảng con $2 \times 2$ có tổng của 4 số được điền trong nó lớn hơn 137.
             \item Giả sử $n$ là số lẻ. Mỗi ô vuông đơn vị của bàng $n \times n$ ta điền một số thuộc $\{-1 ; 0 ; 1\}$ sao cho mỗi bảng con $2 \times 2$ có tổng của 4 số được điền trong nó là 0 . Gọi $S$ là tổng của $n^2$ số trong bảng $n \times n$. Tìm giá trị lớn nhất của $S$.
         \end{enumerate}
     \end{bt}
     \begin{sol}
-        (a) Gọi 
+        (a) Chia bảng $9 \times 9$ thành bảng con $8 \times 8$ và một $L$ Tetromino $9 \times 9$ ở góc. Có 4 cách chia như vậy:
+
+        \begin{center}
+            \includegraphics[scale=0.3]{Image/P16.1.pdf}
+        \end{center}
+        Gọi các cách chia lần lượt là $T_1,T_2,T_3,T_4$. Đánh số thứ tự cho các ô từ $1 \to 81$. Đặt 
+        \[
+            S_1 = 
+        \]
     \end{sol}
     \item \begin{bt}\vocab{\href{https://www.facebook.com/ToanHocvoiPsi/posts/1319983838702201}{(KHTN Lớp 10 - 2023).}}
         Viết một trăm số nguyên dương đầu tiên $1,2,\dots,100$ vào một bảng ô vuông kích thước $10\times 10$ một cách tùy ý sao cho mỗi ô được viết đúng một số. Chứng minh rằng tồn tại hai ô kề nhau (2 ô có cạnh chung) mà hai số viêt ở hai ô này có hiệu lớn hơn hoặc bằng 10.
@@ -577,7 +681,7 @@
         \item \textbf{Cách 1:} Chọn ra hai dòng bất kì và từ một trong hai dòng đó chọn ra 2 điểm, ta tạo được một hình chữ nhật. Ta được $$|S| < \frac{1}{50}\binom{10}{2}\binom{10}{2} $$
                     \begin{figure}[ht]
             \centering
-            \subfloat{\includegraphics[width=0.3\linewidth]{Image/ando.png}}
+            \subfloat{\includegraphics[width=0.3\linewidth]{Image/ando.pdf}}
         \end{figure}
         \item \textbf{Cách 2:} Đếm dựa trên một điểm $a_{ij}$ cho trước. Ta sẽ tìm một điểm $b_{mn} $ nào đó để tạo nên một đường chéo. 
         
@@ -691,9 +795,10 @@
 
     
 \begin{sol}
-    Ta chứng minh $3 | \gcd(a^2 + b^2 + 2,a^2b^2 + 3)$ khi và chỉ khi có một trong hai số chia hết cho $3$.
-    
-    Nếu $3 \mid a,b$ thì khi đó $3\nmid a^2 + b^2 + 2$ nên $3 \nmid \gcd(a^2 + b^2 + 2, a^2b^2 + 3)$
+
+    \vocab{Nhận xét 1:} $3 | \gcd(a^2 + b^2 + 2,a^2b^2 + 3)$ khi và chỉ khi có một trong hai số chia hết cho $3$.
+    \begin{proof}
+        Nếu $3 \mid a,b$ thì khi đó $3\nmid a^2 + b^2 + 2$ nên $3 \nmid \gcd(a^2 + b^2 + 2, a^2b^2 + 3)$
   
   
     Nếu $3 \nmid a,b$ thì $3\nmid a^2b^2 +3$ nên $3 \nmid \gcd(a^2 + b^2 + 2, a^2b^2 + 3)$
@@ -706,10 +811,7 @@
   
   
     Nếu $b = 3k + 2, k \in \mathbb{Z}$ thì khi đó $a^2 + b^2 + 2 = a^2 +9k^2 + 6k + 4 + 2 \equiv 0 \pmod{3}$
-  
-  
-    Khẳng định được chứng minh.
-  
+    \end{proof}
   
     Mặt khác dễ dàng kiểm tra được rằng $ 9 \nmid \gcd(a^2 + b^2 + 2, a^2b^2 + 3)$
   
@@ -727,7 +829,7 @@
     \end{bt}
 
     \begin{sol}
-        Lấy module $n$ các số và ta sử dụng $n$ thay vì $0$. 
+        Lấy module $n$ các số trên bảng và ta sử dụng $n$ thay vì $0$. 
         Ta gọi $r_i$ và $c_i$ lần lượt là tổng các số thuộc hàng hoặc cột $i$. Khi đó số điểm lớn nhất mà hàng $i$ có thể nhận được là $\left\lfloor \frac{r_i}{n} \right\rfloor$. Khi này số điểm lớn nhất ở hàng là 
         \[
             \sum_{i = 1}^n \left\lfloor \frac{r_i}{n} \right\rfloor \leq \frac{\dsum_{i = 1}^n r_i}{n} = \frac{n(n + 1)}{2}
@@ -735,7 +837,7 @@
         Lý do tổng vẫn theo mod $n$ là vì số điểm khi này phải phụ thuộc vào các số mod $n$. Tương tự với cột thì ta có tổng điểm lớn nhất là $n(n +1)$. Giờ ta sẽ chỉ ra một cấu hình có thể đạt được giá trị lớn nhất. Viết vào ô $(i,j)$ với $i<n$ số $i$ nếu $2\nmid j$ và $n-i$ ngược lại và viết $n$ vào hàng cuối cùng.
     \end{sol}
 
-    \item \begin{btvn}\vocab{(Japan MO Final 2021).}
+    \item \begin{bt}\vocab{(Japan MO Final 2021).}
         Cho số nguyên dương $n \geq 2$. Hai người chơi $A$ và $B$ chơi một trò chơi trên lưới các ô vuông đơn vị $n \times 2021$. Đầu tiên, $A$ tô mỗi ô màu đen hoặc trắng. $B$ đặt một viên bi vào một trong các ô ở hàng trên cùng và chỉ định một trong các ô ở hàng dưới cùng làm \textit{goal}. Sau đó, $A$ thao tác $n - 1$ lần như sau:
         \begin{enumerate}
             \item Khi ô có bi được sơn màu trắng, $A$ di chuyển bi sang ô bên dưới.
@@ -744,8 +846,10 @@
         \end{enumerate}
         
         Tìm giá trị nhỏ nhất của $n$ sao cho $A$ luôn có thể di chuyển một viên bi đến \textit{goal}, bất kể lựa chọn của $B$.
-    \end{btvn}
-
+    \end{bt}
+    \begin{sol}
+        Giá trị nhỏ nhất của $n$ là $n \geq 2022$.
+    \end{sol}
     \begin{bt}\vocab{(Japan MO Final 2022).}
         Có $2022$ ô vuông được đánh số thứ tự trên một hàng ngang. Hai người $A$ và $B$ cùng nhau chơi một trò chơi. Đầu tiên, những ô vuông số lẻ được đánh dấu chữ $A$ và những ô vuông số chẵn được đánh dấu chữ $B$. Sau đó, bắt đầu từ $A$, họ thay phiên thực hiện những thao tác sau:
         \begin{enumerate}
@@ -959,10 +1063,24 @@
         Tìm giá trị nhỏ nhất có thể của \( k \) (dưới dạng một hàm của \( n \)).
 
     \end{btvn}
-    \item \begin{btvn}\vocab{(VMO 2009).}
+    \item \begin{bt}\vocab{(VMO 2009).}
         Hãy xác định số lượng tập con $T$ của $S$ sao cho không có hai phần tử nào trong $T$, $a$ và $b$, thỏa mãn điều kiện $|a-b|=\{1,n\}$, trong đó $S =\{1,2,3, \ldots, 2n\}$ và $n \in \mathbb{Z}^+$.
-    \end{btvn}
-
+    \end{bt}
+    \begin{sol}
+        Ta có thể giải quyết bài toán này bằng nguyên lý bù trừ. Gọi $A_1,A_2,\dots,A_n$ lần lượt là các tập chứa 2 phần tử $(1, 1 +n)$, $(2, 2 + n)$,\dots,$(n,n + n)$. Khi đó ta có các quan hệ như sau: 
+        \[
+            \begin{aligned}
+                |A_i| &= 2^{2n - 1}\\
+                |A_{i_1} \cap A_{i_2}| &= 2^{2n - 2}\\
+                \dots\\
+                |A_{i_1} \cap A_{i_2} \cap \dots \cap A_{i_k}| &= 2^{2n - k}\\
+            \end{aligned}
+        \]
+        Khi đó theo nguyên lý bù trừ ta được số tập con không chứa $(a,b)$ thỏa $|a - b| = n$ là 
+        \[
+            \dsum_{i = 1}^{n}\dbi{n}{i}(-1)^{i}.2^{2n - i}
+        \]
+    \end{sol}
     \item \begin{btvn}\vocab{(VMO 2010).}
         Cho số nguyên dương $n$. Xem xét bảng vuông $3 \times 3$. Sử dụng $n$ màu để tô màu tất cả các ô của bảng sao cho:
         \begin{enumerate}
