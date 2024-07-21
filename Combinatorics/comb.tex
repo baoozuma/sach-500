@@ -187,15 +187,6 @@
             T = \binom{n^n + n - 1 }{2n - 1}
         \]
         So sánh hai cách đếm ta hoàn tất bài toán.
-
-
-        \vocab{Cách 2: Sử dùng hàm sinh}
-
-
-        Ta xét hàm sinh
-        \[
-            f(x) = \left(\sum_{i = 0}^{\infty}ix^i\right)^n
-        \]
     \end{sol}
    
     \item \begin{bt}\vocab{(Kon Tum TST 2023).}
@@ -360,12 +351,12 @@
             Ta thấy rằng một cặp điểm thỏa mãn là khi số các điểm nằm bên trong và ngoài cung tương ứng là $1012$ và $1009$.
             Giả sử $2023$ điểm này là đều nhau và được đánh số từ $1 \to 2023$.
     
-            Thật vậy, với $n = 1010$. Khi đó, với cách chọn $1010$ điểm liên tiếp trên đường tròn. Gọi $A,B$ là hai điểm ở ngoài cùng có cung bên trong lớn nhất, và bên ngoài nhỏ nhất. Khi đó số các điểm trong và ngoài của cung $AB$ là  $1009 - 2 + 1 = 1008$ và $2023 - 1011 + 1 = 1013$, mà các điểm bên trong thì lại tạo ra cung trong nhỏ hơn và cung ngoài lớn hơn. Do đó $n \geq 1011$.
+            Thật vậy, với $n = 1010$. Khi đó, với cách chọn $1010$ điểm liên tiếp trên đường tròn. Gọi $A,B$ là hai điểm ở ngoài cùng có cung bên trong lớn nhất, và bên ngoài nhỏ nhất. Khi đó số các điểm trong và ngoài của cung $AB$ là  $1009 - 2 + 1 = 1008$ và $2023 - 1011 + 1 = 1013$, mà các cặp điểm khác thì lại tạo ra cung trong nhỏ hơn và cung ngoài lớn hơn. Do đó $n \geq 1011$.
     
             Với $n \geq 1011$. Ta chia $2023$ điểm thành các cặp 
              \[(1,1014), (2,1015),\dots, (1010, 2023),(1011,1),(1012,2),(1013,3),\dots,(2023,1013) \tag{1}\]
     
-             Ta chọn ít nhất 1011 số, mỗi số được chọn sẽ nằm trong $2$ cặp ở $(1)$, mà lại có $2023$ cặp. Khi đó sau $1011$ lần bỏ vào, theo Dirichlet sẽ có ít nhất một cặp được bỏ vào 2 lần. 
+             Ta chọn ít nhất 1011 số, mỗi số được chọn sẽ nằm trong $2$ cặp ở $(1)$, mà lại có $2023$ cặp. Khi đó sau $1011$ lần bỏ vào, theo Dirichlet sẽ có ít nhất một cặp được bỏ vào 2 lần, tức là đủ để tạo một cung chứa 1012 điểm. Từ đây ta hoàn tất bài toán.
         \end{sol}
     \item \begin{bt}\vocab{(Bình Phước TST 2023).}
         Trên bàn có 99 tấm thẻ được đánh số từ 1 đến 4 và từ 6 đến 100 . Hai bạn $A$ và $B$ luân phiên chơi trò chơi với luật như sau:
@@ -383,49 +374,39 @@
     \end{sol}
     
 
-    \item \begin{btvn}\vocab{(Trường hè Vinh 2023).} Có $k$ người trong một gia đình đi nghỉ mát trong thời gian 7 ngày tại khu du lịch. Buổi sáng, mỗi người chọn ăn một trong 3 món: xôi, phở hoặc bánh mỳ. Biết rằng trong bất kỳ 3 ngày nào, cũng có ít nhất một người mà trong 3 ngày này chọn ăn 3 món phân biệt. Tìm giá trị nhỏ nhất có thể của $k$.
-        
-    \end{btvn}
+
     
-    \item \begin{btvn}\vocab{(OLP 30/4/2021)}
-    Bộ hai số nguyên khác không $(x, y)$ được gọi là "bộ số đẹp" nếu $x$ là số lẻ, $y$ là số chẵn, $x, y$ nguyên tố cùng nhau và $x^2 - y^2$ là số chính phương.
+    \item \begin{bt}\vocab{(OLP 30/4/2021)}
+    Bộ hai số nguyên khác không $(x, y)$ được gọi là 'bộ số đẹp' nếu $x$ là số lẻ, $y$ là số chẵn, $x, y$ nguyên tố cùng nhau và $x^2 + y^2$ là số chính phương.
     \begin{enumerate}
-        \item Chứng minh rằng $(x, y)$ là "bộ số đẹp" khi và chỉ khi tồn tại 2 số nguyên $u, v$ khác $0$ và khác tính chẵn lẻ, nguyên tố cùng nhau sao cho $(x, y) = (u^2 - v^2, 2uv)$.
+        \item Chứng minh rằng $(x, y)$ là 'bộ số đẹp' khi và chỉ khi tồn tại 2 số nguyên $u, v$ khác $0$ và khác tính chẵn lẻ, nguyên tố cùng nhau sao cho $(x, y) = (u^2 - v^2, 2uv)$.
         \item Với mỗi bộ số đẹp $(x, y)$ ta có thể tạo ra 1 bộ số đẹp mới bằng 1 trong 2 phép biến đổi: hoặc đổi dấu của 1 trong 2 số hoặc cộng 1 số nguyên $k$ nào đó vào cả 2 số sao cho $(x + k, y + k)$ là bộ số đẹp. Chứng minh rằng với bất kỳ bộ số đẹp $(x, y)$ và $(z, t)$ cho trước ta luôn có thể biến đổi từ $(x, y)$ thành $(z, t)$ sau hữu hạn các bước biến đổi như trên.
     \end{enumerate}
     
-    \end{btvn}
-    \item \begin{btvn}\vocab{(OLP 30/4/2023). } Ký hiệu $(a_1, a_2, \ldots, a_{2023})$ là một hoán vị của tập hợp $X = \{1; 2; \ldots; 2023\}$ thỏa mãn tính chất $2(a_1 + a_2 + \ldots + a_k)$ chia hết cho $k$ với mọi $k = 1, 2, \ldots, 2023$.
+    \end{bt}
+    \begin{sol}
+        1. Đây là tính chất cơ bản của bộ số Pythagoras. Với bộ $(x,y)$ tốt, tồn tại $z$ nguyên sao cho 
+        \[
+            x^2 + y^2 = z^2 \lra y^2 = (z + x)(z - x)
+        \]
+        Giả sử $x$ lẻ $y$ chẵn, đặt $y = 2t$. Khi đó $z,x$ cùng lẻ nên tồn tại $m,n$ sao cho $z + x = 2m, z - x = 2n$. Suy ra $t^2 = mn$ và $x = m -n, z = m +n$. Do $(z,x) = 1$ nên $(m,n) = 1$. Mà vì $mn = t^2$ nên tồn tại $u,v$ sao cho $m = u^2, n = v^2$. Suy ra $(x,y) = (u^2 - v^2,2uv)$.
+
+        2. Ta chứng minh rằng với mọi bộ $(x,y)$ tốt đều có thể đưa về $(3,4)$. Thật vậy, tồn tại $u,v$ nguyên và nguyên tố cùng nhau sao cho $(x,y) = (u^2 - v^2, 2uv)$. Khi đó cộng $x$ và $y$ cho $4v^2 - 4uv$ ta được bộ mới là $((u - 2v)^2 - v^2, 2v(2v -u ))$.
+
+        Để ý rằng $u > |u - 2v|$ nên bộ sau sẽ luôn bé hơn bộ trước. Lặp lại quá trình này liên tục, ta sẽ đều được $(3,4),(-3,4),(3,-4) \to (3,4)$, hoàn tất chứng minh.
+    \end{sol}
+    \item \begin{bt}\vocab{(OLP 30/4/2023). } Ký hiệu $(a_1, a_2, \ldots, a_{2023})$ là một hoán vị của tập hợp $X = \{1; 2; \ldots; 2023\}$ thỏa mãn tính chất $2(a_1 + a_2 + \ldots + a_k)$ chia hết cho $k$ với mọi $k = 1, 2, \ldots, 2023$.
         \begin{enumerate}
             \item Chứng minh $a_{2023} \in \{1, 2023\}$.
             \item Tính số các hoán vị trên.
         \end{enumerate}
-    \end{btvn}
+    \end{bt}
 
     \item \begin{btvn}\vocab{(Đồng Nai TST 2023).}
         Cho các ý sau:
         \begin{enumerate}[label=(\alph*)]
             \item Cho $2024$ viên bi được xếp thành hàng ngang. Tính số các cách đặt $29$ chiếc thẻ vào giữa các viên bi thỏa mãn ở giữa hai viên bi kề nhau chỉ có nhiều nhất một chiếc thẻ và các viên bi đã cho được thành $30$ phần, mà mỗi phần có ít nhất $9$ viên bi.
             \item Cho 2024 viên bi giống nhau được đặt vào các đỉnh của hình đa giác đều có $2024$ cạnh nội tiếp đường tròn $(O)$, mỗi đỉnh chỉ có 1 viên bi. Tính số các đặt 29 chiếc thẻ giống nhau vào trung điểm các cạnh của đa giác đã cho thỏa mãn tại mỗi trung điểm có nhiều nhất một chiếc thẻ và các viên bi đã cho được chia thành $29$ phần, mà mỗi phần có ít nhất 9 viên bi (biết hai cách đặt thẻ được coi là như nhau nếu tồn tại phép quay quanh tâm $O$ biến cách chia này thành cách chia kia).
-        \end{enumerate}
-    \end{btvn}
-    \item \begin{btvn}\vocab{(Hà Tĩnh TST 2023).}
-        Cho $n$ số nguyên dương đôi một phân biệt $a_1,a_2,\dots,a_n$. Chứng minh rằng với mọi $i \in [n]$, tồn tại số nguyên dương $b$ sao cho $ba_i$ là lũy thừa của số nguyên dương với số mũ lớn hơn $1$.
-    \end{btvn}
-    \begin{sol}
-        Ta chứng minh bằng quy nạp rằng xuất phát từ $2$ số $a,b$ ta lấy trung bình cộng của các số thì sau $n$ bước ta nhận được tất cả các số có dạng $\frac{ka + (2^n -k)b}{2^n},\forall k = 0,\dots,2^n$. Thay $(a,b) = \left(\frac{m}{n}, \frac{n}{m}\right)$ và chọn $m + n =2^k$ ta được số 1. 
-        
-        Ta chứng minh rằng nếu $m + n \neq 2^k$ thì không viết được số $1$. Xét $p \in \bb{P}$ sao cho $p \mid m + n$. Ta nghịch đảo modulo $p$, do $m + n \equiv 0 \pmod{p}$ nên $\frac{m}{n} \equiv \frac{n}{m} \equiv - 1 \pmod{p}$
-      
-        Mọi số được viết trên bảng đều $\equiv - 1\pmod{p}$ vì nếu $x,y \equiv -1 \pmod{p}$ thì $\frac{x + y}{2} \equiv \frac{-1 - 1}{2} \equiv - 1\pmod{p}$ và $\frac{2xy}{x + y} \equiv \frac{2}{-2} \equiv -1\pmod{p}$. Vậy nên không bao giờ viết được $1$ vì $1 \neq - 1 \pmod{p}$. Như vậy để thỏa mãn đề bài thì chọn $(m,n)$ có dạng $m + n = 2^k$ với $k$ nguyên không âm bất kỳ.\end{sol}
-    \item \begin{btvn}\vocab{(PTNK 2022).}
-        Cho $n, k \geq 2$ là hai số nguyên dương và $a_0, a_1, \cdots, a_k$ là các số nguyên dương cho trước. Đặt $S_n=\{1,2, \cdots, n\}$, ta ký hiệu $A_n$ là số các bộ $\left(x_1, x_2, \cdots, x_k\right) \in S_n^k$ thỏa điều kiện:
-        $$
-        n \mid a_0+a_1 x_1+\cdots+a_k x_k .
-        $$
-        \begin{enumerate}[label=(\alph*)]
-            \item Xét số nguyên tố $p \geq 5 ; a_0, a_1, \cdots, a_k$ phân biệt và đều nhỏ hơn $p$. Tính $A_{p^2}$.
-            \item Tính $A_n$ với trường hợp tổng quát.
         \end{enumerate}
     \end{btvn}
     \item \begin{bt}\vocab{(PTNK 2023).}
@@ -812,33 +793,6 @@
             \item Nếu yêu cầu thêm rằng hợp của bất kỳ hai ủy ban nào cũng không được vượt quá $1800$ học sinh, thì câu trả lời trong (i) có đúng không?
         \end{enumerate}
     \end{btvn}
-   
-    \item \begin{bt}\vocab{(HMMT 02/2016).} Cho số nguyên lẻ $n > 1$. Trên một bàn cờ $n \times n$ có ô trung tâm và 4 ô ở góc bị cắt đi. Chúng ta muốn chia $n^2 -5$ hình vuông còn lại thành $\frac{1}{2}(n^2 - 5)$ cặp sao cho hai hình vuông ở mỗi cặp giao nhau tại chính xác một điểm. Tìm giá trị của $n$ thỏa mãn điều đó.
-    \end{bt}
-    \begin{sol}
-        Ta tô màu xen kẽ cho bảng ô vuông bằng hai màu trắng và vàng, với hàng màu vàng nằm ở hàng trung tâm. khi đó sẽ có hai trường hợp như sau:
-        \begin{center}
-            \includegraphics[scale=0.5]{Image/P1.1.pdf}
-            \hspace{1cm}
-            \includegraphics[scale=0.5]{Image/P1.2.pdf}
-        \end{center}
-        Mỗi cặp hình vuông thỏa mãn được chọn sẽ chiếm 1 ô trắng và 1 ô vàng, tức là để tồn tại một cách chọn thỏa mãn thì số ô vàng phải bằng số ô trắng.
-
-        \vocab{Trường hợp 1:} hàng ở trên và dưới cùng được tô màu vàng.  Khi này tổng số ô màu vàng là $\frac{n(n + 1)}{2} - 5$, tổng số ô màu trắng là $\frac{n(n - 1)}{2}$, khi này ta được 
-        \[
-            \frac{n(n + 1)}{2} - 5 = \frac{n(n - 1)}{2} \lra n = 5
-        \]
-        \vocab{Trường hợp 2:} hàng ở trên và dưới cùng được tô màu trắng. Khi này tổng số ô màu vàng là $\frac{n(n - 1)}{2} - 1$, tổng số ô màu trắng là $\frac{n(n + 1)}{2} - 4$, khi này ta được 
-        \[
-            \frac{n(n - 1)}{2} - 1 = \frac{n(n + 1)}{2} - 4 \ra n = 3
-        \]
-        Vậy với $n \in \{3,5\}$ thì tồn tại cách chọn cặp thỏa mãn đề bài. Ta có một cách ghép cặp thỏa mãn như sau cho từng trường hợp:
-        \begin{center}
-            \includegraphics[scale=0.2]{Image/P1.3.pdf}
-            \hspace{1cm}
-            \includegraphics[scale=0.2]{Image/P1.4.pdf}
-        \end{center}
-    \end{sol}
 
     \item \begin{bt}\vocab{(USAJMO 2019).}
         Có $a+b$ cái bát được sắp xếp thành một hàng ngang, được đánh số từ $1$ đến $a+b$. Ban đầu, $a$ bát đầu tiên mỗi bát chứa một quả táo và $b$ bát cuối cùng mỗi bát chứa một quả lê.
