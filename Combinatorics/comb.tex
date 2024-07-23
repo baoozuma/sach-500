@@ -837,19 +837,6 @@
         Lý do tổng vẫn theo mod $n$ là vì số điểm khi này phải phụ thuộc vào các số mod $n$. Tương tự với cột thì ta có tổng điểm lớn nhất là $n(n +1)$. Giờ ta sẽ chỉ ra một cấu hình có thể đạt được giá trị lớn nhất. Viết vào ô $(i,j)$ với $i<n$ số $i$ nếu $2\nmid j$ và $n-i$ ngược lại và viết $n$ vào hàng cuối cùng.
     \end{sol}
 
-    \item \begin{bt}\vocab{(Japan MO Final 2021).}
-        Cho số nguyên dương $n \geq 2$. Hai người chơi $A$ và $B$ chơi một trò chơi trên lưới các ô vuông đơn vị $n \times 2021$. Đầu tiên, $A$ tô mỗi ô màu đen hoặc trắng. $B$ đặt một viên bi vào một trong các ô ở hàng trên cùng và chỉ định một trong các ô ở hàng dưới cùng làm \textit{goal}. Sau đó, $A$ thao tác $n - 1$ lần như sau:
-        \begin{enumerate}
-            \item Khi ô có bi được sơn màu trắng, $A$ di chuyển bi sang ô bên dưới.
-            \item Nếu không, $A$ hãy di chuyển viên bi đến ô tiếp theo ở bên trái hoặc bên phải, sau đó đến ô bên dưới.
-            
-        \end{enumerate}
-        
-        Tìm giá trị nhỏ nhất của $n$ sao cho $A$ luôn có thể di chuyển một viên bi đến \textit{goal}, bất kể lựa chọn của $B$.
-    \end{bt}
-    \begin{sol}
-        Giá trị nhỏ nhất của $n$ là $n \geq 2022$.
-    \end{sol}
     \begin{bt}\vocab{(Japan MO Final 2022).}
         Có $2022$ ô vuông được đánh số thứ tự trên một hàng ngang. Hai người $A$ và $B$ cùng nhau chơi một trò chơi. Đầu tiên, những ô vuông số lẻ được đánh dấu chữ $A$ và những ô vuông số chẵn được đánh dấu chữ $B$. Sau đó, bắt đầu từ $A$, họ thay phiên thực hiện những thao tác sau:
         \begin{enumerate}
@@ -1025,11 +1012,25 @@
         \end{proof}
     \end{sol}
 
-    \item \begin{btvn}\vocab{(Japan MO Final 2023).}
-        Trên một bảng ô vuông $5 \times 5$, người ta đặt các Tetromino
-        lên các hình vuông để trong mỗi hình vuông, có hai hoặc ít hơn viên được bao phủ (các viên này có thể xếp chồng lên nhau). Tìm số hình vuông lớn nhất được bao phủ bởi đúng một viên.
-    \end{btvn}
+    \item \begin{bt}\vocab{(Japan MO Final 2023).}
+        Trên một bảng ô vuông $5 \times 5$, người ta đặt các Z-Tetromino hoặc S-Tetromino
+        lên các hình vuông để trong mỗi hình vuông, có hai hoặc ít hơn viên được bao phủ (các viên này có thể xếp chồng lên nhau). Tìm số hình vuông lớn nhất được bao phủ bởi ít nhất một viên.
+    \end{bt}
+    \begin{sol}
+        Đầu tiên, ta tô màu bảng vuông như sau:
+        \begin{center}
+            \includegraphics[scale=0.3]{Image/P30.1.pdf}
+        \end{center}
+        Khi đó các Tetromino chỉ bao phủ đúng 1 ô đen, mà mỗi ô được phủ nhiều nhất 2 viên, vậy nên số viên lớn nhất là $2 \times 4 = 8$. Tiếp theo, ta tô bảng như sau:
 
+        \begin{center}
+            \includegraphics[scale=0.3]{Image/P30.2.pdf}
+        \end{center}
+        Để ý rằng, mỗi viên phủ đúng 1 ô xanh, mà có tối đa 8 viên nên sẽ có ít nhất 1 viên xanh được bỏ trống. Vậy nên số ô được bao phủ bởi ít nhất 1 viên là $25 - 1 = 24$. Bằng cách lát lần lượt như sau thì ta thỏa mãn giá trị lớn nhất 
+        \begin{center}
+            \includegraphics[scale=0.3]{Image/P30.3.pdf}
+        \end{center}
+    \end{sol}
 
     \item \begin{btvn}\vocab{(Japan MO Final 2024).}
     Trong mặt phẳng tọa độ, các điểm có tung độ và hoành độ nguyên thuộc $1$ đến $2000$ được gọi là điểm tốt. Hơn nữa, đối với bốn điểm $A(x_1, y_1)$, $B(x_2, y_2)$, $C(x_3, y_3)$, $D(x_4, y_4)$ có đường đa tuyến $ABCD$ được gọi là đường $\mathbb{Z}$ nếu như:
